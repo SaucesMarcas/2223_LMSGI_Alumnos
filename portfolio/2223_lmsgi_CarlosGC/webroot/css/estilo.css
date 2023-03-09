@@ -1,0 +1,124 @@
+* {
+    font-family: 'helvetica';
+}
+
+body {
+    background-color: black;
+    color: #fff;
+}
+
+body header h1 {
+    height: 125px;
+    background-color: #111;
+    padding-left: 10rem;
+    padding-top: 1rem;
+    color: #fff;
+    border: solid 1px grey;
+}
+
+main {
+    padding-left: 10%;
+}
+
+.logo{
+    background-color: orange;
+    color: #000;
+    padding: 6px;
+    border-radius: 5px;
+    
+}
+
+img {
+    padding: 1rem 0.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: #fff;
+}
+
+ul {
+    background-color: #111;
+}
+
+#indice li {
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+article {
+    width: 30rem;
+    float: left;
+    border: 3px solid grey;
+    border-bottom: black;
+    margin: 0.5rem;
+    background-color: grey;
+}
+
+ h2 {
+    text-align: center;
+    color: #fff;
+
+}
+
+.listado::first-letter {
+    text-transform: uppercase;
+}
+
+.listado li{
+    padding: 0.5rem;
+    background-color: #111;
+}
+
+p {
+    display: inline;
+    margin-right: 10px;
+    border: solid 1px grey
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: black;
+    background-color: grey;
+    text-align: center;
+}
+
+.clockdate-wrapper {
+  background-color: #111;
+  padding:20px;
+  max-width:300px;
+  width:100%;
+  text-align:center;
+  border-radius:5px;
+  margin-top: -164px;
+  margin-left: 80%;
+}
+#clock{
+  background-color:#111;
+  font-family:'helvetica';
+  font-size:60px;
+  text-shadow:0px 0px 1px #fff;
+  color:#fff;
+}
+#clock span {
+  color:#fff;
+  font-size:30px;
+  position:relative;
+  top:-27px;
+  left:-10px;
+}
+#date {
+  letter-spacing:10px;
+  font-size:14px;
+  font-family:'helvetica';
+  color:#fff;
+}

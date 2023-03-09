@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>01 Gimnasio</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <h1 id="01-gimnasio">01 Gimnasio</h1>
+<h2 id="consultas--xpath">Consultas- XPath</h2>
+<ol>
+<li>
+<p>Título de las actividades.</p>
+<p><code>/actividades/actividad/titulo/text()</code></p>
+<p>Resultado:</p>
+<pre><code class="language-Xpath">    <span class="hljs-number">1</span>. Al agua patos 
+    <span class="hljs-number">2</span>. Spinning y agua 
+    <span class="hljs-number">3</span>. Spinning en el agua 
+    <span class="hljs-number">4</span>. Socorrismo 
+    <span class="hljs-number">5</span>. Perfeccionamiento en el agua 
+    <span class="hljs-number">6</span>. Aprender a nadar
+</code></pre>
+</li>
+<li>
+<p>Mostrar el código de la actividad, título y nivel.</p>
+<p><code>/actividades/actividad/codigo/text()|/actividades/actividad/titulo/text()|/actividades/actividad/@nivel</code></p>
+<p>Resultado:</p>
+<pre><code class="language-Xpath">     <span class="hljs-number">1</span>. infantil
+     <span class="hljs-number">2</span>. A01 
+     <span class="hljs-number">3</span>. Al agua patos 
+     <span class="hljs-number">4</span>. adultos
+     <span class="hljs-number">5</span>. A02 
+     <span class="hljs-number">6</span>. Spinning y agua 
+     <span class="hljs-number">7</span>. adultos
+     <span class="hljs-number">8</span>. A03 
+     <span class="hljs-number">9</span>. Spinning en el agua 
+     <span class="hljs-number">10</span>. infantil
+     <span class="hljs-number">11</span>. A04 
+     <span class="hljs-number">12</span>. Socorrismo 
+     <span class="hljs-number">13</span>.infantil
+     <span class="hljs-number">14</span>. A05 
+     <span class="hljs-number">15</span>. Perfeccionamiento en el agua 
+     <span class="hljs-number">16</span>. adultos
+     <span class="hljs-number">17</span>. A06 
+     <span class="hljs-number">18</span>. Aprender a nadar 
+</code></pre>
+</li>
+<li>
+<p>El primer título de la actividad.</p>
+<p><code>//actividad[1]/titulo/text()</code></p>
+<p>Resultado:</p>
+<pre><code class="language-Xpath">     <span class="hljs-number">1</span>. Al agua patos 
+</code></pre>
+</li>
+<li>
+<p>El último título de la actividad.</p>
+<p><code>//actividad[last()]/titulo/text()</code></p>
+<p>Resultado:</p>
+<pre><code class="language-Xpath">     <span class="hljs-number">1</span>. Aprender a nadar
+</code></pre>
+</li>
+<li>
+<p>Todos los elementos descendientes de las actividades infantiles.</p>
+<p><code>//actividad[@nivel=&quot;infantil&quot;]/node()</code></p>
+<p>Resultado:</p>
+<pre><code class="language-Xpath">     <span class="hljs-number">1</span>. A01 
+     <span class="hljs-number">2</span>. Al agua patos 
+     <span class="hljs-number">3</span>. <span class="hljs-number">2017</span>-<span class="hljs-number">01</span>-<span class="hljs-number">15</span> 
+     <span class="hljs-number">4</span>. <span class="hljs-number">45</span> <span class="hljs-number">3</span> 
+     <span class="hljs-number">5</span>. A04 
+     <span class="hljs-number">6</span>. Socorrismo 
+     <span class="hljs-number">7</span>. <span class="hljs-number">2017</span>-<span class="hljs-number">02</span>-<span class="hljs-number">15</span> 
+     <span class="hljs-number">8</span>. <span class="hljs-number">45</span> <span class="hljs-number">2</span> 
+     <span class="hljs-number">9</span>. A05 
+     <span class="hljs-number">10</span>. Perfeccionamiento en el agua 
+     <span class="hljs-number">11</span>. <span class="hljs-number">2017</span>-<span class="hljs-number">02</span>-<span class="hljs-number">15</span> 
+     <span class="hljs-number">12</span>. <span class="hljs-number">45</span> <span class="hljs-number">2</span> 
+</code></pre>
+</li>
+<li>
+<p>El nombre de las actividades para adultos.</p>
+<p><code>//actividad[@nivel=&quot;adultos&quot;]/titulo/text()</code></p>
+<p>Resultado:</p>
+<pre><code class="language-Xpath">     <span class="hljs-number">1</span>. Spinning y agua 
+     <span class="hljs-number">2</span>. Spinning en el agua 
+     <span class="hljs-number">3</span>. Aprender a nadar 
+</code></pre>
+</li>
+<li>
+<p>El nombre de las actividades con dos sesiones semanales.</p>
+<p><code>//actividad[sesiones/sesiones_semana=2]/titulo/text()</code></p>
+<p><strong>Otras opciones mismo resultado.</strong></p>
+<p><code>//sesiones[sesiones_semana=2]/../titulo/text()</code></p>
+<p><code>//sesiones_semana[.=2]/../../titulo/text()</code></p>
+<p>Resultado:</p>
+<pre><code class="language-Xpath">     <span class="hljs-number">1</span>. Spinning en el agua 
+     <span class="hljs-number">2</span>. Socorrismo 
+     <span class="hljs-number">3</span>. Perfeccionamiento en el agua 
+     <span class="hljs-number">4</span>. Aprender a nadar 
+</code></pre>
+</li>
+<li>
+<p>Número de actividades</p>
+<p><code>count(//actividad)</code></p>
+<p>Resultado:</p>
+<pre><code class="language-Xpath">        Non-standard output: <span class="hljs-number">6</span>
+</code></pre>
+</li>
+<li>
+<p>Si queremos convertir el resultado a cadena de caracteres, podemos usar la función string().</p>
+<p><code>string(count(//actividad))</code></p>
+<p>Resultado:</p>
+<pre><code class="language-Xpath">     Non-standard output: <span class="hljs-number">6</span>
+</code></pre>
+</li>
+<li>
+<p>. Cuenta del número de actividades infantiles..</p>
+<p><code>count(/actividades/actividad[@nivel='infantil'])</code></p>
+<p>Resultado:</p>
+<pre><code class="language-Xpath">    Non-standard output: <span class="hljs-number">3</span>
+</code></pre>
+</li>
+<li>
+<p>Suma de las sesiones semanales de las actividades para adultos.</p>
+<p><code>sum(//actividad[@nivel='adultos']//sesiones_semana)</code></p>
+<p>Resultado:</p>
+<pre><code class="language-Xpath">    Non-standard output: <span class="hljs-number">7</span>
+</code></pre>
+</li>
+<li>
+<p>Nodos de la actividad de codigo A06</p>
+<p><code>//actividad/codigo[.='A06']/parent::node()</code></p>
+<p>Resultado:</p>
+<pre><code class="language-Xpath">    <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">actividad</span> <span class="hljs-attr">nivel</span>=<span class="hljs-string">&quot;adultos&quot;</span>&gt;</span> 
+    </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">codigo</span>&gt;</span>A06<span class="hljs-tag">&lt;/<span class="hljs-name">codigo</span>&gt;</span></span><span class="language-xml"> 
+    </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">titulo</span>&gt;</span>Aprender a nadar<span class="hljs-tag">&lt;/<span class="hljs-name">titulo</span>&gt;</span></span><span class="language-xml"> 
+    </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">fecha_inicio</span>&gt;</span>2017-03-15<span class="hljs-tag">&lt;/<span class="hljs-name">fecha_inicio</span>&gt;</span></span><span class="language-xml"> 
+    </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">sesiones</span> <span class="hljs-attr">intensidad</span>=<span class="hljs-string">&quot;suave&quot;</span>&gt;</span> 
+    </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">minutos_sesion</span>&gt;</span>30<span class="hljs-tag">&lt;/<span class="hljs-name">minutos_sesion</span>&gt;</span></span><span class="language-xml"> 
+    </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">sesiones_semana</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">sesiones_semana</span>&gt;</span></span><span class="language-xml"> 
+    <span class="hljs-tag">&lt;/<span class="hljs-name">sesiones</span>&gt;</span></span><span class="language-xml"> <span class="hljs-tag">&lt;/<span class="hljs-name">actividad</span>&gt;</span></span>
+</code></pre>
+</li>
+<li>
+<p>Duración de las actividades con intensidad fuerte</p>
+<p><code>/actividades/actividad/sesiones[@intensidad='fuerte']/minutos_sesion</code></p>
+<p>Resultado:</p>
+<pre><code class="language-Xpath">    Non-standard output: <span class="hljs-number">45</span>
+</code></pre>
+</li>
+<li>
+<p>Mostrar el código de las actividades cuya duración coincide con la duración del 1º actividad.</p>
+<p><code>/actividades/actividad[sesiones[1]/minutos_sesion = /actividades/actividad[1]/sesiones[1]/minutos_sesion]/codigo</code></p>
+<p>Resultado:</p>
+<pre><code class="language-Xpath">    <span class="hljs-number">1</span>. A01 
+    <span class="hljs-number">2</span>. A02 
+    <span class="hljs-number">3</span>. A04 
+    <span class="hljs-number">4</span>. A05 
+</code></pre>
+</li>
+<li>
+<p>Título de las actividades del año 2018.</p>
+<p><code>//actividad[starts-with(fecha_inicio, '2018')]/titulo</code></p>
+<p>Resultado:</p>
+</li>
+</ol>
+
+        
+        
+    </body>
+    </html>

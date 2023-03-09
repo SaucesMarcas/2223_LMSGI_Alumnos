@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--
+	Descripción: Examen
+	Autor: Carlos García Cachón
+	Fecha de creación/modificación: 13/12/2022
+-->
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Carlos García Cachón">
+	<link rel="icon" type="media/images/logo.png" sizes="32x32" href="media/images/logo.png">
+	<meta name="description" content="Examen">
+	<meta name="keywords" content="CONJUNTO DE PALABRAS RELEVANTES ">
+	<meta name="generator" content="SOFTWARE CON EL QUE HE CREADO LA PAGINA">
+	<meta name="generator" content="60">
+	<link rel="stylesheet" href="css/estilos.css">
+	<title>1º Evaluación. Carlos Garcia Cachon</title>
+</head>
+
+<body>
+	<header id="encabezado">
+		<img src="media/images/logo.png">
+		<h1>Lenguaje de Marcas y Sistemas de Gestion de Información</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="login.html">ACCESO PRIVADO</a></li>
+		</ul>
+	</nav>
+	<main>
+		<div id="parrafo1">Esta página web es el examen de la 1º evaluación
+			del módulo <span class="cursiva"> Lenguaje de Marcas y Sistemas de Gestión de Información </span> de 1º
+			Curso del<span class="negrita"> Ciclo
+				Formativo de Grado Superior de Desarrollo de Aplicaciones Web </span> en el <span class="verde"> IES los
+				Sauces (Benavente). </span>
+		</div>
+		<div id="contenido2">
+			<div id="listado-de-practicas" class="caja">
+				<h2>Listado de practicas</h2>
+				<ol>
+					<li><a href="..\ud2\01\index.html">Noticias</a></li>
+					<li><a href="..\ud2\02\index.html">Horarios</a></li>
+					<li><a href="..\ud2\03\index.html">Formularios</a></li>
+					<li><a href="..\ud2\04\index.html">Multimedia</a></li>
+				</ol>
+			</div>
+			<div class="caja">
+				<h2>Buscador</h2>
+				<form method="get" action="#busqueda.php" id="form1">
+					<div>
+						<input type="search" id="idBuscador-form" name="buscador" placeholder="Escribe aqui">
+						<input type="button" value="Buscar">
+					</div>
+				</form>
+			</div>
+			<div class="caja">
+				<h2>Contacto</h2>
+				<form method="post" action="#altacontacto.php" id="form2">
+					<div>
+						<label for="idNombre">Nombre (requerido)</label>
+						<input type="text" id="idNombre" name="nombre" required>
+					</div>
+					<div>
+						<label for="idCorreo">Correo electronico (requerido)</label>
+						<input type="text" id="idCorreo" name="correo" required>
+					</div>
+					<div>
+						<label for="idAsunto">Asunto</label>
+						<input type="text" id="idAsunto" name="asunto">
+					</div>
+					<div>
+						<label for="idMensaje">Mensaje</label>
+						<input type="text" id="idMensaje" name="mensaje">
+					</div>
+					<input type="button" value="Enviar">
+				</form>
+			</div>
+			<div class="caja">
+				<h2>Audio</h2>
+				<figure>
+					<img src="media/images/mh.gi" alt="Imagen MH">
+					<audio controls>
+						<source src="media/audio/monster.mp3" type="audio/mp3">
+						Tu navegador no soporta el elemento de audio
+					</audio>
+					<figcaption>Monster High</figcaption>
+				</figure>
+			</div>
+			<div class="caja">
+				<h2>Video</h2>
+				<video controls>
+					<source src="media/video/Armageddon.mp4" type="video/mp4">
+					Tu navegador no soporta el elemento de video
+				</video>
+				<p>Trailer Armagedon</p>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div id="footer-menu">
+			<table>
+				<thead></thead>
+				<tbody>
+					<tr>
+						<td><a href="#">Ubicacion</a></td>
+						<td><a href="#">Politica de Cookies</a></td>
+						<td rowspan="2"><a href="#">Aviso Legal</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Contacto</a></td>
+						<td><a href="#">Politica de privacidad</a></td>
+					</tr>
+				</tbody>
+				<tfoot></tfoot>
+			</table>
+		</div>
+		<div id="footer-redes">
+			<figure>
+				<a href="#"><img src="media/images/twitter-256.png" alt="logo-twitter" width="50px" height="50px"></a>
+				<a href="#"><img src="media/images/facebook-256.png" alt="logo-facebook" width="50px" height="50px"></a>
+				<a href="#"><img src="media/images/icono-youtube.png" alt="logo-youtube" width="50px" height="50px"></a>
+				<a href="#"><img src="media/images/logo-instagram.png" alt="logo-instagram" width="50px" height="50px"></a>
+			</figure>
+		</div>
+		<div id="footer-derechos">
+			<address>2022-23 IES LOS SAUCES. © Todos los Derechos Reservados. Carlos García Cachón</address>
+		</div>
+	</footer>
+</body>
+</html>

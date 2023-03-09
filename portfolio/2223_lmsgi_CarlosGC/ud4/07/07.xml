@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Author: Carlos Garcia Cachon
+    Date: 17/01/2023
+    Description: Tenemos que almacenar información sobre un grupo de estudiantes, por cada estudiante almaceno la siguiente 
+información: nombre del estudiante y el código del estudiante. Además, cada estudiante puede tener cero, uno o dos tutores, 
+que a la vez son estudiantes.
+
+Nota. - El código del estudiante y los códigos de los tutores son atributos. (Tipo de atributos ID Y IDREF)
+-->
+<!DOCTYPE grupo SYSTEM "07.dtd">
+<grupo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="07.xsd">
+    <estudiante codigo="E01">
+        <nombre>Rebeca Sanchez</nombre>
+    </estudiante>
+    <estudiante codigo="E02" tutor="E01">
+        <nombre>Erika Martinez</nombre>
+    </estudiante>
+    <estudiante codigo="E03" tutor="E01 E02">
+        <nombre>Victor Manrrique</nombre>
+    </estudiante>
+</grupo>

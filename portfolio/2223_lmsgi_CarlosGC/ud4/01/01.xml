@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Author: Carlos Garcia Cachon
+    Date: 17/01/2023
+    Description: Escribir un documento XML que almacene la información de un mail y contenga la siguiente información: remitente, 
+                destinatario(s), fecha del mensaje, asunto, mensaje, ficheros adjuntos (por cada fichero debe especificar el nombre y el tipo 
+                MIME). No utilizar atributos
+-->
+
+<!DOCTYPE mail SYSTEM "01.dtd">
+<mail xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="01.xsd">
+    <remitente>
+        pepe@gmail.com
+    </remitente>
+    <destinatario>
+        gaza@gmail.com
+    </destinatario>
+    <destinatario>
+        cobreros@gmail.com
+    </destinatario>
+    <destinatario>
+        entrepinares@gmail.com
+    </destinatario>
+    <fecha>
+        <anyo>2023</anyo>
+        <mes>01</mes>
+        <dia>17</dia>
+    </fecha>
+    <asunto>Los Quintos de Castrogonzalo 2023</asunto>
+    <mensaje><![CDATA[
+        1. Red Label
+        2. Black Label
+        3. Four Roses
+        4. Ballantines
+        5. Jack Daniels]]></mensaje>
+    <image>
+        <nombre>Ismael1.jpeg</nombre>
+        <tipo>image/jpeg</tipo>
+    </image>
+    <image>
+        <nombre>Borja1.png</nombre>
+        <tipo>image/png</tipo>
+    </image>
+</mail>

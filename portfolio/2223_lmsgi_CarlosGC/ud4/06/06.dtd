@@ -1,0 +1,5 @@
+<!ELEMENT codigo (ejemplo+)>
+<!ELEMENT ejemplo (#PCDATA)>
+<!ATTLIST ejemplo lenguaje NMTOKEN #REQUIRED>
+<!ATTLIST codigo xmlns:xsi CDATA #IMPLIED
+                xsi:noNamespaceSchemaLocation CDATA #IMPLIED>

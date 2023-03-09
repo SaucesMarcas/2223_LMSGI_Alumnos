@@ -1,0 +1,70 @@
+/******* fuentes    *******/
+
+@font-face {
+    font-family: "roboto-bold";
+    src: url("../fonts/Roboto/Roboto-Bold.ttf");
+}
+
+/******* reset    *******/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+/******* encabezado    *******/
+
+#encabezado {
+    border-bottom: 2px groove green;
+    font-family: 'roboto-bold', 'sans-serif';
+    width: 100%;
+    height: 6rem;
+    top: 0;
+    background-color: white;
+}
+
+#encabezado img {
+    width: 5%;
+    height: 5rem;
+    float: left;
+}
+
+#encabezado h1 {
+    color: green;
+    margin-left: 5px;
+    padding-left: 1rem;
+    padding-top: 1.75rem;
+    font-size: 2rem;
+}
+
+/******* nav    *******/
+
+nav ul{
+    width: 10%;
+    float: right;
+}
+
+nav li{
+    background-color: green;
+}
+
+nav a{
+    color: white;
+    padding: 0.4rem;
+    text-align: center;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+}
+
+/******* main   *******/
+
+/******* footer    *******/

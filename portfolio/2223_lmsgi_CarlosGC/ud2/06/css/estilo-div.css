@@ -1,0 +1,80 @@
+.caja {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+[class^="cara"] {
+    border-color: black;
+    border-style: solid;
+    border-width: 10px;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    padding: 30px;
+    
+}
+
+.punto {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 100%;
+}
+
+
+
+.cara2 {
+    justify-content: space-between;
+}
+
+.cara2 .punto:nth-child(2) {
+    align-self: flex-end;
+}
+
+.cara3 {
+    justify-content: space-between;
+}
+
+.cara3 .punto:nth-child(2) {
+    align-self: center;
+}
+
+.cara3 .punto:nth-child(3){
+    align-self: flex-end;
+}
+
+.cara4 {
+    justify-content: space-between;
+}
+  
+.cara4 .columna {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cara5 {
+    justify-content: space-between;
+}
+
+.cara5 .centro {
+    align-self: center;
+  }
+  
+.cara5 .columna {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cara6 {
+    justify-content: space-between;
+}
+  
+.cara6 .columna {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

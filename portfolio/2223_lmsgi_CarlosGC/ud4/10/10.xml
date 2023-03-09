@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Entrantes, primeros, segundos, postres-->
+<!-- Todos los nombres tiene un tamaño maximo de 100 caracteres y minimo de 4-->
+<!-- Todos los nombres empiezan la primera letra con mayuscula-->
+
+<!DOCTYPE pedido SYSTEM "10.dtd">
+<pedido xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="10.xsd">
+    <plato tipo="entrante">
+        <nombre tipo="jamon">Croquetas_de_Jamon_Caseras</nombre>
+        <cantidad tipo="racionM">racionM</cantidad>
+        <sinGluten opcion="true" />
+        <precio>3.20</precio>
+    </plato>
+    <plato tipo="primero">
+        <nombre>Macarrones_a_la_Carbonara</nombre>
+        <precio>4.80</precio>
+    </plato>
+    <plato tipo="segundo">
+        <nombre>Pollo_al_Ajillo</nombre>
+        <precio>4.80</precio>
+    </plato>
+    <plato tipo="postre">
+        <nombre>Coullant_de_Chocolate_Caliente_con_Nata</nombre>
+        <precio>6</precio>
+    </plato>
+    <bebida>
+        <nombre tipo="sin_gas" medida="ml" tamanyo="500">Agua</nombre>
+        <precio>1.20</precio>
+    </bebida>
+    <bebida>
+        <nombre tipo="sin_gas" medida="ml" tamanyo="1000">Agua</nombre>
+        <precio>1.20</precio>
+    </bebida>
+    <bebida>
+        <nombre tipo="con_gas" medida="ml" tamanyo="237">Fanta</nombre>
+        <precio>1.20</precio>
+    </bebida>
+    <formaPago>
+        <bizum>50</bizum>
+    </formaPago>
+</pedido>

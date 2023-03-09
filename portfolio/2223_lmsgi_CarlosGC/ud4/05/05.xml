@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Author: Carlos Garcia Cachon
+    Date: 17/01/2023
+    Description: Escribir un documento XML que represente la estructura y almacene la siguiente información: Juan Sanchez, telefono de contacto 
+                123456789 con email juansanchez@company.com que vive en Bangalore, estado Karnataka con código 560212
+-->
+<!DOCTYPE Company SYSTEM "05.dtd">
+<Company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="05.xsd">
+    <Employee>
+        <FirstName>Juan</FirstName>
+        <LastName>Sanchez</LastName>
+        <ContactNo>123456789</ContactNo>
+        <Email>juansanchez@company.com</Email>
+        <Address>
+            <City>Bangalore</City>
+            <State>Karnataka</State>
+            <Zip>560212</Zip>
+        </Address>
+    </Employee>
+</Company>

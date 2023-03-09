@@ -1,0 +1,35 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Company">
+    <xs:annotation>
+      <xs:documentation> 
+    Author: Carlos Garcia Cachon
+    Date: 17/01/2023
+    Description: Escribir un documento XML que represente la estructura y almacene la siguiente información: Juan Sanchez, telefono de contacto 
+                123456789 con email juansanchez@company.com que vive en Bangalore, estado Karnataka con código 560212
+</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Employee">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="FirstName"/>
+              <xs:element type="xs:string" name="LastName"/>
+              <xs:element type="xs:int" name="ContactNo"/>
+              <xs:element type="xs:string" name="Email"/>
+              <xs:element name="Address">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="City"/>
+                    <xs:element type="xs:string" name="State"/>
+                    <xs:element type="xs:int" name="Zip"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

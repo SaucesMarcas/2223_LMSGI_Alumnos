@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE pedido SYSTEM "11.dtd">-->
+<!-- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="11.xsd"-->
+<catalogo>
+    <portatil>
+        <referencia identificador="HP10219"/>
+        <nombre>15-DA0204NS</nombre>
+        <!-- Cadena de valores: LENOVO, HP, MSI, APPLE, ASUS, DELL, DESCONOCIDO.-->
+        <fabricante nombre="Lenovo"></fabricante>
+        <procesador>
+            <nombre></nombre>
+            <cache tamanyo="Gb"></cache>
+            <numero>1</numero>
+            <velocidad medida="Ghz">2.3</velocidad>
+        </procesador>
+        <ram>
+            <memoria unidadMedida="Gb">8</memoria>
+            <tipo>DDR4</tipo>
+        </ram>
+        <disco>
+            <tipo>SSD</tipo>
+            <almacenamiento unidadMedida="Gb">500</almacenamiento>
+        </disco>
+        <pantalla>
+            <dimension>15.6_pulgadas</dimension>
+            <resolucion>1266x768</resolucion>
+            <!-- Esta es opcional.-->
+            <resolucionMaxima>1366x768</resolucionMaxima>
+        </pantalla>
+        <grafica>Intel_UHD_Graphics_620</grafica>
+        <foto>foto1.png</foto>
+    </portatil>
+</catalogo>
