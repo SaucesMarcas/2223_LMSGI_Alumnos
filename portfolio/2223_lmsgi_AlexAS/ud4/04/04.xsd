@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:element name="curriculum">
+            <xs:complexType>
+                <xs:sequence>
+                    <xs:element name="nombre-y-apellidos">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="nombre" type="xs:string"/>
+                                <xs:element name="apellidos" type="xs:string"/>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                    <xs:element name="anyo-de-nacimiento">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="dia" type="xs:gDay"/>
+                                <xs:element name="mes" type="xs:gMonth"/>
+                                <xs:element name="anyo" type="xs:gYear"/>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                    <xs:element name="residencia">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="ciudad" type="xs:string"/>
+                                <xs:element name="pais" type="xs:string"/>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                    <xs:element name="datos-de-contacto">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="telefono" type="xs:int"/>
+                                <xs:element name="correo-electronico" type="xs:string"/>
+                                <xs:element name="linkedin" type="xs:string"/>
+                                <xs:element name="breve-descripcion-general" type="xs:string"/>
+                                <xs:element name="competencias" type="xs:string"/>
+                                <xs:element name="titulacion" type="xs:string"/>
+                                <xs:element name="experiencia">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="puesto" type="xs:string"/>
+                                            <xs:element name="empresa" type="xs:string"/>
+                                            <xs:element name="anyoInicio" type="xs:gYear"/>
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+
+                            </xs:sequence>
+                            <xs:attribute name="nivel" type="xs:string" use="required"/>
+                            <xs:attribute name="anyo" type="xs:gYear" use="required"/>
+                        </xs:complexType>
+                    </xs:element>
+       
+                </xs:sequence>
+            </xs:complexType>
+        </xs:element>
+    </xs:schema>

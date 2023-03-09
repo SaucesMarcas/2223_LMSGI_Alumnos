@@ -1,0 +1,83 @@
+body{
+    width: 1024px;
+    margin: auto;
+}
+table {
+    border-collapse: collapse;
+}
+
+main th{
+    text-align: center;
+    
+}
+main td {
+    border: 1px solid black;
+    text-align: center;
+}
+table{
+    width: 70%;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+
+}
+.donut{
+    background-color: green;
+    color: white;
+}
+li{
+    display: inline-block;
+    margin-left: 2rem;
+    background-color: green;
+}
+#Horario{
+    background-color: gray;
+    color: white;
+}
+.EDD{
+    background-color: greenyellow;
+}
+.LMSGI{
+    background-color: gold;
+}
+.SINF{
+    background-color: goldenrod;
+}
+.Programacion{
+    background-color: darkorange;
+}
+.BBDD{background-color: darksalmon;}
+.FOL{
+    background-color: gray;
+}
+#Base{
+    background-color: rgb(15, 174, 228);
+    color: white;
+}
+#Horario-EDD{
+    background-color: rgb(8, 88, 8);
+    color: white;
+}
+#Horario-FOL{
+    background-color: rgb(77, 77, 77);
+    color: white;
+}
+#Horario-BBDD{
+    background-color: palevioletred;
+    color: white;
+}
+#Horario-SINF{
+    background-color: burlywood;
+    color: white;
+}
+#Horario-LMSG{
+    background-color: yellowgreen;
+    color: white;
+}
+#Horario-Programacion{
+    background-color: orangered;
+    color: white;
+}

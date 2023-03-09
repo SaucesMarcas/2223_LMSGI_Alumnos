@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- 
+    author: Alex
+    date: 17/01/2023
+    description: Representar en un documento XML el curriculum vitae. Los datos que debe contener son los siguientes
+
+-->
+<curriculum>
+    <nombre-y-apellidos>
+        <nombre>Alex</nombre>
+        <apellidos>Asensio Sanchez</apellidos>
+    </nombre-y-apellidos>
+    <anyo-de-acimiento>
+        <dia>19</dia>
+        <mes>7</mes>
+        <anyo>2004</anyo>
+    </anyo-de-acimiento>
+    <residencia>
+        <ciudad>Benavente</ciudad>
+        <pais>España</pais>
+    </residencia>
+    <datos-de-contacto>
+        <telefono>123456</telefono>
+        <correo-electronico>alexasensio04clase@gmail.com</correo-electronico>
+        <linkedin>Y la de trabajar te la sabes?326</linkedin>
+        <breve-descripcion-general>No sabe ni freir un huevo no lo contrates</breve-descripcion-general>
+        <competencias nivel="alto">Ingles</competencias>
+        <competencias nivel="medio">No se</competencias>
+        <competencias nivel="bajo">Tampoco se</competencias>
+        <titulacion anyo="2015">Educacion primaria</titulacion>
+        <titulacion anyo="2019">ESO</titulacion>
+        <titulacion anyo="2022">Bachillerato</titulacion>
+        <experiencia>
+            <puesto>Puesto</puesto>
+            <empresa>Empresa</empresa>
+            <anyoInicio>2022</anyoInicio>
+        </experiencia>
+    </datos-de-contacto>
+</curriculum>

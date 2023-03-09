@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- 
+    author: Alex
+    date: 17/01/2023
+    description: Escribir un documento XML que almacene la siguiente informacion
+-->
+<mundo>
+    <linea>
+        <continente>Europa</continente>
+        <pais>Alemania</pais>
+        <capital>Berlin</capital>
+    </linea>
+    <linea>
+        <continente>America</continente>
+        <pais>Argentina</pais>
+        <capital>Buenos Aires</capital>
+    </linea>
+    <linea>
+        <continente>America</continente>
+        <pais>Bahamas</pais>
+        <capital>Nassau</capital>
+    </linea>
+    <linea>
+        <continente>Asia</continente>
+        <pais>Afganistan</pais>
+        <capital>Kabul</capital>
+    </linea>
+    <linea>
+        <continente>Asia</continente>
+        <pais>Arabia Saudita</pais>
+        <capital>Riad</capital>
+    </linea>
+</mundo>

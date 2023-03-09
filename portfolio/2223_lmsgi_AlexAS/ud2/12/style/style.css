@@ -1,0 +1,108 @@
+:root{
+    --colorFondo: #e0e1eb;
+    
+    --color1: #31334d;
+    font-family: sans-serif;
+    
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    position: absolute;
+}
+header{
+    background-color: #31334d;
+    color: white;
+}
+
+li{
+	display: inline-block;
+    background-color: var(--color1);
+    margin-left: 2rem;
+    
+    text-decoration: none;
+    color: white;
+}
+li::first-letter{
+    text-decoration: underline;
+}
+body{
+    background-color: var(--colorFondo);
+}
+ul, ol {
+    list-style: none;
+    float: right;
+    
+}
+.lista{
+    color: white;
+    
+}
+h1{
+    text-align: center;
+    font-style: oblique;
+    letter-spacing: 0.2rem;
+    background-color: var(--color1);
+    color: white;
+    font-size: 5rem;
+}
+h2{
+    font-size: 3rem;
+}
+section{
+    float: left;
+    width: 26%;
+    border: 2px solid var(--color1);
+    margin-left: 6%;
+    margin-top: 6rem;
+    
+   
+}
+img{
+    width: 300px;
+    height: 200px;
+    margin-top: 10px;
+    margin-left: 90px;
+    border: 5px solid white;
+    outline: 5px solid var(--color1);
+}
+
+
+header{
+    
+    text-align: center;
+}
+article{
+    border: 2px solid var(--color1);
+    padding: 3px;
+    margin: 3px;
+    
+    border-radius: 10px;
+    
+}
+h3{
+    background-color: white;
+   
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+div{
+    background-color: var(--color1);
+    border: var(--colorFondo);
+    margin: 3px;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+}

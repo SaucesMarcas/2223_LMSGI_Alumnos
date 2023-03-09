@@ -1,0 +1,12 @@
+body{
+    background-color: aquamarine;
+    text-align: center;   
+}
+a{
+     text-decoration: none;
+     list-style: none;
+     color: black;
+}
+li{
+    list-style: none;
+}
