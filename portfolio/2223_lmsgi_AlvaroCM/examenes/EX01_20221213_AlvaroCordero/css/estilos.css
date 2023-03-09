@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'Roboto-Bold',sans-serif;
+    src: url(./font/Roboto/Roboto-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    background-color: green;
+    padding: 7px;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul li a {
+    color: white;
+}
+
+p {
+    text-align: justify;
+    margin: 20px;
+}
+
+h1 {
+    font-size:  3rem;
+}
+
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    font-family: 'Roboto-Bold',sans-serif;
+    display: flex;
+    align-items: center;
+    color: green;
+    border-bottom: 3px groove green;
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 5%;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Roboto-Bold',sans-serif;
+    
+}
+
+nav ol li a {
+    background-color: green;
+    color: white;
+    padding: 4px;
+}
+
+footer {
+    background-color: green;
+    margin-bottom: 0;
+    font-family: 'Roboto-Bold',sans-serif;
+}
+
+table {
+    max-width: 40%;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    
+}
+
+td {
+     border: 1px solid white;
+     width:180px;
+     height: 40px;
+     text-align:center;
+     color: white;
+     
+}  
+
+.footer-redes {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-redes img {
+    width: 2rem;
+}
+
+address {
+    text-align: center;
+    color: white
+}
+
+#span1 {
+   font-style: italic;
+   font-weight: bold;
+   
+}
+
+#span2 {
+   font-weight: bold;
+
+}
+
+#span3 {
+    color: green;
+}
+
+.contenedor {
+    display: flex;
+    margin: 4rem;
+    padding: 2rem;
+    color: green;
+    
+}
+
+.caja1 {
+    border: 1px solid green;
+    max-height: 5%;
+}
+
+.caja1 ol {
+    padding: 8px;
+}
+
+.caja1 h2 {
+    background-color: green;
+    color: white;
+}
+
+.caja2 {
+    margin-left: 20px;
+    border: 1px solid green;
+}
+
+.caja2 input {
+    margin: 8px;
+}
+
+.caja2 button {
+    margin: 8px;
+}
+.caja3 {
+    margin-left: 20px;
+    max-width: 40%;
+    border: 1px solid green;
+
+}
+
+.caja3 label {
+    margin: 8px;
+}
+
+.caja3 input {
+    margin: 8px;
+}
+
+.caja3 textarea {
+    margin: 8px;
+}
+
+
+.caja4 {
+    max-width: 30%;
+    margin-left: 20px;
+    border: 1px solid green;
+}
+.caja2 h2 {
+    background-color: green;
+    color: white;
+}
+
+.caja3 h2 {
+    background-color: green;
+    color: white;
+}
+
+.caja4 h2 {
+    background-color: green;
+    color: white;
+}
+
+.caja5 h2 {
+    background-color: green;
+    color: white;
+}
+
+.caja5 {
+    margin-left: 20px;
+    border: 1px solid green;
+    max-height: 300px;
+}
+
+
+video {
+    width: 400px;
+}

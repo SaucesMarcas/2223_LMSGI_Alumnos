@@ -1,0 +1,80 @@
+body {
+    width: 1024px;
+    margin: auto
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: auto;
+
+}
+
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
+
+}
+
+#Horario {
+    background-color: grey;
+}
+
+#Entorno {
+    background-color: greenyellow;
+}
+
+#LMGSI {
+    background-color: gold;
+}
+
+#LMGSI2 {
+    background-color: goldenrod;
+}
+
+#Sistemas {
+    background-color: goldenrod;
+}
+
+#Progamacion {
+    background-color: darkorange;
+}
+
+#BD {
+    background-color: darksalmon;
+}
+
+#FOL {
+    background-color: grey;
+}
+
+#piepagina {
+    background-color: aquamarine;
+}
+
+header {
+    background-color: #798daa;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 100px;
+}
+
+li {
+    padding: 2rem;
+    font-size: 1.4rem;
+}
+
+ul {
+    display: flex;
+}
+
+nav {
+    background-color: #1d2127;
+    padding: 0.3rem;
+}

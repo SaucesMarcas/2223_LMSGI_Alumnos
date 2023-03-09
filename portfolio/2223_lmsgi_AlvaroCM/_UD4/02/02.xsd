@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="mundo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="linea">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="continente" type="xs:string"/>
+                            <xs:element name="pais" type="xs:string"/>
+                            <xs:element name="capital" type="xs:string"/>                      
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

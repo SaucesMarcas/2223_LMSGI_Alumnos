@@ -1,0 +1,2 @@
+<!ELEMENT mundo (linea)>
+<!ELEMENT linea (continente,pais,capital)>

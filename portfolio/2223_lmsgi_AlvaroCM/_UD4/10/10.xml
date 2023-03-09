@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="10.xsd">
+    <!-- todos los nombres tienen un maximo de 100 caracteres-->
+    <plato tipo="entrante">
+        <nombre tipo="jamon">croquetas caseras</nombre>
+        <sinGluten opcion="false"/>
+        <cantidad tipo="racion">media</cantidad>
+        <precio>3.20</precio>
+    </plato>
+    <plato tipo="primero">
+        <nombre>Macarrones a la Carbonara</nombre>
+        <precio>4.80</precio>
+        <sinGluten opcion="false"/>
+    </plato>
+    <plato tipo="segundo">
+        <nombre>Pollo al Ajillo</nombre>
+        <precio>4.80</precio>
+        <sinGluten opcion="false"/>
+    </plato>
+    <plato tipo="postre">
+        <nombre tipo="dulce">Coullant de Chocolate</nombre>
+        <precio>6</precio>
+        <sinGluten opcion="false"/>
+    </plato>
+    <bebida>
+        <nombre tipo="sin gas" medida="ml" tamanio="500">Agua</nombre>
+        <precio>1.20</precio>
+    </bebida>
+    <bebida>
+        <nombre tipo="sin gas" medida="ml" tamanio="1000">Agua</nombre>
+        <precio>1.40</precio>
+    </bebida>
+    <bebida>
+        <nombre tipo="con gas" medida="ml" tamanio="500">Fanta</nombre>
+        <precio>1.20</precio>
+    </bebida>
+    <formaPago><!-- bizum,visa,efectivo,criptomoneda,paypal,mastercard-->
+        <bizum>50</bizum>
+    </formaPago>
+</menu>

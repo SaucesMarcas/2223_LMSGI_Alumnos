@@ -1,0 +1,44 @@
+div {
+    text-align: center;
+}
+
+div>div {
+    width: 130px;
+    height: 130px;
+    margin: 5px;
+    border: 5px solid black;
+    background-color: #61ec59;
+    padding: 0px;
+    background-image: url(img/punto.png), url(img/punto.png), url(img/punto.png), url(img/punto.png), url(img/punto.png), url(img/punto.png);
+    background-size: 17%;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+div:nth-child(1)>div {
+    background-position: top left;
+}
+
+div:nth-child(2)>div {
+    background-position: top left,bottom right;
+}
+
+div:nth-child(3)>div {
+    background-position: top left, center, bottom right;
+}
+
+div:nth-child(4)>div {
+    background-position: top left, top right, bottom left, bottom right;
+}
+
+div:nth-child(5)>div {
+    background-position: top left, top right, center, bottom left, bottom right;
+}
+
+div:nth-child(6)>div {
+    background-position: top left, top right, center right, center left, bottom left, bottom right;
+}
+
+footer {
+    text-align: center;
+}

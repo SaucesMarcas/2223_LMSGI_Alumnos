@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<ejemplo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="06.xsd">
+    <lenguaje>
+        <title>HTML</title>
+        <content>
+            <![CDATA[ 
+            !DOCTYPE html>
+            <html lang="es">
+
+            <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="icon" type="image/jpg" href="webroot/img/favicon_low__1_-removebg.png"/>
+                <link href="webroot/css/style.css" rel="stylesheet">
+                <title>Alvaro Cordero - HomePage</title>
+            </head>
+
+            <body>
+            </body>
+            </html>
+        ]]>
+        </content>
+    </lenguaje>
+    <lenguaje>
+        <title>Java</title>
+        <content>
+            <![CDATA[ 
+                class holaMundo
+                {
+                    public static void main(String args[])
+                    {
+                    System.out.println("Hola Mundo");
+                    }
+                }
+            ]]>
+        </content> 
+    </lenguaje>
+</ejemplo>

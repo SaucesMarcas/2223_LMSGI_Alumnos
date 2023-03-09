@@ -1,0 +1,269 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* VARIABLES */
+
+:root {
+    --background-color: #23272e;
+    --text-color: #ABB2BF;
+    --menu-color: #1e2227;
+}
+
+/* RESET */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+    width: 100%;
+
+}
+
+/* HEADER */
+
+header.sticky {
+    background: var(--menu-color);
+    padding: 15px 100px;
+}
+
+
+header {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    transition: 0.6s;
+}
+
+
+header .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+
+header .menu a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 30px;
+    padding: 0 10px;
+    transition: 0.6s ease;
+
+}
+
+.menu>a:hover {
+    font-size: 23px;
+    transition: 0.7s;
+    border-radius: 80%;
+}
+
+.name {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* CONTENT */
+.info {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("/webroot/img/12.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px 100px;
+    color: #fff;
+    text-align: center;
+}
+
+
+.info-text {
+    padding-top: 250px;
+}
+
+.info-text h1 {
+    max-width: 800px;
+    font-size: 75px;
+    font-weight: 800;
+    text-shadow: black 0px 20px 40px;
+}
+
+.info-text h2 {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    font-weight: 500;
+    text-shadow: black 0px 20px 40px;
+}
+
+.info-text a {
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+.info-text a:hover {
+    background-color: var(--background-color);
+    transition: 0.6s;
+}
+
+.portfolio {
+    padding-top: 15px;
+    color: white;
+    background-image: url("/webroot/img/12copia.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.portfolio h2 {
+    font-size: 40px;
+    font-weight: 600px;
+    color: white;
+    margin: 30px 0;
+}
+
+#portfolio {
+    transition: 0.6s;
+}
+
+#first,
+#second,
+#third,
+#fourth {
+    -webkit-box-align: center;
+    align-items: center;
+    box-shadow: black 0px 20px 40px;
+    backdrop-filter: blur(80px);
+    border-radius: 30px;
+    margin-right: 20px;
+    border: 1px solid black;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+#topics {
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #23272e;
+}
+
+
+.quarters {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#third {
+    max-height: 360px;
+}
+
+#fourth {
+    max-height: 600px;
+}
+
+/* QUARTERS TABLES */
+table {
+    display: flex;
+    justify-content: center;
+}
+
+table,
+th,
+td {
+    padding: 8px;
+}
+
+th {
+    box-shadow: rgb(0 0 0 / 15%) 0px 20px 40px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    background-color: var(--menu-color);
+}
+
+td>a {
+    color: var(--text-color);
+    font-size: 17px;
+}
+
+td>a:hover {
+    text-decoration: underline;
+}
+
+td {
+    text-align: start;
+}
+
+
+/* TEST */
+
+.tests {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 100px;
+}
+
+.tests h2 {
+    text-align: center;
+}
+
+.tests h3 {
+    padding-left: 25px;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+.tests h4 {
+    padding-left: 25px;
+    font-size: 20px;
+}
+
+.tests a {
+    color: var(--text-color);
+}
+
+.tests p {
+    padding-left: 25px;
+    color: var(--text-color);
+    font-size: 18px;
+    margin: 30px 0;
+}
+
+span {
+    color: white;
+}
