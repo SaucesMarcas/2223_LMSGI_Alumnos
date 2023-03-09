@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    
+	<channel>
+        <title>IFG-LMSGI</title>
+        <link>https://192.168.2.112</link>
+        <description>Practicas de LMSGI</description>
+        <item>
+            <title>Practica 08</title>
+            <link>http://192.168.2.112/ud2/08/index.html</link>
+            <description><![CDATA[Diferentes maneras de insertar fuentes]]></description>
+            <category>Practica</category>  
+        </item>
+        <item>
+            <title>Practica 09</title>
+            <link>http://192.168.2.112/ud2/09/index.html</link>
+            <description><![CDATA[Posicionamiento]]></description>
+            <category>Practica</category>  
+        </item>
+        <item>
+            <title>Practica 10</title>
+            <link>http://192.168.2.112/ud2/10/index.html</link>
+            <description><![CDATA[Posicionamiento 2]]></description>
+            <category>Practica</category> 
+        </item>
+        <item>
+            <title>Practica 11</title>
+            <link>http://192.168.2.112/ud2/11/index.html</link>
+            <description><![CDATA[CSS En tablas]]></description>
+            <category>Practica</category>  
+        </item>
+        <item>
+            <title>Practica 12</title>
+            <link>http://192.168.2.112/ud2/12/index.html</link>
+            <description><![CDATA[Posicionamiento Absoluto]]></description>
+            <category>Practica</category>  
+        </item>
+        <item>
+            <title>Examen 2</title>
+            <link>http://192.168.2.112</link>
+            <descripcion><![CDATA[Evaluar sobre la sindicación de contenidos, así como XML, Schema XML y DTD</descripcion]]>></descripcion>
+            <pubDate>2023/02/14</pubDate>
+        </item>
+
+	</channel>
+</rss>
