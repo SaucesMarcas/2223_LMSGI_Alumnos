@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Dancing+Script:wght@500&family=Indie+Flower&family=Nerko+One&family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Indie+Flower&family=Nerko+One&family=Rubik+Marker+Hatch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Dancing+Script:wght@500&family=Nerko+One&family=Syne+Mono&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Indie+Flower&family=Nerko+One&family=Roboto:wght@100&family=Rubik+Marker+Hatch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Indie+Flower&family=Montserrat:wght@100&family=Nerko+One&family=Roboto:wght@100&family=Rubik+Marker+Hatch&display=swap');
+@font-face {
+    font-family: 'Akronim';
+    src: url(./font/Akronim-Regular.ttf);
+}
+/* 
+    Color paleta logotipo 
+        --colorInicial: #184b46;
+        --colorIntermedio: 	#a8c9c7;
+ */
+
+* {
+    text-decoration: none;
+}
+
+/* Logotipos */
+/* 1- Color */
+a {
+    color: #184b46;;
+    padding: 1rem;
+}
+span {
+    color: #a8c9c7;
+}
+
+/* 2 - Tipografia */
+.logo-1 {
+    font-family: "Nerko One";
+    font-size: 60px;
+} 
+.logo-2 {
+    font-family: "Indie Flower";
+    font-size: 60px;
+}
+.logo-3 {
+    font-family: "Rubik Marker Hatch";
+    font-size: 60px;
+}
+.logo-4 {
+    font-family: "Caveat";
+    font-size: 60px;
+}
+
+/* Etiqueta Div */
+/* Caja Content */
+.content {
+    width: 100%;
+    max-width: 600px;
+    padding-top: 25px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    position: absolute;
+    left: 50%;
+    border: 1px solid;
+    border-top: dashed red;
+    border-bottom: dashed green;
+    border-left: dotted orange;
+    border-right: dotted red;
+}
+
+/* Estilo de los divs internos */
+div div {
+    width: 30%;
+    max-width: 300px;
+    margin-bottom: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: 2px solid red;
+    background-color: #B0C4DE;
+}
+/* Posicionamiento de los divs */
+div:nth-child(even) {
+    position: flex;
+}
+div:nth-child(odd) {
+    position: flex;
+    margin-left: 50%;
+}
+/* Letra de los div */
+div:nth-child(1) {
+    font-family: Verdana, sans-serif;
+}
+div:nth-child(2) {
+    font-family: 'Didot', serif;
+}
+div:nth-child(3) {
+    font-family: 'Freemono', monospace;
+}
+div:nth-child(4) {
+    font-family: 'Roboto', sans-serif;
+}
+div:nth-child(5) {
+    font-family: 'Akronim', cursive;
+}
+div:nth-child(6) {
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer{
+    color: grey;
+	letter-spacing: 0;
+	width: 100%;
+	position: fixed;
+	padding: 10px;
+	bottom: 0;
+	left: 0;
+	text-align: right;
+	background-color: white;
+}

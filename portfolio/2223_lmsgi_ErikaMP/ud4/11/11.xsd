@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="catalogo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="portatil">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="referencia">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="nombre">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="20"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="fabricante">
+
+                            </xs:element>
+                            <xs:element name="procesador">
+
+                            </xs:element>
+                            <xs:element name="ram">
+
+                            </xs:element>
+                            <xs:element name="discos">
+
+                            </xs:element>
+                            <xs:element name="pantalla">
+
+                            </xs:element>
+                            <xs:element name="grafica">
+                                
+                            </xs:element>
+                            <xs:element name="fotos">
+
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

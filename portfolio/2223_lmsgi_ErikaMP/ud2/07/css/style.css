@@ -1,0 +1,54 @@
+div{text-align:center;}
+div>div{
+	width:125px;
+	height:125px;
+	border: 6px solid black;
+	display:inline-block;
+}
+
+div:nth-child(1)>div{
+	background-image:url(../image/punto.png);
+	background-size:26%;
+	background-repeat:no-repeat;
+	background-position:center;
+	
+}
+div:nth-child(2)>div{
+	background-image:url(../image/punto.png),url(../image/punto.png);
+	background-size:26%;
+	background-repeat:no-repeat;
+	background-position:top left, bottom right;
+	
+}
+div:nth-child(3)>div{
+	background-image:url(../image/punto.png),url(../image/punto.png),url(../image/punto.png);
+	background-size:26%;
+	background-repeat:no-repeat;
+	background-position:top left, bottom right, center;
+	
+}
+div:nth-child(4)>div{
+	background-image:url(../image/punto.png),url(../image/punto.png),url(../image/punto.png),url(../image/punto.png);
+	background-size:26%;
+	background-repeat:no-repeat;
+	background-position:top left, bottom right,bottom left, top right;
+	
+}
+div:nth-child(5)>div{
+	background-image:url(../image/punto.png),url(../image/punto.png),url(../image/punto.png),url(../image/punto.png),url(../image/punto.png);
+	background-size:26%;
+	background-repeat:no-repeat;
+	background-position:top left, bottom right, center, top right,bottom left;
+	
+}
+div:nth-child(6)>div{
+	background-image:url(../image/punto.png),url(../image/punto.png),url(../image/punto.png),url(../image/punto.png),url(../image/punto.png),url(../image/punto.png);
+	background-size:26%;
+	background-repeat:no-repeat;
+	background-position:top left, bottom right, top right, bottom left,left center, right center;
+	
+}
+
+footer {
+	text-align: center;
+}

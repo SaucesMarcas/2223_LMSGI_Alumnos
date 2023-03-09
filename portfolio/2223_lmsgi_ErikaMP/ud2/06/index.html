@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Erika Martínez">
+		<meta name="descrption" content="Actividad 6 - Unidad 2">
+		<meta http-equiv="refresh" content="5">
+		<meta name="keywords" content="mapa, links, imagen">
+		<meta name="generator" content="notepad">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> HTML 06 Erika Martínez Pérez </title>
+		<style>
+			div {
+                width: 160px;
+                height: 160px;
+                border:8px solid black;
+                background-color: white;
+                margin-top:1%;
+                margin-right:1%;
+                margin-bottom:1%;
+                margin-left:1%;
+				padding: 1%;
+                background-origin: content-box;
+				display: inline-block;
+            }
+			
+			div:nth-child(1) {
+				background-image: url(image/punto.png);
+				background-repeat: no-repeat;
+				background-size: 22%;
+				background-position: center;
+			}
+			div:nth-child(2) {
+				background-image: url(image/punto.png), url(image/punto.png);
+				background-repeat: no-repeat;
+				background-size: 22%;
+				background-position: top left, bottom right;
+			}
+			div:nth-child(3) {
+				background-image: url(image/punto.png), url(image/punto.png), url(image/punto.png);
+				background-repeat: no-repeat;
+				background-size: 22%;
+				background-position: top left, center, bottom right;
+			}
+			div:nth-child(4) {
+				background-image: url(image/punto.png), url(image/punto.png), url(image/punto.png), url(image/punto.png);
+				background-repeat: no-repeat;
+				background-size: 22%;
+				background-position: top left, top right, bottom left, bottom right;
+			}
+			div:nth-child(5) {
+				background-image: url(image/punto.png), url(image/punto.png), url(image/punto.png), url(image/punto.png), url(image/punto.png);
+				background-repeat: no-repeat;
+				background-size: 22%;
+				background-position: top left, top right, center, bottom left, bottom right;
+			}
+			div:nth-child(6) {
+				background-image: url(image/punto.png), url(image/punto.png), url(image/punto.png), url(image/punto.png), url(image/punto.png), url(image/punto.png);
+				background-repeat: no-repeat;
+				background-size: 22%;
+				background-position: top left, top right, center right, center left, bottom left, bottom right;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</main>
+	</body>
+</html>

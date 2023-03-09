@@ -1,0 +1,107 @@
+/* Posicionamiento de los divs */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/* Seccciones grandes */
+html{
+	font-family: sans-serif;
+	margin-bottom: 5rem;
+}
+
+body{
+	width: 1024px;
+	margin: 0 auto;
+	background-color: turquoise;
+}
+section{
+	width: 16rem;
+	border: 5px dotted #005A66;
+	background-color: #00B4CC;
+	margin: 1rem;
+	padding: 1rem;
+	float: left;
+}
+
+/* Color de letra */
+a{
+	text-decoration: none;
+	color: black;
+}
+
+/* Listado / Navegación */
+nav{
+	text-align: center;
+	font-size: 2rem;
+	list-style: none;
+}
+li{
+	display: inline-block;
+	margin-left: 2rem;
+}
+li:hover{
+	text-decoration: underline;
+}
+ol{
+	list-style: none;
+}
+
+/* Titulos */
+h1{
+	text-align: center;
+	letter-spacing: 7rem;
+	text-transform: uppercase;
+	font-size: 3rem;
+	color: #005A66; 
+	padding-top: 1rem ;
+}
+h2{
+	text-align: center;
+	font-size: 2rem;
+	font-style: italic;
+}
+h3{
+	font-size: 1rem;
+}
+h4{
+	font-size: 0.75rem;
+	font-style: italic;
+}
+
+/* Texto interno */
+blockquote{
+	font-size: 1rem;
+	text-align: justify;
+	color: black;
+	float: left;
+}
+blockquote:first-letter{
+	font-size: 4rem;
+	color: #005A66;
+	float: left;
+	line-height: 3.3rem;
+}
+figure{
+	text-align: center;
+}
+figure figcaption{
+	font-size: 0.5rem;
+	font-style: italic;
+}
+hr{
+	border: 1px solid black;
+}
+
+/* Pie de página */
+footer{
+	color: grey;
+	letter-spacing: 0;
+	width: 100%;
+	position: fixed;
+	padding: 10px;
+	bottom: 0;
+	left: 0;
+	text-align: right;
+	background-color: white;
+}

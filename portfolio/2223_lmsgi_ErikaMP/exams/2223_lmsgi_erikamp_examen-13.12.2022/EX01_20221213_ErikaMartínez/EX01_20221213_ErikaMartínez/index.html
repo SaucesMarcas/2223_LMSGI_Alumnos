@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Erika Martínez">
+		<meta name="descrption" content="Examen 1ª Evaluación">
+		<meta http-equiv="refresh" content="10">
+		<meta name="keywords" content="css, html">
+		<meta name="generator" content="visual-studio-code">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title> 1º Evaluación. Erika Martínez Pérez </title>
+	<head>
+    <body>
+        <header id="titulo">
+            <img id="logo" src="./media/images/logo.png" alt="logo-sauces" >
+            <h1> Lenguaje de Marcas y Sistemas de Gestión de Información </h1>
+        </header>
+        <nav>
+            <ul>
+                <li href="Futuras-Practicas" id="nav"> ACCESSO PRIVADO </li>
+            </ul>
+        </nav>
+        <main>
+            <p> 
+                Esta página web es el examen de la 1º evaluación del módulo <b><i>Lenguaje de Marcas y 
+                Sistemas de Gestión de Información</i></b> de 1º Curso del <b>Ciclo Formativo de Grado Superior 
+                de Desarrollo de Aplicaciones Web</b> en el <b><span>IES los Sauces (Benavente)</span></b>.
+            </p>
+            <div class="main">
+                <header> <h2> Listado de actividades </h2> </header> 
+                <ol>
+                    <li> Noticias </li>
+                    <li> Horario </li>
+                    <li> Formularios </li>
+                    <li> Multimedia </li>
+                </ol>
+            </div>
+            <div class="main">
+                <h2> Buscador </h2>
+                <form action="#" method="GET" name="formulario">
+                    <input type="search" placeholder="Escribe aquí">
+                </form>
+            </div> 
+            <div class="main">
+                <header> <h2> Contacto </h2> </header>
+                <form action="#" method="GET" name="formulario">                
+                    <label for="idNomb"> Nombre: </label>
+                    <br>
+                    <input type="text" name="nom1" id="idNomb" placeholder="Escribe tu nombre." required>
+                    <br>
+                    <label for="email"> Email o correo de contacto: </label>
+                    <br>
+                    <input type="email" id="email" pattern=".+@gmail\.com" size="30" required>
+                    <br>
+                    <label for="idNomb"> Nombre: </label>
+                    <br>
+                    <input type="text" name="nom1" id="idNomb" placeholder="Escribe tu nombre." required>
+                    <br>
+                    <label for="comentario"> Mensaje </label>
+                    <br>
+                    <textarea name="comentario" id="idcomentario" rows="4" cols="18" placeholder="Escriba aquí"> </textarea>
+                    <br>
+                    <input type="submit" placeholder="Enviar.">
+                </form>
+            </div>
+            <div class="main">
+                <header> <h2> Audio </h2> </header>
+                <img src="media/images/mh.gif" alt="No se ve la imagen" width="150px" height="150px">
+                <br>
+                <audio controls>
+                    <source src="media/audio/monster.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="main">
+                <header> <h2> Video </h2> </header>
+                <iframe id="video" class="video" src="media/video/Armageddon.mp4" title="Armageddon"></iframe>
+                <p> <b>Trailer Armageddon</b> </p>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <div>
+                    <table>
+                        <tr>
+                            <td> Ubicación </td>
+                            <td> Politicas de privacidad </td>
+                            <td rowspan="2"> Aviso Legal </td>
+                        </tr>
+                        <tr>
+                            <td> Contacto </td>
+                            <td> Politicas de Cookies </td>
+                        </tr>
+                    </table>
+                </div>
+                <div> 
+                    <img src="media/images/facebook-256.png" alt="Logo-facebook" width="20px" height="20px">
+                    <img src="media/images/twitter-256.png" alt="Logo-twitter" width="20px" height="20px">
+                    <img src="media/images/logo-instagram.png" alt="Logo-instagram" width="20px" height="20px">
+                    <img src="media/images/icono-youtube.png" alt="Logo-youtube" >
+                </div>
+            </div>
+            <div>
+                <address> 2022-2023 Todos los derechos reservados y optimizado para Google Chrome. Erika Martínez Pérez  </address>
+            </div>
+        </footer>
+    </body>
+</html>
