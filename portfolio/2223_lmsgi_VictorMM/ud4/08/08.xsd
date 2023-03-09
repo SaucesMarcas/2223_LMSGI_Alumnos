@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Descripción: Unidad04-Actividad 01
+	Autor: victor manuel manrique
+	Fecha creación/modificación: 26/01/2023
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="lugares" >
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element name="lugar" type="xs:string"  maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>        
+    </xs:element>
+</xs:schema>

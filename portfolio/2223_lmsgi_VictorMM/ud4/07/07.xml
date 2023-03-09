@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+	Descripción: Unidad04-Actividad 03
+	Autor: victor manuel manrique
+	Fecha creación/modificación: 17/01/2023
+-->
+<!DOCTYPE grupo SYSTEM "07.dtd">
+<grupo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="07.xsd">
+     <estudiante codigo="E1">
+          <nombre>victor</nombre>
+     </estudiante>
+     <estudiante codigo="E2" tutor="E3">
+          <nombre>ruben</nombre>
+     </estudiante>
+     <estudiante codigo="E3" tutor="E1">
+          <nombre>carlos</nombre>
+     </estudiante>
+</grupo>
