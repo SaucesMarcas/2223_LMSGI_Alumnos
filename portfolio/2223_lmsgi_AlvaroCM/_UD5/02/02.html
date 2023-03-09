@@ -826,23 +826,222 @@ hue-6-2: #e6c07b
  <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">color</span>&gt;</span>Acero<span class="hljs-tag">&lt;/<span class="hljs-name">color</span>&gt;</span></span>
  <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">km</span>&gt;</span>240000<span class="hljs-tag">&lt;/<span class="hljs-name">km</span>&gt;</span></span>
 </code></pre>
+<br>
 <p><strong>5. Todos los nodos de los coches de más de 200000 km.</strong></p>
+<pre><code class="language-Xpath">   //coche[km&gt;<span class="hljs-number">20000</span>]/<span class="hljs-type">node</span>()
+</code></pre>
+<p>Resultado</p>
+<pre><code class="language-Xpath">   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">matricula</span>&gt;</span>1234A<span class="hljs-tag">&lt;/<span class="hljs-name">matricula</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">propietario</span>&gt;</span>P01<span class="hljs-tag">&lt;/<span class="hljs-name">propietario</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">marca</span>&gt;</span>Seat<span class="hljs-tag">&lt;/<span class="hljs-name">marca</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">modelo</span>&gt;</span>Leon 1.6 TDI<span class="hljs-tag">&lt;/<span class="hljs-name">modelo</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">color</span>&gt;</span>Gris<span class="hljs-tag">&lt;/<span class="hljs-name">color</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">km</span>&gt;</span>125000<span class="hljs-tag">&lt;/<span class="hljs-name">km</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">matricula</span>&gt;</span>4444B<span class="hljs-tag">&lt;/<span class="hljs-name">matricula</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">propietario</span>&gt;</span>P02<span class="hljs-tag">&lt;/<span class="hljs-name">propietario</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">marca</span>&gt;</span>Seat<span class="hljs-tag">&lt;/<span class="hljs-name">marca</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">modelo</span>&gt;</span>Altea XL<span class="hljs-tag">&lt;/<span class="hljs-name">modelo</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">color</span>&gt;</span>Oro<span class="hljs-tag">&lt;/<span class="hljs-name">color</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">km</span>&gt;</span>90000<span class="hljs-tag">&lt;/<span class="hljs-name">km</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">matricula</span>&gt;</span>1233A<span class="hljs-tag">&lt;/<span class="hljs-name">matricula</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">propietario</span>&gt;</span>P03<span class="hljs-tag">&lt;/<span class="hljs-name">propietario</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">marca</span>&gt;</span>Seat<span class="hljs-tag">&lt;/<span class="hljs-name">marca</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">modelo</span>&gt;</span>Ibiza 1.4 TDI<span class="hljs-tag">&lt;/<span class="hljs-name">modelo</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">color</span>&gt;</span>Rojo<span class="hljs-tag">&lt;/<span class="hljs-name">color</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">km</span>&gt;</span>145000<span class="hljs-tag">&lt;/<span class="hljs-name">km</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">matricula</span>&gt;</span>0011A<span class="hljs-tag">&lt;/<span class="hljs-name">matricula</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">propietario</span>&gt;</span>P04<span class="hljs-tag">&lt;/<span class="hljs-name">propietario</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">marca</span>&gt;</span>Volkswagen<span class="hljs-tag">&lt;/<span class="hljs-name">marca</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">modelo</span>&gt;</span>Golf 1.6 TDI<span class="hljs-tag">&lt;/<span class="hljs-name">modelo</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">color</span>&gt;</span>Negro<span class="hljs-tag">&lt;/<span class="hljs-name">color</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">km</span>&gt;</span>220000<span class="hljs-tag">&lt;/<span class="hljs-name">km</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">matricula</span>&gt;</span>1100B<span class="hljs-tag">&lt;/<span class="hljs-name">matricula</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">propietario</span>&gt;</span>P05<span class="hljs-tag">&lt;/<span class="hljs-name">propietario</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">marca</span>&gt;</span>Volkswagen<span class="hljs-tag">&lt;/<span class="hljs-name">marca</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">modelo</span>&gt;</span>Polo 1.2 Advance<span class="hljs-tag">&lt;/<span class="hljs-name">modelo</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">color</span>&gt;</span>Rojo<span class="hljs-tag">&lt;/<span class="hljs-name">color</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">km</span>&gt;</span>300000<span class="hljs-tag">&lt;/<span class="hljs-name">km</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">matricula</span>&gt;</span>1222C<span class="hljs-tag">&lt;/<span class="hljs-name">matricula</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">propietario</span>&gt;</span>P06<span class="hljs-tag">&lt;/<span class="hljs-name">propietario</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">marca</span>&gt;</span>Renault<span class="hljs-tag">&lt;/<span class="hljs-name">marca</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">modelo</span>&gt;</span>Megane Berlina GT<span class="hljs-tag">&lt;/<span class="hljs-name">modelo</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">color</span>&gt;</span>Acero<span class="hljs-tag">&lt;/<span class="hljs-name">color</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">km</span>&gt;</span>240000<span class="hljs-tag">&lt;/<span class="hljs-name">km</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">matricula</span>&gt;</span>2211C<span class="hljs-tag">&lt;/<span class="hljs-name">matricula</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">propietario</span>&gt;</span>P07<span class="hljs-tag">&lt;/<span class="hljs-name">propietario</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">marca</span>&gt;</span>Ford<span class="hljs-tag">&lt;/<span class="hljs-name">marca</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">modelo</span>&gt;</span>Konnect Combi<span class="hljs-tag">&lt;/<span class="hljs-name">modelo</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">color</span>&gt;</span>Marino<span class="hljs-tag">&lt;/<span class="hljs-name">color</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">km</span>&gt;</span>312000<span class="hljs-tag">&lt;/<span class="hljs-name">km</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">matricula</span>&gt;</span>1234C<span class="hljs-tag">&lt;/<span class="hljs-name">matricula</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">propietario</span>&gt;</span>P08<span class="hljs-tag">&lt;/<span class="hljs-name">propietario</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">marca</span>&gt;</span>Ford<span class="hljs-tag">&lt;/<span class="hljs-name">marca</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">modelo</span>&gt;</span>Ranger<span class="hljs-tag">&lt;/<span class="hljs-name">modelo</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">color</span>&gt;</span>Verde<span class="hljs-tag">&lt;/<span class="hljs-name">color</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">km</span>&gt;</span>125600<span class="hljs-tag">&lt;/<span class="hljs-name">km</span>&gt;</span></span>
+</code></pre>
+<br>
 <p><strong>6. El contenido del color del coche de matrícula 1234C</strong>.</p>
+<pre><code class="language-Xpath">     //coche[matricula=<span class="hljs-string">&quot;1234C&quot;</span>]/color/<span class="hljs-type">text</span>()
+</code></pre>
+<p>Resultado</p>
+<pre><code class="language-Xpath">   <span class="hljs-number">1</span>. Verde
+</code></pre>
+<br>
 <p><strong>7. El contenido de la descripción de las reparaciones realizadas al coche de matrícula: 4444B.</strong></p>
+<pre><code class="language-Xpath">     //reparacion[matricula=<span class="hljs-string">&quot;4444B&quot;</span>]/descripcion/<span class="hljs-type">text</span>()
+</code></pre>
+<p>Resultado</p>
+<pre><code class="language-Xpath">   <span class="hljs-number">1</span>. Cambio aceite
+   <span class="hljs-number">2</span>. Cambio neumaticos
+</code></pre>
+<br>
 <p><strong>8. El contenido de la descripción de la reparación de código J0005.</strong></p>
+<pre><code class="language-Xpath">     //reparacion[@codigo=<span class="hljs-string">&quot;J0005&quot;</span>]/descripcion/<span class="hljs-type">text</span>()
+</code></pre>
+<p>Resultado</p>
+<pre><code class="language-Xpath">   <span class="hljs-number">1</span>. Fallo encendido
+</code></pre>
 <p><strong>9. Suma de las horas invertidas reparando coches.</strong></p>
+<pre><code class="language-Xpath">    <span class="hljs-built_in"> sum</span>(//horas)
+</code></pre>
+<p>Resultado</p>
+<pre><code class="language-Xpath">   Non-standard output:
+   <span class="hljs-number">40</span>
+</code></pre>
+   <br>
 <p><strong>10.  Número de coches en el documento.</strong></p>
+<pre><code class="language-Xpath">     <span class="hljs-built_in"> count</span>(//coche)
+</code></pre>
+<p>Resultado</p>
+<pre><code class="language-Xpath">   Non-standard output:
+   <span class="hljs-number">9</span>
+</code></pre>
+   <br>
 <p><strong>11. Selecciona todos los elementos del primer coche</strong>.</p>
+<pre><code class="language-Xpath">      //coche[<span class="hljs-number">1</span>]
+</code></pre>
+<p>Resultado</p>
+<pre><code class="language-Xpath"> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">coche</span>&gt;</span> 
+ </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">matricula</span>&gt;</span>1234A<span class="hljs-tag">&lt;/<span class="hljs-name">matricula</span>&gt;</span></span><span class="language-xml"> 
+ </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">propietario</span>&gt;</span>P01<span class="hljs-tag">&lt;/<span class="hljs-name">propietario</span>&gt;</span></span><span class="language-xml"> 
+ </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">marca</span>&gt;</span>Seat<span class="hljs-tag">&lt;/<span class="hljs-name">marca</span>&gt;</span></span><span class="language-xml"> </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">modelo</span>&gt;</span>Leon 1.6 TDI<span class="hljs-tag">&lt;/<span class="hljs-name">modelo</span>&gt;</span></span><span class="language-xml"> 
+ </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">color</span>&gt;</span>Gris<span class="hljs-tag">&lt;/<span class="hljs-name">color</span>&gt;</span></span><span class="language-xml"> 
+ </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">km</span>&gt;</span>125000<span class="hljs-tag">&lt;/<span class="hljs-name">km</span>&gt;</span></span><span class="language-xml"> 
+ <span class="hljs-tag">&lt;/<span class="hljs-name">coche</span>&gt;</span></span>
+</code></pre>
+   <br>
 <p><strong>12. Selecciona todos los elementos de la última reparación.</strong></p>
+<pre><code class="language-Xpath">      ```Xpath
+      //reparacion<span class="hljs-built_in">[last</span>()]
+</code></pre>
+<p>Resultado</p>
+<pre><code class="language-Xpath"> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">reparacion</span> <span class="hljs-attr">codigo</span>=<span class="hljs-string">&quot;J0009&quot;</span>&gt;</span> 
+ </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">matricula</span>&gt;</span>1234C<span class="hljs-tag">&lt;/<span class="hljs-name">matricula</span>&gt;</span></span><span class="language-xml"> 
+ </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">descripcion</span>&gt;</span>Cambio aceite<span class="hljs-tag">&lt;/<span class="hljs-name">descripcion</span>&gt;</span></span><span class="language-xml"> 
+ </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">fecha_entrada</span>&gt;</span>2013/06/07<span class="hljs-tag">&lt;/<span class="hljs-name">fecha_entrada</span>&gt;</span></span><span class="language-xml"> 
+ </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">fecha_salida</span>&gt;</span>2013/06/07<span class="hljs-tag">&lt;/<span class="hljs-name">fecha_salida</span>&gt;</span></span><span class="language-xml"> 
+ </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">horas</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">horas</span>&gt;</span></span><span class="language-xml"> 
+ <span class="hljs-tag">&lt;/<span class="hljs-name">reparacion</span>&gt;</span></span>
+</code></pre>
+<br>
 <p><strong>13. Selecciona todos los elementos del coche de la marca Seat con color Rojo.</strong></p>
+<pre><code class="language-Xpath">      ```Xpath
+      //coche[marca=<span class="hljs-string">&quot;Seat&quot;</span> <span class="hljs-keyword">and</span> color=<span class="hljs-string">&quot;Rojo&quot;</span>]
+</code></pre>
+<p>Resultado</p>
+<pre><code class="language-Xpath"> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">coche</span>&gt;</span> 
+ </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">matricula</span>&gt;</span>1233A<span class="hljs-tag">&lt;/<span class="hljs-name">matricula</span>&gt;</span></span><span class="language-xml"> 
+ </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">propietario</span>&gt;</span>P03<span class="hljs-tag">&lt;/<span class="hljs-name">propietario</span>&gt;</span></span><span class="language-xml">
+  </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">marca</span>&gt;</span>Seat<span class="hljs-tag">&lt;/<span class="hljs-name">marca</span>&gt;</span></span><span class="language-xml"> 
+  </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">modelo</span>&gt;</span>Ibiza 1.4 TDI<span class="hljs-tag">&lt;/<span class="hljs-name">modelo</span>&gt;</span></span><span class="language-xml"> 
+  </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">color</span>&gt;</span>Rojo<span class="hljs-tag">&lt;/<span class="hljs-name">color</span>&gt;</span></span><span class="language-xml"> 
+  </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">km</span>&gt;</span>145000<span class="hljs-tag">&lt;/<span class="hljs-name">km</span>&gt;</span></span><span class="language-xml"> 
+  <span class="hljs-tag">&lt;/<span class="hljs-name">coche</span>&gt;</span></span>
+</code></pre>
+<br>
 <p><strong>14. Propietario del coche modelo Polo 1.2 Advance.</strong></p>
+<pre><code class="language-Xpath">      ```Xpath
+      //coche[modelo=<span class="hljs-string">&quot;Polo 1.2 Advance&quot;</span>]
+</code></pre>
+<p>Resultado</p>
+<pre><code class="language-Xpath"> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">coche</span>&gt;</span> 
+ </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">matricula</span>&gt;</span>1100B<span class="hljs-tag">&lt;/<span class="hljs-name">matricula</span>&gt;</span></span><span class="language-xml"> 
+ </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">propietario</span>&gt;</span>P05<span class="hljs-tag">&lt;/<span class="hljs-name">propietario</span>&gt;</span></span><span class="language-xml"> 
+ </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">marca</span>&gt;</span>Volkswagen<span class="hljs-tag">&lt;/<span class="hljs-name">marca</span>&gt;</span></span><span class="language-xml"> 
+ </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">modelo</span>&gt;</span>Polo 1.2 Advance<span class="hljs-tag">&lt;/<span class="hljs-name">modelo</span>&gt;</span></span><span class="language-xml"> 
+ </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">color</span>&gt;</span>Rojo<span class="hljs-tag">&lt;/<span class="hljs-name">color</span>&gt;</span></span><span class="language-xml"> 
+ </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">km</span>&gt;</span>300000<span class="hljs-tag">&lt;/<span class="hljs-name">km</span>&gt;</span></span><span class="language-xml"> 
+ <span class="hljs-tag">&lt;/<span class="hljs-name">coche</span>&gt;</span></span>
+</code></pre>
+<br>
 <p><strong>15. Contenido de la descripción de las reparaciones realizadas con fecha de entrada 2013/06/06.</strong></p>
+<pre><code class="language-Xpath">      ```Xpath
+      //reparacion[fecha_entrada=<span class="hljs-string">&quot;2013/06/06&quot;</span>]/descripcion
+</code></pre>
+<p>Resultado</p>
+<pre><code class="language-Xpath"> <span class="hljs-number">1</span>. Fallo electrico
+ <span class="hljs-number">2</span>. Cambio rueda
+</code></pre>
+<br>
 <p><strong>16.  Seleccionar los coches rojos y grises.</strong></p>
+<pre><code class="language-Xpath">      ```Xpath
+      //coche[color=<span class="hljs-string">&quot;Rojo&quot;</span> <span class="hljs-keyword">or</span> color=<span class="hljs-string">&quot;Gris&quot;</span>]
+</code></pre>
+<p>Resultado</p>
+<pre><code class="language-Xpath"> <span class="hljs-number">1234</span>A P01 Seat Leon <span class="hljs-number">1.6</span> TDI Gris <span class="hljs-number">125000</span> 
+ <span class="hljs-number">1233</span>A P03 Seat Ibiza <span class="hljs-number">1.4</span> TDI Rojo <span class="hljs-number">145000</span> 
+ <span class="hljs-number">1100</span>B P05 Volkswagen Polo <span class="hljs-number">1.2</span> Advance Rojo <span class="hljs-number">300000</span> 
+ <span class="hljs-number">1001</span>A P05 Renault Clio Authentique <span class="hljs-number">1.3</span> Rojo <span class="hljs-number">10000</span> 
+</code></pre>
+<br>
 <p><strong>17.  Número de coches que entraron a reparar el 2013/06/03.</strong></p>
+<pre><code class="language-Xpath">      ```Xpath
+     <span class="hljs-built_in"> count</span>(//reparacion/fecha_entrada[.=<span class="hljs-string">&quot;2013/06/03&quot;</span>])
+</code></pre>
+<p>Resultado</p>
+<pre><code class="language-Xpath"> Non-standard output:
+ <span class="hljs-number">3</span>
+</code></pre>
+<br>
 <p><strong>18.  Contenido del modelo del propietario P01.</strong></p>
+<pre><code class="language-Xpath">      ```Xpath
+      //coche[propietario=<span class="hljs-string">&quot;P01&quot;</span>]/modelo/<span class="hljs-type">node</span>()
+</code></pre>
+<p>Resultado</p>
+<pre><code class="language-Xpath"> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">modelo</span>&gt;</span>Leon 1.6 TDI<span class="hljs-tag">&lt;/<span class="hljs-name">modelo</span>&gt;</span></span>
+</code></pre>
+<br>
 <p><strong>19.  Código de la reparación con fecha de entrada 2013/06/03.</strong></p>
+<pre><code class="language-Xpath">      ```Xpath
+      ///reparacion[fecha_entrada=<span class="hljs-string">&quot;2013/06/03&quot;</span>]/@codigo
+</code></pre>
+<p>Resultado</p>
+<pre><code class="language-Xpath"> <span class="hljs-number">1</span>. J0001
+ <span class="hljs-number">2</span>. J0002
+ <span class="hljs-number">3</span>. J0003
+</code></pre>
+<br>
 <p><strong>20.  Suma de las horas de reparación del coche de matrícula 4444B.</strong></p>
+<pre><code class="language-Xpath">      ```Xpath
+     <span class="hljs-built_in"> sum</span>(//reparacion[matricula=<span class="hljs-string">&quot;4444B&quot;</span>]/horas)
+</code></pre>
+<p>Resultado</p>
+<pre><code class="language-Xpath"> Non-standard output:
+ <span class="hljs-number">3</span>
+</code></pre>
+<br>
 <p><strong>21.  Matrícula de los coches marca Ford y Volkswagen.</strong></p>
+<pre><code class="language-Xpath">      ```Xpath
+      //coche[marca=<span class="hljs-string">&quot;Ford&quot;</span> <span class="hljs-keyword">or</span> marca=<span class="hljs-string">&quot;Volkswagen&quot;</span>]/matricula
+</code></pre>
+<p>Resultado</p>
+<pre><code class="language-Xpath"> <span class="hljs-number">0011</span>A
+ <span class="hljs-number">1100</span>B
+ <span class="hljs-number">2211</span>C
+ <span class="hljs-number">1234</span>C
+</code></pre>
+<br>
 
         
         
