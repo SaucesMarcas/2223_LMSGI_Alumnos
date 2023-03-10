@@ -1,0 +1,11 @@
+<!ELEMENT estudiante (fila+)>
+<!ELEMENT fila (nombre,firstname,lastname,telefono,email,address,city,state,zip)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT firstname (#PCDATA)>
+<!ELEMENT lastname (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT state (#PCDATA)>
+<!ELEMENT zip (#PCDATA)>

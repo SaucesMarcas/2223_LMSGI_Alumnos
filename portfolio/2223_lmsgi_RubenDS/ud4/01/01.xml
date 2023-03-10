@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- 
+    Descripción: Unidad04-Actividad 01
+	Autor: ruben diez sanchez
+	Fecha creación/modificación: 17/01/2023
+-->
+<mail>
+    <remitente>
+        pepe@gmail.com
+    </remitente>
+    <destinatario>
+        lauk@gmail.com
+    </destinatario>
+    <fecha>
+        <dia>17</dia>
+        <mes>01</mes>
+        <año>2023</año>
+    </fecha>
+    <asunto>Los Quintos de Castro Gonzalo 2023</asunto>
+    <![CDATA[ 
+    1.Coca-cola 
+    2.Kas naranja
+    3.Tonica
+    4.Agua]]>
+<imagen>
+    <nombre>borja1.jpg</nombre>
+    <tipo>image.jpg</tipo>
+</imagen>
+<imagen>
+    <nombre>ismael1.jpg</nombre>
+    <tipo>image.jpg</tipo>
+</imagen>
+</mail>

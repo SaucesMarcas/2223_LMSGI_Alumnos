@@ -1,0 +1,35 @@
+<!ELEMENT catalogo (fila+)>
+<!ELEMENT fila (portatil,referencia,nombre,fabricante,procesador,cache,numero,velocidad,ram,memoria,tipo,disco,capacidad,pantalla,dimension,resolucion,maxresolucion,grafica,fotos)>
+<!ELEMENT portatil (#PCDATA)>
+<!ELEMENT referencia (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT fabricante (#PCDATA)>
+<!ELEMENT procesador (#PCDATA)>
+<!ELEMENT cache (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT velocidad (#PCDATA)>
+<!ELEMENT ram (#PCDATA)>
+<!ELEMENT memoria (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT disco (#PCDATA)>
+<!ELEMENT capacidad (#PCDATA)>
+<!ELEMENT pantalla (#PCDATA)>
+<!ELEMENT dimension (#PCDATA)>
+<!ELEMENT resolucion (#PCDATA)>
+<!ELEMENT maxresolucion (#PCDATA)>
+<!ELEMENT grafica (#PCDATA)>
+<!ELEMENT fotos (#PCDATA)>
+<!ATTLIST fabricante lenovo ID #REQUIRED>
+<!ENTITY nombre SYSTEM "default">
+<!ENTITY cache SYSTEM "default">
+<!ENTITY numero SYSTEM "default">
+<!ENTITY velocidad SYSTEM "default">
+<!ENTITY ram SYSTEM "default">
+<!ENTITY memoria SYSTEM "default">
+<!ENTITY tipo SYSTEM "default">
+<!ENTITY disco SYSTEM "default">
+<!ENTITY pantalla SYSTEM "default">
+<!ENTITY dimension SYSTEM "default">
+<!ENTITY resolucion SYSTEM "default">
+<!ENTITY grafica SYSTEM "default">
+<!ENTITY fotos SYSTEM "default">
