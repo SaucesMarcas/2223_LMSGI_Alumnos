@@ -24,11 +24,16 @@
                 <xs:element name="paises">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="paisC" type="xs:string"/>
-                            <xs:element name="paisC" type="xs:string"/>
-                            <xs:element name="paisC" type="xs:string"/>
-                            <xs:element name="paisC" type="xs:string"/>
-                            <xs:element name="paisC" type="xs:string"/>
+                            <xs:element name="pais" type="xs:string">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="sistema" type="xs:string"/>
+                                        <xs:element name="superficie" type="xs:int"/>
+                                        <xs:element name="moneda" type="xs:string"/>
+                                        <xs:element name="idioma" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
