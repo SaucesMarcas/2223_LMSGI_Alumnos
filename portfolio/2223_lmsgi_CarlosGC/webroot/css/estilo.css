@@ -53,11 +53,12 @@ ul {
 }
 
 article {
-    width: 30rem;
+    width: 17rem;
     float: left;
     border: 3px solid grey;
     border-bottom: black;
     margin: 0.5rem;
+    margin-bottom: 2rem;
     background-color: grey;
 }
 
