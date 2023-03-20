@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<menu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="10.xsd">
+<!DOCTYPE catalogo SYSTEM "10.dtd">
+<menu>
     <!-- todos los nombres tienen un maximo de 100 caracteres-->
     <plato tipo="entrante">
         <nombre tipo="jamon">croquetas caseras</nombre>
