@@ -3,7 +3,7 @@
     <xs:element name="mundo">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="linea">
+                <xs:element name="linea" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="continente" type="xs:string"/>

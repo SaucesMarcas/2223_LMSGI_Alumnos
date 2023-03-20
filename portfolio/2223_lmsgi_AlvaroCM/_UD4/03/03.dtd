@@ -1,6 +1,7 @@
-<!ELEMENT hechoshistoricos (linea,descripcion+,fecha,dia,mes,anyo)>
+<!ELEMENT hechoshistoricos (linea+)>
+<!ELEMENT linea (descripcion,fecha)>
 <!ELEMENT fecha (dia,mes,anyo)>
-<!ELEMENT linea (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
 <!ELEMENT dia (#PCDATA)>
 <!ELEMENT mes (#PCDATA)>
 <!ELEMENT anyo (#PCDATA)>

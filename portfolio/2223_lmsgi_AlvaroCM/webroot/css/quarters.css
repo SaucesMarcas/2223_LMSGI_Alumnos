@@ -31,7 +31,6 @@
   font-display: swap;
 }
 
-
 /*RESET CSS*/
 * {
   box-sizing: border-box;
@@ -50,15 +49,15 @@ body {
   letter-spacing: 0.02em;
 }
 
-a {
-  color: white;
-  text-decoration: none;
-}
-
 ul,
 ol {
   text-decoration: none;
   list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
 /* HEADER */
@@ -106,129 +105,63 @@ header .menu a:hover {
   text-decoration: underline;
 }
 
-/*HOME*/
-
-#home {
-  margin-top: 70px;
-  display: flex;
-  height: 93vh;
-  background-image: url(../img/nikita-kachanovsky-OVbeSXRk_9E-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.homeText {
-  padding-top: 200px;
-  padding-left: 50px;
-  max-width: 37%;
-}
-
-.homeText ol li a {
-  font-size: 18px;
-  font-weight: 500;
-}
-
-#home h1 {
-  font-size: 82px;
-  font-weight: 600;
-  line-height: 1em;
-  color: white;
-  letter-spacing: 0;
-  margin-top: 10px;
-  margin-bottom: 4px;
-}
-
-#home p {
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 1.2em;
-  font-weight: 500;
-  color: white;
-  padding-bottom: 40px;
-}
-
-#showmoreButton {
-  margin-top: 50px;
-  padding: 22px;
-  background-color: black;
-}
-
-/*ABOUT ME*/
-.aboutMeContainer {
-  height: 92vh;
-  display: flex;
-  justify-content: center;
-}
-
-.imgContainer {
-  background-image: url("../img/altumcode-dMUt0X3f59Q-unsplash.jpg");
-  background-size: cover;
-  background-position: center center;
-  height: 500px;
-  width: 400px;
-  margin-top: 150px;
-  margin-right: 200px;
-}
-
-.textAboutMe {
-  width: 30%;
-  max-width: 500px;
-  text-align: initial;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.textAboutMe h2 {
-  font-size: 50px;
-  margin-top: 0px;
-}
-
-/*MY PROJECTS*/
-
-#portfolio {
-  background-color: rgb(30, 30, 30);
-  color: white;
+#school {
+  background-color: #7a7979;
   text-align: center;
-}
-
-#portfolio .portfolioContainer {
-  height: 92vh;
-  padding-top: 100px;
+  margin-top: 80px;
 }
 
 .carta p {
+  color: white;
   display: block;
-  font-size: 18px;;
+  font-size: 16px;
+  text-align: justify;
 }
 
-#portfolio h2 {
-  margin-top: 0;
+.carta button {
+  margin-top: 8px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Clarkson", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+button a {
+  color: black;
+}
+
+#school h2 {
+  margin-top: 75px;
   font-size: 4.4em;
 }
 
-#portfolio h3 {
-  font-size: 2.0em;
+#school h3 {
+  color: white;
+  font-size: 2em;
   margin-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   margin-bottom: 30px;
 }
 
-.projects {
+#school .projects {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-#portfolio .carta {
+#school .carta {
   padding: 50px;
   background-size: 100% 150px;
   background-repeat: no-repeat;
   background-position-y: 0;
   background-color: rgba(50, 50, 50, 1);
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-  max-width: 380px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  max-width: 360px;
+  max-height: 400px;
   padding-top: 10px;
   border-radius: 15px;
   margin: 40px;
@@ -268,79 +201,4 @@ header .menu a:hover {
       rgba(0, 0, 0, 0.5)
     ),
     url("/public/images/altumcode-dMUt0X3f59Q-unsplash.jpg");
-}
-
-.carta button {
-  margin-top: 12px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-family: "Clarkson", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-}
-
-button a {
-  color: black;
-}
-/*SCHOOL*/
-
-
-#school {
-  background-color: white;
-  text-align: center;
-}
-
-#school .scoolContainer {
-  height: 92vh;
-  padding-top: 100px;
-}
-
-.carta p {
-  color: white;
-  display: block;
-  font-size: 18px;;
-}
-
-#school h2 {
-  margin-top: 75px;
-  font-size: 4.4em;
-}
-
-#school h3 {
-  color: white;
-  font-size: 2.0em;
-  margin-top: 30px;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-}
-
-#school .projects {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-#school .carta {
-  padding: 50px;
-  background-size: 100% 150px;
-  background-repeat: no-repeat;
-  background-position-y: 0;
-  background-color: rgba(50, 50, 50, 1);
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-  max-width: 380px;
-  padding-top: 10px;
-  border-radius: 15px;
-  margin: 40px;
-}
-
-/*FOOTER*/
-footer {
-  margin-top: 80px;
-}
-
-footer p {
-  text-align: center;
-  margin: 0;
 }

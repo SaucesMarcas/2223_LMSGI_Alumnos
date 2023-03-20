@@ -7,7 +7,14 @@
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="descripcion" type="xs:string"/>
-                            <xs:element name="fecha" type="xs:date">
+                            <xs:element name="fecha" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="dia"/>
+                                        <xs:element name="mes"/>
+                                        <xs:element name="anyo"/>
+                                    </xs:sequence>
+                                </xs:complexType>
                             </xs:element>
                         </xs:sequence>
                     </xs:complexType>
