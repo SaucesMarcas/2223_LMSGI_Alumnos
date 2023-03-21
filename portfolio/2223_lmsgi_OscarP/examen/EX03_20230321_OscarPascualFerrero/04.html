@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+	Descripcion: 2º Examen segundo trimestre - Ejercicio 04
+	Autor: Oscar Pascual Ferrero
+	Fecha creacion/modificacion: 21/03/2023
+-->
+<html lang="es">
+	<head>	
+		<meta charset="UTF-8">
+		<meta name="author" content="Oscar Pascual Ferrero">
+		<link rel="icon" type="images/favicon.ico" sizes="32x32" href="images/favicon.ico">
+		<meta name="description" content="Formulario fuera de fecha">
+		<meta name="keywords" content="formulario, gpus">
+		<meta name="generator" content="Notepad++">
+		<meta name="generator" content="60">
+        <style>
+
+        </style>
+			<title>HTML 03 Oscar Pascual Ferrero</title>
+	</head>
+	<body>
+		
+		<main>
+			<form method="post" action="#alta.php">
+				
+				<fieldset>
+					<legend>Datos Fiscales</legend>
+					
+					<div>
+						<input checked type="radio" id="enparo" name="DatosFiscales" value="enParo">
+						<label for="enParo"> En paro</label>				
+					</div>
+					<div>
+						<input type="radio" id="autonomo" name="DatosFiscales" value="autonomo">
+						<label for="autonomo"> Autonomo</label>
+					</div>
+					<div>
+						<input type="radio" id="porcajena" name="DatosFiscales" value="porcajena">
+						<label for="porcajena"> Por c. ajena</label>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Datos personales</legend>
+
+                    <div>
+						<label for="sueldo">Sueldo</label>
+						<select id="sueldo">
+							
+							<option value="300">300</option>
+							<option value="Más de 400 euros" selected>Más de 400 euros</option>
+							<option value="500">500</option>
+							
+						</select>						
+					</div>
+					<div>
+						<label for="enfprof"><input type="checkbox" name="enfprof" id="enfprof" value="enfprof">Con enfermedad profesional</label>		
+					</div>
+					<div>
+						<label for="padres"><input type="checkbox" name="padres" id="padres" value="padres">Con padres a cargo</label>	
+					</div>
+					<div>
+						<label for="hijos"><input type="checkbox" name="hijos" id="hijos" value="hijos">Con hijos a cargo</label>
+					</div>
+                    
+				</fieldset>
+				
+				<input type="submit" value="Enviar">
+				<input type="reset">
+				
+				<br>
+				
+				
+			</form>
+		</main>		
+		<footer>
+			<address>“2022-2023 Todos los derechos reservados. Oscar Pascual Ferrero. Optimizado para Chrome”</address>
+		</footer>		
+	</body>
+</html>
