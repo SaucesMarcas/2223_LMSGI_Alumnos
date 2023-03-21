@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+	Descripción: Unidad02-Actividad 03
+	Autor: ruben diez sanchez
+	Fecha creación/modificación: 25/10/2022
+-->
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title> Examen </title>
+</head>
+
+<body>
+	<main>
+		<header>
+			<h1>Examen</h1>
+		</header>
+		<fieldset>
+			<legend>Datos fiscales</legend>
+			<label for="Trabajo">En paro</label>
+			<input checked type="radio" name="Trabajo" value="Paro" id="Trabajo">
+			<br>
+			<label for="Trabajo1">Autonomo</label>
+			<input type="radio" name="Trabajo1" value="Paro1" id="Trabajo1">
+			<br>
+			<label for="Lbjuego2">Por c.ajena</label>
+			<input type="radio" name="Trabajo2" value="Paro2" id="Trabajo2">
+		</fieldset>
+		<fieldset>
+			<legend>Datos personales</legend>
+			<legend>Texto</legend>
+			<label for="nombre">Nombre</label>
+			<input type="text" name="Nombre" value="Ruben" id="LbNombre" pattern=[Za-Az] size="10">
+			<br>
+			<label for="apellido">Apellido</label>
+			<input type="text" name="Apellido" value="Diez" id="LbApellido" pattern=[Za-Az] size="10">
+			<br>
+			<label for="sueldo">Sueldo</label>
+			<select name="Sueldo" id="Sueldo">
+			<option value="p">Mas de 400</option>
+			<option value="t">Menos de 400</option>
+			<option value="c">Igual a 400</option>
+		</select>
+		<br>
+		<label for="enfermedad">Con enfermedad profesional</label>
+			<input checked type="checkbox" name="enfermedad" value="enfermedad" id="Enfermedad">
+		<br>
+		<label for="padres">Con padres a cargo</label>
+			<input type="checkbox" name="a cargo" value="a cargo" id="Acargo">
+		<br>
+		<label for="hijos">Con hijos a cargo</label>
+			<input type="checkbox" name="hijos" value="hijos" id="Hijos">
+			<br>
+			<input type="submit" value="Enviar datos">
+		</fieldset>
+		</form>
+	</main>
+</body>
+
+</html>
