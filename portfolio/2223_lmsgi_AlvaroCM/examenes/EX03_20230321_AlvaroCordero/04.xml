@@ -1,15 +1,15 @@
 <formulario>
 	<estudio>
-		<centro></centro>
-		<datosFiscalesParo></datosFiscalesParo>
-		<datosFiscalesAutonomo></datosFiscalesAutonomo>
+		<centro>Ies los sacues</centro>
+		<datosFiscalesParo>Datos Fiscales</datosFiscalesParo>
+		<datosFiscalesAutonomo>Datos Fiscales</datosFiscalesAutonomo>
 	</estudio>
 	<datosPersonales>
-		<nombre></nombre>
-		<apellido></apellido>
-		<sueldo></sueldo>
-		<enfermedad></enfermedad>
-		<padresaACargo></padresaACargo>
-		<hijosACargo></hijosACargo>
+		<nombre>Alvaro</nombre>
+		<apellido>Cordero</apellido>
+		<sueldo>400</sueldo>
+		<enfermedad>No</enfermedad>
+		<padresaACargo>Si</padresaACargo>
+		<hijosACargo>No</hijosACargo>
 	</datosPersonales>
 </formulario>
