@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:simpleType name="tipoMoneda">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="dolares"/>
+		<xs:enumeration value="euros"/>
+		<xs:enumeration value="yenes"/>
+	</xs:restriction>
+</xs:simpleType>
+<xs:simpleType name="tipoPais">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="usa"/>
+		<xs:enumeration value="aleman"/>
+		<xs:enumeration value="japon"/>
+		<xs:enumeration value="espana"/>
+	</xs:restriction>
+</xs:simpleType>
+	<xs:element name="productosfinancieros">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="producto" maxOccurs="unbounded" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="bono" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="valoractual" minOccurs="0">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string">
+														<xs:attribute name="moneda" type="tipoMoneda"/>
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="beneficio" type="xs:float"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="futuro" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="elemento" minOccurs="1">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string">
+														<xs:attribute name="idioma"/>
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="beneficio" type="xs:float"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="acciones" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="empresa" minOccurs="1">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string">
+														<xs:attribute name="pais"/>
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="beneficio" type="xs:float"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

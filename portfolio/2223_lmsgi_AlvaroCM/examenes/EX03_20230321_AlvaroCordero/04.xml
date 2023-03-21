@@ -1,0 +1,15 @@
+<formulario>
+	<estudio>
+		<centro></centro>
+		<datosFiscalesParo></datosFiscalesParo>
+		<datosFiscalesAutonomo></datosFiscalesAutonomo>
+	</estudio>
+	<datosPersonales>
+		<nombre></nombre>
+		<apellido></apellido>
+		<sueldo></sueldo>
+		<enfermedad></enfermedad>
+		<padresaACargo></padresaACargo>
+		<hijosACargo></hijosACargo>
+	</datosPersonales>
+</formulario>

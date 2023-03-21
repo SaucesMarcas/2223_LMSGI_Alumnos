@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Pregunta 5 HTML Alvaro Cordero</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      form {
+        width: 50%;
+      }
+      fieldset {
+        margin: 20px;
+      }
+
+      fieldset legend {
+        background-color: grey;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <form action="index.php" method="get">
+        <fieldset>
+          <legend>¿Has estudiado anteriormente en este centro?</legend>
+          <div>
+            <input
+              type="radio"
+              id="check"
+              name="radio1"
+              id="centro"
+            />
+            <label for="check">En paro</label><br/>
+            <input
+              type="radio"
+              id="check2"
+              name="radio1"
+              id="datosFiscalesParo"
+            />
+            <label for="check">Autonomo</label><br />
+            <input
+              type="radio"
+              id="check3"
+              name="radio1"
+              id="datosFiscalesAutonomo"
+            />
+            <label for="check">Por c. ajena</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Datos personales</legend>
+          <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" />
+          </div>
+          <br />
+          <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" />
+          </div>
+          <br />
+          <div>
+            <label for="curso">Sueldo</label>
+            <select id="curso" name="curso">
+              <option value="" selected="selected">Mas de 400 euros</option>
+              <option value="">Menos de 400 euros</option>
+              <option value="">Variables</option>
+            </select>
+          </div>
+          <div>
+            <input type="checkbox" id="checkbox1" name="conEnfermedad" />
+            <label for="checkbox">Con enfermed profesional</label><br />
+            <input type="checkbox" id="checkbox2" name="conPadres" />
+            <label for="checkbox">Con padres a cargo</label><br />
+            <input type="checkbox" id="checkbox3" name="conHijos" />
+            <label for="checkbox">Con hijos a cargo</label>
+          </div>
+          <br />
+          <div>
+            <input type="submit"  alt="submit" id="sumbit" value="Enviar"/>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
