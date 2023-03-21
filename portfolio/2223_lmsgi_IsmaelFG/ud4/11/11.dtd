@@ -26,4 +26,4 @@
 <!ATTLIST capacidad unidadMedidaDisco CDATA #REQUIRED>
 <!ATTLIST dimension tamanyoPantalla CDATA #REQUIRED>
 <!ATTLIST catalogo xmlns:xsi CDATA #IMPLIED
-xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+xsi:noNamespaceSchemaLocation CDATA #IMPLIED

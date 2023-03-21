@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<lugares>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE lugares SYSTEM "08.dtd">
+<lugares xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="08.xsd">
     En el
     <lugar>
         polo norte

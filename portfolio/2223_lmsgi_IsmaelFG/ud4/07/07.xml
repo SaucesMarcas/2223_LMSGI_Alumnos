@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!DOCTYPE grupo SYSTEM "07.dtd">
-<grupo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="07.xsd"> 
+<grupo> 
 	<estudiante codigo="cod_estudiante1" tutor="cod_tutor1" >
-		<nombre>Juan<nombre>
+		<nombre>Juan</nombre>
 	</estudiante>
 	<estudiante codigo="cod_estudiante2" tutor="cod_tutor2">
-		<nombre>Juan<nombre>
+		<nombre>Juan</nombre>
 	</estudiante>
 	<estudiante codigo="cod_estudiante10" tutor="cod_tutor3">
-		<nombre>Juan<nombre>
+		<nombre>Juan</nombre>
 	</estudiante>
 </grupo>
