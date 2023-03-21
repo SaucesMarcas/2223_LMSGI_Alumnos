@@ -1,0 +1,13 @@
+<!ELEMENT inventario (objeto+)>
+<!ELEMENT objeto (mesa|ordenador)?>
+<!ELEMENT mesa (tipo?,localizacion)>
+<!ELEMENT ordenador (procesador?,memoria?,discoduro)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT localizacion (#PCDATA)>
+<!ELEMENT procesador (#PCDATA)>
+<!ELEMENT memoria (#PCDATA)>
+<!ELEMENT discoduro (#PCDATA)>
+    <!ATTLIST objeto codigo CDATA #IMPLIED>
+    <!ATTLIST procesador fabricante (Intel|AMD) "Intel">
+    <!ATTLIST memoria unidad CDATA #FIXED "Gb">
+    <!ATTLIST discoduro tamano (Tb|Gb|Mb) "Gb">

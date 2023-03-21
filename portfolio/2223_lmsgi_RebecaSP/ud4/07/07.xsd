@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="grupo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="estudiante" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="codigo" type="xs:ID" use="required"/>
+                        <xs:attribute name="tutor" type="xs:IDREFS" use="optional"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

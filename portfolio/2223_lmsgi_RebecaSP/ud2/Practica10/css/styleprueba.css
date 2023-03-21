@@ -1,0 +1,54 @@
+:root{
+	--colorFondo:#fff280;
+	--colorTituloSeccion:#ffc533;
+	--colorTituloArticle:#ff7740;
+	--colorFondoArticle:#ffeb33;
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box; /* contiene las cajas teniendo en cuenta padding y borde, es decir, da tamaño a la caja */
+}
+a{
+	color: black;
+}
+ul, ol{
+	list-style: none;
+}
+body{
+	background-color: var(--colorFondo);
+}
+h1{
+	text-align: center;
+	font-style: oblique;
+	letter-spacing: 0.2rem;
+}
+section{
+	float: left;
+	width: 34rem;
+	border: 2px solid var(--colorTituloSeccion);
+	margin: 0.5rem;
+}
+section h2{
+	background-color: var(--colorTituloSeccion);
+}
+article{
+	float: left;
+	width: 15rem;
+	background-color: var(--colorFondoArticle);
+	border: 1px solid var(--colorTituloArticle);
+	margin: 0.5rem;
+}
+article h3{
+	color: white;
+	background-color: var(--colorTituloArticle);
+}
+footer{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	background-color: white;
+}

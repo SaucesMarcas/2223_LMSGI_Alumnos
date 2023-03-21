@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hechoshistoricos SYSTEM "03.dtd">
+<hechoshistoricos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="03.xsd">
+    <linea>
+        <descripcion>Se funda Youtube</descripcion>
+        <fecha>
+            <dia>15</dia>
+            <mes>2</mes>
+            <anyo>2005</anyo>
+        </fecha>
+    </linea>
+    <linea>
+        <descripcion>Se funda Google</descripcion>
+        <fecha>
+            <dia>4</dia>
+            <mes>9</mes>
+            <anyo>1998</anyo>
+        </fecha>
+    </linea>
+    <linea>
+        <descripcion>Se funda Facebook</descripcion>
+        <fecha>
+            <dia>4</dia>  <!--SON BYTES PORQUE CON GDAY GAY QUE FORMATEAR LA FECHA-->
+            <mes>2</mes>
+            <anyo>2004</anyo>   <!--ESTE EL SHORT PORQUE CON BYTE NO DA-->
+        </fecha>
+    </linea>
+</hechoshistoricos>
