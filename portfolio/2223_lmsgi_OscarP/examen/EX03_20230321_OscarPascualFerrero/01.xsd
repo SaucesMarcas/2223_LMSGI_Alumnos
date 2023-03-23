@@ -10,12 +10,12 @@
     <xs:element name="productosfinancieros">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="producto" >
+                <xs:element name="producto" maxOccurs="unbounded" >
                     <xs:complexType>
-                        <xs:sequence>
+                        <xs:choice>
                             <xs:element name="bono" minOccurs="0">
                                 <xs:complexType>
-                                    <xs:all>
+                                    <xs:sequence>
                                         <xs:element name="valoractual">
                                             <xs:complexType>
                                                 <xs:simpleContent>
@@ -38,7 +38,7 @@
                                                 </xs:restriction>
                                             </xs:simpleType>
                                         </xs:element>
-                                    </xs:all>
+                                    </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
                             <xs:element name="futuro" minOccurs="0">
@@ -95,7 +95,7 @@
                                     </xs:all>
                                 </xs:complexType>
                             </xs:element>
-                        </xs:sequence>
+                        </xs:choice>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
