@@ -17,6 +17,11 @@
         <xs:enumeration value="japon"/>
     </xs:restriction>
 </xs:simpleType>
+<xs:simpleType name="tipoBeneficio">
+    <xs:restriction base="xs:decimal">
+        <xs:fractionDigits value="2"/>
+    </xs:restriction>
+</xs:simpleType>
 
 
 <!-- Declaracion de elementos-->
@@ -25,8 +30,8 @@
             <xs:sequence>
                 <xs:element name="producto" minOccurs="1" maxOccurs="unbounded">
                     <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="bono" minOccurs="0">
+                        <xs:choice>
+                            <xs:element name="bono">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="valoractual" minOccurs="1">
@@ -38,11 +43,11 @@
                                                 </xs:simpleContent>
                                             </xs:complexType>
                                         </xs:element>
-                                        <xs:element name="beneficio" minOccurs="1" type="xs:float"/>
+                                        <xs:element name="beneficio" minOccurs="1" type="tipoBeneficio"/>
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="futuro" minOccurs="0">
+                            <xs:element name="futuro">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="elemento" minOccurs="1">
@@ -54,11 +59,11 @@
                                                 </xs:simpleContent>
                                             </xs:complexType>
                                         </xs:element>
-                                        <xs:element name="beneficio" minOccurs="1" type="xs:float"/>
+                                        <xs:element name="beneficio" minOccurs="1" type="tipoBeneficio"/>
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="acciones" minOccurs="0">
+                            <xs:element name="acciones">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="empresa" minOccurs="1">
@@ -70,11 +75,11 @@
                                                 </xs:simpleContent>
                                             </xs:complexType>
                                         </xs:element>
-                                        <xs:element name="beneficio" minOccurs="1" type="xs:float"/>
+                                        <xs:element name="beneficio" minOccurs="1" type="tipoBeneficio"/>
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
-                        </xs:sequence>
+                        </xs:choice>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>

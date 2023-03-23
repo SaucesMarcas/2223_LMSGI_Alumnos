@@ -5,8 +5,8 @@
         <nombre>Amor</nombre>
         <apellidos>pedro</apellidos>
         <sueldo cantidad="Mas de 400"/>
-        <emfermedad_profesional emfermedad="yes"/>
-        <padres_cargo p_cargo="no"/>
-        <hijos_cargo h_cargo="yes"/>
+        <emfermedad_profesional emfermedad="true"/>
+        <padres_cargo p_cargo="false"/>
+        <hijos_cargo h_cargo="true"/>
     </datos_personales>
 </formulario>
