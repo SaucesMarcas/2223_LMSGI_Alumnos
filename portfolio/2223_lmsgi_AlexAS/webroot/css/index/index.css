@@ -1,12 +1,41 @@
 body{
-    background-color: aquamarine;
-    text-align: center;   
+    background-color:aquamarine;
+    font-style: oblique;
+   
+    
 }
-a{
-     text-decoration: none;
-     list-style: none;
-     color: black;
+h1{
+    text-align: center;
+    font-size: 400%;
+}
+
+h2{
+    text-align: center;
+    margin-left: 45%;
+    background-color: lightgreen;
+    border: 3px solid red;
+    width: 10%;
+    clear: both;
+    font-size: 200%
+}
+
+ul{
+    margin-left: 45%;
+    list-style: none;
 }
 li{
-    list-style: none;
+    font-size: 120%;
+}
+a{
+    
+    text-decoration: none;
+    outline: none;
+    color: black;
+}
+
+footer{
+    background-color: wheat;
+	position: fixed;
+    margin-left: 38%;
+    font-size: 120%;
 }
