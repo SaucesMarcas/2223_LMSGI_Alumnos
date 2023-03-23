@@ -29,6 +29,7 @@
               id="check"
               name="radio1"
               id="centro"
+              value="centro"
             />
             <label for="check">En paro</label><br/>
             <input
@@ -36,6 +37,7 @@
               id="check2"
               name="radio1"
               id="datosFiscalesParo"
+              value="paro"
             />
             <label for="check">Autonomo</label><br />
             <input
@@ -43,8 +45,16 @@
               id="check3"
               name="radio1"
               id="datosFiscalesAutonomo"
+              value="autonomo"
             />
             <label for="check">Por c. ajena</label>
+            <input
+              type="radio"
+              id="check4"
+              name="radio1"
+              id="datosFiscalesAjena"
+              value="ajena"
+            />
           </div>
         </fieldset>
         <fieldset>
@@ -62,17 +72,17 @@
           <div>
             <label for="curso">Sueldo</label>
             <select id="curso" name="curso">
-              <option value="" selected="selected">Mas de 400 euros</option>
-              <option value="">Menos de 400 euros</option>
-              <option value="">Variables</option>
+              <option value="+400" selected="selected">Mas de 400 euros</option>
+              <option value="-400">Menos de 400 euros</option>
+              <option value="variables">Variables</option>
             </select>
           </div>
           <div>
-            <input type="checkbox" id="checkbox1" name="conEnfermedad" />
+            <input type="checkbox" id="checkbox1" name="conEnfermedad" value="conEnfermedad"/>
             <label for="checkbox">Con enfermed profesional</label><br />
-            <input type="checkbox" id="checkbox2" name="conPadres" />
+            <input type="checkbox" id="checkbox2" name="conPadres" value="conPadresACargo"/>
             <label for="checkbox">Con padres a cargo</label><br />
-            <input type="checkbox" id="checkbox3" name="conHijos" />
+            <input type="checkbox" id="checkbox3" name="conHijos" value="ConHijos"/>
             <label for="checkbox">Con hijos a cargo</label>
           </div>
           <br />

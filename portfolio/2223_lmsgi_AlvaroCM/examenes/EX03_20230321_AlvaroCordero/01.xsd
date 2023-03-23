@@ -18,16 +18,16 @@
 	<xs:element name="productosfinancieros">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="producto" maxOccurs="unbounded" minOccurs="0">
+				<xs:element name="producto" maxOccurs="unbounded">
 					<xs:complexType>
-						<xs:sequence>
-							<xs:element name="bono" minOccurs="0">
+						<xs:choice>
+							<xs:element name="bono">
 								<xs:complexType>
 									<xs:sequence>
 										<xs:element name="valoractual" minOccurs="0">
 											<xs:complexType>
 												<xs:simpleContent>
-													<xs:extension base="xs:string">
+													<xs:extension base="xs:float">
 														<xs:attribute name="moneda" type="tipoMoneda"/>
 													</xs:extension>
 												</xs:simpleContent>
@@ -37,14 +37,14 @@
 									</xs:sequence>
 								</xs:complexType>
 							</xs:element>
-							<xs:element name="futuro" minOccurs="0">
+							<xs:element name="futuro">
 								<xs:complexType>
 									<xs:sequence>
-										<xs:element name="elemento" minOccurs="1">
+										<xs:element name="elemento">
 											<xs:complexType>
 												<xs:simpleContent>
 													<xs:extension base="xs:string">
-														<xs:attribute name="idioma"/>
+														<xs:attribute name="idioma" type="xs:string"/>
 													</xs:extension>
 												</xs:simpleContent>
 											</xs:complexType>
@@ -53,14 +53,14 @@
 									</xs:sequence>
 								</xs:complexType>
 							</xs:element>
-							<xs:element name="acciones" minOccurs="0">
+							<xs:element name="acciones">
 								<xs:complexType>
 									<xs:sequence>
-										<xs:element name="empresa" minOccurs="1">
+										<xs:element name="empresa">
 											<xs:complexType>
 												<xs:simpleContent>
 													<xs:extension base="xs:string">
-														<xs:attribute name="pais"/>
+														<xs:attribute name="pais" type="tipoPais"/>
 													</xs:extension>
 												</xs:simpleContent>
 											</xs:complexType>
@@ -69,7 +69,7 @@
 									</xs:sequence>
 								</xs:complexType>
 							</xs:element>
-						</xs:sequence>
+						</xs:choice>
 					</xs:complexType>
 				</xs:element>
 			</xs:sequence>

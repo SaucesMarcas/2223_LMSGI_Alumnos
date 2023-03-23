@@ -1,7 +1,7 @@
 <!ELEMENT inventario (objeto+)>
-<!ELEMENT objeto (mesa?, ordenador?)>
-<!ELEMENT mesa (tipo, localizacion)>
-<!ELEMENT ordenador (procesador, memoria, discoduro)>
+<!ELEMENT objeto (mesa | ordenador)>
+<!ELEMENT mesa (tipo?, localizacion)>
+<!ELEMENT ordenador (procesador?, memoria?, discoduro)>
 <!ELEMENT tipo (#PCDATA)>
 <!ELEMENT localizacion (#PCDATA)>
 <!ELEMENT procesador (#PCDATA)>
