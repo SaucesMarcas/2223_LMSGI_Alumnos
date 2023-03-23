@@ -1,0 +1,20 @@
+body {
+/*Para centrar el texto*/
+	text-align:center;
+/*Para que no quede como un mosaico*/
+	background-repeat:no-repeat;
+	background-image: url("images/fondo.jpg");
+	background-position: center center;
+/*Para rellenar el fondo con toda la imagen*/
+	background-size: cover;
+}
+#indice {
+	border-style:solid;
+	width:500px;
+	margin-left:36%;
+}
+
+div {
+	width:500px;
+	margin-left:37%;
+}

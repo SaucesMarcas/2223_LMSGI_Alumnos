@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--
+	Descripción: Unidad 02 - Ejercicio 03
+	Autor: Carlos García Cachón
+	Fecha de creación/modificación: 25/10/2022
+-->
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Carlos García Cachón">
+		<title>HTML 03 Carlos Garcia Cachon</title>
+		<style>
+			.buscar {margin-left:75%
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<header>
+				<h1>Plantilla de formulario de Coches</h1>
+			</header>
+			<form>
+				<fieldset>
+					<legend>Datos de tu vehiculo</legend>
+						<div class="buscar">
+							<label for="idBusqueda">Buscar:</label>
+							<input type="search" id="idBusqueda" name="cuadro_busqueda">
+							<button type="submit">Search</button>
+						</div>
+						<div>
+							<label for="idTexto">*Indica si has tenido averias en tu coche:</label>
+						</div>
+						<div>
+							<textarea id="idTexto" name="averias" maxlength="150" rows="5" cols="50" placeholder="Escribe aqui las más graves..." required></textarea>
+						</div>
+						<hr>
+						<div>
+							Tracción de tu coche
+						</div>
+							<div>
+								<label for="idAWD"><input checked type="radio" value="AWD" name="traccion" id="idAWD">AWD</label>
+							</div>
+							<div>
+								<label for="idFWD"><input type="radio" value="FWD" name="traccion" id="idFWD">FWD</label>
+							</div>
+							<div>
+								<label for="idRWD"><input type="radio" value="RWD" name="traccion" id="idRWD">RWD</label>
+							</div>
+						<hr>
+						<div>
+							Mantenimiento que necesita
+						</div>
+							<div>
+								<label for="idAceite_Motor"><input checked type="checkbox" value="AM" name="Aceite_Motor" id="idAceite_Motor">Aceite del Motor</label>
+								<label for="idLiquido_Frenos"><input type="checkbox" value="LF" name="Liquido_Frenos" id="idLiquido_Frenos">Liquido de Frenos</label>
+								<label for="idDiscos_Frenos"><input type="checkbox" value="DF" name="Discos_Freno" id="idDiscos_Frenos">Discos de Freno</label>
+								<label for="idPastillas_Frenos"><input type="checkbox" value="PF" name="Pastillas_Freno" id="idPastillas_Frenos">Pastillas de Freno</label>
+								<label for="idNinguno"><input type="checkbox" value="N" name="Ninguno" id="idNinguno">Ninguno</label>
+							</div>
+						<hr>
+						<div>
+							Correo electronico y contraseña
+						</div>
+							<div>
+								<label for="idEmail">*Correo:</label>
+								<input type="email" id="idEmail" pattern=".+@gmail.com" placeholder="@gmail.com" size="25" required>
+								<label for="idContraseña">Contraseña</label>
+								<input type="password" id="idContraseña" required>
+							</div>
+						<hr>
+						<div>
+							*Telefono
+						</div>
+							<div>
+								<label for="idtel2">Introduce tu numero de telefono:</label>
+								<input type="tel" name="telefono2" id="idtel2" pattern="[0-9]{9}" title="Numero incorrecto" placeholder="600000000" required>
+							</div>
+						<hr>
+						<div>
+							Año de tu coche 
+						</div>
+							<div>
+								<label for="idFecha">Introduce la fecha:</label>
+								<input min="1950-01-01" max="2022-10-25" value="2002-03-01" type="date" name="fecha" id="idFecha">
+							</div>
+						<hr>
+						<div>
+							Tiempo de 0 a 100km/h
+						</div>
+							<div>
+								<label for="idTiempo">Introduce el tiempo:</label>
+								<input type="time" name="tiempo" value="00:00:07" min="00:00:01" max="00:02:00" step ="1" id="idTiempo">
+							</div>
+						<hr>
+						<div>
+							Que semana es la que compraste el coche
+						</div>
+							<div>
+								<label for="idSemana">Introduce semana:</label>
+								<input type="week" name="semana" id="idSemana" value="2002-W09" min="1950-W01" max="2022-W52">
+							</div>
+						<hr>
+						<div>
+							Mes de vencimiento del seguro
+						</div>
+							<div>
+								<label for="idMes">Introduce mes:</label>
+								<input type="month" name="mes" id="idMes" value="2022-11" min="2022-01" max="2022-12">
+							</div>
+						<hr>
+						<div>
+							Aislamiento acustico
+						</div>
+							<div>
+								<label for="idAcustica">Introduce 1 si hace mucho ruido y 10 si esta perfecto:</label>
+								<input type="range" name="rango_ruido" id="idAcustica" value="5" min="1" max="10"  step="1">
+							</div>
+						<hr>
+						<div>
+							Marca de tu coche
+						</div>
+							<div>
+								<label for="idMarca">Introduce marca:</label>
+								<select id="idMarca">
+									<option selected value="Mercedes-Benz">Mercedes-Benz</option>
+									<option value="Audi">Audi</option>
+									<option value="Subaru">Subaru</option>
+									<option value="Nissan">Nissan</option>
+									<option value="Toyota">Toyota</option>
+									<option value="Mazda">Mazda</option>
+									<option value="Honda">Honda</option>
+									<option value="Volvo">Volvo</option>
+									<option value="BMW">BMW</option>
+									<option value="Otro">Otro</option>
+								</select>
+							<div>
+								<textarea id="idOtro" name="otro" maxlength="15" rows="1" cols="50" placeholder="Escribe aqui la marca si seleccionaste otro..."></textarea>
+							</div>
+						</div>
+						<hr>
+						<div>
+							Color del coche
+						</div>
+							<div>
+								<label for="idColor">*Selecciona un color:</label>
+								<select id="idColor" multiple required>
+									<option value="Negro">Negro</option>
+									<option value="Gris">Gris</option>
+									<option value="Verde">Verde</option>
+									<option value="Azul">Azul</option>
+									<option value="Rojo">Rojo</option>
+									<option value="Amarillo">Amarillo</option>
+									<option value="Otro">Otro</option>
+								</select>
+								<input type="color">
+							</div>
+						<hr>
+						<div>
+							Consumo medio de combustible
+						</div>
+							<div>
+								<label for="idCombustible">Consumo en litros(0-100)</label>
+								<input type="number" id="idCombustible" name="combustible" min="0.00" max="100.00" value="6.9">
+							</div>
+						<hr>
+						<div>
+							Pagina de compra online de coches
+						</div>
+							<div>
+								<label for="idURL">Introduce la URL</label>
+								<input type="url" name="pagina_compra_coches" id="idURL" value="https://www.coches.net" pattern="https://www.*">
+							</div>
+						<hr>
+						<div>
+							Manda una imagen de tu coche
+						</div>
+							<div>
+								<label for="idFile">Subir archivo:</label>
+								<input type="file" id="idFile" name="file" accept="image/png, image/jpeg, image/gif">
+							</div>
+				</fieldset>
+				<div>
+					<button type="submit" value="Enviar"><img id="idEnviar" src="images/enviar.png" alt="Enviar formulario"></button>
+					<input type="hidden" name="hidden" value="hidden">
+					<button type="reset" value="Reset"><img id="idReset" src="images/reset.png" alt="Resetear formulario"></button>
+				</div>
+			</form>
+		</main>
+		<footer>
+			<address>Autor: Carlos García Cachón	Optimizado para Chrome</address>
+		</footer>
+	</body>
+</html>

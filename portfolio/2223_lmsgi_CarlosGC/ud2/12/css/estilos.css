@@ -1,0 +1,109 @@
+:root{
+    --colorFondo: #e0e1eb; 
+    --color1: #31334d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    padding-bottom: 1100px;
+    margin: 0 auto;
+    background-color: var(--colorFondo);
+}
+
+li {
+    display: inline-table;
+    font-size: 1rem;
+    color: white;
+}
+
+nav ul li a {
+    color: white;
+}
+
+ ul {
+    list-style: none;
+    margin-left: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: 0.2rem;
+    color: white;
+    background-color: var(--color1);
+}
+
+h2 {
+    background-color: var(--color1);
+    color: white;
+    padding-left: 0.25rem;
+}
+
+h3 a{
+    color: black;
+
+}
+
+h3, h4 {
+    background-color: white;
+    color: black;
+    padding-left: 0.5rem;
+}
+
+section {
+    width: 26%;
+    float: left;
+    border-left: 3px solid var(--color1);
+    border-right: 3px solid var(--color1);
+    margin: 0.5rem;
+    margin-left: 6%;
+    padding: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+article {
+    background-color: var(--colorFondo);
+    border: 3px solid var(--color1);
+    border-radius: 10px;
+    width: 400px;
+    margin: 0.25rem;
+    margin-left: 30px;
+}
+
+blockquote {
+    text-align: justify;
+    padding: 0.25rem;
+}
+
+figure {
+    padding: 2px;
+    margin-top: 1rem;
+}
+
+img {
+    border: 2px solid var(--color1);
+    background-color: white;
+    margin-left: 30%;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
+    font-size: 10px;
+    margin-bottom: 1rem;
+}

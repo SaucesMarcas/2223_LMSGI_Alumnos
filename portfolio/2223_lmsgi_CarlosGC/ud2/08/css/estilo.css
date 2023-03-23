@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap%27');
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: black;
+}
+
+.logo-1 {
+    font-size: 50px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.logo-2 {
+    margin-left: 100px;
+    font-size: 50px;
+    font-family: 'Rubik Glitch', cursive;
+}
+
+.logo-3 {
+    margin-left: 100px;
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.logo-4 {
+    margin-left: 100px;
+    font-size: 50px;
+    font-family: 'Qwigley-Regular';
+}
+
+span {
+    color: grey;
+}
+
+.content {
+    width: 100%;
+    max-width: 640px;
+    padding-top: 25px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    border: 3px;
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+    border-left-style: dotted;
+    border-right-style: dotted;
+    border-top-color: red;
+    border-right-color: red;
+    border-bottom-color: green;
+    border-left-color: orangered;
+}
+
+div {
+    width: 30%;
+    max-width: 300px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px;
+    border-color: red;
+    border-style: solid;
+}
+
+div:nth-child(odd){
+    margin-left: 50%;
+}
+
+div:nth-child(even){
+    margin-left: 75px;
+    text-align: center;
+}
+
+div:nth-child(1) {
+    font-family: Verdana, sans-serif;
+    
+}
+
+div:nth-child(2) {
+    font-family: 'GFS Didot', serif;
+}
+
+div:nth-child(3) {
+    font-family: 'FreeMono', monospace;
+}
+
+div:nth-child(4) {
+    font-family: 'Roboto', sans-serif;
+}
+
+div:nth-child(5) {
+    font-family: 'Akronim', cursive;
+}
+
+div:nth-child(6) {
+    font-family: 'Montserrat', sans-serif;
+}
