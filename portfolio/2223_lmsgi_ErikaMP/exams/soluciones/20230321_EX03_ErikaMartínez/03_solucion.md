@@ -1,0 +1,15 @@
+1. Listad los autores de los libros en inglés y el nombre del autor empiece por la letra P.
+
+    `//libro[titulo[@leng="en"]]/autor[starts-with(.,"P")]/text()`
+
+2. Titulo de los libros comprados y pendientes de recibir.
+
+    `//libro[@codigo=//comprados/codigo/text()]|//libro[@codigo=//pedientes/codigo/text()]/titulo/text()`
+
+3. Titulo de los libros cuyo precio es mayor que el último libro.
+
+    `//libro[precio>//libro[last()]/precio/text()]/titulo/text()`
+
+4. Titulo de los libros con más de un autor
+
+    `//libro[count(./autor)>1]/titulo/text()`
