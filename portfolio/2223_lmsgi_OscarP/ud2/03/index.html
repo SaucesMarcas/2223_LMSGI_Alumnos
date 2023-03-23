@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!--
+	Descripcion: Unidad 02 - Ejercicio 03
+	Autor: Oscar Pascual
+	Fecha creacion/modificacion: 25/10/2022
+-->
+<html lang="es">
+	<head>	
+		<meta charset="UTF-8">
+		<meta name="author" content="Oscar Pascual Ferrero">
+		<link rel="icon" type="images/favicon.ico" sizes="32x32" href="images/favicon.ico">
+		<meta name="description" content="Formulario fuera de fecha">
+		<meta name="keywords" content="formulario, gpus">
+		<meta name="generator" content="Notepad++">
+		<meta name="generator" content="60">
+			<title>HTML 03 Oscar Pascual Ferrero</title>
+	</head>
+	<body>
+		<header><h1>Plantilla de formulario de tarjetas graficas</h1></header>
+		<main>
+			<form method="post" action="#alta.php">
+				<fieldset>
+				<legend>GPUs en tu vida</legend>
+					<div>
+						<label for="idTexto">Redacta un pequeño resumen contando tu experiencia con GPUs</label>*
+						<textarea id="idTexto" name="texto" rows="3" cols="50" placeholder="Vuelca aqui tus pensamientos" required></textarea>						
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Constructores</legend>
+					<div>
+						<label>Indica la marca de tu primera GPU:</label>
+					</div>
+					<div>
+						<input checked type="radio" id="ati" name="constructores" value="ati">
+						<label for="ati"> ATI</label>				
+					</div>
+					<div>
+						<input type="radio" id="nvidia" name="constructores" value="nvidia">
+						<label for="nvidia"> Nvidia</label>
+					</div>
+					<div>
+						<input type="radio" id="amd" name="constructores" value="amd">
+						<label for="amd"> AMD</label>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Edad a la que compraste tu primera GPU</legend>
+					<div>
+						<label for="idMenosDeDiez"><input type="checkbox" name="menosdediez" id="idMenosDeDiez" value="menosdediez">Menos de diez</label>		
+					</div>
+					<div>
+						<label for="idEntreDiezYVeinte"><input type="checkbox" name="entrediezyveinte" id="idEntreDiezYVeinte" value="entrediezyveinte">Entre diez y veinte</label>	
+					</div>
+					<div>
+						<label for="idMasDeVeinte"><input type="checkbox" name="masdeveinte" id="idMasDeVeinte" value="masdeveinte">Mas de veinte</label>
+					</div>
+				</fieldset>
+				<fieldset>
+				<legend>E-Mail</legend>
+					<div>
+						<label for="idMail">Correo electronico personal</label>*
+						<input type="email" name="email" id="idMail" maxlength="40" placeholder="xxxxxxxx@xxxxxxxx.xxx" required>						
+					</div>
+				</fieldset>				
+				<fieldset>
+				<legend>Telefono</legend>
+					<div>
+						<label for="idTel">Telefono Contacto 1</label>*
+						<input type="tel" name="telefono1" id="idTel" pattern="\(\+[0-9]{2}\) [0-9]{3} [0-9]{2} [0-9]{2} [0-9]{2}"
+						title="Un numero telefono valido consiste en tres digitos entre parentesis con el codigo 
+						de area	un espacio, tres digitos numericos, un espacio o un -, y cuatro digitos numericos"
+						placeholder="980 63 47 09"  required>						
+					</div>
+				</fieldset>
+				<fieldset>
+				<legend>Fecha</legend>
+					<div>
+						<label for="idFecha">Fecha de compra de la primera GPU
+							<input type="date" name="fecha" min="1991-01-01" max="2022-01-01" value="2000-01-01" id="idFecha">
+						</label>
+					</div>
+				</fieldset>
+				<fieldset>
+				<legend>Hora</legend>
+					<div>
+						<label for="idHora">Hora a la que te levantas para usar tu equipo (06:00 a 22:00)</label>
+							<input type="time" name="hora" min="06:00" value="09:00" max="22:00" id="idHora">
+					</div>
+				</fieldset>
+				<fieldset>
+				<legend>Semana</legend>
+					<div>
+						<label for="idSemana">Indica una semana</label>
+							<input type="week" value="2022-W12" min="2018-W18" max="2023-W26" name="semana" id="idSemana">
+					</div>
+				</fieldset>
+				<fieldset>
+				<legend>Mes</legend>
+					<div>
+						<label for="idMes">Mes preferido para comprar GPUs
+						<input type="month" name="mes" id="idMes">
+						</label>
+					</div>
+				</fieldset>				
+				<fieldset>
+				<legend>Contentometro</legend>
+					<div>
+						<label for="idContento">Indica lo contento que te pone tener tu GPU</label>
+						<div>
+							Poco<input type="range" name="contento" min="0" max="100" value="50" id="idContento" step="5"
+							list="lista">Mucho
+							<datalist id="lista">
+								<option value="0" label="0">
+								<option value="25" label="25">
+								<option value="50" label="50">
+								<option value="75" label="75">
+								<option value="100" label="100">
+							</datalist>
+						</div>			
+					</div>
+				</fieldset>
+				<fieldset>
+				<legend>Modelos GPUs</legend>
+					<div>
+						<label for="idRtx">Modelos RTX</label>
+						<select id="idRtx">
+							<option value="rtx2060">RTX 2060</option>
+							<option value="rtx2070">RTX 2070</option>
+							<option value="rtx2080">RTX 2080</option>
+							<option value="rtx3060">RTX 3060</option>
+							<option value="rtx3070">RTX 3070</option>
+							<option value="rtx3080" selected>RTX 3080</option>
+							<option value="rtx3090">RTX 3090</option>
+						</select>						
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>La imagen en cuestion</legend>
+					<div>
+						<input type="image" src="images/nvidia.jpg" alt="Logo de Nvidia" width="70" height="50">
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Color falvhorito</legend>
+					<div>
+						<input type="color" value="#C71F1F">
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Barra de busqueda</legend>
+					<div>
+						<input type="search" id="idBusqueda" name="busqueda">
+						<input type="button" value="Buscar">
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Acceso a la web de Nvidia</legend>
+					<div>
+						<a href="http://www.nvidia.com/es-es">Clicka para acceder</a>
+						<input type="hidden" name="webe">
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Introduce tu contraseña</legend>
+					<div>
+						<label for="idPass">Contraseña</label>
+						<input type="password" id="idPass" name="pass">
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Cuantas GPUs has tenido en tu vida</legend>
+					<div>
+						<label for="idCantidad">Cuantas:</label>
+						<input type="number" id="idCantidad" name="cantidad" min="1" max="50">
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Carga el manual de tu GPU</legend>
+					<div>
+						<label style="color:red;" for="idManual">Selecciona tu archivo:</label>
+						<input type="file" id="idManual" name="manual">
+					</div>
+				</fieldset>
+				<input type="submit" value="Enviar">
+				<input type="reset">
+				
+				<br>
+				<fieldset>
+					<legend>Botón con imagen</legend>
+						<input type="image" src="images/button.png" alt="Submit" height="40" width="40">
+				</fieldset>
+				
+			</form>
+		</main>		
+		<footer>
+			<address>“2022-2023 Todos los derechos reservados. Oscar Pascual Ferrero. Optimizado para Chrome”</address>
+		</footer>		
+	</body>
+</html>

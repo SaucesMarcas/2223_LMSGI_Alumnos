@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE historia SYSTEM "03.dtd">
+
+<historia xmlns:xsi="http://www.w3.org/2001/XMLSchema" xsi:noNamesespaceSchemaLocation="03.xsd"> 
+    <fila>
+        <descripcion>El dia que naci</descripcion>
+        <fecha>
+            <anyo>1991</anyo>
+            <mes>04</mes>
+            <dia>10</dia>
+        </fecha>
+    </fila>
+    <fila>
+        <descripcion>El dia que nacio Carlos</descripcion>
+        <fecha>
+            <anyo>2000</anyo>
+            <mes>09</mes>
+            <dia>08</dia>
+        </fecha>
+    </fila>
+</historia>
