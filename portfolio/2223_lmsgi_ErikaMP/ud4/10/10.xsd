@@ -42,7 +42,6 @@
                 <xs:element name="bebida" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>

@@ -20,25 +20,18 @@
                                 </xs:simpleType>
                             </xs:element>
                             <xs:element name="fabricante">
-
                             </xs:element>
                             <xs:element name="procesador">
-
                             </xs:element>
                             <xs:element name="ram">
-
                             </xs:element>
                             <xs:element name="discos">
-
                             </xs:element>
                             <xs:element name="pantalla">
-
                             </xs:element>
                             <xs:element name="grafica">
-                                
                             </xs:element>
                             <xs:element name="fotos">
-
                             </xs:element>
                         </xs:sequence>
                     </xs:complexType>
