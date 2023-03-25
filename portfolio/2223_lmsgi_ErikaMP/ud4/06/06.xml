@@ -6,7 +6,7 @@
     Descripción: Crea un documento XML que almacene varios ejemplos de código (HTML, JAVA, PHP,..)
 -->
 <!DOCTYPE codigos SYSTEM "06.dtd">
-<codigos>
+<codigos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="06.xsd">
     <codigo>
         <title>java</title>
         <ejemplo>

@@ -14,3 +14,7 @@ h1 {
 footer {
     text-align: center;
 }
+section {
+    padding-left: 5%;
+    display: inline-flexbox;
+}
