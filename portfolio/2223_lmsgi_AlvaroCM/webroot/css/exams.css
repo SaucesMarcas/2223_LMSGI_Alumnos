@@ -203,3 +203,13 @@ button a {
     ),
     url("/public/images/altumcode-dMUt0X3f59Q-unsplash.jpg");
 }
+
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  text-align: center;
+  padding: 10px;
+}
