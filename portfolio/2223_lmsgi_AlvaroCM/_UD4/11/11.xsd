@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!-- Declaracion de tipos-->
+    <xs:simpleType name="tipoFabricante">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="HP"/>
+            <xs:enumeration value="LENOVO"/>
+            <xs:enumeration value="MSI"/>
+            <xs:enumeration value="APPLE"/>
+            <xs:enumeration value="ASUS"/>
+            <xs:enumeration value="DELL"/>
+            <xs:enumeration value="DESCONOCIDO"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipoTamanyos">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Mb"/>
+            <xs:enumeration value="Gb"/>
+            <xs:enumeration value="Tb"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tamanyoPantalla">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="pulgadas"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipoNombre">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="20"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipoNumProcesadores">
+        <xs:restriction base="xs:integer">
+            <xs:minExclusive value="1"/>
+            <xs:maxExclusive value="20"/>
+        </xs:restriction>
+    </xs:simpleType>
+      <!-- Declaracion de elementos-->
+    <xs:element name="catalogo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="portatil" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="referencia" type="xs:string"/>
+                            <xs:element name="nombre" type="tipoNombre" />
+                            <xs:element name="fabricante">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="nombre" type="tipoFabricante"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="procesador">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string" />
+                                        <xs:element name="cache">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:int">
+                                                        <xs:attribute name="tamanyo"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="numeroProcesadores" type="tipoNumProcesadores" />
+                                        <xs:element name="velocidad">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:float">
+                                                        <xs:attribute name="medida" type="xs:string" fixed="Ghz"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="ram">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="memoria">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:float">
+                                                        <xs:attribute name="unidadMedida" type="tipoTamanyos"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="tipo" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="disco">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="tipo" type="xs:string" />
+                                        <xs:element name="capacidad">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="unidadMedidaDisco" type="tipoTamanyos"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="pantalla">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="dimension">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:float">
+                                                        <xs:attribute name="tamanyoPantalla" type="tamanyoPantalla"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="resolucion" type="xs:string" />
+                                        <xs:element name="resolucionMaxima" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="grafica" type="xs:string" />
+                            <xs:element name="fotos">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombreArchivo" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

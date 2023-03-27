@@ -1,0 +1,24 @@
+<!ELEMENT curriculum (nombre,apellidos,residencia,contacto)>
+<!ELEMENT residencia (ciudad,pais)>
+<!ELEMENT contacto (telefono,correo,linkedin,descripcion?,competencias?,formacion?,experiencia*)>
+<!ELEMENT competencias (competencia+)>
+<!ELEMENT formacion (titulacion+)>
+<!ELEMENT experiencia (puesto,empresa,anyoInicio,anyoFinal)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT correo (#PCDATA)>
+<!ELEMENT linkedin (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT competencia (#PCDATA)>
+<!ELEMENT titulacion (#PCDATA)>
+<!ELEMENT puesto (#PCDATA)>
+<!ELEMENT empresa (#PCDATA)>
+<!ELEMENT anyoInicio (#PCDATA)>
+<!ELEMENT anyoFinal (#PCDATA)>
+<!-- ATRIBUTOS-->
+<!ATTLIST competencia nivel (alto|bajo|medio) #REQUIRED>
+<!ATTLIST titulacion anyo  NMTOKEN #REQUIRED
+                     centro NMTOKENS #REQUIRED>
