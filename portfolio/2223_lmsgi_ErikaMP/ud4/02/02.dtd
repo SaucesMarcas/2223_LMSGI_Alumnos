@@ -1,0 +1,11 @@
+<!-- 
+    Autor: Erika Martínez Pérez
+    Práctica: Actividad 2
+    Descripción: Conversión del ejercicio 02 a DTD
+-->
+<!ELEMENT mundo (continente+)>
+<!ELEMENT continente (nombre,pais)>
+<!ELEMENT pais (nombre,capital)>
+<!ELEMENT capital (nombre)>
+
+<!ELEMENT nombre (#PCDATA)>

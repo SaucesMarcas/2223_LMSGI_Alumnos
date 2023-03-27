@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="curriculum">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nomb" type="xs:string"/>
+        <xs:element name="apell1" type="xs:string"/>
+        <xs:element name="apell2" type="xs:string"/>
+        <xs:element name="residencia">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ciudad" type="xs:string"/>
+              <xs:element name="pais" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="datoscontacto">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="tlf" type="xs:string"/>
+              <xs:element name="email" type="xs:string"/>
+              <xs:element name="linkedin" type="xs:string"/>
+              <xs:element name="descripcion" type="xs:string"/>
+              <xs:element name="competencias">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="competencia" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="nivel" type="xs:string" use="required"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="formacion">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="titulacion" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="anyo" type="xs:string" use="required"/>
+                            <xs:attribute name="centro" type="xs:string" use="required"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="experiencia">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="empresa" type="xs:string"/>
+                    <xs:element name="puesto" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

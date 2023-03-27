@@ -1,0 +1,10 @@
+<!-- 
+    Autor: Erika Martínez Pérez
+    Práctica: Actividad 6
+    Descripción: Conversión del ejercicio 06 a DTD
+-->
+<!ELEMENT codigos (codigo+)>
+<!ELEMENT codigo (title,ejemplo)>
+
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT ejemplo (#PCDATA)>

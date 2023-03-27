@@ -1,0 +1,29 @@
+<!-- 
+    Autor: Erika Martínez Pérez
+    Práctica: Actividad 4
+    Descripción: Conversión del ejercicio 04 a DTD
+-->
+<!ELEMENT curriculum (nomb,apell1,apell2,residencia,datoscontacto)>
+<!ELEMENT residencia (ciudad,pais)>
+<!ELEMENT datoscontacto (tlf,email,linkedin?,descripcion?,competencias?,formacion?,experiencia*)>
+<!ELEMENT competencias (competencia+)>
+<!ELEMENT formacion (titulacion+)>
+<!ELEMENT experiencia (empresa,puesto)>
+
+<!ELEMENT nomb (#PCDATA)>
+<!ELEMENT apell1 (#PCDATA)>
+<!ELEMENT apell2 (#PCDATA)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT tlf (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT linkedin (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT competencia (#PCDATA)>
+<!ELEMENT titulacion (#PCDATA)>
+<!ELEMENT empresa (#PCDATA)>
+<!ELEMENT puesto (#PCDATA)>
+
+<!ATTLIST competencia nivel (alto|medio|bajo) #REQUIRED>
+<!ATTLIST titulacion anyo NMTOKEN #REQUIRED
+                     centro NMTOKENS #REQUIRED>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Autor: Erika Martínez Pérez
+    Práctica: Actividad 7
+    Descripción: Tenemos que almacenar información sobre un grupo de estudiantes, por cada estudiante almaceno la siguiente 
+                información: nombre del estudiante y el código del estudiante. Además, cada estudiante puede tener cero, uno o dos tutores, 
+                que a la vez son estudiantes.
+-->
+<!DOCTYPE grupo SYSTEM "07.dtd">
+<grupo>
+    <estudiante tutor="1A">
+        <nombre codigo="01">Hugo</nombre>
+    </estudiante>
+    <estudiante tutor="2B">
+        <nombre codigo="02">Lara</nombre>
+    </estudiante>
+    <estudiante tutor="3C">
+        <nombre codigo="03">María</nombre>
+    </estudiante>
+</grupo>
