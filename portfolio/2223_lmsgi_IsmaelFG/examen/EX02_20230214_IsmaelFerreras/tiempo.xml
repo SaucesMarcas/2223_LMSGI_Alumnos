@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tiempo>
+    <provincia nombre="zamora">
+        <localidad nombre="benavente">
+            <dia fecha="2022/12/10">
+                <probabilidad medida="%">5</probabilidad>
+                <estadoCielo>Nubes</estadoCielo>
+                <temperatura>
+                    <maxima>36</maxima>
+                    <minima>12</minima>
+                </temperatura>
+                <viento >
+                    <direccion>N</direccion>
+                    <velocidad unidadMedida="km/h">0</velocidad>
+                </viento>
+            </dia>
+            <dia fecha="2022/12/11">
+                <probabilidad medida="%">0</probabilidad>
+                <estadoCielo>Despejado</estadoCielo>
+                <temperatura>
+                    <maxima>13</maxima>
+                    <minima>26</minima>
+                </temperatura>
+                <viento >
+                    <direccion>NE</direccion>
+                    <velocidad unidadMedida="km/h">5</velocidad>
+                </viento>
+            </dia>
+            <dia fecha="2022/12/15">
+                <probabilidad medida="%">10</probabilidad>
+                <estadoCielo>Cubierto con lluvia escasa</estadoCielo>
+                <temperatura>
+                    <maxima>14</maxima>
+                    <minima>28</minima>
+                </temperatura>
+                <viento >
+                    <direccion>N</direccion>
+                    <velocidad unidadMedida="km/h">20</velocidad>
+                </viento>
+            </dia>
+        </localidad>
+    </provincia>
+</tiempo>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+	Descripción: caras dados
+	Autor: Ismael Ferreras García
+	Fecha creación/modificación: 14/11/2022
+    Navegador:Edge
+-->
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="imagen/favicon" href="imagen/favicon.ico">
+    <title>HTML 06 Ismael Ferreras Garcia</title>
+    <style>
+        div {
+            width: 250px;
+            height: 250px;
+            border: 9px solid black;
+            display: inline-block;
+            margin: 15px;
+
+        }
+
+        div:nth-child(2) {
+            background-image: url(imagen/punto.png);
+            background-size: 30px;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+
+        div:nth-child(3) {
+            background-image: url(imagen/punto.png), url(imagen/punto.png);
+            background-size: 30px;
+            background-position: 15% 15%, 85% 85%;
+            background-repeat: no-repeat;
+        }
+
+        div:nth-child(4) {
+            background-image: url(imagen/punto.png), url(imagen/punto.png), url(imagen/punto.png);
+            background-size: 30px;
+            background-position: 15% 15%, center center, 85% 85%;
+            background-repeat: no-repeat;
+        }
+
+        div:nth-child(5) {
+            background-image: url(imagen/punto.png), url(imagen/punto.png), url(imagen/punto.png), url(imagen/punto.png);
+            background-size: 30px;
+            background-position: 15% 15%, 85% 15%, 15% 85%, 85% 85%;
+            background-repeat: no-repeat;
+        }
+
+        div:nth-child(6) {
+            background-image: url(imagen/punto.png), url(imagen/punto.png), url(imagen/punto.png), url(imagen/punto.png), url(imagen/punto.png);
+            background-size: 30px;
+            background-position: 15% 15%, 85% 15%, 15% 85%, 85% 85%, center center;
+            background-repeat: no-repeat;
+        }
+
+        div:nth-child(7) {
+            background-image: url(imagen/punto.png), url(imagen/punto.png), url(imagen/punto.png), url(imagen/punto.png), url(imagen/punto.png), url(imagen/punto.png);
+            background-size: 30px;
+            background-position: 15% 15%, 85% 15%, 15% 85%, 85% 85%, 15% 50%, 85% 50%;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <header><h1>CARAS DE UN DADO</h1></header>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <footer><address>2022-2023 IES LOS SAUCES. Todos los derechos reservados. Ismael Ferreras Garcia</address></footer>
+</body>
+
+</html>

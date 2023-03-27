@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+	<head>
+		<title>
+			Feeder - RSS Feed Reader
+		</title>
+	</head>
+	<body>
+		<outline text="IFG-LMSGI" title="IFG-LMSGI" type="rss" xmlUrl="http://192.168.2.112/ud3/02/02.xml" htmlUrl="https://192.168.2.112" rssfr-favicon="https://icons.feedercdn.com/" />
+		<outline text="IFG-El país" title="IFG-El país" type="rss" xmlUrl="http://192.168.2.112/ud3/01/01.xml" htmlUrl="https://elpais.es" rssfr-favicon="https://icons.feedercdn.com/" />
+	</body>
+</opml>
