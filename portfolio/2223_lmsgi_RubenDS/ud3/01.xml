@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Ruben-EL PAIS</title>
+        <link>https://elpais.com</link>
+        <description></description>
+        <lastBuildDate>Mon, 16 Jan 2023 17:20:10 GMT</lastBuildDate>
+        <item>
+            <guid>https://elpais.com/economia/estar-donde-estes/2023-01-16/todo-lo-que-hace-falta-saber-de-cada-red-social-para-triunfar.html</guid>
+            <title>Todo lo que hace falta saber de cada red social para triunfar</title>
+            <link>https://elpais.com/economia/estar-donde-estes/2023-01-16/todo-lo-que-hace-falta-saber-de-cada-red-social-para-triunfar.html</link>
+            <description>Las plataformas más populares, como Instagram y Facebook, suman a sus servicios nuevos espacios para que las pymes muestren y vendan sus productos</description>
+            <pubDate>Mon, 16 Jan 2023 10:45:00 GMT</pubDate>
+            <category>España</category>
+            
+        </item>
+        <item>
+            <guid>https://elpais.com/cultura/2023-01-10/el-gobierno-estrena-la-anhelada-prestacion-por-desempleo-adaptada-a-la-intermitencia-del-trabajo-cultural.html</guid>
+            <title>El Gobierno estrena la anhelada prestación por desempleo adaptada a la intermitencia del trabajo cultural</title>
+            <link>https://elpais.com/cultura/2023-01-10/el-gobierno-estrena-la-anhelada-prestacion-por-desempleo-adaptada-a-la-intermitencia-del-trabajo-cultural.html</link>
+            <description>El Consejo de Ministros prevé aprobar hoy un real decreto que rebaja a la mitad los requisitos de días cotizados para que artistas y técnicos puedan acceder al subsidio y permite compatibilizar pensión de jubilación y actividad creativa</description>
+            <pubDate>Mon, 16 Jan 2023 10:50:05 GMT</pubDate>
+            <category>España</category>
+            
+        </item>
+        <item>
+            <guid>https://elpais.com/economia/2023-01-16/los-mas-ricos-aumentan-su-fortuna-en-2500-millones-al-dia.html</guid>
+            <title>Los más ricos aumentan su fortuna en 2.500 millones al día</title>
+            <link>https://elpais.com/economia/2023-01-16/los-mas-ricos-aumentan-su-fortuna-en-2500-millones-al-dia.html</link>
+            <description>Oxfam Intermón publica un informe con ocasión del inicio del Foro de Davos en el que denuncia un fuerte aumento de la desigualdad mundial</description>
+            <pubDate>Mon, 16 Jan 2023 19:02:20 GMT</pubDate>
+            <category>España</category>
+            
+        </item>
+    </channel>
+</rss>

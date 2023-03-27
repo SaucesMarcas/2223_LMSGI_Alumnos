@@ -1,0 +1,30 @@
+:root {
+    --colorFondo: #e0e1eb;
+    --color: #31334d;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+body {
+    background-color: var(--colorFondo);
+}
+nav {
+    position: fixed;
+    top: 0rem;
+    right: 0rem;
+}
+figcaption {
+    font-size: 25px;
+    font-style: oblique;
+}
+img {
+    border: 3px solid black;
+    padding: 3px;
+}
+address {
+    position: fixed;
+    left: 38.5%;
+    bottom: 0.2%;
+}

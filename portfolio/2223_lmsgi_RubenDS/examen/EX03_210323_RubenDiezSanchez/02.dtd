@@ -1,0 +1,14 @@
+<!ELEMENT inventario (objeto+)>
+<!ELEMENT objeto (mesa,ordenador,procesador)>
+<!ELEMENT objeto (#PCDATA)>
+<!ELEMENT mesa (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT localizacion (#PCDATA)>
+<!ELEMENT ordenador (#PCDATA)>
+<!ELEMENT procesador (#PCDATA)>
+<!ELEMENT memoria (#PCDATA)>
+<!ELEMENT discoduro (#PCDATA)>
+<!ATTLIST objeto codigo ID #REQUIRED>
+<!ATTLIST procesador fabricante ID #REQUIRED>
+<!ATTLIST memoria unidad ID #REQUIRED>
+<!ATTLIST discoduro tamano CDATA #REQUIRED>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Descripción: Unidad04-Actividad 04
+	Autor: ruben diez sanchez
+	Fecha creación/modificación: 17/01/2023
+-->
+<curriculum>
+    <nombre>Ruben</nombre>
+    <apellidos>Diez Sanchez</apellidos>
+    <residencia>
+        <ciudad>Barcelona</ciudad>
+        <pais>España</pais>
+    </residencia>
+    <contacto>
+        <telefono>654456789</telefono>
+        <correo>ruben@gmail.com</correo>
+        <linkedin>https://linkedin.com/ruben157</linkedin>
+        <descripcion>Descripcion sobre el curriculum</descripcion>
+        <competencias>
+            <competencia nivel="alto">
+                Redes Sociales
+            </competencia>
+            <competencia nivel="bajo">
+                Bases de datos
+            </competencia>
+            <competencia nivel="medio">
+                Entornos de Desarrollo
+            </competencia>
+        </competencias>
+        <formacion>
+            <titulacion anyo="2022" centro="IES LOS SAUCES">Educacion Secundaria</titulacion>
+            <titulacion anyo="2002" centro="IES LOS SAUCES">Sistemas Microinformaticos Y Redes</titulacion>
+        </formacion>
+        <experiencia>
+            <puesto>Puesto de trabajo</puesto>
+            <empresa>Empresa1</empresa>
+            <anyoInicio>2002</anyoInicio>
+            <anyoFinal>2022</anyoFinal>
+        </experiencia>
+        <experiencia>
+            <puesto>Puesto de trabajo 2</puesto>
+            <empresa>Empresa2</empresa>
+            <anyoInicio>2022</anyoInicio>
+        </experiencia>
+    </contacto>
+</curriculum>

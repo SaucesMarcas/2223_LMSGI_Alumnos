@@ -1,0 +1,143 @@
+body{
+    width: 1024px;
+    margin: 0 auto;
+	background-color: #808080;
+}
+article{
+    padding: 10px;
+    margin-bottom: 1em;
+}
+
+section{
+    color: white;
+}
+ul{
+    padding-left: 15px;
+}
+li{
+    display: inline;
+    text-align: center;
+    margin: 5px 10px 0 0; 
+}
+img{
+	display:block;
+	margin:auto;
+}
+header{
+	text-align: justify;
+}
+table {
+	border-collapse:collapse;
+	width:100%;
+	text-align:center;
+	}
+th,td {
+	border: 1px solid black;
+	}
+#encabezado{
+    background-color: #008000;
+    color: white;
+    font-size: 10px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    padding-top: 2px;
+}
+#encabezado1{
+    color: black;
+}
+#navegacion{
+    background-color: #008000;
+    padding: 5px 0 5px 0;
+}
+#navegacion a{
+    list-style-type: none;
+    text-decoration: none;
+    display: inline;
+    color: white;
+    font-size: 25px;
+}
+.hora{
+    background-color: GrayText;
+}
+#id_lmsgi{background-color: #FFD700;}
+#id_prog{background-color: #FF8C00;}
+#id_bbdd{background-color: #E9967A;}
+#id_edd{background-color: #ADFF2F;}
+#id_si{background-color: #DAA520;}
+#id_fol{background-color: #6D6D6D;}
+
+#id_lmsgi{
+    background-color: #FFD700;
+}
+.leng2{
+    background-color: #e8c722;
+}
+#id_bbdd{
+    background-color: #E9967A;
+}
+.base2{
+    background-color: #FA8072;
+}
+#id_edd{
+    background-color: #ADFF2F;
+}
+.ent2{
+    background-color: #9add2e;
+}
+#id_prog{
+    background-color: #FF8C00;
+}
+.progr2{
+    background-color: #e0841a;
+}
+#id_si{
+    background-color: #DAA520;
+}
+.sist2{
+    background-color: #f2ae10;
+}
+#fol{
+    background-color: #6D6D6D;
+}
+.fol2{
+    background-color: #5b5656;
+}
+#tabla2{
+    background-color: #87CEFA;
+	border-collapse:collapse;
+}
+#tabla3{
+    background-color: #87CEFA;
+	border-collapse:collapse;
+    font-size: 14px;
+}
+table { 
+    text-align: center;
+    width: 70%;
+    margin: 1em auto;
+    color: white;
+    border: 1px dotted;
+    table-layout: fixed;
+    empty-cells: hide;
+    border-collapse: collapse;
+    border-spacing: 5px;
+} 
+th, td { 
+    border: 1px dotted white;
+}
+address {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    background-color: #008000;
+    padding: 5px 0 5px 0;
+    color: white;
+    font-size: 20px;
+}
+.caption{
+    color:black;
+}
+footer{
+    font-style: italic;
+}
+
