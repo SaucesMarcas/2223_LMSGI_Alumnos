@@ -1,0 +1,93 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+ol{
+	list-style: none;
+}
+html{
+	font-family: sans-serif;
+	margin-bottom: 5rem;
+}
+nav{
+	text-align: center;
+	font-size: 2rem;
+	list-style: none;
+}
+li{
+	display: inline-block;
+	margin-left: 2rem;
+}
+li:hover{
+	text-decoration: underline;
+}
+body{
+	width: 1024px;
+	margin: 0 auto;
+	background-color: turquoise;
+}
+h1{
+	text-align: center;
+	letter-spacing: 7rem;
+	text-transform: uppercase;
+	font-size: 3rem;
+	color: #005A66; 
+	padding-top: 1rem ;
+}
+section{
+	width: 16rem;
+	border: 5px dotted #005A66;
+	background-color: #00B4CC;
+	margin: 1rem;
+	padding: 1rem;
+	float: left;
+}
+h2{
+	text-align: center;
+	font-size: 2rem;
+	font-style: italic;
+}
+h3{
+	font-size: 1rem;
+}
+h4{
+	font-size: 0.75rem;
+	font-style: italic;
+}
+blockquote{
+	font-size: 1rem;
+	text-align: justify;
+	color: black;
+	float: left;
+}
+blockquote:first-letter{
+	font-size: 4rem;
+	color: #005A66;
+	float: left;
+	line-height: 3.3rem;
+}
+figure{
+	text-align: center;
+}
+figure figcaption{
+	font-size: 0.5rem;
+	font-style: italic;
+}
+hr{
+	border: 1px solid black;
+}
+footer{
+	text-align: center;
+	padding: 0.5rem;
+	width: 100%;
+	background-color: white;
+	color: #005A66;
+	clear: both;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}

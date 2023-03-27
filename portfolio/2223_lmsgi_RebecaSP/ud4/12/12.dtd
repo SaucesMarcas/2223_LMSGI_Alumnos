@@ -1,0 +1,35 @@
+<!ELEMENT musica (artista+)>
+<!ELEMENT artista (nombreArtista,numeroOyentes,info,activo,disco+)>
+<!ELEMENT disco (nombreDisco,fechaLanzamiento,duracionTotal,discografica,canciones)>
+<!ELEMENT canciones (cancion+)>
+<!ELEMENT cancion (nombreCancion,duracion,numeroReproducciones,idioma,letra?,colaboraciones?)>
+<!ELEMENT idioma (extranjero?|nacional?)>
+<!ELEMENT colaboraciones (colaborador+)>
+<!ELEMENT nombreArtista (#PCDATA)>
+<!ELEMENT numeroOyentes (#PCDATA)>
+<!ELEMENT info (#PCDATA)>
+<!ELEMENT activo EMPTY>
+<!ELEMENT nombreDisco (#PCDATA)>
+<!ELEMENT fechaLanzamiento (#PCDATA)>
+<!ELEMENT duracionTotal (#PCDATA)>
+<!ELEMENT discografica (#PCDATA)>
+<!ELEMENT nombreCancion (#PCDATA)>
+<!ELEMENT duracion (#PCDATA)>
+<!ELEMENT numeroReproducciones (#PCDATA)>
+<!ELEMENT extranjero EMPTY>
+<!ELEMENT nacional EMPTY>
+<!ELEMENT letra (#PCDATA)>
+<!ELEMENT colaborador (#PCDATA)>
+    <!ATTLIST artista genero (Pop|Rock|Alternative|Dance_Tecno) #REQUIRED>
+    <!ATTLIST activo opcion (true|false) #REQUIRED>
+    <!ATTLIST disco idDisco ID #REQUIRED>
+    <!ATTLIST disco tipoDisco (sencillo|album) #REQUIRED>
+    <!ATTLIST disco generoDisco (Pop|Rock|Alternative|Dance_Tecno) #REQUIRED>
+    <!ATTLIST duracionTotal unidad CDATA #FIXED "h" >
+    <!ATTLIST canciones numeroCanciones CDATA #REQUIRED>
+    <!ATTLIST cancion idCancion ID #REQUIRED>
+    <!ATTLIST duracion unidadMedida CDATA #FIXED "min">
+    <!ATTLIST extranjero valor (true|false) #REQUIRED>
+    <!ATTLIST nacional valor (true|false) #REQUIRED>
+    <!ATTLIST musica xmlns:xsi CDATA #IMPLIED
+                        xsi:noNamespaceSchemaLocation CDATA #IMPLIED>

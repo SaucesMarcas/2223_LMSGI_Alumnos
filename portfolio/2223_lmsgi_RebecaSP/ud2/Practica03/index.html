@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!--
+	Descripcion: Formulario, practica 03
+	Autor: Rebeca Sánchez Pérez
+	Fecha creacion/modificacion: 20/10/2022
+-->
+<html lang="es"> 
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Rebeca Sánchez Pérez">
+		<meta name="description" content="fomulario de la tematica cosplay con todas las posibles opciones que haya">
+		<meta name="Keywords" content="fomulario, cosplay, respuesta, opcion, registro, material, botones">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" type="image/png" href="images/favicon.png">
+		<title>HTML 03 Rebeca Sánchez Pérez</title>
+	</head>
+	<body>
+		<header>
+			<h1>PLANTILLA DE FORMULARIO DE COSPLAY</h1>
+		</header>
+		<main>
+			<form method="get" action="#alta.php" id="form">
+				<div>
+					<label for="idbuscador">Buscar en el sitio: </label>
+					<input type="search" id="idbuscador" name="buscador" placeholder="Inserte una busqueda..." size="60">
+					<button>Buscar</button>
+				</div>
+				<fieldset>
+					<legend><b>Inicio de Sesión</b></legend>
+					<input type="hidden" id="idimpostor" name="amongus" value="ඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞ">
+					<div>
+						<label for="idusuario">*Nombre de Usuario:</label>
+						<input type="text" id="idusuario" name="usuario" placeholder="example_123" pattern="[A-Za-z_0-9]{5,20}" size="20" required>
+					</div>
+					<div>
+						<label for="idPass">Contraseña:</label>
+						<input type="password" id="idPass" name="password" placeholder="Introduce tu contraseña">
+					</div>
+					<div>
+						<label for="idCorreo">Correo Electrónico:</label>
+						<input type="email" id="idCorreo" name="correo" maxlength="30" placeholder="example@gmail.com">
+					</div>
+					<div>
+						<label for="idtf">Télefono</label>
+						<input type="tel" id="idtf" name="tf" pattern="[0-9]{3} [0-9]{2} [0-9]{2} [0-9]{2}" placeholder="000 00 00 00">
+					</div>
+					
+				</fieldset>
+				<fieldset>
+					<legend><b>Información sobre cosplayer</b></legend>
+					<input type="hidden" id="idimpostor1" name="amongus1" value="ඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞ_AMOR_TE_QUIERO_MUCHO_♥♥♥_ඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞ">
+					<div>
+						<label for="idnumero">Numero de cosplays: </label>
+						<input type="number" id="idnumero" name="numero" placeholder="5" step="1">
+					</div>
+					<fieldset>
+						<legend>Opciones de cosplay</legend>
+						<div>
+							<label for="idanime">
+							<input checked type="checkbox" id="idanime" name="anime" value="anime">Anime</label>
+						</div>
+						<div>
+							<label for="idvideojuegos">
+							<input checked type="checkbox" id="idvideojuegos" name="videojuegos" value="videojuegos">Videojuegos</label>
+						</div>
+						<div>
+							<label for="idpeliculas">
+							<input type="checkbox" id="idpeliculas" name="peliculas" value="peliculas">Peliculas</label>
+						</div>
+						<div>
+							<label for="idseries">
+							<input type="checkbox" id="idseries" name="series" value="series">Series</label>
+						</div>
+						<div>
+							<label for="idotro">
+							<input type="checkbox" id="idotro" name="otro" value="otro">Otro</label>
+						</div>
+					</fieldset>
+					<div>
+						<label for="idmotivos">¿Que fue lo que te motivó para hacer cosplay?</label><br>
+						<textarea id="idmotivos" name="motivos" rows="6" cols="70" placeholder="El cosplay es una manera de expresarse, de sacar lo que tienes dentro y compartirlo con los demás. Puedes darle vida a tus personajes favoritos y compartir tu pasión por ellos con la gente que te rodea. Por un día puedes ser el héroe que salvó su ciudad, su planeta, o ser el villano que le puso las cosas difíciles."></textarea>
+					</div>
+					<div>
+						<label for="idlink">Link a tus redes sociales:</label>
+						<input type="url" id="idlink" name="link" placeholder="www.instagram.com">
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend><b>Cosplay</b></legend>
+					<div>
+						<label for="idtematica">Elige una tematica: </label>
+						<select id="idtematica" name="tematica" form="form">
+							<option value="anime" selected>Anime</option>
+							<option value="videojuegos">Videojuegos</option>
+							<option value="peliculas">Peliculas</option>
+							<option value="series">Series</option>
+							<option value="otro">Otro</option>
+						</select>
+					</div>
+					<fieldset>
+						<legend>Necesitas:</legend>
+						<div>
+							<label for="idpeluca">
+							<input type="checkbox" id="idpeluca" name="peluca" value="peluca">Peluca</label>
+						</div>
+						<div>
+							<label for="idtraje">
+							<input type="checkbox" id="idtraje" name="traje" value="traje">Traje</label>
+						</div>
+						<div>
+							<label for="idmateriales">
+							<input type="checkbox" id="idmateriales" name="materiales" value="materiales">Materiales</label>
+						</div>
+						<div>
+							<label for="idaccesorios">
+							<input type="checkbox" id="idaccesorios" name="accesorios" value="accesorios">Accesorios</label>
+						</div>
+						<div>
+							<label for="idlentillas">
+							<input type="checkbox" id="idlentillas" name="lentillas" value="lentillas">Lentillas</label>
+						</div>
+					</fieldset>
+					<div>
+						<label for="idcolor">Color de peluca: </label>
+						<input type="color" id="idcolor" name="color" value="#00D679">
+					</div>
+					<div>
+						<label for="idpresupesto">Presupuesto (0-100€)</label>
+						<input type="range" id="idpresupesto" name="presupesto" value="40" min="0" max="100" step="10" list="lstrango">
+						<datalist id="lstrango">
+							<option value="0" label="0">
+							<option value="10" label="10">
+							<option value="20" label="20">
+							<option value="30" label="30">
+							<option value="40" label="40">
+							<option value="50" label="50">
+							<option value="60" label="60">
+							<option value="70" label="70">
+							<option value="80" label="80">
+							<option value="90" label="90">
+							<option value="100" label="100">
+						</datalist>
+					</div>
+					<div>
+						<label for="idweek">Semana de comienzo: </label>
+						<input type="week" id="idweek" name="semana">
+					</div>
+					<div>
+						<label for="idmonth">Mes de finalizacion: </label>
+						<input type="month" id="idmonth" name="mes">
+					</div>
+					<div>
+						<label for="idfoto">Sube una foto de tu cosplay favorito: </label>
+						<input type="file" id="idfoto" name="foto" accept="image/png, image/jpeg">
+					</div>
+					<div>
+						<label for="idimage">Ejemplo de imagen: <br></label>
+						<input type="image" id="idimage" alt="foto" src="images/riven1.png" width="300">
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend><b>Convenciones y exposiciones</b></legend>
+					<div>
+						<label for="idnombreconven">Nombre de la proxima convencion:</label>
+						<input type="text" id="idnombreconven" name="nombreconven" placeholder="Market Freak Leon 2022">
+					</div>
+					<div>
+						<label for="idlugar">Lugar:</label>
+						<input type="text" id="idlugar" name="lugar" placeholder="Palacio de exposiciones">
+					</div>
+					<div>
+						<label for="idfecha">Fecha:</label>
+						<input type="date" id="idfecha" name="fecha" value="2022-12-04" min="1999-01-01">
+					</div>
+					<div>
+						<label for="idhora">Hora de entrada:</label>
+						<input type="time" id="idhora" name="hora" value="10:30" min="10:30" max="20:00">
+					</div>
+					<fieldset>
+						<legend>¿Acudiras a dicha convencion?</legend>
+						<div>
+							<label for="idsi"><input checked type="radio" name="opcion1" id="idsi" value="si">Si</label>
+						</div>
+						<div>
+							<label for="idno"><input type="radio" name="opcion1" id="idno" value="no">No</label>
+						</div>
+					</fieldset>
+					<fieldset>
+						<legend>¿Iras con un cosplay?</legend>
+						<div>
+							<label for="idsi1"><input checked type="radio" name="opcion2" id="idsi1" value="si">Si</label>
+						</div>
+						<div>
+							<label for="idno1"><input type="radio" name="opcion2" id="idno1" value="no">No</label>
+						</div>
+					</fieldset>
+				</fieldset>
+				<input type="submit" value="ENVIAR">
+				<input type="reset" value="RESTABLECER">
+			</form>
+		</main>
+		<footer>
+			<address>2022-23  IES LOS SAUCES. ©Todos los derechos reservados y optimizado para Chrome. Rebeca Sánchez Pérez</address>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE inventario SYSTEM "02.dtd">
+<inventario>
+    <objeto codigo="MM2809"> <!--codigo opcional tambien-->
+        <mesa> <!--o mesa u ordenador-->
+            <tipo>Oficina</tipo> <!--tipo opcional-->
+            <localizacion>B09</localizacion> <!--obligatorio-->
+        </mesa>
+    </objeto>
+    <objeto codigo="PC2807">
+        <ordenador> <!--los 2 primeros elementos son optativos-->
+            <procesador fabricante="Intel"> <!--fabricante opcional,, valores:  Intel o AMD, por defecto Intel-->
+                i3
+            </procesador>
+            <memoria unidad="Gb">2</memoria> <!--unidad obligatorio, valor fijo gb-->
+            <discoduro tamano="Gb ">520</discoduro> <!--tamano: Tb, Gb y Mb, siendo por defecto Gb-->
+        </ordenador>
+    </objeto>
+</inventario>

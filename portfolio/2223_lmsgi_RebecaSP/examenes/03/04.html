@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+	Descripcion: Formulario, pregunta 04
+	Autor: Rebeca Sánchez Pérez
+	Fecha creacion/modificacion: 21/03/2023
+-->
+<html lang="es"> 
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Rebeca Sánchez Pérez">
+		<meta name="description" content="fomulariodel examen">
+		<meta name="Keywords" content="fomulario">
+		<style>
+            header{
+                text-align: center;
+            }
+            form{
+                width: 50%;
+                margin: auto;
+            }
+            legend{
+                color: white;
+                background-color: rgb(190, 190, 190);
+            }
+            div{
+                padding-top: 10px;
+            }
+        </style>
+		<link rel="icon" type="image/png" href="images/favicon.png">
+		<title>HTML 03 Rebeca Sánchez Pérez</title>
+	</head>
+    <body>
+        <header>
+			<h1>FORMULARIO - PREGUNTA 4</h1>
+		</header>
+		<main>
+            <form method="get" action="#alta.php" id="form">
+                <fieldset>
+                    <legend>Datos Fiscales</legend>
+                    <div>
+                        <label for="idenparo"><input checked type="radio" name="opciondfiscales" id="idenparo" value="enparo">En paro</label>
+                    </div>
+                    <div>
+                        <label for="idautonomo"><input type="radio" name="opciondfiscales" id="idautonomo" value="autonomo">Autónomo</label>
+                    </div>
+                    <div>
+                        <label for="idajena"><input type="radio" name="opciondfiscales" id="idajena" value="ajena">Por c. ajena</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <div>
+						<label for="idnombre">Nombre:</label>
+						<input type="text" id="idnombre" name="nombre" placeholder="Amor">
+					</div>
+                    <div>
+						<label for="idapellido">Apellidos:</label>
+						<input type="text" id="idapellido" name="idapellido" placeholder="Sánchez">
+					</div>
+                    <div>
+						<label for="idsueldo">Sueldo: </label>
+						<select id="idsueldo" name="sueldo"> <!--no es necesario el form="form"-->
+							<option value=“Másde400” selected>Más de 400</option>
+							<option value=”Menosde400”>Menos de 400</option>
+							<option value=”Variables”>Variables</option>
+						</select>
+					</div>
+                    <div>
+                        <label for="idenfermedad">
+                        <input checked type="checkbox" id="idenfermedad" name="enfermedad" value="enfermedad">Con enfermedad profesional</label>
+                    </div>
+                    <div>
+                        <label for="idpadres">
+                        <input type="checkbox" id="idpadres" name="padres" value="padres">Con padres a cargo</label>
+                    </div>
+                    <div>
+                        <label for="idhijos">
+                        <input checked type="checkbox" id="idhijos" name="hijos" value="hijos">Con hijos a cargo</label>
+                    </div>
+                    <input type="submit" value="ENVIAR">
+                </fieldset>
+            </form>
+        </main>
+    </body>
+</html>

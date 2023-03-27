@@ -1,0 +1,121 @@
+/*GENERAL*/
+:root{
+	--colorFondo:#fff280;
+	--colorTituloSeccion:#ffc533;
+	--colorTituloArticle:#ff7740;
+	--colorFondoArticle:#ffeb33;
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box; /* contiene las cajas teniendo en cuenta padding y borde, es decir, da tamaño a la caja */
+}
+html{
+	margin-bottom: 3rem;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+ul, ol{
+	list-style: none;
+	padding-left: 0.5rem;
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
+}
+body{
+	background-color: var(--colorFondo);
+}
+/*TITULOS*/
+h1{
+	text-align: center;
+	font-style: oblique;
+	letter-spacing: 0.2rem;
+	font-size:3rem;
+}
+h3 *{
+	font-size: 1.2rem;
+	color: white;
+}
+h3:first-letter{
+	margin-left: 0.5rem;
+}
+h4{
+	margin-top: 0.5rem;
+	font-size: 0.7rem;
+	color: white;
+	line-height: 1rem;
+}
+/*MENU DE NAVEGACION*/
+li{
+	font-size: 1rem;
+	color: black;
+	display: inline-block;
+	margin-right: 1rem;
+}
+li:first-letter{
+	text-decoration: underline;
+	font-size: 1.5rem;
+}
+li:hover{
+	text-shadow: 0 0 5px #ff7740, 0 0 10px #ff7740, 0 0 15px #ff7740, 0 0 20px #ff7740, 0 0 30px #ff7740, 0 0 40px #ff7740, 0 0 55px #ff7740, 0 0 75px #ff7740;
+}
+/*SECCION Y TITULO DE LA SECCION*/
+section{
+	float: left;
+	width: 34rem;
+	border: 2px solid var(--colorTituloSeccion);
+	margin: 0.5rem;
+}
+section h2{
+	padding: 0.2rem;
+	padding-left: 0.5rem;
+	font-size: 2rem;
+	background-color: var(--colorTituloSeccion);
+}
+/*ARTICULOS*/
+article{
+	float: left;
+	width: 15rem;
+	background-color: var(--colorFondoArticle);
+	border: 2px solid var(--colorTituloArticle);
+	margin: 0.5rem;
+}
+article header{
+	padding: 0.5rem;
+	padding-bottom: 2rem;
+	color: white;
+	background-color: var(--colorTituloArticle);
+}
+article div{
+	padding: 0.5rem;
+	margin-top: 1rem;
+	font-size: 0.8rem;
+	color: black;
+	text-align: justify;
+}
+/*FOTO Y PIE DE FOTO*/
+figure{
+	text-align: center;
+}
+figure img{
+	border: 2px solid var(--colorTituloArticle);
+	background-color: white;
+	padding: 0.4rem;
+}
+figure figcaption{
+	text-transform: uppercase;
+	font-size: 0.5rem;
+	font-style: italic;
+}
+/*FOOTER DE LA PAGINA*/
+footer{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	padding: 0.5rem 0;
+	background-color: white;
+}
