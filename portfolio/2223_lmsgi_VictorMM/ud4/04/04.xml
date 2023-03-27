@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE curriculum SYSTEM "04.dtd">
+<curriculum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="04.xsd">
+    <nombre>Victor Manuel</nombre>
+    <apellidos>Manrique Villarino</apellidos>
+    <residencia>
+        <ciudad>Benavente</ciudad>
+        <pais>España</pais>
+    </residencia>
+    <contacto>
+        <telefono>633979891</telefono>
+        <correo>victor@gmail.com</correo>
+        <linkedin>https://linkedin.com/victor</linkedin>
+        <descripcion>curriculum</descripcion>
+        <competencias>
+            <competencia nivel="alto">
+                Redes Sociales
+            </competencia>
+            <competencia nivel="bajo">
+                Basesde datos
+            </competencia>
+            <competencia nivel="medio">
+                Entornos de Desarrollo
+            </competencia>
+        </competencias>
+        <formacion>
+            <titulacion anyo="2022" centro="IES LOS SAUCES">Educacion Secundaria</titulacion>
+            <titulacion anyo="2002" centro="IES LOS SAUCES">Sistemas Microinformaticos Y Redes</titulacion>
+        </formacion>
+        <experiencia>
+            <puesto>Puesto de trabajo</puesto>
+            <empresa>Empresa1</empresa>
+            <anyoInicio>2002</anyoInicio>
+            <anyoFinal>2022</anyoFinal>
+        </experiencia>
+        <experiencia>
+            <puesto>Puesto de trabajo 2</puesto>
+            <empresa>Empresa2</empresa>
+            <anyoInicio>2022</anyoInicio>
+            <anyoFinal>2022</anyoFinal>
+        </experiencia>
+    </contacto>
+</curriculum>

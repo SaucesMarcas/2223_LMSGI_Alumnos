@@ -1,0 +1,109 @@
+/*
+--colorFondo:#fff280;
+ --colorTituloSeccion:#ffc533;
+ --colorTituloArticle:#ff7740;
+ --colorFondoArticle:#ffeb33;
+}
+• Fuentes: sans-serif
+• Todos las secciones tienen un ancho de 34 rem y los artículos 15rem
+• Tamaños de fuente en función de rem
+• El pie de página tiene posición fija en la parte inferior de la web
+*/
+:root {
+	--colorFondo:#fff280;
+	--colorTituloSeccion:#ffc533;
+	--colorTituloArticle:#ff7740;
+	--colorFondoArticle:#ffeb33;
+
+	font-family: sans-serif;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ol,ul{
+	list-style: none;
+	text-align: center;
+}
+a{
+	color:black;
+	text-decoration: none;
+	
+}
+li{
+	list-style: none;
+	
+	text-align: center;
+	color: #005a66;
+	font-size: 1rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	font-weight: bold;
+	display: inline-block;
+	padding: 2rem 4rem;
+}
+li::first-letter{
+	
+	text-decoration: underline;
+}
+body{
+	background-color: var(--colorFondo);
+	margin-bottom:3rem;
+}
+h1{
+	text-align: center;
+	font-style: oblique;
+	letter-spacing: 0.2rem;
+	text-transform:uppercase;
+}
+
+section{
+	width: 36rem;
+	float: left;
+	border: 2px solid var(--colorTituloSeccion);
+	margin: 1rem;
+}
+section h2{
+	background-color: var(--colorTituloSeccion);
+}
+article{
+	background-color: var(--colorTituloArticle);
+	border: 1px solid var(--colorTituloArticle);
+	width: 15rem;
+	float: left;
+	margin: 1rem;
+	padding: 1rem;
+}
+article h3 a{
+	color: white;
+}
+article div{
+	background-color: var(--colorFondoArticle);
+	margin: 3px;
+	padding: 3px;
+}
+figcaption {
+    font-size: 9px;
+    font-style: oblique;
+	text-align:center;
+}
+img {
+    border: 3px solid black;
+    padding: 3px;
+	display:block;
+	margin:auto;
+}
+footer{
+	background-color: white;
+	color: #005a66;
+	position:fixed;
+	left: 0;
+	bottom:0;
+	padding: 1rem;
+	width:100%;
+	text-align: center;
+	clear: both;
+	
+}

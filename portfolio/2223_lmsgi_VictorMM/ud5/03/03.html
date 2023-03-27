@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Unidad 5&period;3 Universidad</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <h1 id="unidad-53-universidad">Unidad 5.3 Universidad</h1>
+<ol>
+<li>
+<p>Nombre de la Universidad:
+<code>/universidad/nombre/text()</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\03\images\1.PNG" alt=""></p>
+</li>
+<li>
+<p>Pais de la Universidad:
+<code>/universidad/pais/text()</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\03\images\2.PNG" alt=""></p>
+</li>
+<li>
+<p>Nombres de las Carreras:
+<code>/universidad/carreras/carrera/nombre/text()</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\03\images\3.PNG" alt=""></p>
+</li>
+<li>
+<p>Años de plan de estudio de las carreras:
+<code>/universidad/carreras/carrera/plan/text()</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\03\images\4.PNG" alt=""></p>
+</li>
+<li>
+<p>Nombres de todos los alumnos:
+<code>/universidad/alumnos/alumno/nombre/text()</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\03\images\5.PNG" alt=""></p>
+</li>
+<li>
+<p>Identificadores de todas las carreras:
+<code>/universidad/carreras/carrera/@id)</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\03\images\6.PNG" alt=""></p>
+</li>
+<li>
+<p>Datos de la carrera cuyo id es c01:
+<code>/universidad/carreras/carrera[@id='c01']/node()</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\03\images\7.PNG" alt=""></p>
+</li>
+<li>
+<p>Centro en que se estudia de la carrera cuyo id es c02:
+<code>/universidad/carreras/carrera[@id='c02']/centro/text()</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\03\images\8.PNG" alt=""></p>
+</li>
+<li>
+<p>Nombre de las carreras que tengan subdirector:
+<code>/universidad/carreras/carrera[subdirector]/nombre/text()</code>
+<code>//carrera[subdirector]/nombre/text()</code>
+<code>//carrera/child::subdirector/../nombre/text()</code>
+<code>//subdirector/../nombre/text()</code></p>
+</li>
+</ol>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\03\images\9.PNG" alt="">
+10. Nombre de los alumnos que estén haciendo proyecto:
+<code>/universidad/alumnos/alumno[estudios/proyecto]/nombre/text()</code>
+<code>//alumno[.//proyecto]/nombre/text()</code>
+<code>//estudios[proyecto]/../nombre/text()</code>
+<code>//estudios/proyecto/../../nombre/text()</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\03\images\10.PNG" alt="">
+11. Códigos de las carreras en las que hay algún alumno matriculado:
+<code>//alumno/estudios/carrera/@codigo</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\03\images\11.PNG" alt="">
+12. Apellidos y Nombre de los alumnos con beca:
+<code>concat(//alumno[@beca=&quot;si&quot;]/nombre,&quot; &quot;,//alumno[@beca=&quot;si&quot;]/apellido1,&quot; &quot;,//alumno[@beca=&quot;si&quot;]/apellido2)</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\03\images\12.PNG" alt="">
+13. Nombre de las asignaturas de la titulación c04:
+<code>//asignatura[@titulacion=&quot;c04&quot;]/nombre/text()</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\03\images\13.PNG" alt="">
+14. Nombre de las asignaturas de segundo trimestre:
+<code>//asignatura[trimestre=&quot;2&quot;]/nombre</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\03\images\14.PNG" alt="">
+15. Nombre de las asignaturas que no tienen 4 créditos teóricos:
+<code>//asignatura[creditos_teoricos!=&quot;4&quot;]/nombre/text()</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\03\images\15.PNG" alt="">
+16. Código de la carrera que estudia el último alumno:
+<code>//alumno[last()]/estudios/carrera/@codigo</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\03\images\16.PNG" alt="">
+17. Código de las asignaturas que estudian mujeres:
+<code>//alumno[sexo=&quot;Mujer&quot;]/estudios/asignaturas/asignatura/@codigo</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\03\images\17.PNG" alt="">
+18. Nombre de los alumnos que matriculados en la asignatura a02:
+<code>//alumno[estudios/asignaturas/asignatura/@codigo=&quot;a02&quot;]/nombre/text()</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\03\images\18.PNG" alt="">
+19. Códigos de las carreras que estudian los alumnos matriculados en alguna asignatura.
+<code>//alumno//asignatura/../../carrera/@codigo</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\03\images\19.PNG" alt="">
+20. Apellidos de todos los hombres:
+<code>//alumno[sexo=&quot;Hombre&quot;]/(apellido1 | apellido2)</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\03\images\20.PNG" alt="">
+21. Nombre de la carrera que estudia Víctor Manuel:
+<code>//carrera[@id=//alumno[nombre=&quot;Victor Manuel&quot;]//carrera/@codigo]/nombre/text()</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\03\images\21.PNG" alt="">
+22. Nombre de las asignaturas que estudia Luisa:
+<code>//asignatura[@id=//alumno[nombre=&quot;Luisa&quot;]//asignatura/@codigo]/nombre/text()</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\03\images\22.PNG" alt="">
+23. Primer apellido de los alumnos matriculados en Ingeniería del Software:
+<code>//alumno[.//asignatura/@codigo=//asignatura[nombre=&quot;Ingeniería del Software&quot;]/@id]/apellido1/text()</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\03\images\23.PNG" alt="">
+24. Nombre de las carreras que estudian los alumnos matriculados en la asignatura Tecnología de los Alimentos:
+``</p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\03\images\24.PNG" alt="">
+25. Nombre de los alumnos matriculados en carreras que no tienen subdirector:
+<code>//alumno[estudios/carrera/@codigo=//carrera[not(subdirector)]/@id]/nombre/text()</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\03\images\25.PNG" alt="">
+26. Nombre de los alumnos matriculados en asignaturas con 0 créditos prácticos y que estudien la carrera de I.T. Informática
+``</p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\03\images\26.PNG" alt="">
+27.  Nombre de los alumnos que estudian carreras cuyos planes son anteriores a 2002
+<code>//alumno[estudios/carrera/@codigo=//carrera[plan&lt;2002]/@id]/nombre/text()</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\03\images\27.PNG" alt=""></p>
+
+        
+        
+    </body>
+    </html>
