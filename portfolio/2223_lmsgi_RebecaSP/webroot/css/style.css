@@ -80,6 +80,29 @@ section ol li ul li a:hover{
 	background-color: #ffc9e2;
 	text-decoration: none;
 }
+#logo_github{
+	opacity: 0.5;
+	margin: 10px;
+	width: 50px;
+	position: fixed;
+	right:0;
+	bottom: 0;
+}
+#logo_lenguajes{
+	opacity: 0.5;
+	margin: 10px;
+	margin-right: 70px;
+	width: 50px;
+	position: fixed;
+	right:0;
+	bottom: 0;
+}
+#logo_lenguajes:hover{
+	opacity: 1.0;
+}
+#logo_github:hover{
+	opacity: 1.0;
+}
 #pie_main{
 	color: #fff6ea;
 	text-decoration: underline;
@@ -87,11 +110,13 @@ section ol li ul li a:hover{
 	margin-top: 4rem;
 	text-align: center;
 }
+
 /*main a #pie_main{
 	color: white;
 }*/
+
 address{
-	width: 100%;
+	width: 50%;
 	position: fixed;
 	bottom: 0;
 	left: 0;
