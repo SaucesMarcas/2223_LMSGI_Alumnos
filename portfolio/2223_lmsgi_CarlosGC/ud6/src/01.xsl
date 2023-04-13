@@ -21,21 +21,20 @@
             </head>
             <body>
                 <h1>Información de las viviendas</h1>
-                     <xsl:apply-templates select="vivienda"/>
+                <xsl:apply-templates select="vivienda"/>
+                <p>Número de viviendas: <xsl:value-of select="count(vivienda)"></xsl:value-of></p>
+                <p>Número total de vecinos: <xsl:value-of select="count(vivienda/vecinos)"></xsl:value-of></p> 
             </body>
         </html>
     </xsl:template>
     
     <xsl:template match="vivienda">
-         
-        <p>Piso: <xsl:value-of select="piso"></xsl:value-of>Puerta: <xsl:value-of select="puerta"></xsl:value-of></p> 
-        <ol>
-            <li><xsl:apply-templates select="vecinos/nombre"/></li>
-        </ol>
+        <p>Piso: <xsl:value-of select="piso"></xsl:value-of>    Puerta: <xsl:value-of select="puerta"></xsl:value-of></p> 
+        <xsl:apply-templates select="vecinos"/>
     </xsl:template>
 
-    <xsl:template match="vecinos/nombre">
-         <xsl:value-of select="current()"></xsl:value-of>
+    <xsl:template match="vecinos">
+        <xsl:value-of select="current()"></xsl:value-of>
     </xsl:template>
 
 </xsl:stylesheet>
