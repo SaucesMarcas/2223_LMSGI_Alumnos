@@ -25,30 +25,30 @@
                 </header>
                 <main>
                     <div>
-                        <xsl:apply-templates select="vivienda"/>
+                        <xsl:for-each select="vivienda">
+                            <h2>    
+                                <xsl:value-of select="concat('Piso',piso,'Puerta',puerta)"/>
+                            </h2>
+            
+                            <ol>
+                                <xsl:for-each select="vecinos/nombre">
+                                    <li>
+                                        <xsl:value-of select="./text()"/>
+                                    </li>
+                                </xsl:for-each>
+                            </ol>
+                        </xsl:for-each>
                     </div>
                 </main>
                 <footer>
-                    <h2><xsl:value-of select="concat('Número de viviendas: ',count(//vivienda))"/></h2>
-                    <h2><xsl:value-of select="concat('Número de vecinos: ',count(//nombre))"/></h2>
+                    <h2>
+                        <xsl:value-of select="concat('Número de viviendas: ',count(//vivienda))"/>
+                    </h2>
+                    <h2>
+                        <xsl:value-of select="concat('Número de vecinos: ',count(//nombre))"/>
+                    </h2>
                 </footer>
             </body>
         </html>
     </xsl:template>
-    
-    <xsl:template match="vivienda">
-        <h2>    
-            <xsl:value-of select="concat('Piso',piso,'Puerta',puerta)"/>
-        </h2>
-            
-    <ol>
-        <xsl:apply-templates select="vecinos/nombre"/>
-    </ol>
-        
-</xsl:template>
-    
-<xsl:template match="vecinos/nombre">
-    <li><xsl:value-of select="./text()"/></li>
-</xsl:template>
-
 </xsl:stylesheet>
