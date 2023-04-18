@@ -1,5 +1,0 @@
-URL: http://192.168.2.111/ 
-Actualmente sin dominio, es utilizada la IP de la máquina funcionando como servidor.
-Se han añadido las actividades de la unidad 4, desde la 1 hasta la 9, conteniendo
-tanto el ejercicio de xml como el validador dtd.
-	
