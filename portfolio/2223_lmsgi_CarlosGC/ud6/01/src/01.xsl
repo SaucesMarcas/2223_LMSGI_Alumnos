@@ -20,22 +20,31 @@
                 <title>XSLT 01 Carlos Garcia Cachon</title>
             </head>
             <body>
-                <h1>Información de las viviendas</h1>
+                <main>
+                     <h1>Información de las viviendas</h1>
                      <xsl:apply-templates select="vivienda"/>
+                </main>
+                <footer>
+                    <div>
+                        <xsl:value-of select="concat('Número de viviendas: ',count(//vivienda))"></xsl:value-of>
+                    </div>
+                    <div>
+                         <xsl:value-of select="concat('Número de vecinos: ',count(//nombre))"></xsl:value-of>
+                    </div>
+                </footer>
             </body>
         </html>
     </xsl:template>
     
     <xsl:template match="vivienda">
-         
-        <p>Piso: <xsl:value-of select="piso"></xsl:value-of>Puerta: <xsl:value-of select="puerta"></xsl:value-of></p> 
+        <xsl:value-of select="concat('Piso: ',piso,' Puerta: ',puerta)"></xsl:value-of>
         <ol>
-            <li><xsl:apply-templates select="vecinos/nombre"/></li>
+            <xsl:apply-templates select="vecinos/nombre"/>
         </ol>
     </xsl:template>
 
     <xsl:template match="vecinos/nombre">
-         <xsl:value-of select="current()"></xsl:value-of>
+        <li> <xsl:value-of select="current()"></xsl:value-of></li>
     </xsl:template>
 
 </xsl:stylesheet>
