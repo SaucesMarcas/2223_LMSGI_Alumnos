@@ -1,3 +1,6 @@
 /nbproject
 /.vscode
-
+*.zip
+*.rar
+*.log
+/2223_lmsgi*/pruebas
