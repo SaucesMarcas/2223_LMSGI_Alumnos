@@ -5,7 +5,8 @@
 html{
 	font-family: 'Roboto', sans-serif;
 	background-image: url('../media/images/fondo3.gif');
-	background-size: 30% 129%;
+	background-size: 30% 100%;
+	background-attachment: fixed;
 }
 a{
 	text-decoration: none;
@@ -15,6 +16,7 @@ a{
 	margin: 20px;
 }
 h1{
+	position: relative;
 	width: auto;
 	color: #fff6ea;
 	background-color: #904B6B;
@@ -30,15 +32,78 @@ main p{
 	margin: 20px;
 	margin-bottom: 0;
 }
-section{
+.linea1{
 	float:left;
 	margin: 20px;
-	width: 17%;
-	min-height: 4rem;
+	width: 47%;
+	height: 22rem;
 	border: 2px solid #904B6B;
+	background-color: rgba(255,255,255, 0.5);
 }
-#exams{
-	
+/*IMAGENES DE LA FILA 1*/
+#htmlycss{
+	position: relative;
+	left: 32rem;
+	top: -16.5rem;
+	width: 20rem;
+}
+#rss{
+	position: relative;
+	left: 38rem;
+	top: -5rem;
+	width: 13rem;
+}
+.linea2{
+	float:left;
+	margin: 20px;
+	width: 47%;
+	height: 22rem;
+	border: 2px solid #904B6B;
+	background-color: rgba(255,255,255, 0.5);
+}
+.linea2 span{
+	display: inline-block;
+}
+#columna2{
+	margin-left: 5rem;
+}
+/*IMAGENES DE LA FILA 2*/
+#xml{
+	position: relative;
+	left: 38rem;
+	top: -18rem;
+	width: 17rem;
+}
+#xpath{
+	position: relative;
+	left: 38rem;
+	top: -6.5rem;
+	width: 17rem;
+}
+.linea3{
+	float:left;
+	margin: 20px;
+	width: 47%;
+	height: 20rem;
+	border: 2px solid #904B6B;
+	background-color: rgba(255,255,255, 0.5);
+}
+/*IMAGENES DE LA FILA 3*/
+#foto_exam{
+	position: relative;
+	left: 42rem;
+	top: -12rem;
+	width: 10rem;
+}
+#xslt{
+	position: relative;
+	left: 41rem;
+	top: -5rem;
+	width: 11rem;
+}
+#exams ol ol{
+	background-color: rgba(255,255,255, 0.5);
+	width: 50%;
 }
 section h2{
 	padding: 0.2rem;
@@ -55,12 +120,11 @@ section * a{
 	color: black;
 }
 section ol{
-	background-color: rgba(255,255,255, 0.5);
 	padding: 1rem;
 	list-style-position: inside;
 	/*text-align: center;*/
 }
-section ol:hover{
+section:hover{
 	background-color: rgba(255,255,255, 0.75);
 }
 section li{
@@ -111,19 +175,15 @@ section ol li ul li a:hover{
 	text-decoration: underline;
 	clear: both;
 	margin-top: 4rem;
+	margin-bottom: 4rem;
 	text-align: center;
 }
-
-/*main a #pie_main{
-	color: white;
-}*/
-
 address{
 	width: 50%;
 	position: fixed;
 	bottom: 0;
 	left: 0;
-	padding: 1rem;
+	padding: 0.5rem;
 	/*text-align: center;*/
 	color: white;
 	/*background-color:rgb(21, 172, 121);*/
