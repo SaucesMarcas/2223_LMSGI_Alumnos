@@ -5,6 +5,13 @@
     <xsl:template match="/">
         <html>
             <head>
+                <meta name="description" content="coleccion">/</meta>
+                    <meta name="author" content="Ruben Diez">/</meta>
+                            <meta name="keywords" content="Viviendas" >/</meta>
+                            <meta name="generator" content="netbeans">/</meta>
+                            <meta name="refresh" content="5">/</meta>
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">/</meta>
+                            <link rel="stylesheet" href="../src/style.css">/</link>
                 <title>01 XSLT Ruben Diez Sanchez</title>
                 <style>
                     /* Estilos CSS para la lista */
