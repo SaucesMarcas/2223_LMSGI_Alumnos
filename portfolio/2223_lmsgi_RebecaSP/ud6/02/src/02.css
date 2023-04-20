@@ -6,6 +6,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     Created on : 18 abr 2023, 9:48:30
     Author     : daw1
 */
+*{
+    margin: 0;
+}
 html{
     font-family: 'Roboto', sans-serif;
 }
@@ -32,16 +35,14 @@ table{
     margin: auto;
     border-collapse: collapse;
 }
-.lineas th{
-    border-bottom: 1px solid #E0E1EB;
-}
-.lineas td{
+.lineas{
     border-bottom: 1px solid #E0E1EB;
 }
 #fecha{
     text-align: center;
     color: green;
     font-style: oblique;
+    font-variant: small-caps;
 }
 footer{
     padding: 10px;
