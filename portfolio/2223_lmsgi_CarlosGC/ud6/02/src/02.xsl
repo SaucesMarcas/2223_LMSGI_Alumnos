@@ -16,7 +16,7 @@
                 <meta name="keywords" content="XSLT"/>
                 <meta name="generator" content="NetBeans"/>
                 <meta name="generator" content="60"/>
-                <link rel="stylesheet" href="src/estilo.css"/>
+                <link rel="stylesheet" href="../src/estilo.css"/>
                 <title>XSLT 02 Carlos Garcia Cachon</title>
             </head>
             <body>
@@ -25,14 +25,18 @@
                     <h2>Listado de tickets</h2>
                     <div>
                         <xsl:for-each select="ticket">
-                            <div>
+                            <div class="numTickets">
                                 <xsl:value-of select="concat('Tickets: ',numero)"></xsl:value-of>
                             </div>
                             <table>
                                 <tr>
+                                    <td></td>
                                     <td>
                                         <p>Producto</p>
                                     </td>
+                                     <td></td>
+                                      <td></td>
+                                       <td></td>
                                     <td>
                                         <p>Precio</p>
                                     </td>
@@ -42,23 +46,28 @@
                                         <td> 
                                             <xsl:value-of select="nombre"></xsl:value-of>
                                         </td>
+                                          <td></td>
                                         <td>
                                             <xsl:value-of select="precio"></xsl:value-of>
                                         </td>
                                     </tr>
                                 </xsl:for-each>
                                 <tr>
+                                     <td></td>
                                     <td>
                                         <p>Total</p>
                                     </td>
-                                    <td>
+                                     <td></td>
+                                      <td></td>
+                                       <td></td>
+                                    <td class="totalPrecio">
                                         <xsl:value-of select="total"></xsl:value-of>
                                     </td>
                                 </tr>
-                                <tfoot>
-                                    <xsl:value-of select="concat('FECHA DEL TICKET','   ',fecha)"></xsl:value-of>
-                                </tfoot>
                             </table>
+                            <div class="fechaTicket">
+                                 <xsl:value-of select="concat('Fecha del ticket','   ',fecha)"></xsl:value-of>
+                            </div>
                         </xsl:for-each>
                     </div>
                 </main>

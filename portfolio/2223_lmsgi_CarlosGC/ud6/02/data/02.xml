@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="02.xsl"?>
+<?xml-stylesheet type="text/xsl" href="../src/02.xsl"?>
 
 <listatickets>
 <!-- Autor .- Nombre y Apellidos -->
