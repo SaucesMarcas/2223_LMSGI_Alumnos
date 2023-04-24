@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../src/02.xsl"?>
 
 <!--
     Document   : 02.xsl
-    Created on : 20 de abril de 2023, 13:08
+    Created on : 20 de abril de 2023, 13:09
     Author     : daw1
     Description:
         Purpose of transformation follows.
@@ -14,113 +15,60 @@
     <!-- TODO customize transformation rules 
          syntax recommendation http://www.w3.org/TR/xslt 
     -->
-    <xsl:template match="/">
+<xsl:template match="/peliculas">
         <html>
             <head>
-                <meta name="description" content="coleccion">/</meta>
-                    <meta name="author" content="Ruben Diez">/</meta>
-                            <meta name="keywords" content="Peliculas" >/</meta>
-                            <meta name="generator" content="netbeans">/</meta>
-                            <meta name="refresh" content="5">/</meta>
-                            <meta name="viewport" content="width=device-width, initial-scale=1.0">/</meta>
-                            <link rel="stylesheet" href="../src/style.css">/</link>
+                <meta charset= "utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../src/estilos.css"/>
                 <title>03 XSLT Ruben Diez Sanchez</title>
-                <style>
-                    /* Estilos CSS para la lista */
-                    ul {
-                        list-style-type: none;
-                        margin: 0;
-                        padding: 0;
-                    }
-                    li {
-                        margin: 0 0 5px 0;
-                        padding: 10px;
-                        background-color: #f5f5f5;
-                    }
-                    .header {
-                        font-weight: bold;
-                    }
-                </style>
             </head>
             <body>
-                <table>  
-                <h1>Información de peliculas</h1>
-                <tbody>
-                <h2>Aguas oscuras</h2>
-                <tr>
-                    <td>
-                        <p>Puntuación:</p>
-                        <p>Dirigido a:Adultos</p>
-                    </td>
-                </tr>
-                <h2>La piel que habito</h2>
-                <tr>
-                    <td>
-                        <p>Puntuación:</p>
-                        <p>Dirigido a:Adultos</p>
-                    </td>
-                </tr>
-                <h2>Queen Slim</h2>
-                <tr>
-                    <td>
-                        <p>Puntuación:</p>
-                        <p>Dirigido a:Adultos</p>
-                    </td>
-                </tr>
-                <h2>La candidata perfecta</h2>
-                <tr>
-                    <td>
-                        <p>Puntuación:</p>
-                        <p>Dirigido a:Mayores de 12</p>
-                    </td>
-                </tr>
-                <h2>La camarista</h2>
-                <tr>
-                    <td>
-                        <p>Puntuación:</p>
-                        <p>Dirigido a:Mayores de 12</p>
-                    </td>
-                <h2>Los descendientes</h2>
-                <tr>
-                    <td>
-                        <p>Puntuación:</p>
-                        <p>Dirigido a:Mayores de 12</p>
-                    </td>
-                <h2>Judy</h2>
-                <tr>
-                    <td>
-                        <p>Puntuación:</p>
-                        <p>Dirigido a:Mayores de 16</p>
-                    </td>
-                <h2>El hombre invisible</h2>
-                <tr>
-                    <td>
-                        <p>Puntuación:</p>
-                        <p>Dirigido a:Mayores de 16</p>
-                    </td>
-                <h2>Richard Jewell</h2>
-                <tr>
-                    <td>
-                        <p>Puntuación:</p>
-                        <p>Dirigido a:Mayores de 16</p>
-                    </td>
-                <h2>La invención de Hugo</h2>
-                <tr>
-                    <td>
-                        <p>Puntuación:</p>
-                        <p>Dirigido a: Todos los publicos</p>
-                    </td>
-                <h2>El huevo de dinosaurio</h2>
-                <tr>
-                    <td>
-                        <p>Puntuación:</p>
-                        <p>Dirigido a: Todos los publicos</p>
-                    </td>
-                    </tbody>
-                </table>
-            </body>
+                <header>
+                    <h1>Información de peliculas</h1>
+                </header>
+                <main>
+                     <xsl:apply-templates select="pelicula">
+                       
+                    </xsl:apply-templates>
+                </main>
+                <footer>
+                    <div>Número de tickets:<xsl:value-of select="count(//ticket)"/></div>
+                    <div>Total de tickets:<xsl:value-of select="count(//precio)"/></div>
+                </footer>
+            </body>          
         </html>
     </xsl:template>
-
+    <xsl:template match="pelicula">
+        <article>
+            <h3><xsl:value-of select="concat('Tickets: ',numero)"/></h3>
+            <table>
+                <caption><xsl:value-of select="concat('Fecha Ticket: ',fecha)"/></caption>     
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                </tr>
+                <xsl:apply-templates select="producto"/>
+                <tfoot>
+                    <tr>
+                        <th>Total:</th>
+                        <td> 
+                            <xsl:value-of select="total"/>
+                        </td>  
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+    </xsl:template>
+    
+    <xsl:template match="producto">
+        <article>
+            <table>              
+                <tr>
+                    <td><xsl:value-of select="nombre"/></td>
+                    <td><xsl:value-of select="precio"/></td>
+                </tr>
+            </table>
+        </article>
+    </xsl:template>
 </xsl:stylesheet>
-<?xml-stylesheet type="text/xsl" href="03.xsl"?>

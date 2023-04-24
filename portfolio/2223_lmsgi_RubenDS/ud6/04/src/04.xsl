@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<?xml-stylesheet type="text/xsl" href="../src/02.xsl"?>
 
 <!--
     Document   : 02.xsl
@@ -15,22 +15,21 @@
     <!-- TODO customize transformation rules 
          syntax recommendation http://www.w3.org/TR/xslt 
     -->
-    <xsl:template match="/listatickets">
+<xsl:template match="/peliculas">
         <html>
             <head>
                 <meta charset= "utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="../src/estilos.css"/>
-                <title>02 XSLT Ruben Diez Sanchez</title>
+                <title>03 XSLT Ruben Diez Sanchez</title>
             </head>
             <body>
                 <header>
-                    <h1>Información de tickets</h1>
+                    <h1>Información de peliculas</h1>
                 </header>
                 <main>
-                    <h2>Listado de tickets</h2>
-                     <xsl:apply-templates select="ticket">
-                       <xsl:sort select="numero" data-type="number" order="descending"/>
+                     <xsl:apply-templates select="pelicula">
+                       
                     </xsl:apply-templates>
                 </main>
                 <footer>
@@ -40,8 +39,7 @@
             </body>          
         </html>
     </xsl:template>
-    
- <xsl:template match="ticket">
+    <xsl:template match="pelicula">
         <article>
             <h3><xsl:value-of select="concat('Tickets: ',numero)"/></h3>
             <table>
@@ -73,4 +71,5 @@
             </table>
         </article>
     </xsl:template>
+
 </xsl:stylesheet>

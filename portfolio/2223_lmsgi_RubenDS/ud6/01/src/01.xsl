@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    <xsl:output method="html" encoding="UTF-8"/>
 
-    <xsl:template match="/">
+<!--
+    Document   : 01.xsl
+    Created on : 13 de abril de 2023, 13:09
+    Author     : daw1
+    Description:
+        Purpose of transformation follows.
+-->
+
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+    <xsl:output method="html"/>
+
+    <!-- TODO customize transformation rules 
+         syntax recommendation http://www.w3.org/TR/xslt 
+    -->
+    <xsl:template match="/edificio">
+<xsl:text disable-output-escaping="yes">&lt;DOCTYPE html&gt;
+</xsl:text> 
         <html>
             <head>
-                <meta name="description" content="coleccion">/</meta>
-                    <meta name="author" content="Ruben Diez">/</meta>
-                            <meta name="keywords" content="Viviendas" >/</meta>
-                            <meta name="generator" content="netbeans">/</meta>
-                            <meta name="refresh" content="5">/</meta>
-                            <meta name="viewport" content="width=device-width, initial-scale=1.0">/</meta>
-                            <link rel="stylesheet" href="../src/style.css">/</link>
-                <title>01 XSLT Ruben Diez Sanchez</title>
-                <style>
-                    /* Estilos CSS para la lista */
-                    ul {
-                        list-style-type: none;
-                        margin: 0;
-                        padding: 0;
-                    }
-                    li {
-                        margin: 0 0 5px 0;
-                        padding: 10px;
-                        background-color: #f5f5f5;
-                    }
-                    .header {
-                        font-weight: bold;
-                    }
-                </style>
+                <title>XSLT 01 Ruben Diez Sanchez</title>
             </head>
             <body>
-                <h1>Índice de Viviendas</h1>
-                <ul>
-                    <xsl:for-each select="edificio/vivienda">
-                        <li>
-                            <span class="header">Piso:</span> <xsl:value-of select="piso"/><br/>
-                            <span class="header">Puerta:</span> <xsl:value-of select="puerta"/><br/>
-                            <span class="header">Vecinos:</span><br/>
-                            <ul>
-                                <xsl:for-each select="vecinos/nombre">
-                                    <li><xsl:value-of select="."/></li>
-                                </xsl:for-each>
-                            </ul>
-                        </li>
-                    </xsl:for-each>
-                </ul>
+                <header>    
+                    <h1>Información de las viviendas</h1>
+                </header>
+                <main>
+                    <section>
+                        <header>
+                            <xsl:apply-templates select="vivienda"/>
+                        </header>
+                        <article>
+                            <xsl:apply-templates select="vecinos"/>
+                        </article>
+                        <article>
+                            <p>Número de viviendas:</p>
+                            <p>Número total de vecinos:</p>
+                        </article>
+                </section>
+                </main>
             </body>
         </html>
     </xsl:template>
+    <xsl:template match="vivienda">
+        <p>Piso:<xsl:value-of select="piso"/> Puerta:<xsl:value-of select="puerta"/></p>
+        <ol><xsl:apply-templates select="vecinos"/></ol>    
+    </xsl:template>
+    <xsl:template match="vecinos">
+       <li><xsl:value-of select="."/></li>
+    </xsl:template>
+
 </xsl:stylesheet>
-<?xml-stylesheet type="text/xsl" href="01.xsl"?>
