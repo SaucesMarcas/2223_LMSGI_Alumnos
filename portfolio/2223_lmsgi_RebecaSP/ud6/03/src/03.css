@@ -1,0 +1,47 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 25 abr 2023, 8:56:54
+    Author     : daw1
+*/
+*{
+    margin: 0;
+}
+html{
+    background-image: url("media/peli.png");
+}
+h1{
+    text-align: center;
+    background-color: grey;
+    color: white;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+.cajas{
+    width: 30%;
+    float: left;
+    border: 2px solid black;
+    text-align: center;
+    background-color: lightgrey;
+    margin: 5px;
+    padding: 10px;
+}
+h2{
+    padding: 10px;
+}
+.estrellas{
+    color: orange;
+    font-size: 2rem;
+}
+footer{
+    width: 100%;
+    text-align: center;
+    background-color: grey;
+    color: white;
+    position: fixed;
+    bottom:0;
+    font-size: 1.5rem;
+    padding: 5px;
+}
