@@ -19,14 +19,20 @@
 </xsl:text> 
         <html>
             <head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" type="text/css" href="../target/style.css"/>
                 <title>02 XSLT Erika Martínez Pérez</title>
             </head>
             <body>
+                <header>
+                    <h1>Información de tickets</h1>
+                </header>
                 <main>
-                    <h1>Listado de tickets</h1>
-                    <div>
-                        <xsl:apply-templates select="ticket"/>
-                    </div>
+                    <h2>Listado de tickets</h2>
+                    <xsl:apply-templates select="ticket">
+                        <xsl:sort select="numero" data-type="number" order="descending"/>
+                    </xsl:apply-templates>
                 </main>
                 <footer>
                     <div>
@@ -41,36 +47,30 @@
     </xsl:template>
     
     <xsl:template match="ticket">
-        <h2>
-            <xsl:value-of select="concat('Tickets: ',numero)"/>
-        </h2>
-        <table>
-            <tr>
-                <th></th>
-                <th>Producto</th>
-                <th></th> 
-                <th>Precio</th> 
-            </tr>
-            <tr>
-                <xsl:apply-templates select="producto"/>
-            </tr>
-        </table>
-    </xsl:template>
-    
-    <xsl:template match="producto">
-        <td>
-            <xsl:value-of select="nombre"/>
-        </td>
-        <td>
-            <xsl:value-of select="precio"/> 
-        </td>
         <div>
-            <xsl:apply-templates select="ticket/fecha"/>
+            <h3><xsl:value-of select="concat('Tickets: ',numero)"/></h3>
+            <table>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                </tr>
+                <xsl:apply-templates select="producto"/>
+                <tr>
+                    <th>Total</th>
+                    <th><xsl:value-of select="sum(//producto/precio)"/></th>
+                </tr>
+                <caption>
+                    <xsl:value-of select="concat('Fecha ticket: ',fecha)"/>
+                </caption>
+            </table>
         </div>
     </xsl:template>
     
-    <xsl:template match="ticket/fecha">
-        <xsl:value-of select="concat('Fecha del ticket: ',./text())"/>
+    <xsl:template match="producto">
+        <tr>
+            <td><xsl:value-of select="nombre"/></td>
+            <td><xsl:value-of select="precio"/></td>
+        </tr>
     </xsl:template>
 
 </xsl:stylesheet>
