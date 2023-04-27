@@ -11,7 +11,7 @@
             <head>
                 <meta charset="UTF-8"/>
                 <meta name="author" content="Carlos García Cachón"/>
-                <link rel="icon" type="/media/favicon.ico" sizes="32x32" href="../../../webroot/media/images/favicon-32x32.png"/>
+                <link rel="icon" type="/media/favicon.ico" sizes="32x32" href="../../../webroot/images/favicon-32x32.png"/>
                 <meta name="description" content="Practicando con XSLT"/>
                 <meta name="keywords" content="XSLT"/>
                 <meta name="generator" content="NetBeans"/>
