@@ -1,8 +1,12 @@
-div {
-    border: 1px solid black;
-    background-color: grey;
+* {
+    font-family: 'Permanent Marker', cursive;
 }
 
-* {
-    background-color: gold;
+table {
+    border:5px black solid ;
+}
+
+.cabeceras {
+    color: white;
+    background-color: blue;
 }
