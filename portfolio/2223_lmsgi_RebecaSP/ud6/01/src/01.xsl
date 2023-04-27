@@ -18,6 +18,12 @@
         <xsl:text disable-output-escaping="yes">&lt;DOCTYPE html&gt;</xsl:text> 
         <html>
             <head>
+                <meta charset="UTF-8"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                <meta name="author" content="Rebeca Sánchez Pérez"/>
+                <meta name="description" content="HTML de un listado de viviendas basado en los resultados de un xml"/>
+                <meta name="Keywords" content="viviendas, vecinos, nombre, puerta"/>
+                <link rel="icon" type="image/png" href="../src/media/favicon.png"/>
                 <title>XSLT 01 Rebeca Sánchez Pérez</title>
             </head>
             <body>

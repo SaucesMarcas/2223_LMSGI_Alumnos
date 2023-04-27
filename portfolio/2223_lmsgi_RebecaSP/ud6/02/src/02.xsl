@@ -20,6 +20,7 @@
 		<meta name="author" content="Rebeca Sánchez Pérez"/>
 		<meta name="description" content="HTML de un listado de tickets basado en los resultados de un xml"/>
 		<meta name="Keywords" content="ticket, listado, numero, precio, total, producto, fecha"/>
+                <link rel="icon" type="image/png" href="../src/media/favicon.png"/>
                 <title>XSLT 02 Rebeca Sánchez Pérez</title>
                 <link href="../src/02.css" rel="stylesheet" type="text/css"/>
             </head>

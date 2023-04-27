@@ -1,0 +1,34 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 27 abr 2023, 10:14:57
+    Author     : daw1
+*/
+*{
+    margin: 0;
+}
+html{
+    font-family: 'Permanent Market', cursive;
+    
+}
+header{
+    background-color: #387ab6;
+    color: #fff;
+}
+table{
+    width: 50%;
+    margin: auto;
+    border-collapse: collapse;
+    border-style: groove;
+}
+th{
+    background-color: #387ab6;
+    color: #fff;
+}
+.matricula{
+    font-weight: bold;
+    text-align: center;
+}
+

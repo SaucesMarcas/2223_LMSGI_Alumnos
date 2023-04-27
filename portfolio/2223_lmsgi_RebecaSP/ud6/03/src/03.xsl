@@ -23,6 +23,7 @@
                 <meta name="author" content="Rebeca Sánchez Pérez"/>
                 <meta name="description" content="HTML de un listado de peliculas basado en los resultados de un xml"/>
                 <meta name="Keywords" content="peliculas, puntiaciones, publico, valoracion"/>
+                <link rel="icon" type="image/png" href="../src/media/favicon.png"/>
                 <title>XSLT 03 Rebeca Sánchez Pérez</title>
                 <link href="../src/03.css" rel="stylesheet" type="text/css"/>
             </head>
