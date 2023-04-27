@@ -70,7 +70,7 @@
     </xsl:template> 
     <xsl:template match="//reparacion[current()/matricula=matricula]">
         <div>
-            <div>
+            <div class="codigo">
                 <xsl:value-of select="@codigo"/>  
             </div>
             <ul>

@@ -13,22 +13,46 @@ html{
     font-family: 'Permanent Market', cursive;
     
 }
-header{
-    background-color: #387ab6;
-    color: #fff;
+header {
+    color: white;
+    background-color: #387AB6;
+    padding-left: 6px;
+    width: 50%;
+    margin: auto;
 }
 table{
     width: 50%;
     margin: auto;
     border-collapse: collapse;
     border-style: groove;
+    border-color: white;
 }
 th{
     background-color: #387ab6;
     color: #fff;
+    padding: 0.5rem;
+    border-style: groove;
+}
+td{
+    border-style: groove;
 }
 .matricula{
     font-weight: bold;
     text-align: center;
+    width: 40%;
+}
+.codigo{
+    font-weight: bold;
+}
+.pieReparaciones{
+    background-color: #387AB6;
+    color: #fff;
+    font-variant: small-caps;
+}
+.pieReparaciones div{
+    margin: 10px;
+}
+li{
+    margin: 15px;
 }
 
