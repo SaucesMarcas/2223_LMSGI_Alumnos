@@ -12,7 +12,7 @@
     <xsl:output method="html"/>
 
     <xsl:template match="/listatickets">
-        <xsl:text disable-output-escaping="yes">&lt;DOCTYPE html&gt;</xsl:text> 
+        <xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;</xsl:text> 
         <html>
             <head>
                 <meta charset="UTF-8"/>

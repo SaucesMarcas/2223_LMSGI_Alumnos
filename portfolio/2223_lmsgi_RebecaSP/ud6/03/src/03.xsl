@@ -11,11 +11,9 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:output method="html"/>
 
-    <!-- TODO customize transformation rules 
-         syntax recommendation http://www.w3.org/TR/xslt 
-    -->
     <xsl:template match="/peliculas">
-        <xsl:text disable-output-escaping="yes">&lt;DOCTYPE html&gt;</xsl:text> 
+        <xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;</xsl:text> 
+        <xsl:apply-templates select="comment()"/>
         <html>
             <head>
                 <meta charset="UTF-8"/>
@@ -59,5 +57,11 @@
             <div>Dirigida a: <xsl:value-of select="publico"/></div>
         </div>
     </xsl:template>
-
+    <xsl:template match="comment()">
+        <xsl:text xml:space="preserve">
+            <xsl:comment>
+                <xsl:value-of select="current()"/>
+            </xsl:comment>
+        </xsl:text>
+    </xsl:template>
 </xsl:stylesheet>

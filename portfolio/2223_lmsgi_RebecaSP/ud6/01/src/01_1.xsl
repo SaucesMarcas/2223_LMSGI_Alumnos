@@ -15,7 +15,7 @@
          syntax recommendation http://www.w3.org/TR/xslt 
     -->
     <xsl:template match="/edificio">
-        <xsl:text disable-output-escaping="yes">&lt;DOCTYPE html&gt;</xsl:text> 
+        <xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;</xsl:text> 
         <html>
             <head>
                 <title>XSLT 01 Rebeca Sánchez Pérez</title>
