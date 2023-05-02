@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hechoshistoricos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="03.xsd">
+    <linea>
+        <descripcion>Descripcion</descripcion>
+        <fecha>
+            <dia>Dia</dia>
+            <mes>Mes</mes>
+            <anyo>Año</anyo>
+        </fecha>
+    </linea>
+    <linea>
+        <descripcion>Se funda en Youtube</descripcion>
+        <fecha>
+            <dia>Dia</dia>
+            <mes>Mes</mes>
+            <anyo>Año</anyo>
+        </fecha>
+    </linea>
+    <linea>
+        <descripcion>Se funda en Youtube</descripcion>
+        <fecha>
+            <dia>15</dia>
+            <mes>2</mes>
+            <anyo>2005</anyo>
+        </fecha>
+    </linea>
+    <linea>
+        <descripcion>Se funda en Google</descripcion>
+        <fecha>
+            <dia>4</dia>
+            <mes>9</mes>
+            <anyo>1998</anyo>
+        </fecha>
+    </linea>
+    <linea>
+        <descripcion>Se funda en Facebook</descripcion>
+        <fecha>
+            <dia>4</dia>
+            <mes>2</mes>
+            <anyo>2004</anyo>
+        </fecha>
+    </linea>
+</hechoshistoricos>

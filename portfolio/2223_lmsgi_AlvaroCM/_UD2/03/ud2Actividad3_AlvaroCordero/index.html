@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 03 Álvaro Cordero Miñambres </title>
+</head>
+<body>
+	<main>
+		<header>
+			<h1>Plantilla de Formulario de Matricula 2022/2023 </h1>
+		</header>
+		<!-- Datos del alumno-->
+		<form  action="/index.php" method="get">
+			<fieldset>
+				<legend>Datos del alumno</legend>
+				<div>
+					<label for="nombre_alumno">Nombre:</label>
+					<input type="text" id="nombre_alumno" name="nombre_alumno">
+				</div><br>
+				<div>
+					<label for="apellido_alumno">Apellido:</label>
+					<input type="text" id="apellido"name="apellido_alumno">
+				</div><br>
+				<div>
+					<label for="dni_alumno">Imagen DNI:</label>
+					<input type="file" name="dni" id="dni_alumno">
+				</div><br>
+				<div>
+					<label for="tel_alumno">Telefono:</label>
+					<input type="tel" id="tel_alumno" pattern="[1-9]{9}" name="tel" placeholder="999999999">
+				</div><br>
+				<div>
+					<label for="email_alumno">Correo electronico:</label>
+					<input type="email" placeholder="Escribe aqui" id="email_alumno" pattern=".+@gmail.com" size="30" required>
+				</div><br>
+				<div>
+					<label for="password_alumno">Contraseña:</label>
+					<input type="password" id="contraseña_alumno" minlength="5" maxlength="30" placeholder="Escribe aqui" name="contraseña">
+				</div><br>
+				<legend>¿Has estudiado anteriormente en este centro?</legend>
+				<div>
+					<input type="radio" id="check" name="radio1" id="radio1"> 
+					<label for="check">Si</label>
+				</div>
+				<div>
+					<input type="radio" id="check" name="radio1" id="radio2"> 
+					<label for="check">No</label>
+				</div><br>
+				<div>
+					<label for="curso">Curso: </label>
+					<select id="curso" name="curso">
+						<option value="" selected="selected">Selecciona un curso</option>
+						<option value="SMR">Sistemas Microinformatios Y Redes</option>
+						<option value="DAW">Desarrollo de Aplicaciones Web</option>
+						<option value="DAM">Desarrollo de Aplicaciones Moviles</option>
+						<option value="ASIR">Administración de Sistemas Informáticos en Red</option>
+					</select>
+				</div>
+				<div><br>
+					<label for="textoIQ">Define tu nivel de IQ</label><br>
+					<input type="range" min="-10" max="10" id="textoIQ">
+				</div>
+				<div><br>
+					<label for="texto">¿Porque quieres apuntarte a este grado?</label><br>
+					<textarea id="texto" rows="6" cols="32" name="textarea" placeholder="Escribe aqui"></textarea>
+				</div>
+				<div><br>
+					<label for="fecha_alumno">Fecha:</label>
+					<input type="date" placeholder="mm/dd/yyyy" id="fecha_alumno" name="fecha-start" min="2022-07-01" max="2022-9-15">
+				</div>
+				<div><br>
+					<label for="fecha_alumno">Hora:</label>
+					<input type="time" id="hora" min="00:00" max="23:59" name="fecha1">
+					<input type="hidden" id="hidden" name="hideen" value="3487" name="fecha2">
+				</div><br>
+				<label for="url">Porfolio del alumno:</label>
+				<input type="url" name="url" id="url"
+       					placeholder="https://ejemplo.com"
+       					pattern="https://.*" size="30">
+			</fieldset><br>
+		<!-- Datos de los tutores-->
+			<fieldset>
+				<legend>Datos del tutor/a</legend>
+				<div>
+					<label for="nombre_tutor">Nombre:</label>
+					<input type="text" id="nombre_tutor" name="nombre_tutor">
+				</div><br>
+				<div>
+					<label for="apellido_tutor">Apellido:</label>
+					<input type="text" id="apellido" name="apellido_tutor">
+				</div><br>
+				<div>
+					<label for="dni_tutor">Documento de identidad:</label>
+					<input type="text" id="dni" name="dni_tutor">
+				</div><br>
+				<div>
+					<label for="tel_tutor">Telefono:</label>
+					<input type="tel" placeholder="999999999" id="tel" pattern="[1-9]{9}" name="tel_tutor">
+				</div><br>
+				<div>
+					<label for="email_tutor">Correo electronico:</label>
+					<input type="email" id="email" maxlength="30" name="email_tutor">
+				</div><br>
+				<div>
+					<label for="week">Fecha: </label>
+					<input type="week" id="week" name="week">
+				</div><br>
+				<div>
+					<label for="edad_tutor">Edad: </label>
+					<input type="number" id="edad" name="week">
+				</div><br>
+				<div>
+					<label for="color">¿Color preferido? </label>
+					<input type="color" id="color" name="color">
+				</div>
+			</fieldset><br>
+		<!-- Datos del domicilio-->
+			<fieldset>
+				<legend>Datos del domicilio</legend>
+				<div>
+					<label for="checkbox">¿Vives actualmente aqui?</label><br>
+					<input type="checkbox" id="checkbox1" name="checkbox1" checked>
+					<label for="check">Si</label><br>
+					<input type="checkbox" id="checkbox2" name="checkbox2">
+					<label for="check">No</label>
+				</div><br>
+				<div>
+					<label for="ciudad_tutor">Ciudad:</label>
+					<input type="ciudad" id="ciudad_tutor" name="ciudad">
+				</div><br>
+				<div>
+					<label for="provincia_tutor">Provincia:</label>
+					<input type="provincia" id="provincia_tutor" name="provincia">
+				</div><br
+				<div>
+					<label for="calle_tutor">Calle:</label>
+					<input type="text" id="calle_tutor" name="calle">
+					<label for="numero_tutor">Nº</label>
+					<input type="number" id="numero_tutor" name="numero_domicilio">
+				</div><br>
+				<div><br>
+					<label for="piso">Piso:</label>
+					<input type="piso" id="piso" name="piso">
+				</div>
+				<div><br>
+					<label for="search">Buscar provincia</label>
+					<input type="search" id="search" name="search">
+					<button>Buscar</button>
+				</div>
+				<div><br>
+					<label for="search1">¿Desde que año que año vives aqui?</label><br>
+					<input type="month" id="search1" name="search">
+				</div>
+			</fieldset><br>
+			<input type="image" src="./images/enviar.png" alt="Submit" style="width:100px;height:50px;" id="submit">
+			<input type="reset" value="Reset" id="reset">
+		</form>
+	</main>
+	<footer>
+		<p>Optimizado para Google Chrome</p>
+	</footer>
+</body>
+</html>
+</html>

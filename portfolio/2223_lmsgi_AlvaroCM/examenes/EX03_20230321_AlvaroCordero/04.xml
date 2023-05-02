@@ -1,0 +1,10 @@
+<formulario>
+	<datosFiscales>En paro</datosFiscales>
+	<datosPersonales>
+		<datosFiscales>Alvaro</datosFiscales>
+		<apellido>Cordero</apellido>
+		<sueldo>400</sueldo>
+		<enfermedad>No</enfermedad>
+		<hijo>on</hijo>
+	</datosPersonales>
+</formulario>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>1 - GIMNASIO</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <h1 id="1---gimnasio">1 - GIMNASIO</h1>
+<h2 id="consultas---xpath">Consultas - XPath</h2>
+<p>Dado el siguientes datos XPath online real-time tester, evaluator and generator for XML &amp; HTML
+(<a href="http://xpather.com">xpather.com</a>) se pide realizar las siguientes consultas:</p>
+<ol>
+<li>
+<p>Título de las actividades</p>
+<p><code>/actividades/actividad/titulo/text()</code></p>
+<p>Resultado:</p>
+<p><img src="file:///f:\FP. Grado Superior\LENGUAJE DE MARCAS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_ErikaMP\ud5\01\images\01.PNG" alt="Resultado de la expresion 1"></p>
+</li>
+<li>
+<p>Mostrar el código de la actividad, título y nivel.</p>
+<p><code>/actividades/actividad/codigo/text()|/actividades/actividad/titulo/text()|/actividades/actividad/@nivel</code></p>
+<p>Resultado:</p>
+<p><img src="file:///f:\FP. Grado Superior\LENGUAJE DE MARCAS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_ErikaMP\ud5\01\images\02.PNG" alt="Resultado de la expresion 2"></p>
+</li>
+<li>
+<p>El primer título de la actividad.</p>
+<p><code>//actividad[1]/titulo/text()</code></p>
+<p>Resultado:</p>
+<p><img src="file:///f:\FP. Grado Superior\LENGUAJE DE MARCAS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_ErikaMP\ud5\01\images\03.PNG" alt="Resultado de la expresion 3"></p>
+</li>
+<li>
+<p>El último título de la actividad.</p>
+<p><code>//actividad[last()]/titulo/text()</code></p>
+<p>Resultado:</p>
+<p><img src="file:///f:\FP. Grado Superior\LENGUAJE DE MARCAS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_ErikaMP\ud5\01\images\04.PNG" alt="Resultado de la expresion 4"></p>
+</li>
+<li>
+<p>Todos los elementos descendientes de las actividades infantiles</p>
+<p><code>//actividad[@nivel=&quot;infantil&quot;]/node()</code></p>
+<p>Resultado:</p>
+<p><img src="file:///f:\FP. Grado Superior\LENGUAJE DE MARCAS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_ErikaMP\ud5\01\images\05.PNG" alt="Resultado de la expresion 5"></p>
+</li>
+<li>
+<p>El nombre de las actividades para adultos.</p>
+<p><code>//actividad[@nivel=&quot;adultos&quot;]/titulo/text()</code></p>
+<p>Resultado:</p>
+<p><img src="file:///f:\FP. Grado Superior\LENGUAJE DE MARCAS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_ErikaMP\ud5\01\images\06.PNG" alt="Resultado de la expresion 6"></p>
+</li>
+<li>
+<p>El nombre de las actividades con dos sesiones semanales</p>
+<p><code>//actividad[sesiones/sesiones_semana=2]/titulo/text()</code></p>
+<p>Otras formas:</p>
+<p><code>//sesiones[sesiones_semana=2]/../titulo/text()</code>
+<code>//sesiones_semana[.=2]/../../titulo/text()</code></p>
+<p>Resultado:</p>
+<p><img src="file:///f:\FP. Grado Superior\LENGUAJE DE MARCAS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_ErikaMP\ud5\01\images\07.PNG" alt="Resultado de la expresion 7"></p>
+</li>
+<li>
+<p>Número de actividades</p>
+<p><code>count(//actividad)</code></p>
+<p>Resultado:</p>
+<p><img src="file:///f:\FP. Grado Superior\LENGUAJE DE MARCAS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_ErikaMP\ud5\01\images\08.PNG" alt="Resultado de la expresion 8"></p>
+</li>
+<li>
+<p>Si queremos convertir el resultado a cadena de caracteres, podemos usar la función string().</p>
+</li>
+</ol>
+<p><code>string(count(//actividad))</code></p>
+<p>Resultado:</p>
+<p><img src="file:///f:\FP. Grado Superior\LENGUAJE DE MARCAS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_ErikaMP\ud5\01\images\09.PNG" alt="Resultado de la expresion 9"></p>
+<ol start="10">
+<li>Cuenta del número de actividades infantiles.</li>
+</ol>
+<p><code>count(//actividad[@nivel=&quot;infantil&quot;])</code></p>
+<p>Resultado:</p>
+<p><img src="file:///f:\FP. Grado Superior\LENGUAJE DE MARCAS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_ErikaMP\ud5\01\images\10.PNG" alt="Resultado de la expresion 10"></p>
+<ol start="11">
+<li>Suma de las sesiones semanales de las actividades para adultos.</li>
+</ol>
+<p><code>sum(//actividad[@nivel='adultos']//sesiones_semana)</code></p>
+<p>Resultado:</p>
+<p><img src="file:///f:\FP. Grado Superior\LENGUAJE DE MARCAS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_ErikaMP\ud5\01\images\11.PNG" alt="Resultado de la expresion 10"></p>
+<ol start="12">
+<li>Nodos de la actividad de código A06.</li>
+</ol>
+<p><code>//actividad/codigo[.=&quot;A06&quot;]/parent::node()</code></p>
+<p>Otras formas:</p>
+<p><code>//actividad[codigo=&quot;A06&quot;]/self::node()</code></p>
+<p>Resultado:</p>
+<p><img src="file:///f:\FP. Grado Superior\LENGUAJE DE MARCAS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_ErikaMP\ud5\01\images\12.PNG" alt="Resultado de la expresion 10"></p>
+<ol start="13">
+<li>Duración de las actividades con intensidad fuerte</li>
+</ol>
+<p><code>//actividad/sesiones[@intensidad=&quot;fuerte&quot;]/minutos_sesion/text()</code></p>
+<p>Resultado:</p>
+<p><img src="file:///f:\FP. Grado Superior\LENGUAJE DE MARCAS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_ErikaMP\ud5\01\images\13.PNG" alt="Resultado de la expresion 10"></p>
+<ol start="14">
+<li>Mostrar el código de las actividades cuya duración coincide con la duración del 1º actividad.</li>
+</ol>
+<p><code>//actividad[sesiones/minutos_sesion/text()=//actividad[1]/sesiones/minutos_sesion/text()]/codigo</code></p>
+<p>Resultado:</p>
+<p><img src="file:///f:\FP. Grado Superior\LENGUAJE DE MARCAS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_ErikaMP\ud5\01\images\14.PNG" alt="Resultado de la expresion 10"></p>
+<ol start="15">
+<li>Título de las actividades del año 2018.</li>
+</ol>
+<p><code>//actividad[fecha_inicio&gt;=&quot;2018-01-01&quot; and fecha_inicio&lt;=&quot;2018-12-31&quot; ]/titulo/text()</code></p>
+<p>Otras formas:</p>
+<p><code>//actividad[starts-with(fecha_inicio,&quot;2018&quot;)/titulo/text()</code></p>
+<p>Resultado:</p>
+<p><img src="file:///f:\FP. Grado Superior\LENGUAJE DE MARCAS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_ErikaMP\ud5\01\images\15.PNG" alt="Resultado de la expresion 10"></p>
+
+        
+        
+    </body>
+    </html>

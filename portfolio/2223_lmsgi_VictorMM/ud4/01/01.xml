@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Descripción: Unidad04-Actividad 01
+	Autor: victor manuel manrique
+	Fecha creación/modificación: 17/01/2023
+-->
+<!DOCTYPE email SYSTEM "01.dtd">
+<email xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="01.xsd">
+    <remitente>
+        victor@gmail.com
+    </remitente>
+    <destinatario>
+        gaza@gmail.com
+    </destinatario>
+    <destinatario>
+        lauki@gmail.com
+    </destinatario>
+    <destinatario>
+        cobreros@gmail.com
+    </destinatario>
+    <fecha>
+        <dia>---17</dia>
+        <mes>--01</mes>
+        <anyo>2023</anyo>
+    </fecha>
+    <asunto>los quintos de castrogonzalo 2023</asunto>
+    <mensaje>
+        <![CDATA[ 
+        LISTA DE LA COMPRA
+        1.AGUA
+        2.ZUMO
+        3.KAS
+        4.TONICA]]>
+      os invitamos a las fiestas de castrogonzalo
+    </mensaje>
+    <image>
+        <nombre>ismael.jpg</nombre>
+        <tipo>image/jpeg</tipo>
+    </image>
+    <image>
+        <nombre>borja.png</nombre>
+        <tipo>image/png</tipo>
+    </image>
+</email>

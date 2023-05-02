@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hemeroteca SYSTEM "12.dtd">
+<hemeroteca xmlns:xsi="http://www.w3.org/2001/XMLSchema" xsi:noNamesespaceSchemaLocation="12.xsd">
+  <publicacion id="publicacion1" tituloCorto="Revista1">
+      <titulo>Revista1</titulo>
+      <autor>Juan Perez</autor>
+      <fecha>2022-02-01</fecha>
+      <articulo seccion="Deportes" pagina="12">
+          <titulo>Partido de futbol</titulo>
+          <autor>Pedro Gomez</autor>
+          <contenido>El equipo local ganó 3-0</contenido>
+      </articulo>
+      <articulo seccion="Economia" pagina="18">
+          <titulo>Crecimiento economico</titulo>
+          <autor>Andres Lopez</autor>
+          <contenido>El país ha tenido un crecimiento del 5% en el último trimestre</contenido>
+      </articulo>
+      <noticia categoria="politica">
+          <titulo>Cambio de gobierno</titulo>
+          <contenido>El presidente anunció su renuncia</contenido>
+          <fuente>El Pais</fuente>
+      </noticia>
+  </publicacion>
+  <publicacion id="publicacion2" tituloCorto="Revista2">
+      <titulo>Revista2</titulo>
+      <fecha>2022-02-15</fecha>
+      <articulo seccion="Ciencia" pagina="8">
+          <titulo>Descubrimiento científico</titulo>
+          <autor>Maria Fernandez</autor>
+          <contenido>Se ha descubierto una nueva especie de animal</contenido>
+      </articulo>
+      <noticia>
+          <titulo>Accidente de tráfico</titulo>
+          <contenido>Un coche se estrelló contra un poste de luz</contenido>
+      </noticia>
+  </publicacion>
+  <libro id="libro1" tituloCorto="Libro1">
+      <titulo>Libro1</titulo>
+      <autor>Jose Rodriguez</autor>
+      <fecha>2021-10-01</fecha>
+      <editorial>Editorial1</editorial>
+      <isbn>1234567890</isbn>
+      <idioma>
+          <español>true</español>
+          <aleman>false</aleman>
+          <portugues>true</portugues>
+      </idioma>
+      <genero>
+          <terror>La casa embrujada</terror>
+      </genero>
+  </libro>
+  <libro id="libro2" tituloCorto="Libro2">
+      <titulo>Libro2</titulo>
+      <autor>Ana Gomez</autor>
+      <fecha>2022-01-01</fecha>
+      <editorial>Editorial2</editorial>
+      <isbn>0987654321</isbn>
+      <idioma>
+          <español>true</español>
+          <aleman>true</aleman>
+          <portugues>false</portugues>
+      </idioma>
+      <genero>
+          <humor>Chistes para niños</humor>
+      </genero>
+  </libro>
+</hemeroteca>

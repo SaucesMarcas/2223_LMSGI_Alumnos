@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="historia">
+    <xs:annotation>
+      <xs:documentation> 
+    Author: Carlos Garcia Cachon
+    Date: 17/01/2023
+    Description: Escribir un documento XML que almacene la siguiente información: HECHOS HISTÓRICOS
+        Descripción                 Fecha
+                            Día     Mes     Año
+        Se funda Youtube    15      2       2005
+        Se funda Google     4       9       1998
+        Se funda Facebook   4       2       2004
+</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="fila" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="descripcion"/>
+              <xs:element name="fecha">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="anyo">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:short">
+                          <xs:minInclusive value="1900"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="mes">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:byte">
+                          <xs:maxInclusive value="12"/>
+                          <xs:minInclusive value="0"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="dia">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:byte">
+                          <xs:maxInclusive value="31"/>
+                          <xs:minInclusive value="0"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

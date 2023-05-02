@@ -1,0 +1,28 @@
+<!DOCTYPE catalogo SYSTEM "11.dtd">
+<catalogo> <!-- de 0 o de más portatiles-->
+    <portatil>
+        <referencia></referencia> <!-- ID con 2 letras y 5 digitos númericos-->
+        <nombre></nombre> <!-- cadena caracteres maximo 20 caracteres -->
+        <fabricante nombre="lenovo"/> <!-- lenovo,hp,msi,apple,asus,dell,desconocido -->
+        <procesador>
+            <nombre></nombre> <!-- no restriccion -->
+            <cache tamanyo="Gb"></cache> <!-- tamanyo: mg,gb,tb - por defecto: gb / cache: float -->
+            <numero></numero> <!-- numero: integer, min:1 - max:20 -->
+            <velocidad medida="Ghz"></velocidad> <!-- medida: float / valor fijo medida: Ghz -->
+        </procesador> 
+        <ram>
+            <memoria unidad_medida="Gb"></memoria> <!-- memoria: integer / unidad_medida: mg,gb,tb - por defecto: gb dos caracteres -->
+            <tipo></tipo> <!-- tipo de valores string DDR3 - DDR4 -->
+        </ram>
+        <disco tipo="SSD"> <!-- tipo: SSD o HDD -->
+            <capacidad unidad_medida="Gb"></capacidad> <!-- memoria: integer / unidad_medida: mg,gb,tb - por defecto: gb dos caracteres -->
+        </disco> 
+        <pantalla>
+            <dimension tamanyo="pulgadas"></dimension> <!-- dimension: float - fragmentDigits:1 -->
+            <resolucion></resolucion>
+            <resolucionmax></resolucionmax> <!-- opcional -->
+        </pantalla>
+        <grafica></grafica> <!-- cadena -->
+        <foto></foto><!-- de 0 o de más fotos de portatiles-->
+    </portatil>
+</catalogo>

@@ -1,0 +1,89 @@
+html{
+	font-family: sans-serif;
+	margin-bottom: 5rem;
+}
+main footer{
+	text-align: center;
+	padding: 2rem;
+	width: 100%;
+	background-color: white;
+	color: #005a66;
+	clear: both;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+ul{
+	list-style: none;
+
+}
+li{
+	font-size: 2rem;
+	display: inline-block;
+
+	padding-right: 10rem;
+}
+
+img{
+	width: 100%;
+	
+}
+body{
+	background-color: turquoise;
+	width: 1500px;
+	margin: 0 auto;
+}
+h1{
+	text-align: center;
+	letter-spacing: 4rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 3rem;
+	color: #005a66;
+	padding: 1rem 0;
+}
+main h2{
+	font-size: 3rem;
+}
+main header{
+	font-style: italic;
+	text-align: center;
+}
+ul{
+	text-align: center;
+}
+main section{
+	border: 5px dotted #005a66;
+	margin: 35px;
+
+	width: 25rem;
+	float: left;
+	background-color: #66B2FF;
+}
+
+main article{
+	font-size: 2rem;
+	float: left;
+	line-height: 3.5rem;
+	
+}
+main blockquote::first-letter{
+	color: #005a66;
+	font-size: 3rem;
+	width: 16;
+	height:
+	float: left;
+	line-height: 3.5rem;
+}
+
+
+main figure{
+	width: 75%;
+}
+
+		

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogo SYSTEM "11.dtd">
+<catalogo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="11.xsd">
+    <portatil>
+        <referencia>HP10219</referencia>
+        <nombre>Mi PC</nombre>
+        <fabricante nombreFabricante="APPLE"/> <!--LENOVO, HP, MSI, APPLE, ASUS, DELL, DESCONOCIDO-->
+        <procesador>
+            <nombreProcesador>Intel i9</nombreProcesador>
+            <cache tamanyo="gb">8</cache> <!--Mb, Gb y Tb,-->
+            <numeroProcesadores>2</numeroProcesadores>
+            <velocidad medida="Ghz">3.5</velocidad>
+        </procesador>
+        <ram>
+            <memoria unidadMedida="gb">132</memoria> <!--Mb, Gb y Tb,-->
+            <tipoMemoria>DDR4</tipoMemoria> <!--DDR3, DDR4-->
+        </ram>
+        <disco tipoDisco="SSD">
+            <capacidadDisco unidadMedidaDisco="gb">500</capacidadDisco>
+        </disco>
+        <disco tipoDisco="HDD">
+            <capacidadDisco unidadMedidaDisco="tb">1</capacidadDisco>
+        </disco>
+        <pantalla>
+            <dimension unidadPantalla="pulgadas">15.6</dimension>
+            <resolucion>1266x768</resolucion>
+            <resolucionMax>1366x768</resolucionMax>
+        </pantalla>
+        <grafica>UHD Graphics 620</grafica>
+        <foto>foto1.png</foto>
+    </portatil>
+</catalogo>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE curriculum SYSTEM "04.dtd">
+<curriculum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="04.xsd">
+    <nombre>Ismael</nombre>
+    <apellidos>Ferreras</apellidos>
+    <residencia>
+        <ciudad>Madrid</ciudad>
+        <pais>España</pais>
+    </residencia>
+    <contacto>
+        <telefono>345543234</telefono>
+        <correo>ismaelfg@gmail.com</correo>
+        <linkedin>Ismael FG</linkedin>
+        <descripcion>Curriculum</descripcion>
+        <competencias>
+            <competencia nivel="bajo">
+                Redes Sociales
+            </competencia>
+            <competencia nivel="medio">
+                Bases de datos
+            </competencia>
+            <competencia nivel="alto">
+                Entornos de Desarrollo
+            </competencia>
+        </competencias>
+        <formacion>
+            <titulacion anyo="2022" centro="IES LOS SAUCES">Educacion Secundaria</titulacion>
+            <titulacion anyo="2002" centro="IES LOS SAUCES">SMR</titulacion>
+        </formacion>
+        <experiencia>
+            <puesto>Puesto de trabajo</puesto>
+            <empresa>Empresa1</empresa>
+            <anyoInicio>2002</anyoInicio>
+            <anyoFinal>2022</anyoFinal>
+        </experiencia>
+        <experiencia>
+            <puesto>Puesto de trabajo 2</puesto>
+            <empresa>Empresa2</empresa>
+            <anyoInicio>2022</anyoInicio>
+        </experiencia>
+    </contacto>
+</curriculum>

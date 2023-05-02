@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mundo SYSTEM "02.dtd">
+<!--
+	Descripción: 
+	Autor: Ismael Ferreras García
+	Fecha creación/modificación: 17/01/2023
+-->
+<mundo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="02.xsd">
+    <linea>
+        <continente>EUROPA</continente>
+        <pais>ALEMANIA</pais>
+        <capital>BERLÍN</capital>
+    </linea>
+    <linea>
+        <continente>AMÉRICA</continente>
+        <pais>ARGENTINA</pais>
+        <capital>BUENOS AIRES</capital>
+    </linea>
+    <linea>
+        <continente>AMÉRICA</continente>
+        <pais>BAHAMAS</pais>
+        <capital>NASSAU</capital>
+    </linea>
+    <linea>
+        <continente>ASIA</continente>
+        <pais>AZGANIASTÁN</pais>
+        <capital>KABUL</capital>
+    </linea>
+    <linea>
+        <continente>ASIA</continente>
+        <pais>ARABIA SAUDITA</pais>
+        <capital>RIAD</capital>
+    </linea>
+    
+</mundo>

@@ -1,0 +1,132 @@
+
+ #id_horario{
+    background-color: grey;
+ }
+ #entorno{
+    background-color: greenyellow;
+ }
+ #lmsgi{
+    background-color: gold;
+ }
+ #sistemas{
+    background-color: goldenrod;
+ }
+ #programacion{
+    background-color: darkorange;
+ }
+ #bd{
+    background-color: darksalmon;
+ }
+ #fol{
+    background-color: rgb(95, 91, 91);
+ }
+
+
+
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ html {
+     font-family: sans-serif;
+     margin-bottom: 5rem;
+     background-color: bisque;
+ }
+
+ nav {
+     background-color: rgb(32, 147, 32);
+     height: 60px;
+ }
+
+ li {
+     display: inline-block;
+     padding-top: 1rem;
+     padding-right: 1rem;
+     text-transform: uppercase;
+     font-size: 1.5rem;
+ }
+
+
+ a {
+     text-decoration: none;
+     color: white;
+ }
+
+ body {
+     width: 1024px;
+     margin: 0 auto;
+     text-align: center;
+     
+ }
+ 
+ table {
+     border-collapse: collapse;
+     margin: 0 auto;
+     width: 70%;
+     
+ }
+ article h3{
+    margin-top: 2rem;
+ }
+
+ th,
+ td {
+     border: 1px dotted white;
+     width: 170px;
+ }
+
+ header {
+     background-color: rgb(32, 147, 32);
+     height: 60px;
+ }
+
+ article header {
+     background-color: grey;
+     height: 60px;
+ }
+
+ header img {
+     width: 60px;
+     height: 60px;
+     float: left;
+ }
+
+ h1 {
+     text-align: left;
+     text-transform: uppercase;
+     color: white;
+ }
+
+ article {
+     background-color: grey;
+     color: white;
+ }
+
+ article h3 {
+     border: 1px solid white;
+     background-color: grey;
+     text-align: left;
+     color: white;
+ }
+
+ footer {
+     color: white;
+     background-color: grey;
+     margin-top: 2rem;
+ }
+
+ article footer {
+     text-align: left;
+     background-color: grey;
+ }
+
+ footer address:nth-child(2) {
+     background-color: rgb(32, 147, 32);
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     text-align: center;
+     padding: 0.4rem;
+     clear: both;
+ }

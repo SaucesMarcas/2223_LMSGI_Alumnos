@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE lugares SYSTEM "08.dtd">
+<!-- 
+    Author: Carlos Garcia Cachon
+    Date: 17/01/2023
+    Description:    Tenemos que almacenar información sobre lugares. 
+                    Se pide elaborar el DTD para comprobar que está bien formado.
+<lugares>En el <lugar>polo norte</lugar> hace mucho frío. Pero, en el <lugar>desierto del Sahara</lugar> hace mucho 
+calor.</lugares>
+-->
+<lugares xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="08.xsd">En el <lugar>polo norte</lugar> hace mucho frío. Pero, en el <lugar>desierto del Sahara</lugar> hace mucho 
+calor.</lugares>

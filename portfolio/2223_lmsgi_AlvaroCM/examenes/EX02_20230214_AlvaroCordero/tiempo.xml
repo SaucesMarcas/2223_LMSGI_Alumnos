@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tiempo>
+    <localidad nombre="Zamora">
+        <dias>
+            <dia fecha="2023/02/10">
+                <probabilidadPrecipitacion medida="%">5</probabilidadPrecipitacion>
+                <estadoDelCielo>Nubes</estadoDelCielo>
+                <temperatura>
+                    <minima>12</minima>
+                    <maxima>26</maxima>
+                </temperatura>
+                <viento>
+                    <direccion>N</direccion>
+                    <velocidad>0</velocidad>
+                </viento>
+            </dia>
+            <dia fecha="2023/02/10">
+                <probabilidadPrecipitacion medida="%">0</probabilidadPrecipitacion>
+                <estadoDelCielo>Despejado</estadoDelCielo>
+                <temperatura>
+                    <minima>13</minima>
+                    <maxima>26</maxima>
+                </temperatura>
+                <viento>
+                    <direccion>NE</direccion>
+                    <velocidad>5</velocidad>
+                </viento>
+            </dia>
+            <dia fecha="2023/02/10">
+                <probabilidadPrecipitacion medida="%">
+                    10</probabilidadPrecipitacion>
+                <estadoDelCielo>Cubierto con lluvia escasa</estadoDelCielo>
+                <temperatura>
+                    <minima>14</minima>
+                    <maxima>28</maxima>
+                </temperatura>
+                <viento>
+                    <direccion>N</direccion>
+                    <velocidad unidadMedia="Km/h">20</velocidad>
+                </viento>
+            </dia>
+        </dias>
+    </localidad>
+</tiempo>

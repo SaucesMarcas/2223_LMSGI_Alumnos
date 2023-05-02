@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE horario SYSTEM "h.dtd">
+<horario>
+    <dia tipo="Lunes">
+        <hora horaEntrada="08:30" horaSalida="09:20">
+            <asignatura>EDD</asignatura>
+            <profesor>IFJC</profesor>
+        </hora>
+        <hora horaEntrada="09:20" horaSalida="10:10">
+            <asignatura>FOL</asignatura>
+            <profesor>FOCF</profesor>
+        </hora>
+        <hora horaEntrada="10:10" horaSalida="11:00">
+            <asignatura>BBDD_BBDD</asignatura>
+            <profesor>IFHR</profesor>
+        </hora>
+        <hora horaEntrada="11:25" horaSalida="12:15">
+            <asignatura>BBDD_BBDD</asignatura>
+            <profesor>IFHR</profesor>
+        </hora>
+        <hora horaEntrada="12:15" horaSalida="13:05">
+            <asignatura>EDD</asignatura>
+            <profesor>IFJC</profesor>
+        </hora>
+        <hora horaEntrada="13:05" horaSalida="13:55">
+            <asignatura>SINF</asignatura>
+            <profesor>IFJB</profesor>
+        </hora>
+    </dia>
+    <dia tipo="Martes">
+        <hora horaEntrada="08:30" horaSalida="09:20">
+            <asignatura>Len_Marcas_Sis_Ges_I</asignatura>
+            <profesor>IFAR</profesor>
+        </hora>
+        <hora horaEntrada="09:20" horaSalida="10:10">
+            <asignatura>Len_Marcas_Sis_Ges_I</asignatura>
+            <profesor>IFAR</profesor>
+        </hora>
+        <hora horaEntrada="10:10" horaSalida="11:00">
+            <asignatura>FOL</asignatura>
+            <profesor>FOCF</profesor>
+        </hora>
+        <hora horaEntrada="11:25" horaSalida="12:15">
+            <asignatura>PROG</asignatura>
+            <profesor>IFAC</profesor>
+        </hora>
+        <hora horaEntrada="12:15" horaSalida="13:05">
+            <asignatura>PROG</asignatura>
+            <profesor>IFAC</profesor>
+        </hora>
+        <hora horaEntrada="13:05" horaSalida="13:55">
+            <asignatura>EDD</asignatura>
+            <profesor>IFJC</profesor>
+        </hora>
+    </dia>
+    <dia tipo="Miercoles">
+        <hora horaEntrada="08:30" horaSalida="09:20">
+            <asignatura>PROG</asignatura>
+            <profesor>IFAC</profesor>
+        </hora>
+        <hora horaEntrada="09:20" horaSalida="10:10">
+            <asignatura>PROG</asignatura>
+            <profesor>IFAC</profesor>
+        </hora>
+        <hora horaEntrada="10:10" horaSalida="11:00">
+            <asignatura>SINF</asignatura>
+            <profesor>IFJB</profesor>
+        </hora>
+        <hora horaEntrada="11:25" horaSalida="12:15">
+            <asignatura>SINF</asignatura>
+            <profesor>IFJB</profesor>
+        </hora>
+        <hora horaEntrada="12:15" horaSalida="13:05">
+            <asignatura>BBDD_BBDD</asignatura>
+            <profesor>IFHR</profesor>
+        </hora>
+        <hora horaEntrada="13:05" horaSalida="13:55">
+            <asignatura>BBDD_BBDD</asignatura>
+            <profesor>IFHR</profesor>
+        </hora>
+    </dia>
+    <dia tipo="Jueves">
+        <hora horaEntrada="08:30" horaSalida="09:20">
+            <asignatura>FOL</asignatura>
+            <profesor>FOCF</profesor>
+        </hora>
+        <hora horaEntrada="09:20" horaSalida="10:10">
+            <asignatura>EDD</asignatura>
+            <profesor>IFJC</profesor>
+        </hora>
+        <hora horaEntrada="10:10" horaSalida="11:00">
+            <asignatura>PROG</asignatura>
+            <profesor>IFAC</profesor>
+        </hora>
+        <hora horaEntrada="11:25" horaSalida="12:15">
+            <asignatura>PROG</asignatura>
+            <profesor>IFAC</profesor>
+        </hora>
+        <hora horaEntrada="12:15" horaSalida="13:05">
+            <asignatura>Len_Marcas_Sis_Ges_I</asignatura>
+            <profesor>IFAR</profesor>
+        </hora>
+        <hora horaEntrada="13:05" horaSalida="13:55">
+            <asignatura>Len_Marcas_Sis_Ges_I</asignatura>
+            <profesor>IFAR</profesor>
+        </hora>
+    </dia>
+    <dia tipo="Viernes">
+        <hora horaEntrada="08:30" horaSalida="09:20">
+            <asignatura>BBDD_BBDD</asignatura>
+            <profesor>IFHR</profesor>
+        </hora>
+        <hora horaEntrada="09:20" horaSalida="10:10">
+            <asignatura>BBDD_BBDD</asignatura>
+            <profesor>IFHR</profesor>
+        </hora>
+        <hora horaEntrada="10:10" horaSalida="11:00">
+            <asignatura>PROG</asignatura>
+            <profesor>IFAC</profesor>
+        </hora>
+        <hora horaEntrada="11:25" horaSalida="12:15">
+            <asignatura>PROG</asignatura>
+            <profesor>IFAC</profesor>
+        </hora>
+        <hora horaEntrada="12:15" horaSalida="13:05">
+            <asignatura>SINF</asignatura>
+            <profesor>IFJB</profesor>
+        </hora>
+        <hora horaEntrada="13:05" horaSalida="13:55">
+            <asignatura>SINF</asignatura>
+            <profesor>IFJB</profesor>
+        </hora>
+    </dia>
+</horario>

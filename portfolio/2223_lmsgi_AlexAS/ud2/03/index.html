@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML 03 Alex Asensio Sanchez</title>
+	</head>
+	<body style="background-color:gray;">
+	<main>
+		<header>
+			<h1>Plantilla de formulario de videojuegos</h1>
+		</header>
+		<form method="get">
+		<fieldset>
+			<legend>Datos del usuario</legend>
+			<label for="Nombre">Nombre:</label>
+			<input type="text"  pattern="[a-zA-ZáéíóúÁÉÍÓÚ ]{1,10}" size="20" id="Nombre" >
+			<label for="Apellidos">Apellidos:</label>
+			<input type="text" pattern="[a-zA-ZáéíóúÁÉÍÓÚ ]{2,25}" size="40" id="Apellidos">
+		</fieldset>
+		<fieldset>
+			<legend>¿Ha jugado usted a algun videojuego?</legend>
+			<div><label for="idSi"><input type="radio" value="Si" name="BotonConf" id="idSi" checked>Si</label></div>
+			<div><label for="idNo"><input type="radio" value="No" name="BotonConf" id="idNo">No</label></div>
+		</fieldset>
+		<fieldset>
+			<legend>¿Que tipo de juegos ha jugado usted?</legend>
+			<div><label for="idNinguno"><input type="checkbox" value="1" name="Opcion1" id="idNinguno" checked>Ninguno</label></div>
+			<div><label for="idRPG"><input type="checkbox" value="2" name="Opcion2" id="idRPG">RPG Por turnos</label></div>
+			<div><label for="idARPG"><input type="checkbox" value="3" name="Opcion3" id="idARPG">Action RPG</label></div>
+			<div><label for="idhacknSlash"><input type="checkbox" value="4" name="Opcion4" id="idhacknSlash">Hack and slash</label></div>
+			<div><label for="idPlataformas"><input type="checkbox" value="5" name="Opcion5" id="idPlataformas">Plataformas</label></div>
+			<div><label for="idPeleas"><input type="checkbox" value="6" name="Opcion6" id="idPeleas">Peleas</label></div>
+			<div><label for="idConduccion"><input type="checkbox" value="7" name="Opcion7" id="idConduccion">Conduccion</label></div>
+			<div><label for="idSimulador"><input type="checkbox" value="8" name="Opcion8" id="idSimulador">Simulador</label></div>
+			<div><label for="idSandbox"><input type="checkbox" value="9" name="Opcion9" id="idSandbox">Mundo abierto</label></div>
+			<div><label for="idPuzles"><input type="checkbox" value="10" name="Opcion10" id="idPuzles">Puzles</label></div>
+			<div><label for="idTerror"><input type="checkbox" value="11" name="Opcion11" id="idTerror">Terror</label></div>
+			<div><label for="idVN"><input type="checkbox" value="12" name="Opcion12" id="idVN">Novela visual</label></div>
+		</fieldset>
+			<fieldset>
+			<label for="IdPla">¿En que plataformas juegas usualmente?</label>
+			<input list="pla" name="Plataformas" id="IdPla">
+			<datalist id="pla">
+				<option value="Nintendo">
+				<option value="Sony (Play station)">
+				<option value="Xbox">
+				<option value="PC">
+				<option value="Movil">
+			</datalist>
+			</fieldset>
+			<fieldset>
+				<label for="idpla2">Segunda plataforma en la que mas juegas</label>
+				<select id="idpla2">
+					<option value="Nintendo">Nintendo</option>
+					<option value="Sony">Sony</option>
+					<option value="Xbox" selected>Xbox</option>
+					<option value="PC">PC</option>
+					<option value="Movil">Movil</option>
+				</select>
+			</fieldset>
+		<fieldset>
+		<label for="textarea">
+				¿Cual es su videojuego favorito?<br>
+				<textarea name="text" rows="3" cols="50" id="textarea" placeholder="Escriba aqui"></textarea>
+				
+				
+			
+
+		</fieldset>
+		<fieldset>
+			<label for="Idrango">Del 1 al 10 cuanto valora dicho juego</label>
+			<input type="range" name="rango" id="Idrango" min="0" max="10" value="3">10
+		</fieldset>
+		<fieldset>
+			<label for="quantity">Cuantas veces ha completado este juego:</label>
+			<input type="number" id="quantity" name="quantity" min="1" max="25">
+			</fieldset>
+			<fieldset>
+			<label for="myfoto">¿Puede probarlo de algun modo?, suba una captura de pantalla:</label>
+			<input type="file" id="myfoto" name="foto">
+			</fieldset>
+			<hr>
+			<div>
+				<p>Se esta desarollando un nuevo videojuego y necesitamos de gente dispuesta a probarlo en pos de encontrar fallos, de 
+				querer participar rellene los siguientes campos</p>
+			</div>
+		<fieldset>
+				<label for="idtelefono">Introduzca su telefono</label>
+				<input type="tel" name="telefono" id="idtelefono" pattern="[0-9]{3} [ -] [0-9]{3}[ -][0-9]{3}"
+				title="Numero incorrecto" placeholder="000-00-00-00" required>
+		</fieldset>
+		<fieldset>
+			<label for="IdFecha">Fecha de pedido de la alpha </label>
+				<input type="date" name="Fecha" id="IdFecha">
+		</fieldset>
+		<fieldset>
+			<label for="IdHora">Hora de pedido (de12:00 a 17:00)</label>
+				<input type="time" name="hora" id="IdHora" value="17:00" min="17:00" max="20:00" step="5">
+			
+		</fieldset>
+		<fieldset>
+			<label for="Idsemana">Semana en la que recibir el juego</label>
+				<input type="week" name="semana" id="Idsemana">
+		</fieldset>
+		<fieldset>
+			<label for="Idmes">Mes en el que recibir el juego</label>
+				<input type="month" name="mes" id="Idmes">
+		</fieldset>
+		
+		<div><p hidden>Esto supuestamente no se tiene que ver</p></div>
+			
+		<fieldset>
+				<label for="email">Introduzca su email:</label>
+				<input type="email" id="email" name="email"   minlength="1" maxlength="35"   pattern="xxxxxx@gmail.com" multiple required>
+		</fieldset>
+			
+		<fieldset>
+			<label for="pass">Contraseña de la pagina:</label>
+			<input type="password" id="pass" name="contraseña">
+		</fieldset>
+			
+			
+			
+			
+			
+			<fieldset>
+				<label for="Pag">Buscador para ir a la pagina del juego</label>
+				<input type="url" id="Pag" name="pagina">
+			</fieldset>
+			<fieldset>
+			<label for="gsearch">Buscador para mas informacion del juego:</label>
+			<input type="search" id="gsearch" name="gsearch">
+			</fieldset>
+			<fieldset>
+				<label for="resetear">Restablecer valores</label>
+				<input type="reset" id="resetear" name="reset">
+			</fieldset>
+			
+			<fieldset>
+			<p><input type="image" src="../../webroot/media/images/ud2/03/586383cd7d90850fc3ce2915.png" alt="Submit" height="200" width="200"></p>
+			</fieldset>
+			</form>
+			</main>
+			
+			
+			
+
+
+		<footer>
+				<div>Optimizado para Edge y Google Chrome</div>
+		</footer>
+		</body>
+		
+		
+</html>

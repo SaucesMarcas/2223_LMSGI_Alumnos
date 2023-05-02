@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE horario SYSTEM "12.dtd">
+<horario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="12.xsd">
+    <fila>
+        <hora>Horas</hora>
+        <dia>Lunes</dia>
+        <dia>Martes</dia>
+        <dia>Miercoles</dia>
+        <dia>Jueves</dia>
+        <dia>Viernes</dia>
+    </fila>
+    <fila>
+        <hora>De 8:30 Hasta 9:20</hora>
+        <asignatura dia="lunes" horas="1">EDD-IFJC</asignatura>
+        <asignatura dia="martes" horas="2">Len Marcas Sist Ges I-IFAR</asignatura>
+        <asignatura dia="miercoles" horas="2">PROG-IFAC</asignatura>
+        <asignatura dia="jueves" horas="1">Formación Orint. La-FOCF</asignatura>
+        <asignatura dia="viernes" horas="2">BBDD BBDD-IFHR</asignatura>
+    </fila>
+    <fila>
+        <hora>De 9:20 Hasta 10:10</hora>
+        <asignatura dia="lunes" horas="1">Formación Orint. La-FOCF</asignatura>
+        <asignatura dia="jueves" horas="1">EDD-IFJC</asignatura>
+    </fila>
+    <fila>
+        <hora>De 10:10 Hasta 11:00</hora>
+        <asignatura dia="lunes" horas="2">BBDD BBDD-IFHR</asignatura>
+        <asignatura dia="martes" horas="1">Formación Orint. La-FOCF</asignatura>
+        <asignatura dia="miercoles" horas="2">SINF-IFJB</asignatura>
+        <asignatura dia="jueves" horas="2">PROG-IFAC</asignatura>
+        <asignatura dia="viernes" horas="2">PROG-IFAC</asignatura>
+    </fila>
+    <fila>
+        <hora>De 11:25 Hasta 12:15</hora>
+        <asignatura dia="martes" horas="2">PROG-IFAC</asignatura>
+    </fila>
+    <fila>
+        <hora>De 12:15 Hasta 13:05</hora>
+        <asignatura dia="lunes" horas="2">SINF-IFJB</asignatura>
+        <asignatura dia="miercoles" horas="2">BBDD-IFHR</asignatura>
+        <asignatura dia="jueves" horas="2">Len Marcas Sist Ges I-IFAR</asignatura>
+        <asignatura dia="viernes" horas="2">SINF-IFJB</asignatura>
+    </fila>
+    <fila>
+        <hora>De 13:05 Hasta 13:55</hora>
+        <asignatura dia="martes" horas="1">EDD-IFJC</asignatura>
+    </fila>
+</horario>

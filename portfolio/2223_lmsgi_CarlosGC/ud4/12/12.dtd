@@ -1,0 +1,36 @@
+<!ELEMENT hemeroteca (publicacion+, libro+)>
+<!ELEMENT publicacion (titulo, autor?, fecha?, articulo*, noticia*)>
+<!ELEMENT articulo (titulo, autor, contenido)>
+<!ELEMENT noticia (titulo, contenido, fuente?)>
+<!ELEMENT libro (titulo, autor?, fecha?, editorial, isbn, idioma, genero)>
+<!ELEMENT idioma (español, aleman, portugues)>
+<!ELEMENT genero (terror | humor | infantil)>
+<!ELEMENT terror (#PCDATA)>
+<!ELEMENT humor (#PCDATA)>
+<!ELEMENT infantil (#PCDATA)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT contenido (#PCDATA)>
+<!ELEMENT fuente (#PCDATA)>
+<!ELEMENT editorial (#PCDATA)>
+<!ELEMENT isbn (#PCDATA)>
+<!ELEMENT español (#PCDATA)>
+<!ELEMENT aleman (#PCDATA)>
+<!ELEMENT portugues (#PCDATA)>
+    <!ATTLIST publicacion id CDATA #REQUIRED tituloCorto CDATA #IMPLIED>
+    <!ATTLIST articulo seccion CDATA #IMPLIED pagina CDATA #IMPLIED>
+    <!ATTLIST noticia categoria CDATA "general">
+    <!ATTLIST libro id CDATA #REQUIRED tituloCorto CDATA #IMPLIED>
+    <!ATTLIST titulo id CDATA #IMPLIED>
+    <!ATTLIST autor id CDATA #IMPLIED>
+    <!ATTLIST fecha id CDATA #IMPLIED>
+    <!ATTLIST contenido id CDATA #IMPLIED>
+    <!ATTLIST fuente id CDATA #IMPLIED>
+    <!ATTLIST editorial id CDATA #IMPLIED>
+    <!ATTLIST isbn id CDATA #IMPLIED>
+    <!ATTLIST español id CDATA #IMPLIED>
+    <!ATTLIST aleman id CDATA #IMPLIED>
+    <!ATTLIST portugues id CDATA #IMPLIED>
+<!ATTLIST hemeroteca xmlns:xsi CDATA #IMPLIED
+          xsi:noNamesespaceSchemaLocation CDATA #IMPLIED>

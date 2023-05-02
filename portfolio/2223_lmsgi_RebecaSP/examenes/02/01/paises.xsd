@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="goegrafia">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="continentes">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="continente" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="pais" maxOccurs="unbounded" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="nombre">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="Europa"/>
+                                                <xs:enumeration value="América"/>
+                                                <xs:enumeration value="Asia"/>
+                                                <xs:enumeration value="África"/>
+                                                <xs:enumeration value="Antártida"/>
+                                                <xs:enumeration value="Oceanía"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>    
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="paises">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="pais" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="sistema" type="xs:string"/>
+                                        <xs:element name="superficie" type="xs:int"/>
+                                        <xs:element name="moneda" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="antigua" use="optional" fixed="antigua" type="xs:string"/> 
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="idioma" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="nombre" type="xs:string"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="rios">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="rio" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string"/>
+                                        <xs:element name="pais" type="xs:string" maxOccurs="unbounded"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

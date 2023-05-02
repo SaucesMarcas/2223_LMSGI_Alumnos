@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Autor: Erika Martínez Pérez
+    Práctica: Actividad 2
+    Descripción:  - Escribir un documento XML que almacene la siguiente información:
+-->
+<!DOCTYPE mundo SYSTEM "02.dtd">
+<mundo>
+    <continente>
+        <nombre>europa</nombre>
+        <pais>
+            <nombre>alemania</nombre>
+            <capital>
+                <nombre>berlín</nombre>
+            </capital>
+        </pais>
+    </continente>
+    <continente>
+        <nombre>américa</nombre>
+        <pais>
+            <nombre>argentina</nombre>
+            <capital>
+                <nombre>buenos aires</nombre>
+            </capital>
+        </pais>
+    </continente>
+    <continente>
+        <nombre>asia</nombre>
+        <pais>
+            <nombre>arabia saudita</nombre>
+            <capital>
+                <nombre>riad</nombre>
+            </capital>
+        </pais>
+    </continente>
+</mundo>

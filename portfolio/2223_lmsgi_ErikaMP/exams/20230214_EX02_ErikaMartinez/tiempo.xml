@@ -1,0 +1,26 @@
+<tiempos>
+    <prediccion dia="yyyy-mm-dd"> <!-- formato de fecha yyyy-mm-dd -->
+        <precipitacion></precipitacion> <!-- numero entero comprendido entre 0 y 100 -->
+        <estado></estado> <!-- contiene texto -->
+        <temperatura> <!-- numero entero comprendido entre -100 y 100 -->
+            <minima></minima>
+            <maxima></maxima>
+        </temperatura> 
+        <viento>
+            <direccion></direccion> <!-- lista de valores E,ND,NE,N,O,SD,SE -->
+            <velocidad></velocidad> <!-- numero entero comprendido entre 0 y 400 -->
+        </viento>
+    </prediccion>
+    <prediccion dia="2023-02-10"> 
+        <precipitacion>5</precipitacion>
+        <estado>nubes</estado>
+        <temperatura>
+            <minima>12</minima>
+            <maxima>26</maxima>
+        </temperatura> 
+        <viento>
+            <direccion>N</direccion>
+            <velocidad>0</velocidad>
+        </viento>
+    </prediccion>
+</tiempos>

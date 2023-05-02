@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 
+    Author: Carlos Garcia Cachon
+    Date: 17/01/2023
+    Description: Declarar tres entidades internas: escritor 
+    "Miguel de Cervantes obra "El Quijote" fecha 
+    "29/09/1547"
+-->
+<!DOCTYPE textos [
+    <!ENTITY escritor "Miguel de Cervantes">
+    <!ENTITY obra "El Quijote">
+    <!ENTITY fecha "29/09/1547">
+    <!ELEMENT textos (texto*)>
+    <!ELEMENT texto (#PCDATA)>]>
+
+<textos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="09.xsd">
+    <texto>&obra; fue escrito por &escritor;</texto>
+    <texto>&escritor; nació el &fecha;</texto>
+</textos>

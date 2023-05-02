@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Carlos GC - Imperial News</title>
+        <link>https://elpais.es</link>
+        <description><![CDATA[<h2>Descripcion</h2>]]></description>
+        <language>es</language>
+        <skipDays>
+            <day>Sabado</day>
+            <day>Domingo</day>
+        </skipDays>
+        <lastBuildDate>Thu, 12 Jan 2023 11:22:14 GMT</lastBuildDate>
+        <enclosure type="images/png" url="images/logo.png"></enclosure>
+        <item>
+            <title>Carlos Sainz y Joan Barreda se despiden del Dakar tras otra jornada accidentada</title>
+            <link>https://elpais.com/deportes/2023-01-10/joan-barreda-se-despide-del-dakar-con-otra-caida.html</link>
+            <guid>https://elpais.com/deportes/2023-01-10/joan-barreda-se-despide-del-dakar-con-otra-caida.html</guid>
+            <description>El madrileño, descartado para la clasificación general, vuelca en los primeros kilómetros de la etapa. 
+                El piloto castellonense es trasladado al hospital con dolores de espalda y abandona el rally cuando marchaba 
+                octavo y con opciones de ganar en la clasificación general
+            </description>
+            <category>Noticias</category>
+            <author>Autor 1</author>
+        </item>
+        <item>
+            <title>Carlos Sainz y Joan Barreda se despiden del Dakar tras otra jornada accidentada</title>
+            <link>https://elpais.com/deportes/2023-01-10/joan-barreda-se-despide-del-dakar-con-otra-caida.html</link>
+            <guid>https://elpais.com/deportes/2023-01-10/joan-barreda-se-despide-del-dakar-con-caida.html</guid>
+            <description>El madrileño, descartado para la clasificación general, vuelca en los primeros kilómetros de la etapa. 
+                El piloto castellonense es trasladado al hospital con dolores de espalda y abandona el rally cuando marchaba 
+                octavo y con opciones de ganar en la clasificación general
+            </description>
+            <category>España</category>
+            <author>Autor 1</author>
+        </item>
+        <copyright>Derechos de Autor elpais.es</copyright>
+    </channel>
+</rss>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogo SYSTEM "11.dtd">
+<catalogo>
+    <portatil>
+        <referencia>LN12345</referencia>
+        <nombre>Portatil1</nombre>
+        <!-- LENOVO HP APPLE MSI ASUS DELL DESCONOCIDO -->
+        <fabricante nombre="HP"/>
+        <procesador>
+            <nombre>Intel core i3</nombre>
+            <cache tamanyo="Gb">8</cache>
+            <numero>2</numero>
+            <velocidad medida="Ghz">3.5</velocidad>
+        </procesador>
+        <ram>
+            <memoria unidadmedida="Gb">132</memoria>
+            <!-- ddr3 ddr4 -->
+            <tipomemoria>DDR3</tipomemoria>
+        </ram>
+        <disco tipo="SSD">
+            <capacidad unidadmedidadisco="Gb">500</capacidad>
+        </disco>
+        <disco tipo="HDD">
+            <capacidad unidadmedidadisco="Tb">1</capacidad>
+        </disco>
+        <pantalla>
+            <dimension tamanyopantalla="pulgadas">15.6</dimension>
+            <resolucion>1266x768</resolucion>
+            <resolucionMaxima>1366x768</resolucionMaxima>
+        </pantalla>
+        <grafica>UHD Graphics 620</grafica>
+        <fotos>foto1portatil1.png, foto2portatil1.png</fotos>
+    </portatil>
+</catalogo>

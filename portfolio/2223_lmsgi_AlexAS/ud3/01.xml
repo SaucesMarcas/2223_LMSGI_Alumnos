@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Alex- El pais</title>
+        <link>http://192.168.2.105/index.html</link>
+        <description>Ultimas noticias del periodico el pais</description>
+        <language>es</language>
+        <category>Noticias</category>
+        <skipDays>
+            <day>Saturday</day>
+            <day>Sunday</day>
+        </skipDays>
+        <skipHours>
+            <hour>0</hour>
+            <hour>1</hour>
+            <hour>2</hour>
+            <hour>3</hour>
+            <hour>4</hour>
+            <hour>5</hour>
+            <hour>6</hour>
+            <hour>7</hour>
+            <hour>8</hour>
+        </skipHours>
+        <lastBuildDate>Thu, 12 Jan 2023 13:34:00 +0100</lastBuildDate>
+        <item>
+            <title>Brasil se llena de incertidumbre tras un asalto</title>
+            <link>https://www.20minutos.es/noticia/5090614/0/brasil-da-por-controlado-el-asalto-al-congreso-y-comienza-a-depurar-responsabilidades-todo-esto-debilitara-a-bolsonaro/</link>
+            <description>
+                <![CDATA[Un asalto <strong>manifestante</strong> provoca incertidumbre en las autoridades del pais pues pudo contar con apoyo estructural]]>
+            </description>
+            <enclosure url="http://192.168.2.105/ud3/images/juan1.jpg" length="20992" type="image/jpg"/>
+            <category>News</category>
+            <pubDate>Mon, 16 Jan 2023 12:05:00 +0100</pubDate>
+        </item>
+        <item>
+            <title>Detenido Matteo Messina, el capo de la mafia mas buscado en Italia</title>
+            <link>https://elpais.com/internacional/2023-01-16/detenido-matteo-messina-el-capo-de-la-mafia-mas-buscado-en-italia.html</link>
+            <description>
+                <![CDATA[El jefe de la organización criminal Cosa Nostra estaba huido de la justicia desde hacía 30 años]]>
+            </description>
+            <enclosure url="http://192.168.2.105/ud3/images/juan2.jpg" length="18739,2" type="image/jpg"/>
+            <category>News</category>
+            <pubDate>Mon, 16 Jan 2023 12:05:00 +0100</pubDate>
+        </item>
+        <item>
+            <title>Productivo despegue de Nadal ante Draper</title>
+            <link>https://elpais.com/deportes/2023-01-16/productivo-despegue-de-nadal-ante-draper.html</link>
+            <description>
+                <![CDATA[El campeón de 22 grandes sortea un estreno peliagudo contra el inglés (7-5, 2-6, 6-4 y 6-1, en 3h 41m) y rellena el depósito anímico antes del cruce con McDonaldAun lesionado]]>
+            </description>
+            <enclosure url="http://192.168.2.105/ud3/images/juan3.jpg" length="9615,36" type="image/jpg"/>
+            <category>Sports</category>
+            <pubDate>Mon, 16 Jan 2023 12:05:00 +0100</pubDate>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,59 @@
+/******fuentes***********/
+@font-face {
+	font-family: roboto-bold;
+	src: url("../fonts/Roboto/Roboto-Bold.ttf");
+}
+
+/* reset *******/
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: content-box;
+}
+a{
+	text-decoration: none;
+}
+ol, ul{
+	list-style: none;
+}
+
+/***** encabezado *******/
+#encabezado{
+	border-bottom: 2px groove green;
+	font-family: 'roboto-bold','sans-serif';	
+	width: 100%;
+	background-color: white;	
+	height: 8rem;	
+}
+#encabezado img{
+	width: 5rem;
+	float: left;
+}
+#encabezado h1{
+	color: green;
+	margin-left: 5px;
+	padding-top: 2rem;
+	font-size: 2rem;
+}
+/*****menu navegacion****/
+
+nav ul{
+	width: 10%;
+	float: right;
+}
+nav li{
+	background-color: green;
+
+}
+nav a{
+	color: white;
+	padding: 0.4rem;
+	text-align: center;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+
+}
+/******main**************/
+
+/******footer************/

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Rebeca - RSS de mi web</title>
+        <link>http://192.168.2.108</link>
+        <description>Ultimas noticias de mi periodico</description>
+        <category>Noticias</category>
+        <category>Local</category>
+        <category>Nacional</category>
+        <category>Internacional</category>
+        <copyright>2022-23  IES LOS SAUCES. ©Todos los derechos reservados y optimizado para Chrome. Rebeca Sánchez Pérez</copyright>
+        <language>es-es</language>
+        <lastBuildDate>Fri, 13 Jan 2023 13:15:40 +0100</lastBuildDate>
+        <pubDate>Tue, 10 Jan 2023 08:30:00 +0100</pubDate>
+        <skipDays>
+            <day>Saturday</day>
+            <day>Sunday</day>
+        </skipDays>
+        <skipHours>
+            <hour>0</hour>
+            <hour>1</hour>
+            <hour>2</hour>
+            <hour>3</hour>
+            <hour>4</hour>
+            <hour>5</hour>
+            <hour>6</hour>
+            <hour>7</hour>
+            <hour>8</hour>
+        </skipHours>
+        <image>
+            <url>https://192.168.2.108/ud3/images/favicon.png</url>
+            <link>http://192.168.2.108</link>
+            <title>Rebeca - RSS de mi web</title>
+        </image>
+        <item>
+            <title>Luz verde al proyecto de reforma del pabellón municipal La Rosaleda de Benavente con 275.000 euros de coste</title>
+            <link>https://www.laopiniondezamora.es/benavente/2022/09/29/luz-verde-proyecto-reforma-pabellon-76038474.html</link>
+            <guid isPermaLink="true">https://www.laopiniondezamora.es/benavente/2022/09/29/luz-verde-proyecto-reforma-pabellon-76038474.html</guid>
+            <description><![CDATA[La primera fase incluye la remodelación de los aseos públicos de la primera planta y el montaje de una pista de juego de <b>madera maciza</b>.]]></description>
+            <author>rebeca.sanper.1@educa.jcyl.es (Rebeca Sánchez)</author>
+            <category>Noticias</category>
+            <category>Local</category>
+            <category>Pabellon</category>
+            <pubDate>Tue, 10 Jan 2023 08:30:00 +0100</pubDate>
+            <enclosure url="https://192.168.2.108/ud3/images/pabellon.png" length="500" type="image/png" />
+            <source url="https://www.laopiniondezamora.es">LaOpinionDeZamora.es</source>
+        </item>
+        <item>
+            <title>El alcalde paraliza la instalación de un negocio en la plaza Mayor</title>
+            <link>https://www.benaventedigital.es/el-alcalde-paraliza-la-instalacion-de-un-negocio-en-la-plaza-mayor</link>
+            <guid isPermaLink="true">https://www.benaventedigital.es/el-alcalde-paraliza-la-instalacion-de-un-negocio-en-la-plaza-mayor</guid>
+            <description><![CDATA[El Ayuntamiento de <b>Benavente</b> concedió al promotor licencia para adecuar el local, con los informes favorables emitidos por los servicios técnicos.]]></description>
+            <author>rebeca.sanper.1@educa.jcyl.es (Rebeca Sánchez)</author>
+            <category>Noticias</category>
+            <category>Local</category>
+            <category>Ayuntamiento</category>
+            <pubDate>Tue, 10 Jan 2023 08:30:00 +0100</pubDate>
+            <enclosure url="https://192.168.2.108/ud3/images/Local_de_la_plaza.png" length="500" type="image/png" />
+            <source url="https://www.benaventedigital.es">BenaventeDigital.es</source>
+        </item>
+        <item>
+            <title>Examen 2</title>
+            <link>http://192.168.2.108/index.html#E02</link>
+            <description>Evaluar sobre la sindicación de contenidos, así como XML, Schema XML y DTD</description>
+            <pubDate>Tue, 14 Feb 2023 09:59:00 +0100</pubDate>
+            <enclosure url="https://192.168.2.108/ud3/images/pabellon.png" length="500" type="image/png" />
+        </item>
+    </channel>
+</rss>

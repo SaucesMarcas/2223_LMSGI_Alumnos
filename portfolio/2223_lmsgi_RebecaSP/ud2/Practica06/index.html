@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+	Descripcion: Caras de un dado, practica 06
+	Autor: Rebeca Sánchez Pérez
+	Fecha creacion/modificacion: 15/11/2022
+-->
+<html lang="es"> 
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Rebeca Sánchez Pérez">
+		<meta name="description" content="Caras de un dado hechas sin clases, ni ids, ni css">
+		<meta name="Keywords" content="dados, caras, punto, cuadrado, borde">
+		<style>
+			div{
+				width:150px;
+				height:150px;
+				border:7px solid black;
+				margin-left: 10px;
+				margin-right: 10px;
+				margin-bottom: 10px;
+				margin-top: 10px;
+				padding: 30px;
+				background-origin: content-box;
+				display:inline-block;
+				}
+			div:nth-child(1){
+				background-image: url(images/punto.png);
+				background-size: 20%;
+				background-repeat: no-repeat;
+				background-position:center;
+				}
+			div:nth-child(2){
+				background-image: url(images/punto.png),url(images/punto.png);
+				background-size: 20%;
+				background-repeat: no-repeat;
+				background-position: right bottom, left top;
+				}
+			div:nth-child(3){
+				background-image: url(images/punto.png),url(images/punto.png),url(images/punto.png);
+				background-size: 20%;
+				background-repeat: no-repeat;
+				background-position: right bottom, left top, center;
+				}
+			div:nth-child(4){
+				background-image: url(images/punto.png),url(images/punto.png),url(images/punto.png),url(images/punto.png);
+				background-size: 20%;
+				background-repeat: no-repeat;
+				background-position: right bottom, right top, left bottom, left top;
+				}
+			div:nth-child(5){
+				background-image: url(images/punto.png),url(images/punto.png),url(images/punto.png),url(images/punto.png),url(images/punto.png);
+				background-size: 20%;
+				background-repeat: no-repeat;
+				background-position: right bottom, right top, left bottom, left top, center;
+				} 
+			div:nth-child(6){
+				background-image: url(images/punto.png),url(images/punto.png),url(images/punto.png),url(images/punto.png),url(images/punto.png),url(images/punto.png);
+				background-size: 20%;
+				background-repeat: no-repeat;
+				background-position: right bottom, right, right top, left bottom, left, left top;
+				}
+		</style>
+		<link rel="icon" type="image/png" href="images/favicon.png">
+		<title>HTML 06 Rebeca Sánchez Pérez</title>
+	</head>
+	<body>
+		<header>
+			<h1>CARAS DE UN DADO</h1>
+		</header>
+		<main>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</main>
+		<footer>
+			<address>2022-23  IES LOS SAUCES. ©Todos los derechos reservados y optimizado para Chrome. Rebeca Sánchez Pérez</address>
+		</footer>
+	</body>
+</html>

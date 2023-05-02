@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!--
+	Descripción: Unidad02-Actividad 03
+	Autor: Victor Manuel Manrique Villarino
+	Fecha creación/modificación: 25/10/2022
+-->
+<html lang="es">
+	<head>
+		<title>HTML 03 Victor Manuel Manrique Villarino</title>
+			<meta charset= "utf-8">
+			<meta name="description" content="coleccion">
+			<meta name="author" content="Victor Manrique" >
+			<meta name="keywords" content="muñecas"  >
+			<meta name="generator" content="notepad++" >
+			<meta name="refresh" content="5" >
+			<link rel="icon" type="image/x-icon" href="media/images/favicon.png">
+			<link rel="stylesheet" href="css/estilo.css">
+	</head>
+	<body> 
+		<header>
+			<h1>Muñecas</h1>
+		</header>
+		<main>
+			<form action="#" method="get">
+				<label for="site-search">buscar:</label>
+				<input type="search" id="site-search" name="q">
+				<label for="url">Introduce una URL</label>
+				<input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30">
+			</form>
+			<form action="#" method="get">			
+				<fieldset>
+					<legend> Datos Personales</legend>
+					<div>
+						<label for="idnombre"> Nombre </label>
+						<input type="text" id="idnombre"  name="nombre" placeholder="introduce nombre">
+					</div>
+					<div>
+						<label for="idapellido"> Apellidos </label>
+						<input type="text" id="idapellido" name="apellidos" placeholder="introduce apellidos">
+					</div>
+					<div>
+						<label for="idte">telefono de contacto</label>
+						<input type="tel" name="telefono" id="idte" pattern="\([0-9]{3}\) [0-9]{3}[-][0-9]{4}" title="un numero esta formado por 3 numeros entre parentesis y un grupo de tres y otro de cuatro separados por un guion" placeholder="(000) 000-0000">
+					</div>
+					<div>
+						<label for="idemail"> Color favorito </label>
+						<input type="color" id="color">
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend> Registro</legend>
+					<div>
+						<label for="idemail"> Correo Electronico </label>
+						<input type="email" id="idemail" name="email" placeholder="introduce email">
+					</div>
+					<div>
+						<label for="idemail"> Password </label>
+						<input type="password" id="pswd" min="1" max="8">
+					</div>
+					<div>
+						<label for="avatar">selecciona foto de perfil</label>
+						<input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+					</div>
+			</fieldset>
+			<fieldset>
+				<legend> Fecha Nacimiento</legend>
+				<div>
+					<label for="bdaymonth">mes de nacimiento:</label>
+					<input type="month" id="bdaymonth" name="bdaymonth">
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Genero</legend>
+				<div>
+					<label for="idmasc"><input type="radio" id="idmasc" name="genero" value="Masculino"> Masculino </label>
+				</div>
+				<div>
+					<label for="idfem"><input type="radio" id="idfem" name="genero" value="Femenino"> Femenino </label>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Tipo De Muñeca</legend>
+				<div>
+					<label for="idcolec"><input  type="checkbox" id="idcolec" name="colec1" value="Vintage"> Vintage </label>
+				</div>
+				<div>
+					<label for="idbarbie"><input  type="checkbox" id="idbarbie" name="colec2" value="barbie"> Barbie </label>
+				</div>
+				<div>
+					<label for="idmonster"><input  type="checkbox" id="idmonster" name="colec3" value="Monster High"> Monster High </label>
+				</div>
+				<div>
+					<label for="idseries"><input  type="checkbox" id="idseries" name="colec4" value="Series"> Series </label>
+				</div>
+				<div>
+					<label for="idnancy"><input type="checkbox" id="idnancy" name="colec5" value="Nancy"> Nancy </label>
+				</div>
+				<div>
+					<label for="idwinx"><input type="checkbox" id="idwinx" name="colec6" value="Winx Club"> Winx Club </label>
+				</div>
+				<div>
+					<label for="iddisney"><input type="checkbox" id="iddisney" name="colec7" value="Disney"> Disney </label>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Cantidad</legend>
+					<label for="quantity">Cuantas colecciones tienes</label>
+					<input type="number" id="quantity" name="quantity" min="1" max="50">
+			</fieldset>
+			<fieldset>
+				<legend>Marca Favorita</legend>
+				<div>
+					<label for="idfam"><input type="radio" id="idfam" name="marca" value="Famosa"> Famosa </label>
+				</div>
+				<div>
+					<label for="idjack"><input type="radio" id="idjack" name="marca" value="Jackss Pacific"> Jackss Pacific </label>
+				</div>
+				<div>
+					<label for="idwitty"><input type="radio" id="idwitty" name="marca" value="Witty toys"> Witty Toys </label>
+				</div>
+				<div>
+					<label for="idmat"><input type="radio" id="idmat" name="marca" value="Mattel"> Mattel </label>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend> Calidad </legend>
+				<div>
+					<label for="idcant"> puntua las nuevas colecciones</label>
+						<input type="range" name="rango" id="idcant" min="0" max="10" value="5" list="nc">
+						<datalist id="nc">
+							<option value="0" label="0"></option>
+							<option value="1" label="1"></option>
+							<option value="2" label="2"></option>
+							<option value="3" label="3"></option>
+							<option value="4" label="4"></option>
+							<option value="5" label="5"></option>
+							<option value="6" label="6"></option>
+							<option value="7" label="7"></option>
+							<option value="8" label="8"></option>
+							<option value="9" label="9"></option>
+							<option value="10" label="10"></option>
+						</datalist>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend> ¿Donde las consigues? </legend>
+					<select>
+						<option value="Tienda Fisica">Tienda fisica</option>
+						<option value="Mercadillo">Mercadillo</option>
+						<option value="Ferias">Ferias</option>
+						<option value="Tienda online">Tienda Online</option>	
+						<option value="Wallapop">Wallapop</option>	
+						<option value="vinted">Vinted</option>	
+					</select>
+			</fieldset>
+			<fieldset>
+				<legend> coleción favorita de los ultimos años </legend>
+					<label for="idCol">selecciona tu colección actual favorita</label>
+						<input list="lstCol" name="browser" id="idCol" placeholder="selecciona un valor">
+					<datalist id="lstCol">
+						<option value="Rainbow High">Rainbow high</option>
+						<option value="Shadow High">Shadow high</option>
+						<option value="Monster High">Monster high G3</option>
+						<option value="Winx Club">Winx</option>
+					</datalist>
+			</fieldset>
+			
+			<fieldset>
+				<legend> Fecha De Formulario </legend>
+				<div>
+					<label for="idfecha2"> Fecha</label>
+				<input type="date" name="fecha" id="idfecha2">	
+				</div>
+				<div>
+				<label for="week">semana</label>
+					<input type="week" name="week" id="week" min="2022-W43" max="2022-W45">
+				</div>
+				<div>
+					<label for="idhora"> hora
+						<input type="time" name="hora" id="idhora" value="09:00">
+					</label>
+				</div>
+			</fieldset>
+			<textarea name="comentario" rows="10" cols="20" placeholder="escribe tu comentario"></textarea>
+			<br>
+			<input type="image" src="images/enviar.png" name="enviar" alt="enviar" style="height:100px;width:100px">
+			<input type="image" src="images/reset.jpg" name="reset" alt="reset" style="height:100px;width:100px">
+			<input id="prodId" name="prodId" type="hidden" value="xm234jq">
+		
+			</form>
+		</main>
+		<footer>
+			<address>2022-2023 Todos los derechos reservados © Victor Manuel Manrique Villarino</address>
+		</footer>	
+	</body>
+</html>
+	

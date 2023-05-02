@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--ELEMENTO CON ATRIBUTO Y AUTOCIERRE (SIN NADA
+ESCRITO)-->
+<xs:element name="fabricante">
+    <xs:complexType>
+        <xs:attribute name="nombreFabricante" default="DESCONOCIDO">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">   <!--value="LENOVO|HP|APPLE"-->
+                    <xs:enumeration value="LENOVO" />
+                    <xs:enumeration value="HP" />
+                    <xs:enumeration value="APPLE" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+</xs:element>
+<!--ELEMENTO
+CON TEXTO Y ATRIBUTO CON PLANTILLA (CASO ESPECIAL)-->
+<xs:element name="memoria">
+    <xs:complexType>
+        <xs:simpleContent>
+            <xs:extension base="xs:int">
+                <xs:attribute name="unidadMedida" default="gb">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="mb" />
+                            <xs:enumeration value="gb" />
+                            <xs:enumeration value="tb" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:element>
+<!--ELEMENTO
+CON ATRIBUTO Y DENTRO UN ELEMENTO EXCEPCIONAL CON ATRIBUTO (LOS TRIBUTOS DEL PADRE VAN ABAJO)-->
+<xs:element name="disco" maxOccurs="unbounded">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="capacidadDisco">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:int"> <!--TIPO DEL HIJO-->
+                            <xs:attribute name="unidadMedidaDisco"> <!--ATRIBUTO DEL HIJO-->
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="mb" />
+                                        <xs:enumeration value="gb" />
+                                        <xs:enumeration value="tb" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="tipoDisco">  <!--ATRIBUTO DEL PADRE-->
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="SSD" />
+                    <xs:enumeration value="HDD" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+</xs:element>

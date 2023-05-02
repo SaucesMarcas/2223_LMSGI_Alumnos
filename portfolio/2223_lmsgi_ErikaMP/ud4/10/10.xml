@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- nombres tamaño-max=100_char tamaño-min=4_char -->
+<!-- nombre empiezan por mayuscula siempre-->
+<pedido> 
+    <plato tipo="entrante"> <!-- entrantes,primeros,segundos,postres -->
+        <nombre tipo="jamón">Croquetas caseras</nombre> <!-- jamon,boletus,mixtas -->
+        <sinGluten opcion="false"/>
+        <cantidad tipo="racion">media</cantidad>
+        <precio>3,20</precio>
+    </plato>
+    <plato tipo="primero"> <!-- entrantes,primeros,segundos,postres -->
+        <nombre>Macarrones a la carbonara</nombre> <!-- jamon,boletus,mixtas -->
+        <sinGluten opcion="false"/>
+        <precio>4,80</precio>
+    </plato>
+    <plato tipo="segundo"> <!-- entrantes,primeros,segundos,postres -->
+        <nombre>Pollo al ajillo</nombre> <!-- jamon,boletus,mixtas -->
+        <sinGluten opcion="true"/>
+        <precio>4,80</precio>
+    </plato>
+    <plato tipo="postres">
+        <nombre tipo="dulce">Coullant de chocolate calientey nata</nombre>
+        <sinGluten opcion="false"/>
+        <precio>6,00</precio>
+    </plato>
+    <bebida>
+        <nombre tipo="sin_gas" medida="ml" tamanyo="500">Agua</nombre>
+        <precio>1,20</precio>
+    </bebida>
+    <bebida>
+        <nombre tipo="sin_gas" medida="ml" tamanyo="1000">Agua</nombre>
+        <precio>2,40</precio>
+    </bebida>
+    <bebida>
+        <nombre tipo="con_gas" medida="ml" tamanyo="500">Agua</nombre>
+        <precio>1,50</precio>
+    </bebida>
+    <formaPago> <!-- bizzum,visa,efectivo,criptomoneda,paypal,mastercard -->
+        <bizzum>50</bizzum>
+    </formaPago>
+</pedido>

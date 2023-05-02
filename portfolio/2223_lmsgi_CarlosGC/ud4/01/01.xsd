@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="mail">
+    <xs:annotation>
+      <xs:documentation> 
+    Author: Carlos Garcia Cachon
+    Date: 17/01/2023
+    Description: Escribir un documento XML que almacene la información de un mail y contenga la siguiente información: remitente, 
+                destinatario(s), fecha del mensaje, asunto, mensaje, ficheros adjuntos (por cada fichero debe especificar el nombre y el tipo 
+                MIME). No utilizar atributos
+</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="remitente"/>
+        <xs:element type="xs:string" name="destinatario" maxOccurs="unbounded" minOccurs="0"/>
+        <xs:element name="fecha">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:short" name="anyo"/>
+              <xs:element type="xs:byte" name="mes"/>
+              <xs:element type="xs:byte" name="dia"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element type="xs:string" name="asunto"/>
+        <xs:element type="xs:string" name="mensaje"/>
+        <xs:element name="image" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="nombre"/>
+              <xs:element type="xs:string" name="tipo"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <!-- CANAL -->
+    <channel>
+        <!-- Elementos obligatorios de la etiqueta channel -->
+        <title>Pratica 02 - Alvaro Cordero (HomePage)</title>
+        <link>http://192.168.2.114</link>
+        <description>Ultimas noticias de mis tareas en Lenguage de Marcas</description>
+        <!-- Elementos opcionales-->
+        <language>es-es</language>
+        <category>Noticias El Pais</category>
+        <copyright>2023 Alvaro Cordero. All right reserved</copyright>
+        <pubDate>Wed, 02 Oct 2002 08:00:00 EST</pubDate>
+        <skipDays>
+            <day>Saturday</day>
+            <day>Sunday</day>
+        </skipDays>
+        <skipHours>
+            <hour>0</hour>
+            <hour>1</hour>
+            <hour>2</hour>
+            <hour>3</hour>
+            <hour>4</hour>
+            <hour>5</hour>
+            <hour>6</hour>
+            <hour>7</hour>
+        </skipHours>
+        <image>
+            <link>http://192.168.2.114</link>
+            <title>Pratica 02 - Alvaro Cordero (HomePage)</title>
+            <url>http://192.168.2.114/_UD3/img/12.png</url>
+            <description>Imagen fondo de background de mi pagina web</description>
+            <height>42</height>
+            <width>116</width>
+        </image>
+        <!-- ARTICULO DEL CANAL -->
+        <!-- Elemento variable (Puedes incluir esta etiqueta si lo cress conveniente)-->
+        <item>
+            <title>Practica de Horarios con HTML en Lenguage de Marcas</title>
+            <link>http://192.168.2.114/_UD2/02/ud2Actividad2_AlvaroCordero/index.html</link>
+            <guid>
+                http://192.168.2.114/_UD2/02/ud2Actividad2_AlvaroCordero/index.html</guid>
+            <category>HTML</category>
+            <pubDate>Wed, 02 Oct 2002 08:00:00 EST</pubDate>
+            <description>En esta tarea he estado practicando y entrenando mis habilidades con las etiquetas de HTML</description>
+        </item>
+        <item>
+            <title>Practica de posicionamiento en CSS</title>
+            <link>https://192.168.2.114/_UD2/09/ud01Actividad1_AlvaroCordero/index.html</link>
+            <guid>
+                http://192.168.2.114/_UD2/09/ud01Actividad1_AlvaroCordero/index.html</guid>
+            <category>CSS</category>
+            <pubDate>Wed, 02 Oct 2002 08:00:00 EST</pubDate>
+            <description><![CDATA[<p>Posicionamiento CSS</p>]]></description>
+        </item>
+        <item>
+            <title>Formularios en HTML</title>
+            <link>http://192.168.2.114/_UD2/03/ud2Actividad3_AlvaroCordero/index.html</link>
+            <guid>
+                http://192.168.2.114/_UD2/03/ud2Actividad3_AlvaroCordero/index.html</guid>
+            <category>HTML</category>
+            <pubDate>Wed, 02 Oct 2002 08:00:00 EST</pubDate>
+            <description>Aprender a usar los formularios a su vez de entenderel funcionamiento de los IDS</description>
+        </item>
+        <item>
+            <title>Examen 2</title>
+            <link>https://192.168.2.114/examenes/EX02_20230214_AlvaroCordero</link>
+            <guid>
+                https://192.168.2.114/examenes/EX02_20230214_AlvaroCordero</guid>
+            <description>Evaluar sobre la sindicación de contenidos, así como XML, Schema XML y DTD</description>
+            <category>XML, DTD , SCHEMA</category>
+            <pubDate>Wed, 02 Oct 2002 08:00:00 EST</pubDate>
+            <enclosure url="http://192.168.2.114/_UD3/img/12.png" length="67" type="image/png"/>
+        </item>
+    </channel>
+</rss>

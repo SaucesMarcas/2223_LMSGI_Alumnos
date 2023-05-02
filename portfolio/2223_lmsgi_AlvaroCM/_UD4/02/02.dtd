@@ -1,0 +1,5 @@
+<!ELEMENT mundo (linea+)>
+<!ELEMENT linea (continente,pais,capital)>
+<!ELEMENT continente (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT capital (#PCDATA)>
