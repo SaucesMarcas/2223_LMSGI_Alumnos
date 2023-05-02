@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+	<head>
+		<title>Feeder - RSS Feed Reader</title>
+	</head>
+	<body>
+		<outline text="Ruben-RSS en mi web" title="Victor MV-RSS en mi web" type="rss" xmlUrl="http://192.168.2.107/ud3/02.xml" htmlUrl="http://192.168.2.107" rssfr-favicon="https://icons.feedercdn.com/"/>
+		<outline text="Ruben-EL PAIS" title="Victor MV-EL PAIS" type="rss" xmlUrl="http://192.168.2.107/ud3/01.xml" htmlUrl="https://elpais.com" rssfr-favicon="https://icons.feedercdn.com/"/>
+	</body>
+</opml>

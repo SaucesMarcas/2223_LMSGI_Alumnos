@@ -1,0 +1,65 @@
+main{
+    text-align: center;
+}
+footer{
+    background-color: green;
+}
+.log{
+    float: left;  
+}
+.login{
+   text-align: right;
+   color: white;
+   background-color: green;
+   text-decoration: none;
+}
+
+.sauces{
+    color: green;
+}
+.cabez{
+    background-color: green;
+    color: white;
+}
+td{
+    border: solid 1px black
+}
+ol{
+    text-decoration: none;
+    
+}
+#listado{
+    width: 10rem;
+    border: solid green 2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-left: 30px;
+}
+#buscador{
+    width: 10rem;
+    border: solid green 2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+#contacto{
+    width: 10rem;
+    border: solid green 2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#audio{
+    width: 10rem;
+    border: solid green 2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#video{
+    width: 10rem;
+    border: solid green 2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#footer-redes{
+    float: right;
+}

@@ -1,0 +1,4 @@
+<!ELEMENT ejemplos (lenguaje+)>
+<!ELEMENT lenguaje (title,content)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT content (#PCDATA)>

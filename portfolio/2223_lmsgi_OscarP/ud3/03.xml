@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Oscar - El Pais</title>
+        <link>https://elpais.com</link>
+        <description>![CDATA[Ultimas noticias del periodico]]</description>
+        <item>
+            <title>Oscar 4000 millones </title>
+            <link>https://elpais.com/economia/2023-01-10/industria-estrena-nuevo-responsable-con-prisas-ejecutar-mas-de-4000-millones-de-los-fondos-europeos-en-un-ano.html</link>
+            <guid>https://elpais.com/economia/2023-01-10/industria-estrena-nuevo-responsable-con-prisas-ejecutar-mas-de-4000-millones-de-los-fondos-europeos-en-un-ano.html</guid>
+            <pubDate>Thu, 12 Jan 2023 04:00:00GMT</pubDate>
+            <description>Francisco Blanco asume la secretaria de industria para fundir la pasta en menos de un año</description>
+        </item>
+        <item>
+            <title>Oscar Siria </title>
+            <link>https://elpais.com/espana/2023-01-10/el-gobierno-comienza-a-repatriar-desde-siria-a-las-esposas-e-hijos-de-los-yihadistas-del-isis.html</link>
+            <guid>https://elpais.com/espana/2023-01-10/el-gobierno-comienza-a-repatriar-desde-siria-a-las-esposas-e-hijos-de-los-yihadistas-del-isis.html</guid>
+            <description>Dos mujeres y sus 12 hijos llegan al aeropuerto militar de Torrejón de Ardoz</description>
+        </item>
+        
+    </channel>
+</rss>

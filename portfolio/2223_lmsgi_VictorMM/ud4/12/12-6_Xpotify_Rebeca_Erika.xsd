@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:annotation>
+        <xs:documentation>Realizado por: Rebeca Sánchez Pérez y Erika Martínez Pérez</xs:documentation>
+        <xs:appinfo>Xpotify: recogida de informacion de artistas y sus discos</xs:appinfo>
+    </xs:annotation>
+    <xs:group name="elementCantante">
+        <xs:sequence>
+            <xs:element name="nombreArtista" type="xs:string"/>
+            <xs:element name="numeroOyentes" type="xs:long"/>
+            <xs:element name="info" type="xs:string"/>
+            <xs:element name="activo">
+                <xs:complexType>
+                    <xs:attribute name="opcion" type="xs:boolean"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="attDisco">
+        <xs:attribute name="idDisco">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="[D][0-9][0-9]"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="tipoDisco" default="album">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="sencillo"/>
+                    <xs:enumeration value="album"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="generoDisco">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="Pop"/>
+                    <xs:enumeration value="Rock"/>
+                    <xs:enumeration value="Alternative"/>
+                    <xs:enumeration value="Dance_Tecno"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:attributeGroup>
+    <xs:element name="musica">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="artista">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:group ref="elementCantante"/>
+                            <xs:element name="disco" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombreDisco" type="xs:string"/>
+                                        <xs:element name="fechaLanzamiento" type="xs:date"/>
+                                        <xs:element name="duracionTotal">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:time">
+                                                        <xs:attribute name="unidad" use="required" fixed="h"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="discografica" type="xs:string"/>
+                                        <xs:element name="canciones">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="cancion" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="nombreCancion" type="xs:string"/>
+                                                                <xs:element name="duracion">
+                                                                    <xs:complexType>
+                                                                        <xs:simpleContent>
+                                                                            <xs:extension base="xs:time">
+                                                                                <xs:attribute name="unidadMedida" use="required" fixed="min"/>
+                                                                            </xs:extension>
+                                                                        </xs:simpleContent>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="numeroReproducciones" type="xs:long"/>
+                                                                <xs:element name="idioma">
+                                                                    <xs:complexType>
+                                                                        <xs:choice>
+                                                                            <xs:element name="extranjero">
+                                                                                <xs:complexType>
+                                                                                    <xs:attribute name="valor" type="xs:boolean" fixed="true" use="required"/>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                            <xs:element name="nacional">
+                                                                                <xs:complexType>
+                                                                                    <xs:attribute name="valor" type="xs:boolean" fixed="true" use="required"/>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:choice>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="letra" type="xs:string" minOccurs="0"/>
+                                                                <xs:element name="colaboraciones" minOccurs="0">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence> <!--xs:sequence -> xs:all no permite que la repeticion del elemento sea el mismo-->
+                                                                            <xs:element name="colaborador" type="xs:string" minOccurs="1" maxOccurs="5"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="idCancion">
+                                                                <xs:simpleType>
+                                                                    <xs:restriction base="xs:string">
+                                                                        <xs:pattern value="[C][0-9][0-9]"/>
+                                                                    </xs:restriction>
+                                                                </xs:simpleType>
+                                                            </xs:attribute>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="numeroCanciones" type="xs:int"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attributeGroup ref="attDisco"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="genero">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="Pop"/>
+                                    <xs:enumeration value="Rock"/>
+                                    <xs:enumeration value="Alternative"/>
+                                    <xs:enumeration value="Dance_Tecno"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

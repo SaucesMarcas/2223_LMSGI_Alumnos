@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogo SYSTEM "11.dtd">
+<catalogo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="11.xsd">
+    <portatil>
+        <referencia>HP10219</referencia>
+        <nombre>PORTATIL HP</nombre>
+        <fabricante nombre="HP"></fabricante>
+        <procesador>
+            <nombre>i3-7020</nombre>
+            <cache tamanyo="Mb">10</cache>
+            <numeroProcesadores>2</numeroProcesadores>
+            <velocidad medida="Ghz">2.3</velocidad>
+        </procesador>
+        <ram>
+            <memoria unidadMedida="Mb">8</memoria>
+            <tipo>ddr4</tipo>
+        </ram>
+        <disco>
+            <tipo>SSD</tipo>
+            <capacidad unidadMedidaDisco="Gb">256</capacidad>
+        </disco>
+        <pantalla>
+            <dimension tamanyoPantalla="pulgadas">27</dimension>
+            <resolucion>1920x1080</resolucion>
+            <resolucionMaxima>1920x1080</resolucionMaxima>
+        </pantalla>
+        <grafica>1050ti</grafica>
+        <fotos>
+            <nombreArchivo>foto2.jpg</nombreArchivo>
+        </fotos>
+    </portatil>
+    <portatil>
+        <referencia>HP10218</referencia>
+        <nombre>PORTATIL LENOVO</nombre>
+        <fabricante nombre="LENOVO"></fabricante>
+        <procesador>
+            <nombre>i5-7400 </nombre>
+            <cache tamanyo="Mb">40</cache>
+            <numeroProcesadores>4</numeroProcesadores>
+            <velocidad medida="Ghz">3.3</velocidad>
+        </procesador>
+        <ram>
+            <memoria unidadMedida="Mb">16</memoria>
+            <tipo>ddr4</tipo>
+        </ram>
+        <disco>
+            <tipo>SSD</tipo>
+            <capacidad unidadMedidaDisco="Gb">500</capacidad>
+        </disco>
+        <pantalla>
+            <dimension tamanyoPantalla="pulgadas">20</dimension>
+            <resolucion>1920x1080</resolucion>
+            <resolucionMaxima>1920x1080</resolucionMaxima>
+        </pantalla>
+        <grafica>2060ti</grafica>
+        <fotos>
+            <nombreArchivo>foto4.jpg</nombreArchivo>
+        </fotos>
+    </portatil>
+</catalogo>

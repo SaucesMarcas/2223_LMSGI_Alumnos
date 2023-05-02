@@ -1,0 +1,2 @@
+<!ELEMENT lugares (#PCDATA|lugar)*>
+<!ELEMENT lugar (#PCDATA)>

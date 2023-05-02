@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Agave Nerd Font', cursive;
+    src: url(fonts/agave\ regular\ Nerd\ Font\ Complete\ Mono.ttf);
+}
+
+a {
+    text-decoration: none;
+    font-size: 50px;
+    padding: 20px;
+}
+
+.logo-1 {
+    font-family: 'Syne Mono', monospace;
+}
+
+.logo-1 > span {
+    color: red;
+}
+
+.logo-1 {
+    color: blueviolet;
+}
+
+.logo-2 {
+    font-family: 'Agave Nerd Font', cursive;
+}
+
+.logo-2 > span {
+    color: red;
+}
+
+.logo-2 {
+    color: blueviolet;
+}
+
+.logo-3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo-3 > span {
+    color: red;
+}
+
+.logo-3 {
+    color: blueviolet;
+}
+
+.logo-4 {
+    font-family: 'Roboto Condensed';
+}
+
+.logo-4 > span {
+    color: red;
+}
+
+.logo-4 {
+    color: blueviolet;
+}
+
+div:nth-child(1) {
+    font-family: sans-serif;
+}
+
+div:nth-child(2) {
+    font-family: serif;
+}
+
+div:nth-child(3) {
+    font-family: monospace;
+}
+
+div:nth-child(4) {
+    font-family: 'Roboto Condensed';
+}
+
+div:nth-child(5) {
+    font-family: 'Agave Nerd Font', cursive;
+    font-size: 24px;
+}
+
+div:nth-child(6) {
+    font-family: 'Montserrat';
+}
+
+.content {
+    width: 100%;
+    max-width: 600px;
+    padding-top: 25px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    border: solid 1px;
+    border-bottom: dashed green;
+    border-top: dashed red;
+    border-left: dotted orange;
+    border-right: dotted red;
+    position: absolute;
+    left: 50%;
+    
+
+}
+
+.content > div {
+    width: 30%;
+    max-width: 300px;
+    padding-top: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: 2px solid red;
+    background-color:#91a8cf;
+}
+
+div:nth-child(odd) {
+    position: absolute;
+    left: 50%;
+}
+
+div:nth-child(even) {
+   position: relative;
+}
+
+footer {
+    bottom: 0;
+}
+

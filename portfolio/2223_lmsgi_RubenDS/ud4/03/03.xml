@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- 
+    Descripción: Unidad04-Actividad 03
+	Autor: ruben diez sanchez
+	Fecha creación/modificación: 17/01/2023
+-->
+<HechosHistoricos>
+    <linea>
+        <descripxion>Se funda Youtube</descripxion>
+        <fecha>
+            <dia>15</dia>
+            <mes>2</mes>
+            <año>2005</año>
+        </fecha>
+    </linea>
+    <linea>
+        <descripxion>Se funda Google</descripxion>
+        <fecha>
+            <dia>4</dia>
+            <mes>9</mes>
+            <año>1998</año>
+        </fecha>
+    </linea>
+    <linea>
+        <descripxion>Se funda Facebook</descripxion>
+        <fecha>
+            <dia>4</dia>
+            <mes>2</mes>
+            <año>2004</año>
+        </fecha>
+    </linea>
+</HechosHistoricos>

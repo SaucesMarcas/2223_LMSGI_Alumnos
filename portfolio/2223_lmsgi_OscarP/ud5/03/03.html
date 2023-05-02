@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Unidad 5&period;3 Universidad</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <h1 id="unidad-53-universidad">Unidad 5.3 Universidad</h1>
+<ol>
+<li>
+<p>Nombre de la Universidad:</p>
+<p><code>/universidad/nombre/text()</code></p>
+<p>Resultado:</p>
+<p><img src="file:///c:\Users\daw1.IS31WX11\Dropbox\DATOS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_OscarP\ud5\03\images\solucion1.png" alt="Resultado de la expresion 1"></p>
+</li>
+<li>
+<p>Pais de la Universidad:</p>
+<p><code>/universidad/pais/text()</code></p>
+<p>Resultado:</p>
+<p><img src="file:///c:\Users\daw1.IS31WX11\Dropbox\DATOS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_OscarP\ud5\03\images\solucion2.png" alt="Resultado de la expresion 2"></p>
+</li>
+<li>
+<p>Nombres de las Carreras:</p>
+<p><code>//carrera/nombre/text()</code></p>
+<p>Resultado:</p>
+<p><img src="file:///c:\Users\daw1.IS31WX11\Dropbox\DATOS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_OscarP\ud5\03\images\solucion3.png" alt="Resultado de la expresion 3"></p>
+</li>
+<li>
+<p>Años de plan de estudio de las carreras:</p>
+<p><code>//carrera/plan/text()</code></p>
+<p>Resultado:</p>
+<p><img src="file:///c:\Users\daw1.IS31WX11\Dropbox\DATOS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_OscarP\ud5\03\images\solucion4.png" alt="Resultado de la expresion 4"></p>
+</li>
+<li>
+<p>Nombres de todos los alumnos:</p>
+<p><code>//alumno/nombre/text()</code></p>
+<p>Resultado:</p>
+<p><img src="file:///c:\Users\daw1.IS31WX11\Dropbox\DATOS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_OscarP\ud5\03\images\solucion5.png" alt="Resultado de la expresion 5"></p>
+</li>
+<li>
+<p>Identificadores de todas las carreras:</p>
+<p><code>//carrera/@id</code></p>
+<p>Resultado:</p>
+<p><img src="file:///c:\Users\daw1.IS31WX11\Dropbox\DATOS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_OscarP\ud5\03\images\solucion6.png" alt="Resultado de la expresion 6"></p>
+</li>
+<li>
+<p>Datos de la carrera cuyo id es c01:</p>
+<p><code>//carrera[@id=&quot;c01&quot;]</code></p>
+<p>Resultado:</p>
+<p><img src="file:///c:\Users\daw1.IS31WX11\Dropbox\DATOS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_OscarP\ud5\03\images\solucion7.png" alt="Resultado de la expresion 7"></p>
+</li>
+<li>
+<p>Centro en que se estudia de la carrera cuyo id es c02:</p>
+<p><code>//carrera[@id=&quot;c02&quot;]/centro/text()</code></p>
+<p>Resultado:</p>
+<p><img src="file:///c:\Users\daw1.IS31WX11\Dropbox\DATOS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_OscarP\ud5\03\images\solucion8.png" alt="Resultado de la expresion 8"></p>
+</li>
+<li>
+<p>Nombre de las carreras que tengan subdirector:</p>
+<p><code>//carrera[subdirector]/nombre/text()</code></p>
+<p>Resultado:</p>
+<p><img src="file:///c:\Users\daw1.IS31WX11\Dropbox\DATOS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_OscarP\ud5\03\images\solucion9.png" alt="Resultado de la expresion 9"></p>
+</li>
+<li>
+<p>Nombre de los alumnos que estén haciendo proyecto:</p>
+<p><code>//alumno[.//proyecto]/nombre/text()</code></p>
+<p>Resultado:</p>
+<p><img src="file:///c:\Users\daw1.IS31WX11\Dropbox\DATOS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_OscarP\ud5\03\images\solucion10.png" alt="Resultado de la expresion 10"></p>
+</li>
+<li>
+<p>Códigos de las carreras en las que hay algún alumno matriculado:</p>
+<p><code>//alumno/estudios/carrera/@codigo</code></p>
+<p>Resultado:</p>
+<p><img src="file:///c:\Users\daw1.IS31WX11\Dropbox\DATOS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_OscarP\ud5\03\images\solucion11.png" alt="Resultado de la expresion 11"></p>
+</li>
+<li>
+<p>Apellidos y Nombre de los alumnos con beca:</p>
+<p><code>concat(//alumno[@beca=&quot;si&quot;]/nombre,&quot; &quot;,//alumno[@beca=&quot;si&quot;]/apellido1,&quot; &quot;,//alumno[@beca=&quot;si&quot;]/apellido2)</code></p>
+<p>Resultado:</p>
+<p><img src="file:///c:\Users\daw1.IS31WX11\Dropbox\DATOS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_OscarP\ud5\03\images\solucion12.png" alt="Resultado de la expresion 12"></p>
+</li>
+<li>
+<p>Nombre de las asignaturas de la titulación c04:</p>
+<p><code>//asignatura[@titulacion=&quot;c04&quot;]/nombre/text()</code></p>
+<p>Resultado:</p>
+<p><img src="file:///c:\Users\daw1.IS31WX11\Dropbox\DATOS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_OscarP\ud5\03\images\solucion13.png" alt="Resultado de la expresion 13"></p>
+</li>
+<li>
+<p>Nombre de las asignaturas de segundo trimestre:</p>
+<p><code>//asignatura[trimestre=&quot;2&quot;]/nombre/text()</code></p>
+<p>Resultado:</p>
+<p><img src="file:///c:\Users\daw1.IS31WX11\Dropbox\DATOS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_OscarP\ud5\03\images\solucion14.png" alt="Resultado de la expresion 14"></p>
+</li>
+<li>
+<p>Nombre de las asignaturas que no tienen 4 créditos teóricos:</p>
+<p><code>//asignatura[creditos_teoricos!=&quot;4&quot;]/nombre/text()</code></p>
+<p>Resultado:</p>
+<p><img src="file:///c:\Users\daw1.IS31WX11\Dropbox\DATOS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_OscarP\ud5\03\images\solucion15.png" alt="Resultado de la expresion 15"></p>
+</li>
+<li>
+<p>Código de la carrera que estudia el último alumno:ç</p>
+<p><code>//alumno[last()]/estudios/carrera/@codigo</code></p>
+<p>Resultado:</p>
+<p><img src="file:///c:\Users\daw1.IS31WX11\Dropbox\DATOS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_OscarP\ud5\03\images\solucion16.png" alt="Resultado de la expresion 16"></p>
+</li>
+<li>
+<p>Código de las asignaturas que estudian mujeres:</p>
+<p><code>//alumno[sexo=&quot;Mujer&quot;]//asignatura/@codigo</code></p>
+<p>Resultado:</p>
+<p><img src="file:///c:\Users\daw1.IS31WX11\Dropbox\DATOS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_OscarP\ud5\03\images\solucion17.png" alt="Resultado de la expresion 17"></p>
+</li>
+<li>
+<p>Nombre de los alumnos que matriculados en la asignatura a02:</p>
+<p><code>//asignatura[@codigo=&quot;a02&quot;]/../../../nombre/text()</code></p>
+<p>Resultado:</p>
+<p><img src="file:///c:\Users\daw1.IS31WX11\Dropbox\DATOS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_OscarP\ud5\03\images\solucion18.png" alt="Resultado de la expresion 18"></p>
+</li>
+<li>
+<p>Códigos de las carreras que estudian los alumnos matriculados en alguna asignatura.</p>
+<p><code>//asignatura/../..//carrera/@codigo</code></p>
+<p>Resultado:</p>
+<p><img src="file:///c:\Users\daw1.IS31WX11\Dropbox\DATOS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_OscarP\ud5\03\images\solucion19.png" alt="Resultado de la expresion 19"></p>
+</li>
+<li>
+<p>Apellidos de todos los hombres:</p>
+<p><code>//alumno[sexo=&quot;Hombre&quot;]//(apellido1|apellido2)</code></p>
+<p>Resultado:</p>
+<p><img src="file:///c:\Users\daw1.IS31WX11\Dropbox\DATOS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_OscarP\ud5\03\images\solucion20.png" alt="Resultado de la expresion 20"></p>
+</li>
+<li>
+<p>Nombre de la carrera que estudia Víctor Manuel:</p>
+<p><code>//carrera[@id=//alumno[nombre=&quot;Victor Manuel&quot;]//carrera/@codigo]/nombre/text()</code></p>
+<p>Resultado:</p>
+<p><img src="file:///c:\Users\daw1.IS31WX11\Dropbox\DATOS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_OscarP\ud5\03\images\solucion21.png" alt="Resultado de la expresion 21"></p>
+</li>
+<li>
+<p>Nombre de las asignaturas que estudia Luisa:</p>
+<p><code>//asignatura[@id=//alumno[nombre=&quot;Luisa&quot;]//asignatura/@codigo]/nombre/text()</code></p>
+<p>Resultado:</p>
+<p><img src="file:///c:\Users\daw1.IS31WX11\Dropbox\DATOS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_OscarP\ud5\03\images\solucion22.png" alt="Resultado de la expresion 22"></p>
+</li>
+<li>
+<p>Primer apellido de los alumnos matriculados en Ingeniería del Software:</p>
+<p><code>//asignatura[creditos_teoricos!=&quot;4&quot;]/nombre/text()</code></p>
+<p>Resultado:</p>
+<p><img src="file:///c:\Users\daw1.IS31WX11\Dropbox\DATOS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_OscarP\ud5\03\images\solucion23.png" alt="Resultado de la expresion 23"></p>
+</li>
+<li>
+<p>Nombre de las carreras que estudian los alumnos matriculados en la asignatura Tecnología de los Alimentos:</p>
+<p><code>//asignatura[creditos_teoricos!=&quot;4&quot;]/nombre/text()</code></p>
+<p>Resultado:</p>
+<p><img src="file:///c:\Users\daw1.IS31WX11\Dropbox\DATOS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_OscarP\ud5\03\images\solucion24.png" alt="Resultado de la expresion 24"></p>
+</li>
+<li>
+<p>Nombre de los alumnos matriculados en carreras que no tienen subdirector:</p>
+<p><code>//asignatura[creditos_teoricos!=&quot;4&quot;]/nombre/text()</code></p>
+<p>Resultado:</p>
+<p><img src="file:///c:\Users\daw1.IS31WX11\Dropbox\DATOS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_OscarP\ud5\03\images\solucion25.png" alt="Resultado de la expresion 25"></p>
+</li>
+<li>
+<p>Nombre de los alumnos matriculados en asignaturas con 0 créditos prácticos y que estudien la carrera de I.T. Informática</p>
+<p><code>//asignatura[creditos_teoricos!=&quot;4&quot;]/nombre/text()</code></p>
+<p>Resultado:</p>
+<p><img src="file:///c:\Users\daw1.IS31WX11\Dropbox\DATOS\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_OscarP\ud5\03\images\solucion26.png" alt="Resultado de la expresion 26"></p>
+</li>
+<li>
+<p>Nombre de los alumnos que estudian carreras cuyos planes son anteriores a 2002</p>
+</li>
+</ol>
+
+        
+        
+    </body>
+    </html>

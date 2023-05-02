@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>2-Garaje</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <h1 id="2-garaje">2-Garaje</h1>
+<h2 id="consultas-xpath">consultas XPath</h2>
+<ol>
+<li>
+<p>Los elementos de cada coche.
+<code>/garaje/coches/node()</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\02\images\1.PNG" alt=""></p>
+</li>
+<li>
+<p>Los elementos de cada reparación.
+<code>/garaje/reparaciones/node()</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\02\images\2.PNG" alt=""></p>
+</li>
+<li>
+<p>El contenido de La matrícula de los coches.
+<code>//matricula/text()</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\02\images\3.PNG" alt=""></p>
+</li>
+<li>
+<p>Todos los nodos (elementos y contenido) de los coches de la marca Renault.
+<code>//coche[marca=&quot;Renault&quot;]/*</code>
+<img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\02\images\4.PNG" alt=""></p>
+</li>
+<li>
+<p>Todos los nodos de los coches de más de 200000 km.
+<code>//coche[km&gt;200000]/*</code>
+<img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\02\images\5.PNG" alt=""></p>
+</li>
+<li>
+<p>El contenido del color del coche de matrícula 1234C.
+<code>//coche[matricula='1234C']/color/text()</code>
+<img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\02\images\6.PNG" alt=""></p>
+</li>
+<li>
+<p>El contenido de la descripción de las reparaciones realizadas al coche de matrícula: 4444B.
+<code>//reparacion[matricula='4444B']/descripcion/text()</code>
+<img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\02\images\7.PNG" alt=""></p>
+</li>
+<li>
+<p>El contenido de la descripción de la reparación de código J0005.
+<code>//reparacion[@codigo='J0005']/descripcion/text()</code>
+<img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\02\images\8.PNG" alt=""></p>
+</li>
+<li>
+<p>Suma de las horas invertidas reparando coches.
+<code>sum(//horas)</code>
+<img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\02\images\9.PNG" alt=""></p>
+</li>
+<li>
+<p>Número de coches en el documento.
+<code>count(//coche/matricula)</code>
+<img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\02\images\10.PNG" alt=""></p>
+</li>
+<li>
+<p>Selecciona todos los elementos del primer coche.
+<code>//coche[1]/node()</code>
+<code>//coche[position()=1]/node()</code>
+<img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\02\images\11.PNG" alt=""></p>
+</li>
+<li>
+<p>Selecciona todos los elementos de la última reparación.
+<code>//reparacion[last()]/node()</code>
+<img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\02\images\12.PNG" alt=""></p>
+</li>
+<li>
+<p>Selecciona todos los elementos del coche de la marca Seat con color Rojo.
+<code>//coche[marca='Seat' and color='Rojo']/node()</code>
+<img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\02\images\13.PNG" alt=""></p>
+</li>
+<li>
+<p>Propietario del coche modelo Polo 1.2 Advance.
+<code>//coche[modelo='Polo 1.2 Advance']/propietario/text()</code>
+<img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\02\images\14.PNG" alt=""></p>
+</li>
+<li>
+<p>Contenido de la descripción de las reparaciones realizadas con fecha de entrada 2013/06/06.
+<code>//reparacion[fecha_entrada='2013/06/06']/descripcion/text()</code>
+<img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\02\images\15.PNG" alt=""></p>
+</li>
+<li>
+<p>Seleccionar los coches rojos y grises.
+<code>//coche[color='Gris' or color='Rojo']/node()</code>
+<img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\02\images\16.PNG" alt=""></p>
+</li>
+<li>
+<p>Número de coches que entraron a reparar el 2013/06/03.
+<code>count(//reparacion[fecha_entrada='2013/06/03']/matricula)</code>
+<img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\02\images\17.PNG" alt=""></p>
+</li>
+<li>
+<p>Contenido del modelo del propietario P01.
+<code>//coche[propietario='P01']/modelo/text()</code>
+<img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\02\images\18.PNG" alt=""></p>
+</li>
+<li>
+<p>Código de la reparación con fecha de entrada 2013/06/03.
+<code>//reparacion[fecha_entrada='2013/06/03']/@codigo</code>
+<img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\02\images\19.PNG" alt=""></p>
+</li>
+<li>
+<p>Suma de las horas de reparación del coche de matrícula 4444B.
+<code>sum(//reparacion[matricula='4444B']/horas)</code>
+<img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\02\images\20.PNG" alt=""></p>
+</li>
+<li>
+<p>Matrícula de los coches marca Ford y Volkswagen.
+<code>//coche[marca='Ford' or marca='Volkswagen']/matricula/text()</code>
+<img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\02\images\21.PNG" alt=""></p>
+</li>
+<li>
+<p>Nombre del propietario del coche de la reparación J0001
+<code>//coche[matricula=//reparacion[@codigo='J0001']/matricula]/propietario/text()</code>
+<img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\02\images\22.PNG" alt=""></p>
+</li>
+</ol>
+
+        
+        
+    </body>
+    </html>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+	Descripción: Unidad04-Actividad 02
+	Autor: victor manuel manrique
+	Fecha creación/modificación: 17/01/2023
+-->
+<!DOCTYPE tabla SYSTEM "02.dtd">
+
+<tabla xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="02.xsd">
+    <fila>
+        <continente>Europa</continente>
+        <pais>Alemania</pais>
+        <capital>Berlin</capital>
+    </fila>
+    <fila>
+        <continente>America</continente>
+        <pais>Argentina</pais>
+        <capital>Buenos Aires</capital>
+    </fila>
+    <fila>
+        <continente>America</continente>
+        <pais>Bahamas</pais>
+        <capital>Nassau</capital>
+    </fila>
+    <fila>
+        <continente>Asia</continente>
+        <pais>Afganistan</pais>
+        <capital>Kabul</capital>
+    </fila>
+    <fila>
+        <continente>Asia</continente>
+        <pais>Arabia Saudita</pais>
+        <capital>Riad</capital>
+    </fila>
+</tabla>

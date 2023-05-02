@@ -1,0 +1,12 @@
+* {
+    white-space: pre;
+}
+codigo::after {
+    content: '\A';
+    white-space: pre;
+}
+title {
+    color: red;
+    border: 1px solid red;
+    padding: 6px;
+}

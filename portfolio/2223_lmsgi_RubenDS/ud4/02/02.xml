@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- 
+    Descripción: Unidad04-Actividad 02
+	Autor: ruben diez sanchez
+	Fecha creación/modificación: 17/01/2023
+-->
+<planeta>
+    <linea>
+        <contienente>Europa</contienente> 
+        <pais>Alemania</pais>
+        <capital>Berlin</capital>
+    </linea>
+    <linea>
+        <contienente>América</contienente> 
+        <pais>Argentina</pais>
+        <capital>Buenos Aires</capital>
+    </linea>
+    <linea>
+        <contienente>América</contienente> 
+        <pais>Bahamas</pais>
+        <capital>Nassau</capital>
+    </linea>
+    <linea>
+        <contienente>Asia</contienente> 
+        <pais>Afganistan</pais>
+        <capital>Kabul</capital>
+    </linea>
+    <linea>
+        <contienente>Asia</contienente> 
+        <pais>Arabia Saudi</pais>
+        <capital>Riad</capital>
+    </linea>
+</planeta>

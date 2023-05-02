@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Autor: Erika Martínez Pérez
+    Práctica: Actividad 1
+    Descripción:  Escribir un documento XML que almacene la información de un mail y contenga la siguiente información: remitente, 
+                destinatario(s), fecha del mensaje, asunto, mensaje, ficheros adjuntos (por cada fichero debe especificar el nombre y el tipo 
+                MIME). No utilizar atributos.
+-->
+<!DOCTYPE mail SYSTEM "01.dtd">
+<mail>
+    <remitente>director@gmail.com</remitente>
+    <destinatario>jefe1@gmail.com </destinatario>
+    <destinatario>jefe2@gmail.com </destinatario>
+    <destinatario>jefe3@gmail.com</destinatario>
+    <fecha>
+        <dia>17</dia>
+        <mes>01</mes>
+        <anyo>2023</anyo>
+    </fecha>
+    <asunto>los quintos de castrogonzalo 2023</asunto>
+    <mensaje>
+        <![CDATA[ 
+        LISTA DE LA COMPRA
+        1.AGUA
+        2.ZUMO
+        3.KAS
+        4.TONICA]]>
+    </mensaje>
+    <image>
+        <nombre>ismael.jpg</nombre>
+        <tipo>image/jpeg</tipo>
+    </image>
+    <image>
+        <nombre>borja.png</nombre>
+        <tipo>image/png</tipo>
+    </image>
+</mail>

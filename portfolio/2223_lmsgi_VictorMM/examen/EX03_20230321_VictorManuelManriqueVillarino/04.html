@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+	Descripción: examen3-Actividad 04
+	Autor: Victor Manuel Manrique Villarino
+	Fecha creación/modificación: 21/03/2023
+-->
+<html lang="es">
+	<head>
+		<title>formulario</title>
+			<meta charset= "utf-8">
+			<meta name="description" content="coleccion">
+			<meta name="author" content="Victor Manrique" >
+			<meta name="keywords" content="muñecas"  >
+			<meta name="generator" content="notepad++" >
+			<meta name="refresh" content="5" >
+	</head>
+	<body> 
+		<header>
+			<h1>EXAMEN</h1>
+		</header>
+		<main>
+			<form action="#" method="get">			
+				<fieldset>
+					<legend> Datos Fiscales</legend>
+					<div>
+						<label for="paro"><input type="radio" id="paro" name="fiscal" value="paro"> En Paro </label>
+					</div>
+					<br>
+					<div>
+						<label for="paro"><input type="radio" id="paro" name="fiscal" value="autonomo"> Autonomo </label>
+					</div>
+					<br>
+					<div>
+						<label for="paro"><input type="radio" id="paro" name="fiscal" value="c.ajena"> Por c. ajena </label>
+					</div>
+					<br>
+				</fieldset>
+				<fieldset>
+					<legend> Datos Personales</legend>
+					<div>
+						<label for="idnombre"> Nombre </label>
+						<input type="text" id="idnombre"  name="nombre" placeholder="introduce nombre">
+					</div>
+					<br>
+					<div>
+						<label for="idapellido"> Apellidos </label>
+						<input type="text" id="idapellido" name="apellidos" placeholder="introduce apellidos">
+					</div>
+					<br>
+					<div>
+						<label for="idCol">Sueldo</label>
+							<input list="lstCol" name="browser" id="idCol" placeholder="selecciona un valor">
+						<datalist id="lstCol">
+							<option value="+400">Más de 400</option>
+							<option value="-400">Menos de 400</option>
+							<option value="variables">Variables</option>
+						</datalist>
+					</div>
+					<br>
+					<div>
+						<label for="datos"><input type="checkbox" id="datos" name="datos" value="enfermedadp"> Con enfermedad profesional </label>
+					</div>
+					<div>
+						<label for="datos2"><input type="checkbox" id="datos2" name="datos" value="padres"> Con padres a cargo </label>
+					</div>
+					<div>
+						<label for="datos1"><input type="checkbox" id="datos1" name="datos" value="hijos"> Con hijos a cargo </label>
+					</div>
+					<br>
+					<input type="submit">
+				</fieldset>
+			</form>
+		</main>
+		<footer>
+			<address>2022-2023 Todos los derechos reservados © Victor Manuel Manrique Villarino</address>
+		</footer>	
+	</body>
+</html>
+	

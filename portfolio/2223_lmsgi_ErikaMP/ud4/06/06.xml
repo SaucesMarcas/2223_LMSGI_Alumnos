@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<!--
+	Autor: Erika Martínez Pérez
+    Práctica: Actividad 6
+    Descripción: Crea un documento XML que almacene varios ejemplos de código (HTML, JAVA, PHP,..)
+-->
+<!DOCTYPE codigos SYSTEM "06.dtd">
+<codigos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="06.xsd">
+    <codigo>
+        <title>java</title>
+        <ejemplo>
+            <![CDATA[
+                #include <stdio.h>
+                int main()
+                {
+                    float nota;
+                    printf("\n Introduzca nota(real): ");
+                    scanf("%f,&nota);
+                    if (5<=nota)
+                        printf("\n APROBADO");
+                    return 0;
+                }
+            ]]>
+        </ejemplo>
+    </codigo>
+    <codigo>
+        <title>html</title>
+        <ejemplo>
+            <![CDATA[
+                <!DOCTYPE html>
+                <html>
+                    <body>
+
+                        <h1>My Firts Heading</h1>
+
+                        <p>My firts paragraph.</p>
+                        
+                    </body>
+                </html>
+            ]]>
+        </ejemplo>
+    </codigo>
+</codigos>

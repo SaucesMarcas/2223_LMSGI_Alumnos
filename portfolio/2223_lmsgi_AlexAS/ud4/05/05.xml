@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    author: Alex
+    date: 19/01/2023
+    description: Representar en un documento XML con los siguientes datos
+
+-->
+<!DOCTYPE Company SYSTEM "05.dtd">
+<Company>
+    <Employee>
+        <FirstName>Juan</FirstName>
+        <LastName>Sanchez</LastName>
+        <ContactNo>123456789</ContactNo>
+        <Email>juansanchez@company.com</Email>
+        <Address>
+            <City>Bangalore</City>
+            <State>Karnataka</State>
+            <Zip>560212</Zip>
+            </Address>
+    </Employee>
+</Company>

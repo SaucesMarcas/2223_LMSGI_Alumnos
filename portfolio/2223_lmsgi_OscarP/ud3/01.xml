@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Oscar - 01 Noticias El Pais</title>
+        <link>https://elpais.com</link>
+        <language>es-es</language>
+        <skipDays>
+            <day>Saturday</day>
+            <day>Sunday</day>
+        </skipDays>
+        <image>
+            <link>http://dallas.example.com</link>
+            <title>Dallas Times-Herald</title>
+            <url>http://dallas.example.com/masthead.gif</url>
+            <description>Read the Dallas Times-Herald</description>
+            <height>32</height>
+            <width>96</width>
+        </image>
+        <description>![CDATA[Ultimas noticias del periodico]]</description>
+        <item>
+            <title>A gastar 4000 millones </title>
+            <link>https://elpais.com/economia/2023-01-10/industria-estrena-nuevo-responsable-con-prisas-ejecutar-mas-de-4000-millones-de-los-fondos-europeos-en-un-ano.html</link>
+            <guid>https://elpais.com/economia/2023-01-10/industria-estrena-nuevo-responsable-con-prisas-ejecutar-mas-de-4000-millones-de-los-fondos-europeos-en-un-ano.html</guid>
+            <pubDate>Thu, 12 Jan 2023 04:00:00GMT</pubDate>
+            <description>Francisco Blanco asume la secretaria de industria para fundir la pasta en menos de un año</description>
+            <author>Dani Cordero</author>
+            <enclosure type="image/png" url="images/rss.png" />
+        </item>
+        <item>
+            <title>Movidas en Siria </title>
+            <link>https://elpais.com/espana/2023-01-10/el-gobierno-comienza-a-repatriar-desde-siria-a-las-esposas-e-hijos-de-los-yihadistas-del-isis.html</link>
+            <guid>https://elpais.com/espana/2023-01-10/el-gobierno-comienza-a-repatriar-desde-siria-a-las-esposas-e-hijos-de-los-yihadistas-del-isis.html</guid>
+            <description>Dos mujeres y sus 12 hijos llegan al aeropuerto militar de Torrejón de Ardoz</description>
+            <author>Oscar Gutierrez/Juana Viudez</author>
+        </item>
+        <item>
+            <title>Hojaldrillo para desayunar</title>
+            <link>https://elcomidista.elpais.com/elcomidista/2022/11/28/receta/1669634847_772284.html</link>
+            <guid>https://elcomidista.elpais.com/elcomidista/2022/11/28/receta/1669634847_772284.html</guid>
+            <description>El condimento de origen japonés se utiliza por lo general en platos salados, pero en esta receta usamos su versión blanca para potenciar el sabor de una tarta con fruta.</description>
+        </item>
+        <copyright>2023 Los Sauces. All right reserved.</copyright>
+    </channel>
+</rss>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Author: Carlos Garcia Cachon
+    Date: 17/01/2023
+    Description: Escribir un documento XML que almacene la siguiente información: HECHOS HISTÓRICOS
+        Descripción                 Fecha
+                            Día     Mes     Año
+        Se funda Youtube    15      2       2005
+        Se funda Google     4       9       1998
+        Se funda Facebook   4       2       2004
+-->
+<!DOCTYPE historia SYSTEM "03.dtd">
+<historia xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="03.xsd">
+    <fila>
+        <descripcion>Se funda Youtube</descripcion>
+        <fecha>
+            <anyo>2005</anyo>
+            <mes>2</mes>
+            <dia>15</dia>
+        </fecha>
+    </fila>
+    <fila>
+        <descripcion>Se funda Google</descripcion>
+        <fecha>
+            <anyo>1998</anyo>
+            <mes>9</mes>
+            <dia>4</dia>
+        </fecha>
+    </fila>
+    <fila>
+        <descripcion>Se funda Facebook</descripcion>
+        <fecha>
+            <anyo>2004</anyo>
+            <mes>2</mes>
+            <dia>4</dia>
+        </fecha>
+    </fila>
+</historia>

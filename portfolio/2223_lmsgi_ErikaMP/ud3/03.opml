@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+    <head>
+        <title>Lista de suscripciones - Erika Martínez</title>
+        <dateCreated>Mon, 16 Jan 2023 18:55:00 +0100</dateCreated>
+        <dateCreated>Mon, 16 Jan 2023 19:00:00 +0100</dateCreated>
+        <ownerName>Erika Martínez Pérez</ownerName>
+        <ownerEmail>erika.marper.1@educa.jcyl.es</ownerEmail>
+    </head>
+    <body>
+    <outline text="Erika MP - El país" 
+            title="Erika MP - El país" 
+            type="rss" xmlUrl="http://127.0.0.1:5500/ud3/01.xml" 
+            htmlUrl="https://elpais.es" 
+            rssfr-favicon="https://icons.feedercdn.com/"/>
+    <outline text="Erika MP - Noticiario practicas" 
+            title="Erika MP - Noticiario practicas" 
+            type="rss" xmlUrl="http://127.0.0.1:5500/ud3/02.xml" 
+            htmlUrl="https://192.168.2.111/"/>
+    </body>
+</opml>

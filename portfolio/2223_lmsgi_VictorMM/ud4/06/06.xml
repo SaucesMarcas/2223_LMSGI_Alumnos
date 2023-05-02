@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ejemplos SYSTEM "06.dtd">
+<!--
+	Descripción: Unidad04-Actividad 03
+	Autor: victor manuel manrique
+	Fecha creación/modificación: 17/01/2023
+-->
+<ejemplos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="06.xsd">
+     <ejemplo>
+          <title>java</title>
+          <content>
+          <![CDATA[ 
+               #include<studio.h>
+               int main()
+               {
+                    float nota;
+                    printf("\n Introduzca nota (real):");
+                    scanf("%f",&nota);
+                    if(5<=nota)
+                         printf("\n APROBADO")
+                    RETURN 0:
+               }
+          ]]>
+          </content>
+     </ejemplo>
+     <ejemplo>
+          <title>html</title>
+          <content>
+          <![CDATA[ 
+               <!DOCTYPE html>
+               <html>
+                    <body>
+                         <h1>My First Heading</h1>
+                          <p>My First paragraph</p>
+                    </body>
+               </html>
+          ]]>
+          </content>
+     </ejemplo>
+</ejemplos>

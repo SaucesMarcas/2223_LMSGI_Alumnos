@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="08.dtd" type="application/xml-dtd"?>
+<lugares>
+    <lugar>Polo Norte</lugar>
+    <lugar>Mi casa</lugar>
+    <lugar>España</lugar>
+</lugares>

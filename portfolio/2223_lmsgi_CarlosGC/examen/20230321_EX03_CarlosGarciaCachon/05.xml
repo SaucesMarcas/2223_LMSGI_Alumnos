@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formulario>
+    <datosFiscales EnParo="true" Autonomo="false" Por_c._ajena="false"></datosFiscales>
+    <datosPersonales>
+        <name>carlos</name>
+        <apellido>garcia</apellido>
+        <idDesplegable mas400E="true" menos400E="false" variables="false"></idDesplegable>
+        <checkbox EP="true" PC="false" HC="false"></checkbox>
+    </datosPersonales>
+</formulario>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meteorologica>
+    <fila>
+        <fecha tipoDate="2023-02-10"></fecha>
+        <probabilidadP tipo="%">5</probabilidadP>
+        <estadoC>Nubes</estadoC>
+        <temperatura>
+            <temperaturaMin>12</temperaturaMin>
+            <temperaturaMax>26</temperaturaMax>
+        </temperatura>
+        <viento procedencia="N" velocidad="km/h">0</viento>
+    </fila>
+    <fila>
+        <fecha tipoDate="2023-02-11"></fecha>
+        <probabilidadP tipo="%">0</probabilidadP>
+        <estadoC>Despejado</estadoC>
+        <temperatura>
+            <temperaturaMin>13</temperaturaMin>
+            <temperaturaMax>26</temperaturaMax>
+        </temperatura>
+        <viento procedencia="NE" velocidad="km/h">5</viento>
+    </fila>
+    <fila>
+        <fecha tipoDate="2023-02-15"></fecha>
+        <probabilidadP tipo="%">10</probabilidadP>
+        <estadoC>Cubierto_con_lluvia_escasa</estadoC>
+        <temperatura>
+            <temperaturaMin>14</temperaturaMin>
+            <temperaturaMax>28</temperaturaMax>
+        </temperatura>
+        <viento procedencia="N" velocidad="km/h">20</viento>
+    </fila>
+</meteorologica>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="world">
+    <xs:annotation>
+      <xs:documentation> 
+    Author: Carlos Garcia Cachon
+    Date: 24/01/2023
+    Description: Escribir un documento XML que almacene la siguiente información:
+                    CONTINENTE      PAÍS                CAPITAL
+                    EUROPA          ALEMANIA            BERLÍN
+                    AMÉRICA         ARGENTINA           BUENOS AIRES
+                    AMÉRICA         BAHAMAS             NASSAU
+                    ASIA            AFGANISTÁN          KABUL
+                    ASIA            ARABIA SAUDITA      RIAD
+</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="linea" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="continente"/>
+              <xs:element type="xs:string" name="pais"/>
+              <xs:element type="xs:string" name="capital"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

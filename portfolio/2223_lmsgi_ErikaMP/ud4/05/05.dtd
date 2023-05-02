@@ -1,0 +1,16 @@
+<!-- 
+    Autor: Erika Martínez Pérez
+    Práctica: Actividad 5
+    Descripción: Conversión del ejercicio 05 a DTD
+-->
+<!ELEMENT Company (Employee+)>
+<!ELEMENT Employee (Firtsname,Lastname,ContactNo+,Email,Address)>
+<!ELEMENT Address (City,State,Zip)>
+
+<!ELEMENT Firtsname (#PCDATA)>
+<!ELEMENT Lastname (#PCDATA)>
+<!ELEMENT ContactNo (#PCDATA)>
+<!ELEMENT Email (#PCDATA)>
+<!ELEMENT City (#PCDATA)>
+<!ELEMENT State (#PCDATA)>
+<!ELEMENT Zip (#PCDATA)>

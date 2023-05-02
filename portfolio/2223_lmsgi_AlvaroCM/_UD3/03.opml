@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+    <head>
+        <title>Feeder - RSS Feed Reader</title>
+    </head>
+    <body>
+        <outline text="Pratica 02 - Alvaro Cordero (HomePage))" title="Pratica 02 - Alvaro Cordero (HomePage))" type="rss" xmlUrl="http://192.168.2.114/_UD3/02.xml" htmlUrl="https://interbenavente.es/" rssfr-favicon="https://icons.feedercdn.com/"/>
+        <outline text="Pratica 01 - Alvaro Cordero (ElPais)" title="Pratica 01 - Alvaro Cordero (ElPais)" type="rss" xmlUrl="http://192.168.2.114/_UD3/01.xml" htmlUrl="https://elpais.es" rssfr-favicon="https://icons.feedercdn.com/"/>
+    </body>
+</opml>
