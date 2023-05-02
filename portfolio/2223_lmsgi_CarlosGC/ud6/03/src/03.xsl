@@ -6,6 +6,7 @@
          syntax recommendation http://www.w3.org/TR/xslt 
     -->
     <xsl:template match="/peliculas">
+        <xsl:apply-templates select="comment()"/>
         <xsl:text disable-output-escaping="yes">&lt;DOCTYPE html&gt;</xsl:text>
         <html>
             <head>
@@ -50,6 +51,15 @@
                 </footer>
             </body>
         </html>
+    </xsl:template>
+    
+    <xsl:template match="comment()">
+       <xsl:text xml:space="preserve">
+       <xsl:comment>
+           <xsl:value-of select="."/>
+           </xsl:comment>
+       </xsl:text>
+        
     </xsl:template>
 
 </xsl:stylesheet>
