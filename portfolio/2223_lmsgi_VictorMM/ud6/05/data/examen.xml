@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="xslt07.xsl" type="text/xsl"?>
+<?xml-stylesheet href="../src/05.xsl" type="text/xsl"?>
 
 <examen>
 	<datos>
-		<nombreCiclo>Despliegue de Aplicaciones Web</nombreCiclo>
+		<nombreCiclo>Desarrollo de Aplicaciones Web</nombreCiclo>
 		<curso>1</curso>
 		<nombreModulo>Lenguaje de Marcas y Sistemas Gestión de Información</nombreModulo>
 		<evaluacion>3</evaluacion>
