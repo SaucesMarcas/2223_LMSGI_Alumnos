@@ -3,7 +3,7 @@
   <xsl:template match="/">
     <html>
       <head>
-        <title>Garaje</title>
+        <title>04 XSLT Victor Manuel Manrique Villarino</title>
       </head>
       <body>
         <h1>Coches</h1>
