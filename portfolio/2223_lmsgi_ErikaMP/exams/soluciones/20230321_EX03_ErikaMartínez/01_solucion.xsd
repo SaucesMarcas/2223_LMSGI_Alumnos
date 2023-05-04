@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:simpleType name="tipoBeneficiario">
+    <xs:restriction base="xs:decimal">
+        <xs:fractionDigits value="2"/>
+    </xs:restriction>
+</xs:simpleType>
+    <xs:element name="productosfinancieros">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="producto" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:choice>
+                            <xs:element name="bono">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="valoractual">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:decimal">
+                                                        <xs:attribute name="moneda">
+                                                            <xs:simpleType>
+                                                                <xs:restriction base="xs:string">
+                                                                    <xs:enumeration value="yenes"/>
+                                                                    <xs:enumeration value="dolares"/>
+                                                                    <xs:enumeration value="euros"/>
+                                                                </xs:restriction>
+                                                            </xs:simpleType>
+                                                        </xs:attribute>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="beneficio" type="tipoBeneficiario"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="futuro">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="elemento">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="idioma" type="xs:string"/>
+                                                    </xs:extension>    
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="beneficio" type="tipoBeneficiario"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="acciones">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="empresa">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="pais" type="xs:string"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="beneficio" type="tipoBeneficiario"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:choice>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

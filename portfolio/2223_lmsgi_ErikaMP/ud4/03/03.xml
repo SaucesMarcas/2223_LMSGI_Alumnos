@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Autor: Erika Martínez Pérez
+    Práctica: Actividad 3
+    Descripción: Escribir un documento XML que almacene la siguiente información: HECHOS HISTÓRICOS
+-->
+<!DOCTYPE hechos SYSTEM "03.dtd">
+<hechos>
+    <acontecimiento>
+        <nombre>se funda youtube</nombre>
+        <fecha>
+            <dia>15</dia>
+            <mes>2</mes>
+            <anyo>2005</anyo>
+        </fecha>
+    </acontecimiento>
+    <acontecimiento>
+        <nombre>se funda google</nombre>
+        <fecha>
+            <dia>4</dia>
+            <mes>9</mes>
+            <anyo>1998</anyo>
+        </fecha>
+    </acontecimiento>
+    <acontecimiento>
+        <nombre>se funda facebook</nombre>
+        <fecha>
+            <dia>4</dia>
+            <mes>2</mes>
+            <anyo>2004</anyo>
+        </fecha>
+    </acontecimiento>
+</hechos>

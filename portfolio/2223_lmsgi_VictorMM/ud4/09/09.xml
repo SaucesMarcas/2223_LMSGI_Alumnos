@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+	Descripción: Unidad04-Actividad 03
+	Autor: victor manuel manrique
+	Fecha creación/modificación: 17/01/2023
+-->
+<!DOCTYPE textos[
+     <!ELEMENT textos (texto*)>
+     <!ELEMENT texto (#PCDATA)>
+     <!ATTLIST textos xmlns:xsi CDATA #IMPLIED
+                xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+     <!ENTITY escritor "Miguel de Cervantes">
+     <!ENTITY obra "El Quijote">
+     <!ENTITY fecha "29/09/1547">
+
+]>
+<textos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="09.xsd">
+     <texto> &obra; fue escrito por &escritor;</texto>
+     <texto> &escritor; nació el  &fecha;</texto>
+</textos>

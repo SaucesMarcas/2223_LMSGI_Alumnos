@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Author: Oscar Pascual Ferrero
+    Date: 17/01/2023
+    Description: Escribir un documento XML que almacene la información de un mail y contenga la siguiente información: remitente, 
+                destinatario(s), fecha del mensaje, asunto, mensaje, ficheros adjuntos (por cada fichero debe especificar el nombre y el tipo 
+                MIME). No utilizar atributos
+-->
+
+<!DOCTYPE mail SYSTEM "01.dtd">
+
+<mail  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamesespaceSchemaLocation="01.xsd">
+    <remitente>oscar@telefonica.com</remitente>
+    <destinatario>carlos@yahoo.es</destinatario>
+    <destinatario>difriben@terra.es</destinatario>
+    <destinatario>bd@hotmail.com</destinatario>
+    <fecha>
+        <dia>17</dia>
+        <mes>01</mes>
+        <anyo>2023</anyo>        
+    </fecha>
+    <asunto>Los Quintos de Castrogonzalo 2023</asunto>
+    <mensaje><![CDATA[
+        1. Jack Daniels
+        2. Cutty shark
+        3. Four Roses
+        4. Licor de manzana
+        5. Champin]]></mensaje>
+    <image>
+        <nombre>Ismael1.jpeg</nombre>
+        <tipo>image/jpeg</tipo>
+    </image>
+    <image>
+        <nombre>Borja1.png</nombre>
+        <tipo>image/png</tipo>
+    </image>
+</mail>

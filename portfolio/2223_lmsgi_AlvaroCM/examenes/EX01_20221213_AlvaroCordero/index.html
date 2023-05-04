@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="media/images/logo.png">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>1º Evaluacion Alvaro Cordero Miñambres</title>
+</head>
+
+<body>
+    <header>
+        <img src="./media/images/logo.png" alt="LogoSauces">
+        <h1>Lenguaje de Marcas y Sistemas de Gestion de Informacion</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="login.html">ACCESO PRIVADO</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <p>Esta página web es el examen de la 1º evaluación
+            del módulo <span id="span1">Lenguaje de Marcas y Sistemas de Gestión de Información</span> de 1º Curso del
+            <span id="span2">Ciclo
+                Formativo de Grado Superior de Desarrollo de Aplicaciones Web</span> en el <span id="span3">IES los
+                Sauces(Benavente)</span>
+            (Benavente).</p>
+        <div class="contenedor">
+            <div class="caja1">
+                <h2>Listado de practicas</h2>
+                <ol>
+                    <li><a href="">Noticias</a></li>
+                    <li><a href="">Horarios</a></li>
+                    <li><a href="">Formulario</a></li>
+                    <li><a href="">Multimedia</a></li>
+                </ol>
+            </div>
+            <div class="caja2">
+                <h2>Buscador</h2>
+                <input type="search" id="search" name="search" placeholder="Escribe aqui">
+                <button>Buscar</button>
+            </div>
+            <div class="caja3">
+                <h2>Contacto</h2>
+                <div>
+                    <label for="nombre_tutor">Nombre(requerido)</label><br>
+                    <input type="text" id="nombre_tutor" name="nombre_tutor" required>
+                </div>
+                <div>
+                    <label for="email">Tu correo electronico(requerido)</label><br>
+                    <input type="email" id="email" maxlength="30" name="email" required>
+                </div>
+                <div>
+                    <label for="Asunto">Asunto</label><br>
+                    <input type="text" id="asunto" name="asunto">
+                </div>
+                <div>
+                    <label for="texto">Mensaje</label><br>
+                    <textarea id="texto" rows="6" cols="32" name="textarea" placeholder="Escribe aqui"></textarea>
+                </div>
+            </div>
+            <div class="caja4">
+                <h2>Audio</h2>
+                <img src="./media/images/mh.gif" alt="mh">
+                <audio src="./media/audio/monster.mp3" controls></audio>
+            </div>
+            <div class="caja5">
+                <h2>Video</h2>
+                <video src="./media/video/Armageddon.mp4"></video>
+            </div>
+    </main>
+</body>
+<footer>
+    <div>
+        <div id="footer-menu">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Ubicacion</td>
+                        <td>Politica de Cookies</td>
+                        <td rowspan="2">Aviso legal</td>
+                    </tr>
+                    <tr>
+                        <td>Contacto</td>
+                        <td>Politica de privacidad</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="footer-redes">
+            <img src="./media/images/facebook-256.png" alt="facebook">
+            <img src="./media/images/twitter-256.png" alt="twitter">
+            <img src="./media/images/icono-youtube.png" alt="youtube">
+            <img src="./media/images/logo-instagram.png" alt="instagram">
+        </div>
+    </div>
+    <div class="footer-derechos">
+        <address>2022-23 IES Los Sauces @Todos los derechos reservados Alvaro Cordero</address>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+	Descripcion: Multimedia, practica 04
+	Autor: Rebeca Sánchez Pérez
+	Fecha creacion/modificacion: 03/11/2022
+-->
+<html lang="es"> 
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Rebeca Sánchez Pérez">
+		<meta name="description" content="HTML de Multimedia(imagenes,videos y audios) del tema elegido en el fomulario anterior">
+		<meta name="Keywords" content="cosplay, videos, imagenes, links, audios, multimedia">
+		<link rel="stylesheet" href="css/estilos.css">
+		<link rel="icon" type="image/png" href="media/images/favicon.png">
+		<title>HTML 04 Rebeca Sánchez Pérez</title>
+	</head>
+	<body>
+		<header>
+			<h1><span class="destacado">MULTIMEDIA</span>: COSPLAY</h1>
+		</header>
+		<nav class="menu">
+			<ul>
+				<li><a href ="#id_Imagenes">Imagenes</a></li>
+				<li><a href ="#id_Videos">Videos</a></li>
+				<li><a href ="#id_Audios">Audios</a></li>
+			</ul>
+		</nav>
+		<hr>
+		<main>
+			<section id="id_Imagenes">
+				<header>
+					<h2>IMAGENES</h2>
+				</header>
+				<div class="multi">
+					<a href="media/images/mario.jpg"><img height="500" src="media/images/mario.jpg" alt="Cosplay de Mario Bros en version Borderlands"></a>
+					<a href="media/images/itachi.png"><img height="500" src="media/images/itachi.png" alt="Cosplay de Itachi de Naruto"></a>
+					<a href="media/images/nergigante.jpg"><img height="500" src="media/images/nergigante.jpg" alt="Kamui con la armadura del Nergigante del Monster Hunter World"></a>
+					<a href="media/images/goku.jpeg"><img height="500" src="media/images/goku.jpeg" alt="Perrito relindo haciendo cosplay de Goku"></a>
+					<a href="media/images/mh.jpg"><img height="500" src="media/images/mh.jpg" alt="Armadura masculina del Nergigante del Monster Hunter"></a>
+				</div>
+			</section>
+			<hr>
+			<section id="id_Videos" class="multi">
+				<header>
+					<h2>VIDEOS</h2>
+					<h3 class="subtitulo">Enlaces de Youtube</h3>
+				</header>
+				<div>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/bkbJsJ6lxyQ?autoplay=1&mute=1&start=7"></iframe>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/U-I3icwb_pE?"></iframe>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/E9xG0CDd63E?start=3"></iframe>
+				</div>
+				<div>
+					<h3 class="subtitulo">Videos almacenados</h3>
+					<video height="400" controls>
+						<source src="media/video/freddy.mp4" type="video/mp4">
+						<source src="media/video/freddy.ogg" type="video/ogg">
+						Tu navegador no soporta HTML5, por favor pruebe con Chrome.
+					</video>
+					<video height="400" controls>
+						<source src="media/video/espada.mp4" type="video/mp4">
+						<source src="media/video/espada.ogg" type="video/ogg">
+						Tu navegador no soporta HTML5, por favor pruebe con Chrome.
+					</video>
+					<video height="400" controls>
+						<source src="media/video/tutorial.mp4" type="video/mp4">
+						<source src="media/video/tutorial.ogg" type="video/ogg">
+						Tu navegador no soporta HTML5, por favor pruebe con Chrome.
+					</video>
+				</div>
+			</section>
+			<hr>
+			<section id="id_Audios" class="multi">
+				<header>
+					<h2>AUDIOS</h2>
+					<h3 class="subtitulo">Consejos para empezar a hacer cosplay</h3>
+				</header>
+				<div>
+					<audio controls>
+						<source src="media/audio/tip1.mp3" type="audio/mpeg">
+						<source src="media/audio/tip1.ogg" type="audio/ogg">
+						Tu navegador no soporta HTML5, por favor pruebe con Chrome.
+					</audio>Consejo para un cosplayer principiante
+					<br>
+					<audio controls>
+						<source src="media/audio/peluca.mp3" type="audio/mpeg">
+						<source src="media/audio/peluca.ogg" type="audio/ogg">
+						Tu navegador no soporta HTML5, por favor pruebe con Chrome.
+					</audio>¿Que hago con la peluca?
+					<br>
+					<audio controls>
+						<source src="media/audio/tela.mp3" type="audio/mpeg">
+						<source src="media/audio/tela.ogg" type="audio/ogg">
+						Tu navegador no soporta HTML5, por favor pruebe con Chrome.
+					</audio>¿Que tela puedo utilizar para hacer un cosplay?
+				</div>
+			</section>
+			<hr>
+		</main>
+		<footer>
+			<address>2022-23  IES LOS SAUCES. ©Todos los derechos reservados y optimizado para Chrome. Rebeca Sánchez Pérez</address>
+		</footer>
+	</body>
+</html>

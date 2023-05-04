@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tiempo lugar="Benavente">
+    <fila>
+        <fecha>2023-01-10</fecha>
+        <Precipitacion medida="%">5</Precipitacion>
+        <cielo>nubes</cielo>
+        <temperatura>
+            <minima>12</minima>
+            <maxima>26</maxima>
+        </temperatura>
+        <viento medida="km/h">N 0</viento>
+    </fila>
+    <fila>
+        <fecha>2023-01-11</fecha>
+        <Precipitacion medida="%">0</Precipitacion>
+        <cielo>despejado</cielo>
+        <temperatura>
+            <minima>13</minima>
+            <maxima>26</maxima>
+        </temperatura>
+        <viento medida="km/h">NE 5</viento>
+    </fila>
+    <fila>
+        <fecha>2023-01-15</fecha>
+        <Precipitacion medida="%">10</Precipitacion>
+        <cielo>Cubierto con lluvia escasa</cielo>
+        <temperatura>
+            <minima>14</minima>
+            <maxima>28</maxima>
+        </temperatura>
+        <viento medida="km/h">N 20</viento>
+    </fila>
+</tiempo>

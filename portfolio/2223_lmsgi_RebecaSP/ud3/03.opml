@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+    <head>
+        <title>Lista de suscripciones Rebeca</title>
+        <dateCreated>Mon, 16 Jan 2023 09:36:00 +0100</dateCreated>
+        <dateModified>Mon, 16 Jan 2023 09:36:00 +0100</dateModified>
+        <ownerName>Rebeca Sánchez Pérez</ownerName>
+        <ownerEmail>rebeca.sanper.1@educa.jcyl.es</ownerEmail>
+    </head>
+    <body>
+		<outline text="Rebeca - El País" 
+                title="Rebeca - El País" 
+                type="rss" 
+                xmlUrl="http://192.168.2.108/ud3/01.xml" 
+                htmlUrl="https://elpais.com/" 
+                rssfr-favicon="https://icons.feedercdn.com/"/>
+        <outline text="Rebeca - RSS de mi web" 
+                title="Rebeca - RSS de mi web" 
+                type="rss" 
+                xmlUrl="http://192.168.2.108/ud3/02.xml" 
+                htmlUrl="http://192.168.2.108" 
+                rssfr-favicon="https://icons.feedercdn.com/"/>
+    </body>
+</opml>

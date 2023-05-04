@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<musica xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="12-6_Xpotify_Rebeca_Erika.xsd">
+    <artista genero="Pop">
+        <nombreArtista>Shakira</nombreArtista>
+        <numeroOyentes>40.000.000</numeroOyentes>
+        <info>cantante colombiana</info>
+        <activo opcion="true"></activo>
+        <disco>
+            <nombreDisco>oral fixaction</nombreDisco>
+            <fechaLanzamiento>2005-07-12</fechaLanzamiento>
+            <duracionTotal unidad="h">8</duracionTotal>
+            <discografica>universal</discografica>
+            <canciones numeroCanciones="1">
+                <cancion idCancion="1-9">
+                    <nombreCancion>animals</nombreCancion>
+                    <duracion unidadMedida="min">3:50</duracion>
+                    <numeroReproducciones>100</numeroReproducciones>
+                    <idioma>
+                        <extranjero valor="true" />
+                        <nacional valor="true"/>
+                    </idioma>
+                    <letra>Español e ingles</letra>
+                    <colaboraciones>
+                        <colaborador></colaborador>
+                    </colaboraciones>
+                </cancion>
+            </canciones>
+        </disco>
+    </artista>
+</musica>

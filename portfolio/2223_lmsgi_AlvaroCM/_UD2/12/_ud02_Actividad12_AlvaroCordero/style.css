@@ -1,0 +1,114 @@
+:root {
+    --colorFondo: #e0e1eb;
+    --color1: #31334d;
+}
+
+h1 {
+    font-size: 4.7rem;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    font-style: italic;
+    background-color: #31334d;
+    color: white;
+}
+
+article header {
+    padding: 0.3rem;
+    padding-bottom: 2rem;
+    background-color: white;
+}
+
+body {
+    background-color: var(--colorFondo);
+}
+
+section {
+    float: left;
+    width: 26%;
+    margin-top: 2rem;
+    margin-left: 5%;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    border-left: 2px solid var(--color1);
+    border-right: 2px solid var(--color1);
+}
+
+section h2 {
+    margin-left: 0.38rem;
+    margin-right: 0.5rem;
+    background-color: var(--color1);
+    font-size: 2.8rem;
+    color: white;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: dotted;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: white;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    padding: 10px;
+    margin-left: 0;
+}
+
+article {
+    display: inline-block;
+    margin: 7px;
+    border: 2px solid var(--color1);
+    border-radius: 2%;
+}
+
+article div {
+    background-color: var(--colorFondoArticle);
+    padding-top: 2rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+
+}
+
+article h3 {
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+article h4 {
+    color: black;
+    font-size: 0.9rem;
+}
+
+p {
+    text-align: justify;
+}
+
+img {
+    border: 2px solid var(--color1);
+    padding: 0.3rem;
+    margin-left: 7.5rem;
+}
+
+figcaption {
+    font-size: 11px;
+    text-align: center;
+}
+

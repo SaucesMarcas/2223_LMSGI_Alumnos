@@ -1,0 +1,102 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html{
+	font-family: 'Roboto', sans-serif;
+	background-image: url('../media/images/fondo3.gif');
+	background-size: 30% 129%;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+#main{
+	margin: 20px;
+}
+h1{
+	width: auto;
+	color: #fff6ea;
+	background-color: #904B6B;
+	border-radius: 50px;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 3rem;
+	padding: 0.5rem;
+	margin: 10px;
+}
+main p{
+	font-size: 1.2rem;
+	margin: 20px;
+	margin-bottom: 0;
+}
+section{
+	float:left;
+	margin: 20px;
+	width: 17%;
+	min-height: 4rem;
+	border: 2px solid #904B6B;
+}
+section h2{
+	padding: 0.2rem;
+	/*border-bottom: 2px solid black;*/
+	font-size: 2rem;
+	text-align: center;
+	color: #fff6ea;
+	background-color: #904B6B;
+}
+/*h2 .unidades{
+	text-decoration: underline dotted;
+}*/
+section * a{
+	color: black;
+}
+section ol{
+	background-color: rgba(255,255,255, 0.5);
+	padding: 1rem;
+	list-style-position: inside;
+	/*text-align: center;*/
+}
+section ol:hover{
+	background-color: rgba(255,255,255, 0.75);
+}
+section li{
+	font-size: 1.2rem;
+}
+section ul li{
+	display: inline;
+	font-size: 1rem;
+	margin-right: 0.5rem;
+}
+section ul li a{
+	color: #904B6B;
+	border: 1px solid #904B6B;
+	padding: 0 0.2rem;
+}	
+section ol a:hover{
+	text-decoration: underline;
+}
+section ol li ul li a:hover{
+	background-color: #ffc9e2;
+	text-decoration: none;
+}
+#pie_main{
+	color: #fff6ea;
+	text-decoration: underline;
+	clear: both;
+	margin-top: 4rem;
+	text-align: center;
+}
+/*main a #pie_main{
+	color: white;
+}*/
+address{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	/*text-align: center;*/
+	color: white;
+	/*background-color:rgb(21, 172, 121);*/
+}

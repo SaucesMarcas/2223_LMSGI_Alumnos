@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="estilos.css"?>
+<!DOCTYPE ejemplos SYSTEM "06.dtd">
+<ejemplos>
+    <lenguaje>
+        <title>Java</title>
+        <content>
+            <![CDATA[
+            #include <stdio.h></stdio.h>
+            int main()
+            {
+                float nota;
+                printf("\n Introduzca nota (real):");
+                scanf("%f",&nota);
+                if(5<=nota)
+                    printf("\n APROBADO");
+                return 0;
+            }
+            ]]>
+        </content>
+    </lenguaje>
+    <lenguaje>
+        <title>Html</title>
+        <content><![CDATA[
+            <!DOCTYPE html>
+            <html>
+            <body>
+            
+            <h1>My first Heading</h1>
+            
+            <p>My first parragraph</p>
+
+            </body>
+            </html>
+            ]]></content>
+    </lenguaje>
+</ejemplos>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grupo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="07.xsd">
+    <estudiante>
+        <nombre></nombre>
+        <codigo></codigo>
+        <tutores>
+            <tutor1></tutor1>
+        </tutores>
+    </estudiante>
+    <estudiante>
+        <nombre>Maria</nombre>
+        <codigo id="2"></codigo>
+        <tutores>
+            <tutor1 idref="1"/>
+        </tutores>
+    </estudiante>
+</grupo>

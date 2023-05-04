@@ -1,0 +1,3 @@
+<!ELEMENT lugares (#PCDATA | lugar)*>
+<!ELEMENT lugar (#PCDATA)>
+<!ATTLIST lugares xmlns:xsi CDATA #IMPLIED>

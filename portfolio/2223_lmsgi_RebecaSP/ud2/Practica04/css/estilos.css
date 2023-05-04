@@ -1,0 +1,41 @@
+body {
+	background-image: url("../media/images/fondo.png");
+	font-family: "Arial";
+	font-size: 1.5em;
+}
+h1 {
+	color: white;
+	text-align: center;
+}
+.destacado, h2 {
+	color:#b3ffff;
+	text-align: center;
+}
+.subtitulo {
+	color:white;
+	text-align: center;
+	text-decoration: underline;
+}
+nav {
+	background-color: white;
+	opacity: 0.5;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+li {
+	color: white;
+	display: inline;
+}
+.menu {
+	text-align: center;
+	padding: 15px 18px;
+}
+.multi {
+	text-align: center;
+}
+div, p, address {
+	color: white;
+}

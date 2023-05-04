@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Festival xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="12-2_VictorManuelManrique.xsd">
+    <Sede>
+        <Lugar>LugarSede</Lugar>
+        <CadenaAnfitriona>Cadena1</CadenaAnfitriona>
+    </Sede>
+    <Presentador>
+        <Nombre>Hannah Waddingham</Nombre>
+        <Residencia>Liverpool, Reino Unido</Residencia>
+    </Presentador>
+    <Paises>
+        <Clasificados>
+            <Pais>
+                <Nombre>Albania</Nombre>
+                <Participacion>Sudeen Light</Participacion>
+                <Nombre>Reino Unido</Nombre>
+                <Participacion>Wild Youth</Participacion>
+                <Nombre>Italia</Nombre>
+                <Participacion>Remo Forrer</Participacion>
+                <Nombre>Paises Bajos</Nombre>
+                <Participacion>Noa Kirel</Participacion>
+                <Nombre>Polonia</Nombre>
+                <Participacion>Käärijä</Participacion>
+                <Nombre>Suezia</Nombre>
+                <Participacion>Vesna</Participacion>
+            </Pais>
+        </Clasificados>
+        <Semifinalistas>
+            <Semifinal numero="1">
+                <Nombre>Armenia</Nombre>
+                <Participacion>Brunette</Participacion>
+                <Nombre>Chipre</Nombre>
+                <Participacion>Andrew Lambrou</Participacion>
+                <Nombre>Bélgica</Nombre>
+                <Participacion>	Gustaph</Participacion>
+            </Semifinal>
+            <Semifinal numero="2">
+                <Nombre>Armenia</Nombre>
+                <Participacion>Brunette</Participacion>
+                <Nombre>Chipre</Nombre>
+                <Participacion>Andrew Lambrou</Participacion>
+                <Nombre>Bélgica</Nombre>
+                <Participacion>	Gustaph</Participacion>
+            </Semifinal>
+        </Semifinalistas>
+    </Paises>
+    <Preseleccion>
+        <Paises>4</Paises>
+    </Preseleccion>
+    <Entradas>
+        <Cantidad>2</Cantidad>
+    </Entradas>
+</Festival>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--!DOCTYPE pedido SYSTEM "10.dtd"-->
+<pedido xmlns:xsi="http://www.w3.org/2001/XMLSchema" xsi:noNamesespaceSchemaLocation="10.xsd">
+    <!-- todos los nombre tienen un tamaño max de 100 caracteres y min de 4
+    todos los nombres empiezan por MAY
+    -->
+    <plato tipo="entrante">
+        <nombre tipo="jamon">Croquetas caseras</nombre>        <!-- jamon|boletus|mixtas-->
+        <cantidad tipo="racion"></cantidad>        <!-- media|entera-->
+        <sinGluten opcion="true"/>
+        <precio>3.2</precio>
+    </plato>
+    <plato tipo="primero">
+        <nombre>Macarrones a la carbonara</nombre>
+        <precio>4.8</precio>
+    </plato>
+    <plato tipo="segundo">
+        <nombre>Pollo al ajillo</nombre>
+        <precio>4.8</precio>
+    </plato>
+    <plato>
+        <nombre tipo="postre">Coullant de chocolate y nata</nombre>        <!-- dulce|salado-->
+        <precio>6</precio>
+    </plato>
+    <bebida>
+        <nombre tipo="sin gas" medidas="ml" tamanyo="500">Agua</nombre>
+        <precio>1.2</precio>
+    </bebida>
+    <bebida>
+        <nombre tipo="sin gas" medidas="ml" tamanyo="1000">Agua</nombre>
+        <precio>1.8</precio>
+    </bebida>
+    <bebida>
+        <nombre tipo="con gas" medidas="ml" tamanyo="237">Fanta</nombre>
+        <precio>2.5</precio>
+    </bebida>
+    <formaPago>
+        <bizum>50</bizum>        <!-- bizum|tarjeta|cripto|contado-->
+    </formaPago>
+</pedido>

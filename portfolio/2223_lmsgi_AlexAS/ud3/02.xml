@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Alex- Ejercicio 2</title>
+        <link>http://192.168.2.105/index.html</link>
+        <description>Ultimas noticias del periodico el pais</description>
+        <language>es</language>
+        <category>Noticias</category>
+        <skipDays>
+            <day>Saturday</day>
+            <day>Sunday</day>
+        </skipDays>
+        <skipHours>
+            <hour>0</hour>
+            <hour>1</hour>
+            <hour>2</hour>
+            <hour>3</hour>
+            <hour>4</hour>
+            <hour>5</hour>
+            <hour>6</hour>
+            <hour>7</hour>
+            <hour>8</hour>
+        </skipHours>
+        <lastBuildDate>Mon, 16 Jan 2023 11:42:00 +0100</lastBuildDate>
+        <item>
+            <title>Ejercicio 1</title>
+            <link>http://192.168.2.105/ud2/08/index.html</link>
+            <description>
+                <![CDATA[Practica numero 8]]>
+            </description>
+            <enclosure url="http://192.168.2.105/ud3/images/02-1.jpg" length="45261" type="image/jpg"/>
+            <category>News</category>
+            <pubDate>Mon, 16 Jan 2023 12:05:00 +0100</pubDate>
+            <guid>https://validator.w3.org/feed/</guid>
+        </item>
+
+        <item>
+            <title>Ejercicio 2</title>
+            <link>http://192.168.2.105/ud2/09/index.html</link>
+            <description>
+                <![CDATA[Practica numero 9]]>
+            </description>
+            <enclosure url="http://192.168.2.105/ud3/images/02-2.jpg" length="111616" type="image/jpg"/>
+            <category>News</category>
+            <pubDate>Mon, 16 Jan 2023 12:05:00 +0100</pubDate>
+            <guid>https://validator.w3.org/</guid>
+        </item>
+
+        <item>
+            <title>Ejercicio 3</title>
+            <link>http://192.168.2.105/ud2/10/index.html</link>
+            <description>
+                <![CDATA[Practica numero 10]]>
+            </description>
+            <enclosure url="http://192.168.2.105/ud3/images/02-3.jpg" length="962560" type="image/jpg"/>
+            <category>News</category>
+            <pubDate>Mon, 16 Jan 2023 12:05:00 +0100</pubDate>
+            <guid>https://jigsaw.w3.org/css-validator/</guid>
+        </item>
+
+        <item>
+            <title>Ejercicio 4</title>
+            <link>http://192.168.2.105/ud2/11/index.html</link>
+            <description>
+                <![CDATA[Practica numero 11]]>
+            </description>
+            <enclosure url="http://192.168.2.105/ud3/images/02-4.jpg" length="200" type="image/jpg"/>
+            <category>News</category>
+            <pubDate>Mon, 16 Jan 2023 12:05:00 +0100</pubDate>
+            <guid></guid>
+        </item>
+
+        <item>
+            <title>Ejercicio 5</title>
+            <link>http://192.168.2.105/ud2/12/index.html</link>
+            <description>
+                <![CDATA[Practica numero 12]]>
+            </description>
+            <enclosure url="http://192.168.2.105/ud3/images/02-5.jpg" length="1059062" type="image/jpg"/>
+            <category>News</category>
+            <pubDate>Mon, 16 Jan 2023 12:05:00 +0100</pubDate>
+             <guid></guid>
+        </item>
+
+
+
+        <item>
+            <title>Examen 2</title>
+            <link>http://192.168.2.105/ud2/12/index.html</link>
+            <description>
+                <![CDATA[Evaluar sobre la sindicación de contenidos, así como XML, Schema XML y DTD]]>
+            </description>
+            <enclosure url="http://192.168.2.105/ud3/images/02-5.jpg" length="1059062" type="image/jpg"/>
+            <pubDate>Tue, 14 Feb 2023 9:36:00 +0100</pubDate>
+        </item>
+    </channel>
+    
+</rss>

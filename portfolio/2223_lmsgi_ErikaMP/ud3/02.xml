@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel> 
+        <title>Erika MP - Noticiario practicas</title>
+        <link>https://192.168.2.111/</link>
+        <description>Últimas noticias de las actuzalizaciones</description>
+        <lastBuildDate>Thu, 12 Jan 2023 12:32:10 +0100</lastBuildDate>
+        <language>es-es</language>
+        <category>Noticiario RSS Erika Martínez</category>
+        <copyright>2022-23 IES LOS SAUCES. Todos los derechos reservador. Erika Martínez Pérez</copyright>
+        <skipDays> 
+            <day>Saturday</day>
+            <day>Sunday</day>
+        </skipDays>
+        <skipHours> 
+            <hour>0</hour>
+            <hour>1</hour>
+            <hour>2</hour>
+            <hour>3</hour>
+            <hour>4</hour>
+            <hour>5</hour>
+            <hour>6</hour>
+            <hour>7</hour>
+            <hour>8</hour> 
+        </skipHours>
+        <image>
+            <link>http://192.168.2.111/</link>
+            <title>Erika MP - Noticiario practicas</title>
+            <url>http://192.168.2.111/ud3/images/imagen.png</url>
+            <description>Imagen logo RSS</description>
+            <height>32</height>
+            <width>96</width>
+        </image>
+        <item>
+            <title>Actualización - Creaciónd de la prática 04.pdf</title>
+            <link>http://192.168.2.111/ud3/04.pdf</link>
+            <guid>http://192.168.2.111/ud3/04.pdf</guid>
+            <description><![CDATA[<b>Actualización - Creaciónd de la prática 04.pdf</b>]]></description>
+            <category>practicas</category>
+            <category>clase</category>
+            <category>lenguaje</category>
+            <category>marcas</category>
+            <category>items</category>
+            <pubDate>Mon, 16 Jan 2023 18:40:00 +0100</pubDate>
+        </item>
+        <item>
+            <title>Actualización - Creaciónd de la prática 03.opml</title>
+            <link>http://192.168.2.111/ud3/03.opml</link>
+            <guid>http://192.168.2.111/ud3/03.opml</guid>
+            <description><![CDATA[<b>Actualización - Creaciónd de la prática 03.opml</b>]]></description>
+            <category>practicas</category>
+            <category>clase</category>
+            <category>lenguaje</category>
+            <category>marcas</category>
+            <category>items</category>
+            <pubDate>Mon, 16 Jan 2023 19:00:00 +0100</pubDate>
+        </item>
+        <item>
+            <title>Actualización - Creaciónd de la prática 02.xml</title>
+            <link>http://192.168.2.111/ud3/02.xml</link>
+            <guid>http://192.168.2.111/ud3/02.xml</guid>
+            <description><![CDATA[<b>Actualización - Creaciónd de la prática 02.xml</b>]]></description>
+            <category>practicas</category>
+            <category>clase</category>
+            <category>lenguaje</category>
+            <category>marcas</category>
+            <category>items</category>
+            <pubDate>Fri, 13 Jan 2023 17:20:42 +0100</pubDate>
+        </item>
+        <item>
+            <title>Actualización - Creaciónd de la prática 01.xml</title>
+            <link>http://192.168.2.111/ud3/01.xml</link>
+            <guid>http://192.168.2.111/ud3/01.xml</guid>
+            <description><![CDATA[<b>Actualización - Creaciónd de la prática 01.xml</b>]]></description>
+            <category>practicas</category>
+            <category>clase</category>
+            <category>lenguaje</category>
+            <category>marcas</category>
+            <category>items</category>
+            <pubDate>Fri, 13 Jan 2023 17:10:42 +0100</pubDate>
+        </item>
+        <item>
+            <title>Actualización CSS Practica 12 - HTML</title>
+            <link>https://192.168.2.111/ud2/12/index.html</link>
+            <guid>https://192.168.2.111/ud2/12/index.html</guid>
+            <description><![CDATA[<b>Actualización CSS Practica 12 - HTML</b>]]></description>
+            <category>practicas</category>
+            <category>clase</category>
+            <category>lenguaje</category>
+            <category>marcas</category>
+            <category>items</category>
+            <pubDate>Fri, 13 Jan 2023 17:00:42 +0100</pubDate>
+        </item>
+        <item>
+            <title>Actualización Examen 02 - Lenguaje de Marcas</title>
+            <link>http://192.168.2.111/exams/EX02_20230214_ErikaMartinez/index.html</link>
+            <guid>http://192.168.2.111/exams/EX02_20230214_ErikaMartinez/index.html</guid>
+            <description><![CDATA[<b>Evaluar sobre la sindicación de contenidos, así como XML, Schema XML y DTD</b>]]></description>
+            <category>practicas</category>
+            <category>clase</category>
+            <category>lenguaje</category>
+            <category>marcas</category>
+            <category>items</category>
+            <pubDate>Tue, 14 Feb 2023 09:51:00 +0100</pubDate>
+        </item>
+    </channel>
+</rss>

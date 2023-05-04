@@ -1,0 +1,7 @@
+#footer2 {
+    bottom: 0;
+    background-color: white;
+    color: grey;
+    display: flex;
+    justify-content: flex-end;
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="10.xsd">
+    <plato tipo="entrante">
+        <!-- entrantes,primeros,segundos y postres-->
+        <nombre tipo="jamon">Croquetas caseras</nombre>
+        <cantidad tipo="racion">media</cantidad>
+        <sinGluten opcion="false"/>
+        <precio>3.20</precio>
+    </plato>
+    <plato tipo="primero">
+        <!-- entrantes,primeros,segundos y postres-->
+        <nombre>Macarrones a la carbonada</nombre>
+        <precio>4.80</precio>
+        <sinGluten opcion="false"/>
+    </plato>
+    <plato tipo="segundo">
+        <nombre>Pollo al ajillo</nombre>
+        <precio>10</precio>
+        <sinGluten opcion="true"/>
+    </plato>
+    <plato tipo="postre">
+        <nombre tipo="dulce">Coullant de chocolate caliente</nombre>
+        <precio>6</precio>
+    </plato>
+    <bebida>
+        <nombre tipo="sin gas" medida="ml" tamanio="500">Agua</nombre>
+        <precio>1.20</precio>
+    </bebida>
+    <bebida>
+        <nombre tipo="sin gas" medida="ml" tamanio="1500">Agua</nombre>
+        <precio>2</precio>
+    </bebida>
+    <bebida>
+        <nombre tipo="con gas" medida="ml" tamanio="500">Agua</nombre>
+        <precio>1.50</precio>
+    </bebida>
+    <formaPago>        <!-- efectivo visa bizum cryptomonedas -->
+        <bizum>50</bizum>
+    </formaPago>
+
+</menu>

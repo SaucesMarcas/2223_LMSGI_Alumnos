@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Author: Carlos Garcia Cachon
+    Date: 17/01/2023
+    Description: - Crea un documento XML que almacene varios ejemplos de código (HTML, JAVA, PHP,..)
+                    En un documento XML, una instrucción de procesamiento (processing instruction) sirve para indicar cierta información al programa para que procese 
+                    dicho documento.
+                    Cómo asociar un archivo CSS a un documento XMLSchema
+                    <?xml-stylesheet type="text/css" href="estilos.css"?>
+                    Reglas CSS utilizadas:
+                        white-space: pre; (preservar los espacios en el código)
+                        codigo::after { content: ' \A'; white-space: pre;} (Saltar de línea y preservar los espacios en el código)
+                        y por último el lenguaje de color rojo, border y tamaño de 20px.
+                        En un documento XML, para incluir una sección CDATA, esta se escribe comenzando con la cadena de caracteres "<![CDATA[" y terminando con los 
+                        caracteres "]]>".
+-->
+<?xml-stylesheet type="text/css" href="estilos.css"?>
+<!DOCTYPE codigo SYSTEM "06.dtd">
+<codigo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="06.xsd">
+    <ejemplo lenguaje="java">
+        <![CDATA[int main(){
+            float nota;
+            printf("\n Introduzca nota (real): ");
+            scanf("%f",&amp;nota);
+            if(5 &lt;= nota )
+                printf("\n APROBADO");
+                return 0;
+            }]]>
+        </ejemplo>
+    <ejemplo lenguaje="html">
+        <![CDATA[<!DOCTYPE html>
+        <html>
+            <body>
+                <h1>My First Heading</h1>
+                <p>My first paragraph</p>
+            </body>
+        </html>]]>
+    </ejemplo>
+</codigo>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<productosfinancieros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="01.xsd">
+    <producto> <!--UNO O MAS-->
+        <bono> <!--PUEDE SER BONO, FUTURO O ACCIONES-->
+            <valoractual moneda="yenes">2.212</valoractual> <!--MONEDA DOLARES, EUROS O YENES-->
+            <beneficio>-2.83</beneficio> <!--OBLIGATORIO DECIMAL POSITIVO O NEGATIVO-->
+        </bono>
+    </producto>
+    <producto>
+        <futuro>
+            <elemento idioma="espanol">Petroleo</elemento>
+            <beneficio>-3.83</beneficio>
+        </futuro>
+    </producto>
+    <producto>
+        <acciones>
+            <empresa pais="usa">ENRON</empresa> <!--pais: usa, alemania, japon y espana-->
+            <beneficio>2.91</beneficio>
+        </acciones>
+    </producto>
+</productosfinancieros>

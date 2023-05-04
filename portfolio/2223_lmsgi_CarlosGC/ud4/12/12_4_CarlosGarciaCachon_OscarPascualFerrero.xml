@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grupoMusical xmlns:xsi="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="12_AlvaroCorderoMiñambres.xsd">
+    <datosGM>
+        <nombre>The Beatles</nombre>
+        <estiloMusical>ROCK</estiloMusical>
+        <director>
+            <nombre>Brian Samuel</nombre>
+            <apellidos>
+                <apellido2>Epstein</apellido2>
+                <mote>Brian Epstein</mote>
+            </apellidos>
+        </director>
+        <artistas>
+            <nombre>John</nombre>
+            <apellidos>
+                <apellido2>Lennon</apellido2>
+                <mote>John</mote>
+            </apellidos>
+        </artistas>
+        <artistas>
+            <nombre>Paul</nombre>
+            <apellidos>
+                <apellido2>McCartney</apellido2>
+                <mote>McCartney</mote>
+            </apellidos>
+        </artistas>
+        <artistas>
+            <nombre>George</nombre>
+            <apellidos>
+                <apellido2>Harrison</apellido2>
+                <mote>Harrison</mote>
+            </apellidos>
+        </artistas>
+        <artistas>
+            <nombre>Ringo</nombre>
+            <apellidos>
+                <apellido2>Starr</apellido2>
+                <mote>Ringo Starr</mote>
+            </apellidos>
+        </artistas>
+        <discografias>
+            <nombre>Parlophone</nombre>
+            <discos>Revolver</discos>
+            <anyo>1966</anyo>
+        </discografias>
+        <conciertos>
+            <nombre>Get Back - The Rooftop Concert</nombre>
+            <lugar>
+                <localidad>Londres</localidad>
+                <provincia>Londres</provincia>
+                <direccion>
+                    <calle>3 de Savile Row</calle>
+                </direccion>
+            </lugar>
+        </conciertos>
+        <precio>0</precio>
+        <formaPago>
+            <targeta></targeta>
+            <efectivo></efectivo>
+        </formaPago>
+        <abono>
+            <tamanyo></tamanyo>
+        </abono>
+        <fecha>1969-1-30</fecha>
+        <premios>
+            <nombre>Grammy por Album del Año</nombre>
+            <discos>Sgt. Pepper`s Lonely Hearts Club Band</discos>
+            <anyo>1968</anyo>
+        </premios>
+    </datosGM>
+</grupoMusical>

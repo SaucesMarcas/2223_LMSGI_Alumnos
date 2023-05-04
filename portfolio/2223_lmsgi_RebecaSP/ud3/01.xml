@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Rebeca - El País</title> <!--OBLIGATORIO-->
+        <link>https://elpais.com/</link>> <!--OBLIGATORIO-->
+        <description>Ultimas noticias del periodico El País</description>> <!--OBLIGATORIO-->
+        <category>Noticias</category>
+        <category>Periodico</category>
+        <category>Actualidad</category>
+        <copyright>2022-23  IES LOS SAUCES. ©Todos los derechos reservados y optimizado para Chrome. Rebeca Sánchez Pérez</copyright>
+        <language>es-es</language>
+        <lastBuildDate>Fri, 13 Jan 2023 10:20:15 GMT</lastBuildDate>
+        <pubDate>Tue, 10 Jan 2023 12:16:15 GMT</pubDate>
+        <skipDays>
+            <day>Saturday</day>
+            <day>Sunday</day>
+        </skipDays>
+        <skipHours>
+            <hour>0</hour>
+            <hour>1</hour>
+            <hour>2</hour>
+            <hour>3</hour>
+            <hour>4</hour>
+            <hour>5</hour>
+            <hour>6</hour>
+            <hour>7</hour>
+            <hour>8</hour>
+        </skipHours>
+        <image>
+            <url>https://192.168.2.108/ud3/images/favicon.png</url>
+            <link>https://elpais.com/</link>
+            <title>Rebeca - El País</title>
+        </image>
+        <item>
+            <title>¿Qué ocurre cuándo una de nuestras manos no obedece?</title>> <!--OBLIGATORIO-->
+            <link>https://elpais.com/ciencia/el-hacha-de-piedra/2023-01-12/que-ocurre-cuando-una-de-nuestras-manos-no-obedece.html</link>> <!--OBLIGATORIO-->
+            <guid isPermaLink="true">https://elpais.com/ciencia/el-hacha-de-piedra/2023-01-12/que-ocurre-cuando-una-de-nuestras-manos-no-obedece.html</guid>
+            <description><![CDATA[Cuando se pierde la conexión entre los dos <b>hemisferios del cerebro</b> se puede dar una patología que se conoce como síndrome del doctor <i>Strangelove</i>.]]></description>> <!--OBLIGATORIO-->
+            <author>rebeca.sanper.1@educa.jcyl.es (Rebeca Sánchez)</author>
+            <category>Noticias</category>
+            <category>Ciencia</category>
+            <category>Neurología</category>
+            <pubDate>Wed, 11 Jan 2023 12:16:35 GMT</pubDate>
+            <enclosure url="https://192.168.2.108/ud3/images/item1.png" length="500" type="image/png" />
+            <source url="https://elpais.com/">ElPais.es</source>
+        </item>
+        <item>
+            <title>El día que Tom Cruise intentó reclutar a Seth Rogen para la iglesia de la Cienciología</title>
+            <link>https://elpais.com/gente/2023-01-12/el-dia-que-tom-cruise-intento-reclutar-a-seth-rogen-para-la-iglesia-de-la-cienciologia.html</link>
+            <guid isPermaLink="true">https://elpais.com/gente/2023-01-12/el-dia-que-tom-cruise-intento-reclutar-a-seth-rogen-para-la-iglesia-de-la-cienciologia.html</guid>
+            <description><![CDATA[Internet ha rescatado una entrevista de 2021 en la que el cómico canadiense relata un encuentro incómodo con el protagonista de <b>‘Top Gun’: “Esquivé esa bala”</b>.]]></description>
+            <author>rebeca.sanper.1@educa.jcyl.es (Rebeca Sánchez)</author>
+            <category>Gente</category>
+            <category>Actores</category>
+            <category>Seth Rogen</category>
+            <pubDate>Thu, 12 Jan 2023 12:16:15 GMT</pubDate>
+            <enclosure url="https://192.168.2.108/ud3/images/item2.png" length="500" type="image/png" />
+            <source url="https://elpais.com/">ElPais.es</source>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Festival xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="12.xsd">
+    <Sede>
+        <Lugar>Liverpool,Reino Unido</Lugar>
+        <CadenaAnfitriona>BBC</CadenaAnfitriona>
+    </Sede>
+    <Presentador>
+        <Nombre>Alesha Dixon</Nombre>
+        <Residencia>Reino Unido</Residencia>
+    </Presentador>
+    <Paises>
+        <Clasificados>
+            <Pais>
+                <Nombre>España</Nombre>
+                <Participacion>Blanca Paloma</Participacion>
+            </Pais>
+            <Pais>
+                <Nombre>Francia</Nombre>
+                <Participacion>La Zarra</Participacion>
+            </Pais>
+            <Pais>
+                <Nombre>Italia</Nombre>
+                <Participacion>Marco Mengoni</Participacion>
+            </Pais>
+            <Pais>
+                <Nombre>Alemania</Nombre>
+                <Participacion>Cascada</Participacion>
+            </Pais>
+            <Pais>
+                <Nombre>Reino Unido</Nombre>
+                <Participacion>Dua Lipa</Participacion>
+            </Pais>
+        </Clasificados>
+        <Semifinalistas>
+            <Semifinal numero="1">
+                <Nombre>Noruega</Nombre>
+                <Participacion>Alessandra</Participacion>
+            </Semifinal>
+            <Semifinal numero="2">
+                <Nombre>Eslovenia</Nombre>
+                <Participacion>Jocker Out</Participacion>
+            </Semifinal>
+        </Semifinalistas>
+    </Paises>
+    <Preseleccion>
+        <Paises>14</Paises>
+    </Preseleccion>
+    <Entradas>
+        <Cantidad>2000</Cantidad>
+    </Entradas>
+</Festival>

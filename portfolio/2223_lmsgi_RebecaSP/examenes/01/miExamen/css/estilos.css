@@ -1,0 +1,132 @@
+@font-face{ 
+	font-family: 'Roboto-bold';
+	src: url("../fonts/Roboto/Roboto-Bold.ttf"); 
+} 
+/*GENERAL*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Courier New", Courier, monospace;
+}
+nav,footer{
+	font-family: 'Roboto-bold';
+}
+ul,ol{
+	text-decoration: none;
+}
+/*ENCABEZADO DE LA PAGINA*/
+#encabezado{
+	width: 100%;
+	font-family: 'Roboto-bold';
+	background-color: white;
+	border-bottom: 2px groove green;
+	display: inline-block;
+}
+#encabezado img{
+	width: 5%;
+	float: left;
+}
+h1{
+	color: green;
+	float: left;
+	font-size: 3rem;
+	margin-top: 1rem;
+}
+/*nav*/
+nav ul{
+	width: 10%;
+	margin-left: 105rem;
+}
+nav * li{
+	text-transform: uppercase;
+	padding: 0.5rem;
+	text-align: center;
+	background-color: green;
+	list-style: none;
+}
+nav * li a{
+	text-decoration: none;
+	color: white;
+}
+
+/*MAIN*/
+main div{
+	padding: 0.5rem;
+}
+main div::first-line{
+	padding: 2rem;
+}
+section{
+	border-radius: 10px 10px 0 0;
+	width: 15rem;
+	border: 3px solid green;
+	float: left;
+	margin: 0.5rem;
+}
+section header{
+	padding: 0.25rem;
+	color: white;
+	background-color: green;
+}
+section article{
+	padding: 0.5rem;
+	color: green;
+}
+#listado-de-practicas ol{
+	list-style-position: inside;
+}
+#listado-de-practicas a{
+	color: green;
+	text-decoration: none;
+}
+#audio img{
+	width: 100%;
+}
+#video video{
+	width: 100%;
+}
+#audio audio{
+	width: 100%;
+}
+input{
+	width: 100%;
+}
+textarea{
+	width: 100%;
+}
+button{
+	width: 100%;
+}
+/*FOOTER DE LA PAGINA*/
+footer{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	padding: 0.5rem;
+	text-align: center;
+	color: white;
+	background-color: #008000;
+}
+footer table{
+	border-collapse: collapse;
+	border: 1px solid white;
+}
+footer td{
+	padding: 0 1rem;
+	margin: 0.5rem;
+	border: 1px solid white;
+}
+footer img{
+	width: 2%;
+	top: 0;
+	float: right;
+}
+footer figure{
+	margin-right: 50px;
+	
+}
+footer address{
+	padding-top: 0.5rem;
+	color: white; 
+}

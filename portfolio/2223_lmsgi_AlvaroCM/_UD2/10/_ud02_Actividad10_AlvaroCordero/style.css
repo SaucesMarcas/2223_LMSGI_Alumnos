@@ -1,0 +1,97 @@
+:root {
+    --colorFondo: #fff280;
+    --colorTituloSeccion: #ffc533;
+    --colorTituloArticle: #ff7740;
+    --colorFondoArticle: #ffeb33;
+}
+
+h1 {
+    font-size: 2.7rem;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    font-style: italic;
+}
+
+article header {
+    padding: 0.3rem;
+    padding-bottom: 2rem;
+    border: 1px solid var(--colorFondo);
+    background-color: var(--colorTituloArticle);
+}
+
+body {
+    background-color: var(--colorFondo);
+}
+
+section {
+    float: left;
+    width: 34rem;
+    border: 3px solid var(--colorTituloSeccion);
+    margin: 3px;
+    margin: 0.5rem;
+}
+
+section h2 {
+    background-color: var(--colorTituloSeccion);
+    font-size: 2rem;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: dotted;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    padding: 10px;
+    margin-left: 0;
+}
+
+article {
+    width: 15rem;
+    display: inline-block;
+    margin: 7px;
+    border: 2px solid var(--colorTituloArticle);
+}
+
+article div {
+    background-color: var(--colorFondoArticle);
+    padding-top: 2rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+
+}
+
+article h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+article h4 {
+    color: white;
+    font-size: 0.9rem;
+}
+
+p {
+    text-align: justify;
+}
+
+img {
+    border: 2px solid var(--colorTituloArticle);
+    margin-left: 1rem;
+}
+
+figcaption {
+    font-size:11px;
+    text-align: center;
+}

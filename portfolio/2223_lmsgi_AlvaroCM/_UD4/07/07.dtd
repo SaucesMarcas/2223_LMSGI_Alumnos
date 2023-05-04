@@ -1,0 +1,5 @@
+<!ELEMENT grupo (estudiante)>
+<!ELEMENT estudiante (nombre)>
+    <!ATTLIST estudiante codigo ID #REQUIRED>
+    <!ATTLIST estudiante tutor IDREFS #IMPLIED>
+<!ELEMENT nombre (#PCDATA)>

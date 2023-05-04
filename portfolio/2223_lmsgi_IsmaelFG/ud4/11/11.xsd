@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- Declaracion de tipos -->
+<xs:simpleType name="tipoMedida">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="MB"/>
+        <xs:enumeration value="GB"/>
+        <xs:enumeration value="TB"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="tipoDisco">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="SSD"/>
+        <xs:enumeration value="HDD"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:attributeGroup name="atributosPelicula">
+    <xs:attribute name="genero" type="xs:string"/>
+    <xs:attribute name="edad" type="xs:int"/>
+    <xs:attribute name="tresde" type="xs:boolean"/>
+</xs:attributeGroup>
+
+    <xs:element name="catalogo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="portatil" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="referencia"/>
+                            <xs:element name="nombre"/>
+                            <xs:element name="fabricante">
+                                <xs:complexType>
+                                    <xs:attribute name="nombre" type="xs:string"></xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="procesador">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre"/>
+                                        <xs:element name="cache">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:float">
+                                                        <xs:attribute name="tamanyo" type="tipoMedida" default="GB"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="numero" type="xs:int" minOccurs="1" maxOccurs="20"/>
+                                        <xs:element name="velocidad">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:float">
+                                                        <xs:attribute name="medida" type="xs:string" fixed="Ghz"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="ram">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="memoria">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:int">
+                                                        <xs:attribute name="unidadMedida" default="GB" type="tipoMedida"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="tipo" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="disco">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="capacidad">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:int">
+                                                        <xs:attribute name="unidadMedidaDisco" type="tipoMedida"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="tipoDisco" type="tipoDisco"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="pantalla" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="dimension">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:int">
+                                                        <xs:attribute name="tamanyoPantalla"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="resolucion" type="xs:string"/>
+                                        <xs:element name="resolucionMax" type="xs:string" minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="grafica" type="xs:string"/>
+                            <xs:element name="foto" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

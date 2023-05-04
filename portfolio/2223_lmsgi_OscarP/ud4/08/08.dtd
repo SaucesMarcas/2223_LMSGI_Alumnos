@@ -1,0 +1,5 @@
+<!ELEMENT lugares (#PCDATA|lugar)*>
+<!-- Es importante el orden de #PCDATA|loquesea para que no de error-->
+<!ELEMENT lugar (#PCDATA)>
+<!ATTLIST lugares xmlns:xsi CDATA #IMPLIED
+          xsi:noNamesespaceSchemaLocation CDATA #IMPLIED>

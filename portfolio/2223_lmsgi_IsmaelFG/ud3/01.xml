@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+	<channel>
+        <title>IFG-El país</title>
+        <link>https://elpais.es</link>
+        <description>Ultimas noticias del periodico el país</description>
+        <item>
+            <title>Asalto a el congreso de Brasil</title>
+            <link>https://elpais.com/internacional/2023-01-09/el-asalto-al-congreso-de-brasil-por-parte-de-los-seguidores-de-bolsonaro-en-vivo.html</link>
+            <description><![CDATA[El presidente Lula da Silva se reúne en Brasilia con representantes de los tres poderes del Estado tras el ataque bolsonarista en Brasilia | La policía desaloja el campamento que desde hace semanas pide la intervención del Ejército]]></description>
+            <category>Prensa</category>    
+        </item>
+        <item>
+            <title>La república bananera que bajó del norte</title>
+            <link>https://elpais.com/internacional/2023-01-10/la-republica-bananera-que-bajo-del-norte.html</link>
+            <description><![CDATA[Además de negociar mayorías en un Congreso que no controla, Lula necesitará recuperar el control de la calle hasta ayer ocupada por lunáticos y extremistas]]></description>
+            <category>Prensa</category>  
+        </item>
+
+	</channel>
+</rss>
