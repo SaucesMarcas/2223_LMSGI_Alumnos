@@ -27,7 +27,7 @@
                                 <xsl:value-of select="concat('Numero de viviendas ',count(//vivienda))"/>
                             </h2>
                             <ol>
-                                <xsl:for-each
+                                <xsl:for-each></xsl:for-each>
                             </ol>
                         </xsl:for-each>
                     </div>
