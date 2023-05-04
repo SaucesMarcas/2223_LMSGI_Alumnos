@@ -19,22 +19,27 @@ h1{
     color: green;
     margin:0;
     padding-left: 5px;
+    height: 42px;
 }
 
 h2{
     background-color: green;
-    color: white;
+    color: lightgray;
+    margin-top: 22px;
+    height: 32px;
 }
 
 h3{
    color: green;
-   border: 1px solid greenyellow;
+   border: 2px solid greenyellow;
+   margin-top: 26px;
 }
 
 table{
     border-collapse: collapse;
     width: 75%;
     margin: 0 auto;
+    height: 100px
 }
 
 tr{
@@ -52,8 +57,19 @@ tr{
     font-variant: small-caps;
 }
 
+caption {
+    caption-side: bottom;
+    color: green;
+    font-style: italic;
+    font-variant: small-caps;
+    margin-top: 1px;
+    
+}
+
 footer{
     background-color: green;
     color: white;
     text-align: right;
+    padding: 5px;
+    text-transform: uppercase;
 }

@@ -1,0 +1,41 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 25 abr 2023, 9:03:50
+    Author     : Oscar Pascual Ferrero
+*/
+h1{
+    background-color: grey;
+    color: white;
+    text-align: center;
+}
+
+.content-1{
+    border: 1px solid black;
+    display: inline-table;
+    margin: 5px;
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    background-color: white;
+}
+
+html{
+    background-image: url("../src/claqueta.avif");
+    background-size: 50px
+}
+
+.naranja{
+    color: orange;
+}
+
+footer{
+    background-color: grey;
+    color: white;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

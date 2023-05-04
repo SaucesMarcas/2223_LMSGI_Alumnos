@@ -20,10 +20,11 @@
         <html>
             <head>
                 <title>02 XSLT Oscar Pascual Ferrero</title>
+                <link href="../src/estilos.css" rel="stylesheet" type="text/css"/>
             </head>
             <body>
                 <header>
-                    <h1>Informacion de tickets</h1>
+                    <h1>Información de tickets</h1>
                 </header>
                 <main>
                     <h2>Listado de tickets</h2>
@@ -36,11 +37,11 @@
                                 <tr>
                                     <td></td>
                                     <td>
-                                        <xsl:value-of select="concat('Producto')"/>
+                                        <p id="b">Producto</p>
                                     </td>
                                     <td></td>
                                     <td>
-                                        <xsl:value-of select="concat('Precio')"/>
+                                        <p id="b">Precio</p>
                                     </td>
                                 </tr>
                                 
@@ -58,21 +59,21 @@
                                 </xsl:for-each>
                                 
                                 <tr>
-                                    <td><xsl:value-of select="concat('Total')"/></td>
                                     <td></td>
+                                    <td><p id="b">Total</p></td>
                                     <td></td>
-                                    <td><xsl:value-of select="total"/></td>
+                                    <td><p id="b"><xsl:value-of select="total"/></p></td>
                                 </tr>
                                                                 
                             </table>
-                            <p><xsl:value-of select="concat('Fecha del ticket ',fecha)"/></p>
+                            <p id="fecha"><xsl:value-of select="concat('Fecha del ticket ',fecha)"/></p>
                         </xsl:for-each>                        
-                    </div>
-                    <div>
-                        <p><xsl:value-of select="concat('NÚMERO DE TICKETS: ',count(ticket))"/></p>
-                        <p><xsl:value-of select="concat('TOTAL DE TICKETS: ',sum(ticket/total))"/></p>
-                    </div>
+                    </div>                    
                 </main>
+                <footer>
+                    <div>NÚMERO DE TICKETS: <xsl:value-of select="count(ticket)"/></div>
+                    <div>TOTAL DE TICKETS: <xsl:value-of select="sum(ticket/total)"/></div>
+                </footer>
             </body>
         </html>
     </xsl:template>

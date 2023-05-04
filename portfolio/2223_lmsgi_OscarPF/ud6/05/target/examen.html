@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+        <html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Oscar Pascual Ferrero">
+        <meta name="application-name" content="Portfolio de LMSGI">
+        <meta name="description" content="Crea un formulario a partir de XML">
+        <meta name="keywords" content="xslt, xml, html">
+        <meta name="robots" content="index, follow">
+        <link rel="icon" href="../../../webroot/media/images/favicon.ico" type="image/x-icon">
+        <title>Lenguaje de Marcas y Sistemas Gesti&oacute;n de Informaci&oacute;n</title>
+        <link href="../src/examen.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1>Despliegue de Aplicaciones Web</h1>
+            <h2>Lenguaje de Marcas y Sistemas Gesti&oacute;n de Informaci&oacute;n</h2>
+            <h3>Fecha: 15 de mayo de 2017</h3>
+        </header>
+        <main>
+            <form method="get" action="#enviarExamen.php">
+                <div class="grey">
+                    <xsl-for-each select="//pregunta">
+                        <div class="pregunta">
+                            <div class="bold">1 .- &iquest;Qu&eacute; capa OSI administra los segmentos de datos?</div>
+                        </div>
+                        <div class="respuesta"></div>
+                    </xsl-for-each>
+                </div>
+            </form>
+        </main>
+        <footer></footer>
+    </body>
+</html>
