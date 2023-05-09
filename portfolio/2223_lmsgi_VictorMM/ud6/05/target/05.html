@@ -3,14 +3,14 @@
     <head>
         <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Victor Manrique">
+        <meta name="author" content="Victor Manuel Manrique">
         <meta name="application-name" content="Portfolio de LMSGI">
-        <meta name="description" content="Crea un form a partir de XML">
+        <meta name="description" content="Crea un form a partir XML">
         <meta name="keywords" content="xslt, xml, html">
         <meta name="robots" content="index, follow">
-        <link rel="icon" href="../../webroot/media/imagen/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../../webroot/media/images/favicon.png" type="image/x-icon">
         <title>Lenguaje de Marcas y Sistemas Gesti&oacute;n de Informaci&oacute;n</title>
-        <link type="text/css" rel="stylesheet" href="../src/estilos.css">
+        <link href="../src/05.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <header>
@@ -20,50 +20,40 @@
         </header>
         <main>
             <form method="get" action="#enviarExamen.php">
-                <div class="pregunta">
-                    <div class="enunciado">1.-&iquest;Qu&eacute; capa OSI administra los segmentos de datos?</div>
-                    <div class="respuesta">
-                        <div>1</div>
-                        <div>1</div>
-                        <div>1</div>
-                        <div>1</div>
+                <div class="cajaGris">
+                    <div class="pregunta">
+                        <div class="enunciadoPregunta">1.-&iquest;Qu&eacute; capa OSI administra los segmentos de datos?</div>
+                        <div class="respuesta">
+                            <label for="id11"><input type="radio" name="respuesta1" id="id11" value="1">Capa de aplicaci&oacute;n</label><label for="id12"><input type="radio" name="respuesta1" id="id12" value="2">Capa de presentaci&oacute;n</label><label for="id13"><input type="radio" name="respuesta1" id="id13" value="3">Capa de sesi&oacute;n</label><label for="id14"><input type="radio" name="respuesta1" id="id14" value="4">Capa de transporte</label>
+                        </div>
+                    </div>
+                    <div class="pregunta">
+                        <div class="enunciadoPregunta">2.-&iquest;Qu&eacute; tipo de informaci&oacute;n contiene el encabezado de la Capa 4 para ayudar en el env&iacute;o de datos?</div>
+                        <div class="respuesta">
+                            <label for="id21"><input type="radio" name="respuesta2" id="id21" value="1">N&uacute;mero de puerto del servicio</label><label for="id22"><input type="radio" name="respuesta2" id="id22" value="2">Direcci&oacute;n l&oacute;gica del host</label><label for="id23"><input type="radio" name="respuesta2" id="id23" value="3">Direcci&oacute;n f&iacute;sica del dispositivo</label><label for="id24"><input type="radio" name="respuesta2" id="id24" value="4">Identificador de conexi&oacute;n virtual</label>
+                        </div>
+                    </div>
+                    <div class="pregunta">
+                        <div class="enunciadoPregunta">3.-Durante el proceso de encapsulaci&oacute;n, &iquest;qu&eacute; identificadores se agregan en la capa de transporte?</div>
+                        <div class="respuesta">
+                            <label for="id31"><input type="radio" name="respuesta3" id="id31" value="1">Direcciones IP de origen y de destino</label><label for="id32"><input type="radio" name="respuesta3" id="id32" value="2">Direcciones MAC de origen y de destino</label><label for="id33"><input type="radio" name="respuesta3" id="id33" value="3">N&uacute;meros de puertos de origen y destino</label><label for="id34"><input type="radio" name="respuesta3" id="id34" value="4">Identificadores de canal de origen y destino</label>
+                        </div>
+                    </div>
+                    <div class="pregunta">
+                        <div class="enunciadoPregunta">4.-&iquest;Qu&eacute; rango de n&uacute;meros de puerto se asigna de forma din&aacute;mica a las aplicaciones cliente al iniciar una conexi&oacute;n con el servidor?</div>
+                        <div class="respuesta">
+                            <label for="id41"><input type="radio" name="respuesta4" id="id41" value="1">De 0 a 255</label><label for="id42"><input type="radio" name="respuesta4" id="id42" value="2">De 0 a 1023</label><label for="id43"><input type="radio" name="respuesta4" id="id43" value="3">De 1024 a 49151</label><label for="id44"><input type="radio" name="respuesta4" id="id44" value="4">Mayor de 65535</label>
+                        </div>
+                    </div>
+                    <div class="pregunta">
+                        <div class="enunciadoPregunta">5.-&iquest;Qu&eacute; informaci&oacute;n contiene el encabezado de la Capa 3 para ayudar en el env&iacute;o de datos?</div>
+                        <div class="respuesta">
+                            <label for="id51"><input type="radio" name="respuesta5" id="id51" value="1">Direcci&oacute;n l&oacute;gica del host de destino</label><label for="id52"><input type="radio" name="respuesta5" id="id52" value="2">N&uacute;mero de puerto</label><label for="id53"><input type="radio" name="respuesta5" id="id53" value="3">Direcci&oacute;n f&iacute;sica del dispositivo</label><label for="id54"><input type="radio" name="respuesta5" id="id54" value="4">Identificador de conexi&oacute;n virtual</label>
+                        </div>
                     </div>
                 </div>
-                <div class="pregunta">
-                    <div class="enunciado">2.-&iquest;Qu&eacute; tipo de informaci&oacute;n contiene el encabezado de la Capa 4 para ayudar en el env&iacute;o de datos?</div>
-                    <div class="respuesta">
-                        <div>2</div>
-                        <div>2</div>
-                        <div>2</div>
-                        <div>2</div>
-                    </div>
-                </div>
-                <div class="pregunta">
-                    <div class="enunciado">3.-Durante el proceso de encapsulaci&oacute;n, &iquest;qu&eacute; identificadores se agregan en la capa de transporte?</div>
-                    <div class="respuesta">
-                        <div>3</div>
-                        <div>3</div>
-                        <div>3</div>
-                        <div>3</div>
-                    </div>
-                </div>
-                <div class="pregunta">
-                    <div class="enunciado">4.-&iquest;Qu&eacute; rango de n&uacute;meros de puerto se asigna de forma din&aacute;mica a las aplicaciones cliente al iniciar una conexi&oacute;n con el servidor?</div>
-                    <div class="respuesta">
-                        <div>4</div>
-                        <div>4</div>
-                        <div>4</div>
-                        <div>4</div>
-                    </div>
-                </div>
-                <div class="pregunta">
-                    <div class="enunciado">5.-&iquest;Qu&eacute; informaci&oacute;n contiene el encabezado de la Capa 3 para ayudar en el env&iacute;o de datos?</div>
-                    <div class="respuesta">
-                        <div>5</div>
-                        <div>5</div>
-                        <div>5</div>
-                        <div>5</div>
-                    </div>
+                <div class="botones">
+                    <input type="submit" value="Enviar formulario"><input type="reset" value="Borrar formulario">
                 </div>
             </form>
         </main>
