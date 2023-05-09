@@ -24,7 +24,7 @@
                     <h1>Practica 4<br/>Informacion de Garajes</h1>
                 </header>
                 <main>
-                    <xsl:for-each select="coches/coche">
+                    <xsl:for-each select="reparaciones/reparacion">
                         <div>
                         <table>
                             <tr class="cabeceras">

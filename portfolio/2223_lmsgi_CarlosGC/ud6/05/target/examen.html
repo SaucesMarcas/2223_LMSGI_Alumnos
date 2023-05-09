@@ -1,26 +1,62 @@
 <DOCTYPE html><html>
     <head>
         <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta charset="UTF-8">
-        <meta name="author" content="Carlos Garc&iacute;a Cach&oacute;n">
-        <link rel="icon" type="images/favicon.ico" sizes="32x32" href="../../../webroot/images/favicon.ico">
-        <meta name="description" content="Practicando con XSLT">
-        <meta name="keywords" content="XSLT">
-        <meta name="generator" content="NetBeans">
-        <meta name="generator" content="60">
-        <link rel="stylesheet" href="../src/examen.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Carlos Garcia">
+        <meta name="application-name" content="Portfolio de LMSGI">
+        <meta name="description" content="Crear un form a partir XML">
+        <meta name="keywords" content="xslt, xml, html">
+        <meta name="robots" content="index, follow">
+        <link rel="icon" href="../../webroot/media/imagen/favicon.ico" type="image/x-icon">
+        <title>Lenguaje de Marcas y Sistemas Gesti&oacute;n de Informaci&oacute;n</title>
+        <link type="text/css" rel="stylesheet" href="../src/examen.css">
         <title>XSLT 05 Carlos Garcia Cachon</title>
     </head>
     <body>
         <header>
-            <h1>
-                Desarrollo de Aplicaciones Web
-                <br>
-                Lenguaje de Marcas y Sistemas Gesti&oacute;n de Informaci&oacute;n
-                <br>
-            </h1>
+            <h1>Despliegue de Aplicaciones Web</h1>
+            <h2>Lenguaje de Marcas y Sistemas Gesti&oacute;n de Informaci&oacute;n</h2>
+            <h3>Fecha: 15 de mayo de 2017</h3>
         </header>
-        <main></main>
+        <main>
+            <form action="enviarExamen.php" method="get">
+                <div class="formulario">
+                    <div class="pregunta">
+                        <div class="enunciadoPregunta">1.-&iquest;Qu&eacute; capa OSI administra los segmentos de datos?</div>
+                        <div class="respuesta">
+                            <label for="id11"><input type="radio" name="var1" id="var1" value="1">Capa de aplicaci&oacute;n</label><label for="id12"><input type="radio" name="var1" id="var1" value="2">Capa de presentaci&oacute;n</label><label for="id13"><input type="radio" name="var1" id="var1" value="3">Capa de sesi&oacute;n</label><label for="id14"><input type="radio" name="var1" id="var1" value="4" checked>Capa de transporte</label>
+                        </div>
+                    </div>
+                    <div class="pregunta">
+                        <div class="enunciadoPregunta">2.-&iquest;Qu&eacute; tipo de informaci&oacute;n contiene el encabezado de la Capa 4 para ayudar en el env&iacute;o de datos?</div>
+                        <div class="respuesta">
+                            <label for="id21"><input type="radio" name="var2" id="var2" value="1" checked>N&uacute;mero de puerto del servicio</label><label for="id22"><input type="radio" name="var2" id="var2" value="2">Direcci&oacute;n l&oacute;gica del host</label><label for="id23"><input type="radio" name="var2" id="var2" value="3">Direcci&oacute;n f&iacute;sica del dispositivo</label><label for="id24"><input type="radio" name="var2" id="var2" value="4">Identificador de conexi&oacute;n virtual</label>
+                        </div>
+                    </div>
+                    <div class="pregunta">
+                        <div class="enunciadoPregunta">3.-Durante el proceso de encapsulaci&oacute;n, &iquest;qu&eacute; identificadores se agregan en la capa de transporte?</div>
+                        <div class="respuesta">
+                            <label for="id31"><input type="radio" name="var3" id="var3" value="1">Direcciones IP de origen y de destino</label><label for="id32"><input type="radio" name="var3" id="var3" value="2">Direcciones MAC de origen y de destino</label><label for="id33"><input type="radio" name="var3" id="var3" value="3" checked>N&uacute;meros de puertos de origen y destino</label><label for="id34"><input type="radio" name="var3" id="var3" value="4">Identificadores de canal de origen y destino</label>
+                        </div>
+                    </div>
+                    <div class="pregunta">
+                        <div class="enunciadoPregunta">4.-&iquest;Qu&eacute; rango de n&uacute;meros de puerto se asigna de forma din&aacute;mica a las aplicaciones cliente al iniciar una conexi&oacute;n con el servidor?</div>
+                        <div class="respuesta">
+                            <label for="id41"><input type="radio" name="var4" id="var4" value="1">De 0 a 255</label><label for="id42"><input type="radio" name="var4" id="var4" value="2">De 0 a 1023</label><label for="id43"><input type="radio" name="var4" id="var4" value="3" checked>De 1024 a 49151</label><label for="id44"><input type="radio" name="var4" id="var4" value="4">Mayor de 65535</label>
+                        </div>
+                    </div>
+                    <div class="pregunta">
+                        <div class="enunciadoPregunta">5.-&iquest;Qu&eacute; informaci&oacute;n contiene el encabezado de la Capa 3 para ayudar en el env&iacute;o de datos?</div>
+                        <div class="respuesta">
+                            <label for="id51"><input type="radio" name="var5" id="var5" value="1" checked>Direcci&oacute;n l&oacute;gica del host de destino</label><label for="id52"><input type="radio" name="var5" id="var5" value="2">N&uacute;mero de puerto</label><label for="id53"><input type="radio" name="var5" id="var5" value="3">Direcci&oacute;n f&iacute;sica del dispositivo</label><label for="id54"><input type="radio" name="var5" id="var5" value="4">Identificador de conexi&oacute;n virtual</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="botones">
+                    <input type="button" value="Enviar formulario"><input type="reset" value="Borrar formulario">
+                </div>
+            </form>
+        </main>
         <footer></footer>
     </body>
 </html>
