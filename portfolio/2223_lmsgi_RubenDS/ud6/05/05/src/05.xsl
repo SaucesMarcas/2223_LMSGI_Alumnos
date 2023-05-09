@@ -18,7 +18,7 @@
             <head>
                 <xsl:call-template name="metaweb">
                     <xsl:with-param name="descripcion" select="'Crea un form a partir de XML'"/>
-                    <xsl:with-param name="autor" select="'Victor Manrique'"/>
+                    <xsl:with-param name="autor" select="'Rubén Díez Sánchez'"/>
                     <xsl:with-param name="titulo">
                         <xsl:value-of select="datos/nombreModulo"/>
                     </xsl:with-param>
