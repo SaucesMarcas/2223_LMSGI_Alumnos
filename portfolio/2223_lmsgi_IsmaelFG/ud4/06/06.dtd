@@ -1,4 +1,0 @@
-<!ELEMENT codigo (lenguaje+)>
-<!ELEMENT lenguaje (titulo,content)>
-<!ELEMENT titulo (#PCDATA)>
-<!ELEMENT content (#PCDATA)>

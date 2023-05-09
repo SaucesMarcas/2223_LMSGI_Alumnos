@@ -1,7 +1,0 @@
-<!ELEMENT mundo (linea+)>
-<!ELEMENT linea (continente,pais,capital)>
-<!ELEMENT continente (#PCDATA)>
-<!ELEMENT pais (#PCDATA)>
-<!ELEMENT capital (#PCDATA)>
-<!ATTLIST mundo xmlns:xsi CDATA #IMPLIED
-xsi:noNamespaceSchemaLocation CDATA #IMPLIED>

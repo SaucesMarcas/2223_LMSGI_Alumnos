@@ -1,9 +1,0 @@
-<!ELEMENT horario (fila+)>
-<!ELEMENT fila (hora+,dia*,asignatura*)>
-<!ELEMENT hora (#PCDATA)>
-<!ELEMENT dia (#PCDATA)>
-<!ELEMENT asignatura (#PCDATA)>
-<!ATTLIST asignatura dia (lunes|martes|miercoles|jueves|viernes) #REQUIRED>
-<!ATTLIST asignatura horas (1|2) "1">
-<!ATTLIST horario xmlns:xsi CDATA #IMPLIED
-xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
