@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">    
+    <!-- ELEMENTOS OBLIGATORIOS DE LA ETIQUETA CHANNEL -->
+    <channel>
+        <title></title>
+        <link></link>
+        <descripcion></descripcion>        
+        <!-- ELEMENTOS OPCIONALES DE LA ETIQUETA CHANNEL -->
+        <item>            
+            <!-- EL ELEMENTO ITEM TIENE ESTOS ELEMENTOS OBLIGATORIOS -->
+            <title></title>
+            <link></link>
+            <descripcion></descripcion>            
+            <!-- tambien puede contener elementos opcionales como los siguientes-->
+            <guid idPermaLink="true"></guid>            
+            <!-- identifica un elemento -->
+            <author></author>
+            <category></category>
+            <pubDate></pubDate>
+            <enclosure lenght="" type="" url=""></enclosure>            
+            <!-- permite asociar un fichero de audio o video-->
+            <source url=""></source>
+        </item>
+        <category></category>
+        <copyright></copyright>
+        <language></language>
+        <lastBuildDate></lastBuildDate>        
+        <!-- indica la fecha y hora en la que se aztualizo el canal -->
+        <pubDate></pubDate>        
+        <!-- fecha y hora de publicion del canal -->
+        <skipDays>            
+            <!-- dias de la semana en los que el canal no se aztualiza-->
+            <day></day>
+            <day></day>
+            <day></day>
+        </skipDays>
+        <skipHours>
+            <hour></hour>
+            <hour></hour>
+            <hour></hour>
+        </skipHours>
+        <image>            
+            <!-- EL ELEMENTO IMAGE CONTIENE 3 ELEMENTOS OBLIGATORIOS-->
+            <link></link>
+            <title></title>
+            <url></url>            
+            <!-- tambien puede contener elementos opcionales como los siguientes -->
+            <descripcion></descripcion>
+            <height></height>
+            <widht></widht>
+        </image>
+    </channel>
+</rss>
