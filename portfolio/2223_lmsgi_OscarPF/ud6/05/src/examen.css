@@ -7,45 +7,30 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     Author     : Oscar Pascual Ferrero
 */
 
-*{
-    font-family: 'Permanent Marker', cursive;
+.formulario{    
+    background-color: gray;
+    padding: 10px;
+    margin: 15px;
 }
 
-
-html{
-    width: 1024px;
-    margin: 0 auto;
+.enunciadoPregunta{
+     font-weight: bold;
 }
 
-h1{
-    background-color: #387ab6;
-    color: white;
-    text-align: left;
-    
+.pregunta{   
+    background-color: white;
+    border: black dotted 1px;
 }
 
-.cabeceras{
+.respuesta{
+    border: black dotted 1px;
+}
+
+.botones{
     text-align: center;
-    background-color: #387ab6;
-    color: white;
 }
 
-table{
-     width: 100%;
-     margin: 0 auto;
-}
-
-table,tr,td{
-    border-collapse: collapse;
-    border:5px #FFF groove;
-}
-
-.total{
-    background-color: #387ab6;
-    color: white;
-    font-variant: small-caps;
-}
-
-.bold{
-    font-weight: bold;
+label{
+    display: block;
+    border: black dotted 1px;
 }

@@ -37,21 +37,31 @@
                         <xsl:value-of select="concat('Fecha: ',//dia,' de ',document('../data/meses.xml')/meses/mes[@id=current()//mes]/text(),' de ',//anyo)"/>
                     </h3>
                 </header>
-                <main> 
-                    <form method="get" action="#enviarExamen.php">
-                        <div class="grey">
-                            <xsl-for-each select="//pregunta">
+                <main>
+                    
+                    <form action="enviarExamen.php" method="get">
+                        <div class="formulario">
+                            <xsl:for-each select="//pregunta">
                                 <div class="pregunta">
-                                    <div class="bold"><xsl:value-of select="concat(//@id,' .- ',//enunciado)"/></div>
+                                    <div class="enunciadoPregunta">
+                                        <xsl:value-of select="concat(@id,'.-',enunciado)"/>
+                                    </div>
+                                    <div class="respuesta">
+                                        <xsl:apply-templates select="respuestas/respuesta">
+                                            <xsl:with-param name="idPregunta" select="current()/@id"/>
+                                        </xsl:apply-templates>
+                                    </div>
                                 </div>
-                                <div class="respuesta">
-                                    <xsl:apply-templates select="respuestas/respuesta">
-                                        <xsl:with-param name="idPregunta" select="current()/@id"/>
-                                    </xsl:apply-templates>
-                                </div>
-                            </xsl-for-each>
+                            </xsl:for-each>
                         </div>
-                    </form>                   
+                        <xsl:if test="$corregido='no'">
+                            <div class="botones">
+                                <input type="submit" value="Enviar formulario"/>
+                                <input type="reset" value="Borrar formulario"/>
+                            </div>
+                        </xsl:if>
+                    </form>
+                    
                 </main>
                 <footer>
                     
@@ -62,8 +72,30 @@
 
     <xsl:template match="respuestas/respuesta">
         <xsl:param name="idPregunta"/>
-        
-        <div><xsl:value-of select="$idPregunta"/></div>
+        <label>
+            <xsl:attribute name="for">
+                <xsl:value-of select="concat('id',$idPregunta,position())"/> 
+            </xsl:attribute>
+            <input type="radio">
+                <xsl:attribute name="name">
+                    <xsl:value-of select="concat('respuesta',$idPregunta)"/> 
+                </xsl:attribute>
+                <xsl:attribute name="id">
+                    <xsl:value-of select="concat('id',$idPregunta,position())"/>
+                </xsl:attribute>
+                <xsl:attribute name="value">
+                    <xsl:value-of select="position()"/>
+                </xsl:attribute>
+                <xsl:if test="$corregido!='no'">
+                    <xsl:attribute name="disabled"/>                
+                    <xsl:if test="@correcta='correcta'">
+                        <xsl:attribute name="checked"/>
+                    </xsl:if>
+                </xsl:if>
+            </input>
+            <xsl:value-of select="./text()"/>
+        </label>
+       
     </xsl:template>
 
 </xsl:stylesheet>
