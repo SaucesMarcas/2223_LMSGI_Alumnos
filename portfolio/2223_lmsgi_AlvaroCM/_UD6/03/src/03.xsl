@@ -5,6 +5,7 @@
     <xsl:output method="html"/>
     <xsl:template match="/peliculas">
         <xsl:text disable-output-escaping="yes">&lt;DOCTYPE html&gt;</xsl:text>
+        <xsl:apply-templates select="comment()"/>
         <html>
             <head>
                 <meta charset="UTF-8"/>
@@ -57,4 +58,13 @@
             </body>
         </html>
     </xsl:template>
+    
+    <xsl:template match="comment()">
+        <xsl:text xml:space="preserve">
+            <xsl:comment>
+                <xsl:value-of select="."/>
+            </xsl:comment>
+        </xsl:text>
+    </xsl:template>
+    
 </xsl:stylesheet>
