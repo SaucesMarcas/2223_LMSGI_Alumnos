@@ -103,8 +103,20 @@ footer{
 	position:fixed;
 	left: 0;
 	bottom:0;
-	padding: 2rem;
+	padding: 4px;
 	width:100%;
 	text-align: center;
 	clear: both;
+}
+
+
+#footer-redes img {
+  width: 3rem;
+  height: 3rem;
+  display:inline;
+}
+#footer-flechas img {
+  width: 3rem;
+  height: 3rem;
+  display:inline;
 }
