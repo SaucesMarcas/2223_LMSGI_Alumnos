@@ -84,7 +84,7 @@ main p{
 	float:left;
 	margin: 20px;
 	width: 47%;
-	height: 20rem;
+	height: 22rem;
 	border: 2px solid #904B6B;
 	background-color: rgba(255,255,255, 0.5);
 }
@@ -92,13 +92,13 @@ main p{
 #foto_exam{
 	position: relative;
 	left: 42rem;
-	top: -12rem;
+	top: -11rem;
 	width: 10rem;
 }
 #xslt{
 	position: relative;
 	left: 41rem;
-	top: -14rem;
+	top: -15.5rem;
 	width: 11rem;
 }
 #exams ol ol{
@@ -113,9 +113,6 @@ section h2{
 	color: #fff6ea;
 	background-color: #904B6B;
 }
-/*h2 .unidades{
-	text-decoration: underline dotted;
-}*/
 section * a{
 	color: black;
 }
@@ -179,7 +176,7 @@ section ol li ul li a:hover{
 	text-align: center;
 }
 address{
-	width: 50%;
+	width: 60%;
 	position: fixed;
 	bottom: 0;
 	left: 0;
