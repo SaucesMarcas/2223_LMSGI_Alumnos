@@ -1,2 +1,1 @@
-192.168.2.112
-Actualizado index mejorado ejercicios de la unidad 4 añadidios ejercicios 1 2 3 de la unidad 5
+Realizados ejercicios unidad 6, actualizado el index tengo un problema con 2 archivos xml que se muestran como vacios en el index

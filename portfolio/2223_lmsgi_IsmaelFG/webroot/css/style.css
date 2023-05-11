@@ -47,8 +47,10 @@ article {
     color: green;
     margin: 1rem;
     background-color: green;
-    width: 22%;
-
+    width: 25%;
+    margin-bottom: 4rem;
+    
+    
 }
 
 ol {
@@ -78,10 +80,17 @@ footer {
 footer th {
     border: 1px solid white;
 }
+footer a {
+    float: right;
+}
 ol div{
     margin-left: 40px;
     padding: 2px;
 }
 ol div a{
     margin-left: 0px;
+}
+
+section {
+    margin-left: 200px;
 }
