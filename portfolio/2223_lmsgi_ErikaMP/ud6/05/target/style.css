@@ -1,0 +1,30 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 9 may 2023, 8:50:44
+    Author     : daw1
+*/
+
+label {
+    display: block;
+    border: 2px dotted black;
+    margin: 2px;
+}
+
+input {
+    margin-right: 4px;
+    margin-top: 4px;
+    position: relative;
+}
+
+.enunciadoPregunta {
+    font-weight: bold;
+}
+
+.pregunta {
+    border: 1px solid black;
+    margin: 4px;
+    padding: 4px;
+}

@@ -9,14 +9,18 @@
 -->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-    <xsl:output method="html"/>
+    <xsl:output method="html" indent="yes"/>
+    <xsl:import href="../../lib/libreria.xsl"/>
 
     <!-- TODO customize transformation rules 
          syntax recommendation http://www.w3.org/TR/xslt 
     -->
     <xsl:template match="/peliculas">
         <xsl:text disable-output-escaping="yes">&lt;DOCTYPE html&gt;
-</xsl:text> 
+        </xsl:text>
+        <xsl:apply-templates select="comment()"/>
+        <xsl:text> 
+        </xsl:text> 
         <html>
             <head>
 		<meta charset="UTF-8"/>
@@ -58,5 +62,13 @@
             </body>
         </html>
     </xsl:template>
+    
+    <!-- <xsl:template match="comment()">
+        <xsl:text xml:space="preserve">
+        <xsl:comment>
+            <xsl:value-of select="."/>
+        </xsl:comment>
+        </xsl:text>
+    </xsl:template> -->
 
 </xsl:stylesheet>

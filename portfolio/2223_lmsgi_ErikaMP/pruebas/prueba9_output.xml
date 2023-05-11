@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><centros>
+    <persona poblacion="2">
+        Francisco 
+        <direccion>
+                        
+            <poblacion>Benavente</poblacion>
+                        
+            <cp>49600</cp>
+                    
+        </direccion>
+        <direccion>
+                        
+            <poblacion>Morales del Rey</poblacion>
+                        
+            <cp>49693</cp>
+                    
+        </direccion>
+    </persona>
+    <persona poblacion="3">
+        María 
+        <direccion>
+                        
+            <poblacion>Valladolid</poblacion>
+                        
+            <cp>47010</cp>
+                    
+        </direccion>
+        <direccion>
+                        
+            <poblacion>Santa Croya de Tera</poblacion>
+                        
+            <cp>49626</cp>
+                    
+        </direccion>
+        <direccion>
+                        
+            <poblacion>Noja</poblacion>
+                        
+            <cp>39180</cp>
+                    
+        </direccion>
+    </persona>
+</centros>
