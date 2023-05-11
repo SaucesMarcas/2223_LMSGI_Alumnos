@@ -83,11 +83,18 @@ ol{
 	float:left;
 	padding: 100px;
 }
+.u3{
+    display: inline;
+}
+.ud3{
+    
+    display: inline;
+}
 .ex01{
 	float:left;
 }
 div{
-	display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 
