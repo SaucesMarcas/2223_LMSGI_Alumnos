@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 20%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+table {
+  display: inline-table;
+  border: 1px solid green;
+}
+
+table th,
+table td {
+	padding: 5px;
+  border: solid 1px green;
+}
+
+ul {
+	margin-top: 30px;
+	margin-left: 50px;
+}
+
+.cooking {
+	color: green;	
+}
+
+.children {
+	color: blue;
+}
+
+.web {
+	color: red
+}
