@@ -15,23 +15,30 @@
          syntax recommendation http://www.w3.org/TR/xslt 
     -->
     <xsl:template match="/network">
-        network:
-        <xsl:value-of select="concat('version: ',version)"/>
-        renderer: network
-        ethernets:
-        <xsl:apply-templates select="interface"/>
+        <xsl:text>network:</xsl:text>
+        <xsl:text>
+    version: <xsl:text><xsl:value-of select="version"/></xsl:text></xsl:text>
+        <xsl:text>
+    renderer: network
+    ethernets: </xsl:text><xsl:apply-templates select="interface"/>
     </xsl:template>
     
     <xsl:template match="interface">
-        <xsl:value-of select="concat(ethernets,':')"/>
-        <xsl:value-of select="concat('dhcp4:',dhcp4)"/>
-        <xsl:value-of select="concat('address: [',address,'/24]')"/>
-        <xsl:value-of select="concat('gateway: ',gateway)"/>
-        <xsl:apply-templates select="nameservers/address"/>
+    <xsl:text><xsl:value-of select="concat(ethernets,':')"/>
+    </xsl:text>
+        <xsl:text><xsl:value-of select="concat('dhcp4: ',dhcp4)"/>
+        </xsl:text>
+        <xsl:text><xsl:value-of select="concat('address: [',address,'/24]')"/>
+        </xsl:text>
+        <xsl:text><xsl:value-of select="concat('gateway: ',gateway)"/>
+        </xsl:text>
+        <xsl:text>
+        nameservers: [<xsl:text><xsl:apply-templates select="nameservers/address"/></xsl:text></xsl:text>
+        <xsl:text>]</xsl:text>
     </xsl:template>
     
     <xsl:template match="nameservers/address">
-        <xsl:value-of select="./text()"/>
+        <xsl:value-of select="./text()"/><xsl:if test="position()!=last()"><xsl:text>,</xsl:text></xsl:if>
     </xsl:template>
 
 </xsl:stylesheet>
