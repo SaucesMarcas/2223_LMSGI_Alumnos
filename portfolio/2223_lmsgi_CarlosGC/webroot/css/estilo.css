@@ -93,6 +93,19 @@ footer {
     text-align: center;
 }
 
+footer address {
+margin: 7px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+footer img {
+padding: 0;
+width: 35px;
+height: 35px;
+}
+
 .clockdate-wrapper {
   background-color: #111;
   padding:20px;
