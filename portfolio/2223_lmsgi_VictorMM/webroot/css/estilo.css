@@ -34,6 +34,24 @@ img {
 
 }
 
+p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: justify;
+  text-indent: 3rem;
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+.cursiva {
+  font-style: italic;
+}
+
+.importante {
+  color: var(--color1);
+}
 
 /* titulos */
 h2 {
