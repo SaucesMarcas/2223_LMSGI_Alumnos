@@ -1,0 +1,20 @@
+{
+    "Usuario":[
+        { 
+        "Nombre":"Victor",
+        "ColorFondo":"Verde",
+        "TamañoTexto":16,
+        "ColorTexto":"Azul",
+        "Idioma":"Español",
+        "PantallaInicio":true
+    }, 
+    {
+        "Nombre":"Ruben",
+        "ColorFondo":"Blanco",
+        "TamañoTexto":16,
+        "ColorTexto":"Negro",
+        "Idioma":"Español",
+        "PantallaInicio":true
+    } 
+]    
+}

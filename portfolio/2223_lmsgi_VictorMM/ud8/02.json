@@ -1,0 +1,42 @@
+{
+    "Nombre":"Chicago Bulls",
+    "Color":["rojo","negro","blanco"],
+    "Estadio":"United Center",
+    "Entrenador":"Billy Donovan",
+    "PlantillHistorica":false,
+    "PaginaWeb":null,
+    "Jugadores":{
+        "Base":[
+            {
+                "nombre":"Patrick Beverly",
+                "dorsal":10
+                },
+                {
+                    "nombre":"Ayo Dosunmu",
+                    "dorsal":1  
+                }
+
+        ],
+        "Alero":[
+        {
+            "nombre":"Patrick Williams",
+            "dorsal":2
+            },
+            {
+                "nombre":"Zach LaVine",
+                "dorsal":8  
+            }
+        ],
+        "Pivot":[
+        {
+            "nombre":"Nikola Vucevic",
+            "dorsal":11
+            },
+            {
+                "nombre":"Andre Drummond",
+                "dorsal":10 
+            }
+        ] 
+    }
+
+}
