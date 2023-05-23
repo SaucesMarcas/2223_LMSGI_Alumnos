@@ -1,0 +1,32 @@
+{
+    "configuraciones": [
+        {
+            "usuario" : "oscar",
+            "colorFondo" : "verde",
+            "tamañoTexto" : 26,
+            "colorTexto" : "blanco",
+            "pantallaInicio" : "no"
+        },
+        {
+            "usuario" : "borja",
+            "colorFondo" : "amarillo",
+            "tamañoTexto" : 12,
+            "colorTexto" : "negro",
+            "pantallaInicio" : "si"
+        },
+        {
+            "usuario" : "carlos",
+            "colorFondo" : "lila",
+            "tamañoTexto" : 85,
+            "colorTexto" : "gris",
+            "pantallaInicio" : "no"
+        },
+        {
+            "usuario" : "rebeca",
+            "colorFondo" : "rosa",
+            "tamañoTexto" : 33,
+            "colorTexto" : "negro",
+            "pantallaInicio" : "si"
+        }
+    ]
+}
