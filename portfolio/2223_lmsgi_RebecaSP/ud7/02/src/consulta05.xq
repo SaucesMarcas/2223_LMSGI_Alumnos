@@ -1,6 +1,7 @@
 <resultado>
 {
-let $x := doc("books")/bookstore/book/title, $y := count(doc("books")/bookstore/book)
-return $x
+  for $x in doc("books")/bookstore/book, 
+  $y in count(doc("books")/bookstore/book)
+  return <titulo>{$x/title/text()}</titulo><total>{$y}</total>
 }
 </resultado>
