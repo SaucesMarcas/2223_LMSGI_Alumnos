@@ -52,6 +52,7 @@ p{
 
 div{
     display: inline-block;
+
     margin-left: 5%;   
 }
 #unidad2{
@@ -99,7 +100,7 @@ div{
 
     width: 10%;
     position: center;
-    margin-top: -15%;
+    
     background: rgba(191, 191, 191, 0.9);
     opacity: 100%   
 }
