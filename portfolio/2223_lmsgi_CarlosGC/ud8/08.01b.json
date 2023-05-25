@@ -1,0 +1,94 @@
+{
+    "nombreEquipo": "Cleveland Cavaliers",
+    "colorEquipacion" : "vino,negro,dorado,azul marino",
+    "nombreEstadio" : "Rocket Mortgage FieldHouse",
+    "nombreEntrenador" : "J. B. Bickerstaff",
+    "esPlantillaHistorica" : "si",
+    "web" : "https://www.cavaliersteamshop.com/",
+    "jugadores" : 
+            {
+                "base" : 
+                [
+        {
+            "nombreJugador" : "Darius Garland",
+            "dorsal" : 10
+        },
+        {
+            "nombreJugador" : "Ricky Rubio",
+            "dorsal" : 13
+        },
+        {
+            "nombreJugador" : "Raul Neto",
+            "dorsal" : 19
+        }
+                ],
+                "escoltas" :
+                [
+        {
+            "nombreJugador" : "Donovan Mitchell",
+            "dorsal" : 45
+        },
+        {
+            "nombreJugador" : "Caris LeVert",
+            "dorsal" : 3
+        },
+        {
+            "nombreJugador" : "Dylan Widler",
+            "dorsal" : 9
+        },
+        {
+            "nombreJugador" : "Sam Merrill",
+            "dorsal" : 5
+        }
+                ],
+                "aleros" :
+                [
+        {
+            "nombreJugador" : "Isaac Okoro",
+            "dorsal" : 35
+        },
+        {
+            "nombreJugador" : "Danny Green",
+            "dorsal" : 14
+        },
+        {
+            "nombreJugador" : "Lamar Stevens",
+            "dorsal" : 8
+        }
+                ],
+                "ala-pivots" :
+                [
+        {
+            "nombreJugador" : "Evan Mobley",
+            "dorsal" : 4
+        },
+        {
+            "nombreJugador" : "Cedi Osma",
+            "dorsal" : 16
+        },
+        {
+            "nombreJugador" : "Mamadi Diakite",
+            "dorsal" : 21
+        }          
+                ],
+                "pivots" :
+                [
+        {
+            "nombreJugador" : "Jarrett Allen",
+            "dorsal" : 31
+        },
+        {
+            "nombreJugador" : "Dean Wade",
+            "dorsal" : 32
+        },
+        {
+            "nombreJugador" : "Robin Lopez",
+            "dorsal" : 33
+        },
+        {
+            "nombreJugador" : "Isaiah Mobley",
+            "dorsal" : 15
+        }            
+                ]
+            }
+}
