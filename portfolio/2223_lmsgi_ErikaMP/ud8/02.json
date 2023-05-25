@@ -1,0 +1,22 @@
+{
+    "nombre": "ejemplo_equipo",
+    "equipacion": "azul",
+    "nombre_estadio": "ejemplo_estadio", 
+    "nombre_entrenador": "ejemplo_entrenador",
+    "platilla": false,
+    "referencia": true,
+    "jugadores": [
+        [{
+            "nombre": "ejemplo_jugador1",
+            "dorsal": 4
+        }],
+        [{
+            "nombre": "ejemplo_jugador2",
+            "dorsal": 5
+        }],
+        [{
+            "nombre": "ejemplo_jugador3",
+            "dorsal": 6
+        }]
+    ]
+}
