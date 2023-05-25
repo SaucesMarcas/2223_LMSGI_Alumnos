@@ -1,0 +1,55 @@
+{
+    "nombre":"Toronto Raptors",
+    "color_equipacion":"red",
+    "estadio":"Air Canada Centre",
+    "entrnador":"Nick Nurse",
+    "plantilla_historica":false,
+    "web":null,
+    "jugadores":[
+        {
+            "Base":[
+                {
+                    "nombre":"Fred VanVleet",
+                    "dorsal":23
+                },
+                {
+                    "nombre":"Jeff Dowtin",
+                    "dorsal":15
+                }
+
+            ]
+        },
+        {
+            "Alero":[
+                {
+                    "nombre":"Scottie Barnes",
+                    "dorsal":4
+                },
+                {
+                    "nombre":"Ron Harper Jr.",
+                    "dorsal":8
+                }
+
+            ]
+        },
+        {
+            "Pívot":[
+                {
+                    "nombre":"Jakob Poeltl",
+                    "dorsal":19
+                },
+                {
+                    "nombre":"Precious Achiuwa",
+                    "dorsal":5
+                }
+
+            ]
+        }
+
+        
+
+        
+        
+
+    ]
+}   
