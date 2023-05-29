@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--
+	Descripción: Hola Mundo
+	Autor: Borja Nuñez Refoyo
+	Fecha creación/modificación:	18/10/2022
+-->
+<html lang="es">
+	<head>
+		<meta  charset="UTF-8">
+		<title>Prueba 4</title>
+	</head>
+	<body>
+		<form method="get" action="alta.php">
+			<fieldset>
+				<legend>Datos Personales</legend>
+				<div>
+					<label for="nombre">Nombre:</label>
+					<input type="text" id="nombre">
+				</div><br>
+				<div>
+					<label for="nombre">Apellidos:</label>
+					<input type="text" id="apellidos">
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Estudias:</legend>
+				<div>
+					<label for="DAW"><input checked type="radio" name="ciclo" id="DAW" value="DAW">DAW</label>
+				</div>
+				<div>
+					<label for="DAM"><input type="radio" name="ciclo" id="DAM" value="DAM">DAM</label>
+				</div>
+				<div>
+					<label for="ASIR"><input type="radio" name="ciclo" id="ASIR" value="ASIR">ASIR</label>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Modulos:</legend>
+				<div>
+					<label for="Informatica"><input type="checkbox" name="fp" id="Informatica" value="Informatica">Informatica</label>
+				</div>
+				<div>
+					<label for="Mecanica"><input type="checkbox" name="fp1" id="Mecanica" value="Mecanica">Mecanica</label>
+				</div>
+				<div>
+					<label for="Electricidad"><input type="checkbox" name="fp2" id="Electricidad" value="Electricidad">Electricidad</label>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Contrato:</legend>
+				<div>
+					<label for="idFecha">Fecha de contratacion:
+						<input min="1999-01-01" value="2000-09-08" type="date" name="fecha" id="idFecha">
+					</label>
+				</div>
+				<div>
+					<label for="idHora">Hora de la entrevista
+						<input type="time" name="hora" id="idHora" value="09:00" min="08:30" max="14:00">
+					</label>
+				</div>
+				<div>
+				<label for="idAire">Calidad del aire</label>
+					<input id="idAire" name="aire" type="range" min="0" max="100" value="50" step="10" list="lista">
+					<datalist id="lista">
+						<option value="0" label="0">
+						<option value="10" label="10">
+						<option value="20" label="20">
+						<option value="30" label="30">
+						<option value="40" label="40">
+						<option value="50" label="50">
+						<option value="60" label="60">
+						<option value="70" label="70">
+						<option value="80" label="80">
+						<option value="90" label="90">
+						<option value="100" label="100">
+				</div>
+			</fieldset>
+			<fieldset>
+				<div>
+					<label for="idCoches">Marca de coche 
+						<select id="idCoches">
+							<option value="bmw">BMW</option>
+							<option value="audi" selected>Audi</option>
+							<option value="mercedes">Mercedes</option>
+							<option value="seat">Seat</option>
+							<option value="ford">Ford</option>
+						</select>
+					</label>
+				</div>
+			</fieldset>
+			<fieldset>
+				<div>
+					<label for="idTexto">Observaciones</label>
+					<textarea name="texto" rows="7" cols="50"></textarea>
+				</div>
+			</fieldset>
+			<fieldset>
+				<label for="idNavegador">Selecciona tu navegador favorito
+					<input list="1stNavegador" name="navegador" id="idNavegador" multiple>
+					<datalist id="1stNavegador">
+						<option value="Edge">
+						<option value="Firefox">
+						<option value="Chrome">
+						<option value="Opera">
+						<option value="Safari">
+					</datalist>
+				</label>
+			</fieldset>
+			<fieldset>
+				<label for="idTelefono">Telefono Contacto</label>
+					<input type="tel" name="telefono" id="idTelefono" pattern="\([0-9]{3}\)[0-9]{3}[ -][0-9]{4}" title="Telefono" placeholder="(000)000-0000" requiered>
+			</fieldset>
+			<input type="image" src="images/botonprueba4.png" width="100px" height="80px" alt="submit">
+		</form>
+	</body>
+</html>
