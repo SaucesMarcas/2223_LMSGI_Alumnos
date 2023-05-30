@@ -1,0 +1,1 @@
+<resultado><titulo>Everyday Italian(1)</titulo><titulo>Harry Potter(1)</titulo><titulo>XQuery Kick Start(5)</titulo><titulo>Learning XML(1)</titulo></resultado>
