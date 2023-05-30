@@ -1,0 +1,18 @@
+<resultado>
+    <libro>
+        <titulo>Everyday Italian</titulo>
+        <autores>1</autores>
+    </libro>
+    <libro>
+        <titulo>Harry Potter</titulo>
+        <autores>1</autores>
+    </libro>
+    <libro>
+        <titulo>XQuery Kick Start</titulo>
+        <autores>5</autores>
+    </libro>
+    <libro>
+        <titulo>Learning XML</titulo>
+        <autores>1</autores>
+    </libro>
+</resultado>

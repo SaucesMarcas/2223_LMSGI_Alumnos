@@ -1,2 +1,10 @@
-<lib2005><title lang="en">Everyday Italian</title><author>Giada De Laurentiis</author></lib2005>
-<lib2005><title lang="en">Harry Potter</title><author>J K. Rowling</author></lib2005>
+<resultado>
+    <lib2005>
+        <title lang="en">Everyday Italian</title>
+        <author>Giada De Laurentiis</author>
+    </lib2005>
+    <lib2005>
+        <title lang="en">Harry Potter</title>
+        <author>J K. Rowling</author>
+    </lib2005>
+</resultado>
