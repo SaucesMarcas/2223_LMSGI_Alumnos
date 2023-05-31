@@ -1,0 +1,10 @@
+#antigua{display: flex;flex-direction: row; width:350px; height:220px}
+body{background-image:linear-gradient(to left,green,pink);}
+h1{color:red;text-align:center}
+h2{color:blue;text-align:center}
+h3{color:purple;}
+h4{color:orange;}
+p{color:purple; text-align: center;}
+figure{
+	display:inline-block;
+}

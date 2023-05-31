@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Victor MV-RSS en mi web</title>
+        <link>http://192.168.2.103</link>
+        <description></description>
+        <lastBuildDate>MOn, 16 Jan 2023 12:19:14 GMT</lastBuildDate>
+        <item>
+            <guid>http://192.168.2.103/ud2/12/index.html</guid>
+            <title>posicionamiento</title>
+            <link>http://192.168.2.103/ud2/12/index.html</link>
+            <description>absoluto</description>
+            <pubDate>Thu, 12 Jan 2023 11:01:26 GMT</pubDate>
+            <category>España</category>
+            
+        </item>
+        <item>
+            <guid>http://192.168.2.103/ud2/11/index.html</guid>
+            <title>css en tablas</title>
+            <link>http://192.168.2.103/ud2/11/index.html</link>
+            <description>css en tablas</description>
+            <pubDate>Thu, 12 Jan 2023 11:01:26 GMT</pubDate>
+            <category>España</category>
+            
+        </item>
+        <item>
+            <guid>http://192.168.2.103/ud2/10/index.html</guid>
+            <title>posicionamiento</title>
+            <link>http://192.168.2.103/ud2/10/index.html</link>
+            <description>fixed/float</description>
+            <pubDate>Thu, 12 Jan 2023 11:01:26 GMT</pubDate>
+            <category>España</category>
+            
+        </item>
+        <item>
+            <guid>http://192.168.2.103/ud2/09/index.html</guid>
+            <title>posicionamiento</title>
+            <link>http://192.168.2.103/ud2/09/index.html</link>
+            <description>posicionamiento</description>
+            <pubDate>Thu, 12 Jan 2023 11:01:26 GMT</pubDate>
+            <category>España</category>
+            
+        </item>
+        <item>
+            <guid>http://192.168.2.103/ud2/08/index.html</guid>
+            <title>fuentes</title>
+            <link>http://192.168.2.103/ud2/08/index.html</link>
+            <description>fuentes</description>
+            <pubDate>Thu, 12 Jan 2023 11:01:26 GMT</pubDate>
+            <category>España</category>  
+        </item>
+        <item>
+            <guid>http://192.168.2.103/examen/EX02_20230214_VictorManuelManriqueVillarino</guid>
+            <title>Examen 02</title>
+            <link>http://192.168.2.103/examen/EX02_20230214_VictorManuelManriqueVillarino</link>
+            <description>Evaluar sobre la sindicación de contenidos, así como XML, Schema XML y DTD</description>
+            <pubDate>Thu, 14 Feb 2023</pubDate>
+            <category>España</category>
+        </item>
+    </channel>
+</rss>

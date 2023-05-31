@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>1-Gimnasio</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <h1 id="1-gimnasio">1-Gimnasio</h1>
+<h2 id="consultas-xpath">consultas XPath</h2>
+<ol>
+<li>Título de las actividades</li>
+</ol>
+<p><code>/actividades/actividad/titulo/text()</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\01\images\1.PNG" alt=""></p>
+<ol start="2">
+<li>
+<p>Mostrar el código de la actividad, título y nivel.
+<code>/actividades/actividad/codigo/text()|/actividades/actividad/titulo/text()|/actividades/actividad/@nivel</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\01\images\2.PNG" alt=""></p>
+</li>
+<li>
+<p>El primer título de la actividad.</p>
+<p><code>//actividad[1]/titulo</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\01\images\3.PNG" alt=""></p>
+</li>
+<li>
+<p>El último título de la actividad.</p>
+</li>
+</ol>
+<p><code>//actividad[last()]/titulo/text()</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\01\images\4.PNG" alt=""></p>
+<ol start="5">
+<li>Todos los elementos descendientes de las actividades infantiles</li>
+</ol>
+<p><code>//actividad[@nivel=&quot;infantil&quot;]/node()</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\01\images\5.PNG" alt=""></p>
+<ol start="6">
+<li>El nombre de las actividades para adultos.</li>
+</ol>
+<p><code>//actividad[@nivel=&quot;adultos&quot;]/titulo/text()</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\01\images\6.PNG" alt=""></p>
+<ol start="7">
+<li>El nombre de las actividades con dos sesiones semanales</li>
+</ol>
+<p><code>//actividad[sesiones/sesiones_semana=2]/titulo/text()</code>
+<code>//sesiones[sesiones_semana=2]/../titulo/text()</code>
+<code>//sesiones_semana[.=2]/../../titulo/text()</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\01\images\7.PNG" alt=""></p>
+<ol start="8">
+<li>Número de actividades</li>
+</ol>
+<p><code>count(//actividad)</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\01\images\8.PNG" alt=""></p>
+<ol start="9">
+<li>Si queremos convertir el resultado a cadena de caracteres, podemos usar la función string().</li>
+</ol>
+<p><code>string(count(//actividad))</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\01\images\9.PNG" alt=""></p>
+<ol start="10">
+<li>Cuenta del número de actividades infantiles.</li>
+</ol>
+<p><code>count(//actividad[@nivel=&quot;infantil&quot;])</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\01\images\10.PNG" alt=""></p>
+<ol start="11">
+<li>Suma de las sesiones semanales de las actividades para adultos.</li>
+</ol>
+<p><code>sum(//actividad[@nivel=&quot;adultos&quot;]/sesiones/sesiones_semana)</code>
+<code>sum(//actividad[@nivel=&quot;adultos&quot;]//sesiones_semana)</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\01\images\11.PNG" alt=""></p>
+<ol start="12">
+<li>Nodos de la actividad de código A06.</li>
+</ol>
+<p><code>/actividades/actividad/codigo[.=&quot;A06&quot;]/parent::node()</code>
+<code>//actividad[codigo=&quot;A06&quot;]/node()</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\01\images\12.PNG" alt=""></p>
+<ol start="13">
+<li>Duración de las actividades con intensidad fuerte</li>
+</ol>
+<p><code>//actividad/sesiones[@intensidad=&quot;fuerte&quot;]/minutos_sesion/text()</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\01\images\13.PNG" alt=""></p>
+<ol start="14">
+<li>Mostrar el código de las actividades cuya duración coincide con la duración del 1º actividad.</li>
+</ol>
+<p><code>//actividad[sesiones/minutos_sesion/text()=//actividad[1]/sesiones/minutos_sesion/text()]/codigo</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\01\images\14.PNG" alt=""></p>
+<ol start="15">
+<li>Título de las actividades del año 2018</li>
+</ol>
+<p><code>//actividad[fecha_inicio&gt;=&quot;2018-01-01&quot; and fecha_inicio&lt;=&quot;2018-12-31&quot;]/titulo/text()</code></p>
+<p><img src="file:///d:\DAW1\2223_LMSGI_Alumnos\portfolio\2223_lmsgi_VictorMM\ud5\01\images\15.PNG" alt=""></p>
+
+        
+        
+    </body>
+    </html>

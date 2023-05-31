@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Descripción: examen
+	Autor: victor manuel manrique
+	Fecha creación/modificación: 14/02/2023
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="geografia" >
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="continentes">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="continente">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="paisC" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="paises">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="pais" type="xs:string">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="sistema" type="xs:string"/>
+                                        <xs:element name="superficie" type="xs:int"/>
+                                        <xs:element name="moneda" type="xs:string"/>
+                                        <xs:element name="idioma" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>        
+    </xs:element>
+</xs:schema>
