@@ -5,52 +5,59 @@
 }
 
 body{
-background: linear-gradient(to left,aqua,violet)
+    background: linear-gradient(to left,aqua,violet)
 
 }
 
-	
-table {border-collapse: collapse;width:100%;text-align:center;}
-th,td {border: 1px solid black;}
+
+table {
+    border-collapse: collapse;
+    width:100%;
+    text-align:center;
+}
+th,td {
+    border: 1px solid black;
+}
 table img{
     width: 50px;
     height: 50px;
-    
+
 }
+
 
 /* header */
 h1 {
 
     color: blue;
     text-align: center;
-	font-size: 50px;
-   
+    font-size: 50px;
+
 }
 img {
     width: 250px;
     height: 150px;
-	margin-top: 1%;
+    margin-top: 1%;
 
 
 }
 
 p {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  text-align: justify;
-  text-indent: 3rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: justify;
+    text-indent: 3rem;
 }
 
 .negrita {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .cursiva {
-  font-style: italic;
+    font-style: italic;
 }
 
 .importante {
-  color: var(--color1);
+    color: var(--color1);
 }
 
 /* titulos */
@@ -60,29 +67,29 @@ h2 {
     text-align:center;
     font-weight: normal;
     color:white;
-	
+
 }
 h3{
-	color: black;
+    color: black;
 }
 
 h4{
-	color: black;
-	text-align:center;
+    color: black;
+    text-align:center;
 }
 
 /* listas */
 
 li {
-	padding:3px 0;
+    padding:3px 0;
 }
 
 ol{
-	list-style-type:upper-roman;
-	list-style-position:inside;
-	padding:30px;
-	text-align:left;
-	font-size:20px;
+    list-style-type:upper-roman;
+    list-style-position:inside;
+    padding:30px;
+    text-align:left;
+    font-size:20px;
 
 
 
@@ -91,25 +98,25 @@ ol{
 
 
 .ex{
-	border: 2px solid white;
-	font-size:20px;
-	
-    
+    border: 2px solid white;
+    font-size:20px;
+
+
 }
 
 .ud2{
-	float:left;
-	padding: 100px;
+    float:left;
+    padding: 100px;
 }
 .u3{
     display: inline;
 }
 .ud3{
-    
+
     display: inline;
 }
 .ex01{
-	float:left;
+    float:left;
 }
 div{
     display: flex;
@@ -118,30 +125,30 @@ div{
 
 }
 main{
-	margin-bottom:8%;
+    margin-bottom:8%;
 }
 
 /* Footer */
 footer{
-	background-color:white;
-	color:#3349FF;
-	position:fixed;
-	left: 0;
-	bottom:0;
-	padding: 4px;
-	width:100%;
-	text-align: center;
-	clear: both;
+    background-color:white;
+    color:#3349FF;
+    position:fixed;
+    left: 0;
+    bottom:0;
+    padding: 4px;
+    width:100%;
+    text-align: center;
+    clear: both;
 }
 
 
 #footer-redes img {
-  width: 3rem;
-  height: 3rem;
-  display:inline;
+    width: 3rem;
+    height: 3rem;
+    display:inline;
 }
 #footer-flechas img {
-  width: 3rem;
-  height: 3rem;
-  display:inline;
+    width: 3rem;
+    height: 3rem;
+    display:inline;
 }
