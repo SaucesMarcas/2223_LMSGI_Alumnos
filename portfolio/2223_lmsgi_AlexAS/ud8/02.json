@@ -1,0 +1,41 @@
+{
+    "nombre_equipo":"Los angeles Lakers",
+    "color_equipacion":"amarillo",
+    "nombre_estadio":"los Angeles stadium",
+    "nombre_entrenador":"ruben",
+    "es_plantilla_historica":true,
+    "referencia_web":null,
+    "jugadores":{
+        "base":[
+            {
+                "nombre":"Shaquille Harrison",
+                "dorsal":0
+            },
+            {
+                "nombre":"D'Angelo Russell",
+                "dorsal":1
+            }           
+        ],
+
+        "alero":[
+            {
+                "nombre":"LeBron James",
+                "dorsal":6
+            },
+            {
+                "nombre":"Rui Hachimura",
+                "dorsal":28
+            }
+        ],
+        "centro":[
+            {
+                "nombre":"Mo Bamba",
+                "dorsal":12
+            },
+            {
+                "nombre":"Tristan Thompson",
+                "dorsal":9
+            }
+        ]
+    }
+}

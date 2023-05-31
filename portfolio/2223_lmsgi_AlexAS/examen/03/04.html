@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<title>Ejercicio 4</title>
+        <style>
+			h1{
+                text-align: center;
+            }
+            legend{
+                background-color: grey;
+                color: white;
+            }
+            div {
+				text-align: center;
+                
+			}
+            fieldset{
+                margin-left: 40%;
+                width: 20%;
+            }
+		</style>
+    </head>
+    <body>
+        <header>
+            <h1>Formulario</h1>
+        </header>
+        <main>
+            <form method="get" action="alta.php" id="form">
+                <fieldset>
+                    <legend>Datos Fiscales</legend>
+                    <div>
+                        <label for="idenparo"><input checked type="radio" name="opciondfiscales" id="idenparo" value="paro">En paro</label>
+                    </div>
+
+                    <div>
+                        <label for="idautonomo"><input checked type="radio" name="opciondfiscales" id="idautonomo" value="autonomo">Autonomo</label>
+                    </div>
+
+                    <div>
+                        <label for="idajena"><input checked type="radio" name="opciondfiscales" id="idajena" value="ajena">Cuenta ajena</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <div>
+                        <label for="idnombre">Nombre:</label>
+                        <input type="text" id="idnombre" name="nombre" placeholder="Amor">
+                    </div>
+
+                    <div>
+                        <label for="idapellido">Apellido:</label>
+                        <input type="text" id="idapellido" name="apellido" placeholder="Sanchez">
+                    </div>
+                        <label for="idsueldo">Sueldo:</label>
+                        <select id="idsueldo">
+                            <option value="Mas de 400">Mas de 400</option>
+                            <option value="Menos de 400">Menos de 400</option>
+                            <option value="Variable">Variable</option>
+                        </select>
+                    <div>
+                       <label for="idenfermedad">Enfermedad profesional</label> 
+                       <input type="checkbox" id="idenfermedad">
+                       <label for="idpadres">Padres a cargo</label>
+                       <input type="checkbox" id="idpadres">
+                       <label for="idhijos">Hijos a cargo</label>
+                       <input type="checkbox" id="idhijos">
+                    </div>
+                    <input type="submit" value="Enviar">
+                </fieldset>
+            </form>
+        </main>
+    </body>
+</html>

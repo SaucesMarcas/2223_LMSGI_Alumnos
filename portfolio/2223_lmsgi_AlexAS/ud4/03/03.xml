@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- 
+    author: Alex
+    date: 17/01/2023
+    description: Escribir un documento XML que almacene la siguiente informacion
+-->
+<hechos-historicos>
+    <hecho1>
+        <descripcion>Se funda Youtube</descripcion>
+        <fecha>
+            <dia>15</dia>
+            <mes>2</mes>
+            <anyo>2005</anyo>
+        </fecha>
+    </hecho1>
+    <hecho2>
+        <descripcion>Se funda Google</descripcion>
+        <fecha>
+            <dia>4</dia>
+            <mes>9</mes>
+            <anyo>1998</anyo>
+        </fecha>
+    </hecho2>
+    <hecho3>
+        <descripcion>Se funda Facebook</descripcion>
+        <fecha>
+            <dia>4</dia>
+            <mes>2</mes>
+            <anyo>2004</anyo>
+        </fecha>   
+    </hecho3>
+</hechos-historicos>

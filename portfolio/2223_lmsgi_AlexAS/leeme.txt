@@ -1,0 +1,11 @@
+Practica 2: cambiados los enlaces #, tabla añadida al footer, footer añadido a section, celdas de profecor con celdas unidas
+Practica 3: Ahora se pueden meter espaxios en blanco en nombre y apellidos, atributo for cambiado en nombre y apellidos para que no sean iguales, for e id ahora coinciden en apellidos, placeholder usado en el textarea, formato de telefono adaptado a formato español
+Practica 5: Añadido footer
+Practica 6: Añadida descripcion, autor, y fecha
+Practica 8 "añadida"
+Practica 9: Añadido margen a la parte de abajo del articulo para que se muestre en su totalidad, eliminado warning de validacion
+Practica 10: Entregada
+----------------------
+Añadidos ejercicios 1,2,3 y 4 de XML
+------------------------------------
+Añadidos ejercicios tema 3 y 4

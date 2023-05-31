@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tiempo>
+    <municipio nombre="Benavente">
+        <dia fecha="2023/02/10">
+            <precipitacion>5%</precipitacion>
+            <cielo>Nubes</cielo>
+            <temperatura>
+                <min>12º</min>
+                <max>26º</max>
+            </temperatura>
+            <viento>
+                <direccion>N</direccion>
+                <velocidad>0</velocidad>
+            </viento>
+        </dia>
+        <dia fecha="2023/02/11">
+            <precipitacion>0%</precipitacion>
+            <cielo>Despejado</cielo>
+            <temperatura>
+                <min>13º</min>
+                <max>26º</max>
+            </temperatura>
+            <viento>
+                <direccion>NE</direccion>
+                <velocidad>5</velocidad>
+            </viento>
+        </dia>
+        <dia fecha="2023/02/15">
+            <precipitacion>10%</precipitacion>
+            <cielo>Cubierto con lluvia escasa</cielo>
+            <temperatura>
+                <min>14º</min>
+                <max>28º</max>
+            </temperatura>
+            <viento>
+                <direccion>N</direccion>
+                <velocidad>20</velocidad>
+            </viento>
+        </dia>
+    </municipio>
+</tiempo>
