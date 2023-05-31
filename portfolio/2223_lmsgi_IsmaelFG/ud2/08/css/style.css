@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Storm&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap');
+@font-face {
+    font-family: 'Akronim-Regular',cursive;
+    src: url(../fuentes/Akronim-Regular.ttf);
+}
+a {
+    text-decoration:none;
+    color: black;
+    font-size: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+a:nth-child(1){
+    font-family: 'Rubik 80s Fade', cursive;
+}
+a:nth-child(2){
+    font-family: 'Rubik Vinyl', cursive;
+}
+a:nth-child(3){
+    font-family: 'Rubik Storm', cursive;
+}
+a:nth-child(4){
+    font-family: 'Roboto',sans-serif;
+}
+
+.content{
+    width: 100%;
+    max-width: 600px;
+    padding-top: 25px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    border-right:dotted red;
+    border-left:dotted orange;
+    border-top:dashed red;
+    border-bottom:dashed green;
+    margin-bottom: 50px;
+    
+}
+.content :nth-child(odd){
+    width: 30%;
+    max-width: 300px;
+    padding-top: 25px;
+    padding-right: 10px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    border: 2px solid red;
+    margin-bottom: 25px;
+    background-color: rgb(128, 167, 230);
+}
+.content :nth-child(even){
+    width: 30%;
+    max-width: 300px;
+    padding-top: 25px;
+    padding-right: 10px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    border: 2px solid red;
+    margin-bottom: 25px;
+    background-color: rgb(128, 167, 230);
+}
+.content :nth-child(1){
+    font-family: 'Verdana',sans-serif;
+}
+.content :nth-child(2){
+    font-family: 'Didot',serif;
+}
+.content :nth-child(3){
+    font-family: 'Freemono',monospace;
+}
+.content :nth-child(4){
+    font-family: 'Roboto',sans-serif;
+}
+.content :nth-child(5){
+    font-family: 'Akronim-Regular',cursive;
+}
+.content :nth-child(6){
+   font-family: 'Montserrat',sans-serif;
+}

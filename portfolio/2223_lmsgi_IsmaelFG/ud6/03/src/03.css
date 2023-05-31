@@ -1,0 +1,43 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 20 abr 2023, 13:25:58
+    Author     : daw1
+*/
+html{
+   background-image: url(../imagen/claqueta.jpg)
+}
+
+
+header{
+    background-color: grey;
+    color: white;
+    text-align: center;
+}
+
+.content-1{
+    background-color: lightgray;
+    border: 1px solid black;
+    display: inline-block;
+    text-align:center;
+    width: 30%;
+    margin: 20px;
+}
+
+footer{
+    background-color: grey;
+    color: white;
+    text-align: center;
+    width: 100%;
+    bottom:0;
+    position: absolute;
+}
+
+.naranja{
+    color: orange;
+}
+
+
+

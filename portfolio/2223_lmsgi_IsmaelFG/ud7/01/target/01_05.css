@@ -1,0 +1,18 @@
+.web{
+    color: red;
+}
+
+.cooking{
+    color: green;
+}
+
+.children{
+    color: blue;
+}
+
+td{
+    border: 1px solid green;
+}
+table{
+    border: 1px solid green;
+}

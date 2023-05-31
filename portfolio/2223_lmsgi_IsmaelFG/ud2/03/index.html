@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--
+	Descripción: Formulario
+	Autor: Ismael Ferreras García
+	Fecha creación/modificación: 04/12/2022
+-->
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" type="imagen/favicon" href="imagen/favicon.ico">
+	<title>HTML 03 Ismael Ferreras García</title>
+</head>
+
+<body>
+	<header>
+		<h1>Plantilla formulario de películas</h1>
+	</header>
+	<main>
+		<label for="gsearch">Barra de busqueda:</label>
+		<input type="search" id="gsearch" name="gsearch">
+		<br>
+		<br>
+		<form action="action.php" method="get">
+			<fieldset>
+				<legend>Informacion Personal</legend>
+				<div>
+					<label for="nombre"> Nombre:</label>
+					<input type="text" id="nombre" name="nombre">
+				</div>
+				<br>
+				<div>
+					<label for="apellido"> Apellido:</label>
+					<input type="text" id="apellido" name="apellido">
+				</div>
+				<br>
+				<div>
+					<label for="email">Correo electronico:*</label>
+					<input type="email" id="email" name="email" size="40"
+						pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
+						placeholder="example@gmail.com" required>
+				</div>
+				<br>
+				<div>
+					<label for="phone">Numero de telefono:*</label>
+					<input type="tel" id="phone" name="phone" pattern="[0-9]{9}"
+						title="El numero de telefono no es valido" placeholder="Ejemplo:989989909" required>
+				</div>
+				<br>
+				<fieldset>
+					<legend>Introduce tu genero</legend>
+					<div>
+						<input type="radio" id="hombre" name="gen_encuestado" value="hombre" checked>
+						<label for="hombre"> Hombre</label>
+					</div>
+					<div>
+						<input type="radio" id="mujer" name="gen_encuestado" value="mujer">
+						<label for="mujer"> Mujer</label>
+					</div>
+					<div>
+						<input type="radio" id="otro" name="gen_encuestado" value="otro">
+						<label for="otro"> Otro</label>
+					</div>
+				</fieldset>
+				<br>
+				<div>
+					<label for="fecha">Fecha de nacimiento:</label>
+					<input type="date" id="fecha" name="fecha" value="2000-10-08" min="1900-01-01" max="2022-10-30">
+				</div>
+				<br>
+				<div>
+					<label for="favcolor">¿Cual es tu color favorito?:</label>
+					<input type="color" id="favcolor" name="favcolor" value="#ff0000">
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Generos de películas que sueles ver</legend>
+				<div>
+					<input type="checkbox" id="terror" name="gen_terror" value="terror">
+					<label for="terror">Terror</label>
+				</div>
+				<div>
+					<input type="checkbox" id="aventura" name="gen_aventura" value="aventura">
+					<label for="aventura">Aventura</label>
+				</div>
+				<div>
+					<input type="checkbox" id="accion" name="gen_accion" value="accion">
+					<label for="accion">Acción</label>
+				</div>
+				<div>
+					<input type="checkbox" id="fantasia" name="gen_fantasia" value="fantasia">
+					<label for="fantasia">Fantasía</label>
+				</div>
+				<div>
+					<input type="checkbox" id="suspense" name="gen_suspense" value="suspense">
+					<label for="suspense">Suspense</label>
+				</div>
+				<div>
+					<input type="checkbox" id="drama" name="gen_drama" value="drama">
+					<label for="drama">Drama</label>
+				</div>
+				<div>
+					<input type="checkbox" id="otro_peli" name="gen_otro" value="otro_peli">
+					<label for="otro_peli"> Otro</label>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Tus peliculas favoritas</legend>
+				<label for="idpeliculas">¿Que pelicula te gustaría ver?</label>
+				<input list="peliculas" name="pelicula" id="idpeliculas">
+				<datalist id="peliculas">
+					<option value="Moonfall">
+					<option value="Animales fantásticos: Los secretos de Dumbledore">
+					<option value="La invitación">
+					<option value="Morbius">
+					<option value="Bullet Train">
+					<option value="Morbius">
+					<option value="Bullet Train">
+					<option value="Ninguna de las anteriores">
+				</datalist>
+				<br>
+				<label for="opinion"></label>
+				<br>
+				<textarea id="opinion" name="opinion" rows="4" cols="50">
+						Alguna película que recomendarías:
+					</textarea>
+				<p hidden>esto no se ve</p>
+				<br>
+			</fieldset>
+			<fieldset>
+				<legend>¿Te gusta ir al cine?</legend>
+				<div>
+					<select name="cine">
+						<option>Si</option>
+						<option>No</option>
+						<option>De vez en cuando</option>
+					</select>
+				</div>
+				<br>
+				<div>
+					<label for="bdaymonth">Cuando fue la ultima vez que fuiste a el cine:</label>
+					<input type="month" id="bdaymonth" name="bdaymonth">
+				</div>
+				<br>
+				<div>
+					<label for="hora">¿A que hora sueles ir a el cine?</label>
+					<input type="time" id="hora" name="hora">
+				</div>
+				<br>
+				<div>
+					<label for="quantity">Cuantas veces has ido a el cine en el ultimo mes:</label>
+					<input type="number" id="quantity" name="quantity" min="0" max="30">
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Puntúanos</legend>
+				<div>
+					<label for="puntuacion">Puntua la encuesta del 1 al 10:</label>
+					<input type="range" id="puntuacion" name="puntuacion" min="0" max="10">
+				</div>
+				<br>
+				<div>
+					<label for="recomendacion">Si tienes alguna recomendacion añadela aqui:</label>
+					<input type="file" id="recomendacion" name="recomendacion">
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Inicia sesion para enviar el formulario</legend>
+				<div>
+					<label for="usuario"> Usuario:</label>
+					<input type="text" id="usuario">
+				</div>
+				<br>
+				<div>
+					<label for="pwd">Contraseña:</label>
+					<input type="password" id="pwd" name="pwd">
+				</div>
+			</fieldset>
+			<input type="image" src="imagen/a.jpg" width="125" height="45" name="button_a" alt="Submit" value="Submit">
+			<br>
+			<input type="reset" value="Reset">
+		</form>
+		<br>
+		<footer>
+			<address>2022-2023 IES LOS SAUCES. Todos los derechos reservados. Ismael Ferreras García©</address>
+		</footer>
+	</main>
+</body>
+
+</html>
