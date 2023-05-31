@@ -1,0 +1,1 @@
+<resultado><precioMinimo>29.99</precioMinimo><precioMaximo>49.99</precioMaximo></resultado>

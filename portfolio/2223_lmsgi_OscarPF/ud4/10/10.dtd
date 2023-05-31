@@ -1,0 +1,9 @@
+<!ELEMENT pedido (plato,bebida,formaPago)>
+<!ELEMENT plato (nombre|cantidad?|sinGluten?|precio)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT cantidad (#PCDATA)>
+<!ELEMENT sinGluten (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST plato tipo (entrante|primero|segundo|postre) #REQUIRED>
+<!ATTLIST pedido xmlns:xsi CDATA #IMPLIED
+          xsi:noNamesespaceSchemaLocation CDATA #IMPLIED>

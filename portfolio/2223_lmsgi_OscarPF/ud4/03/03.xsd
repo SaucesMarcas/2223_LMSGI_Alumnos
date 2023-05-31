@@ -1,0 +1,44 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="historia">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="fila" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="descripcion" type="xs:string"></xs:element>
+                            <xs:element name="fecha">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="anyo">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:short">
+                                                    <xs:minInclusive value="1900"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="mes">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:byte">
+                                                    <xs:minInclusive value="1"/>
+                                                    <xs:maxInclusive value="12"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="dia">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:byte">
+                                                    <xs:minInclusive value="1"/>
+                                                    <xs:maxInclusive value="31"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

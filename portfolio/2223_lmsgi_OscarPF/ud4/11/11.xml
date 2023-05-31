@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogo SYSTEM "11.dtd">
+<catalogo>
+    <portatil>
+        <referencia>HP12345</referencia>
+        <nombre>HP 15-DA0204NS</nombre>
+        <fabricante nombre="HP"></fabricante> <!-- LENOVO|HP|MSI|APPLE|ASUS|DELL|DESCONOCIDO-->
+        <procesador>
+            <nombre>i3-7020U</nombre>
+            <cache tamanyo="Gb">50</cache> <!-- Mb|Gb|Tb default Gb-->
+            <numero>4</numero>
+            <velocidad medida="Ghz">1.8</velocidad>
+        </procesador>
+        <ram>
+            <memoria unidadMedida="Gb">8</memoria> <!-- Mb|Gb|Tb default Gb-->
+            <tipoMemoria>DDR4</tipoMemoria> <!-- DDR3|DDR4-->
+        </ram>
+        <disco tipoDisco="SSD"> <!-- SSD|HDD-->
+            <capacidad unidadMedidaDisco="Gb">256</capacidad> <!-- Mb|Gb|Tb default Gb-->
+        </disco>
+        <pantalla>
+            <dimension tamanyoPantalla="pulgadas">15.6</dimension>
+            <resolucion>1266x768</resolucion>
+            <resolucionMaxima>1366x768</resolucionMaxima> <!-- OPCIONAL-->
+        </pantalla>
+        <grafica>3060ti</grafica>
+        <foto>foto1.png</foto>
+    </portatil>
+</catalogo>

@@ -1,0 +1,81 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="curriculum">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string"/>
+                <xs:element name="appellidos" type="xs:string"/>
+                <xs:element name="residencia">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ciudad" type="xs:string"/>
+                            <xs:element name="pais" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="contacto">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="telefono" type="xs:short"></xs:element>
+                            <xs:element name="correo" type="xs:string"></xs:element>
+                            <xs:element name="linkedin" type="xs:string"></xs:element>
+                            <xs:element name="descripcion" type="xs:string"></xs:element>
+                            <xs:element name="competencias" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="competencia" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="nivel">
+                                                            <xs:simpleType>
+                                                                <xs:restriction base="xs:string">
+                                                                    <xs:pattern value="bajo|medio|alto"/>
+                                                                </xs:restriction>
+                                                            </xs:simpleType>
+                                                        </xs:attribute>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="formacion">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="titulacion" maxOccurs="unbounded" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="anyo">
+                                                            <xs:simpleType>
+                                                                <xs:restriction base="xs:short">
+                                                                    <xs:minInclusive value="1900"/>
+                                                                </xs:restriction>
+                                                            </xs:simpleType>
+                                                        </xs:attribute>
+                                                        <xs:attribute name="centro" type="xs:string"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="experiencia" maxOccurs="unbounded" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="puesto" type="xs:string" />
+                                        <xs:element name="empresa" type="xs:string" />
+                                        <xs:element name="anyoInicio" type="xs:short" />
+                                        <xs:element name="anyoFinal" type="xs:short" minOccurs="0" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

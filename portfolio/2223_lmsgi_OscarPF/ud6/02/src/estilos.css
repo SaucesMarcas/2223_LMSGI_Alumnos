@@ -1,0 +1,75 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 20 abr 2023, 13:10:17
+    Author     : daw1
+*/
+*{
+    margin: 0;
+}
+
+html{
+    font-family: 'Roboto',sans-serif;
+}
+
+h1{
+    background-color: #c6bfbd;
+    color: green;
+    margin:0;
+    padding-left: 5px;
+    height: 42px;
+}
+
+h2{
+    background-color: green;
+    color: lightgray;
+    margin-top: 22px;
+    height: 32px;
+}
+
+h3{
+   color: green;
+   border: 2px solid greenyellow;
+   margin-top: 26px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 75%;
+    margin: 0 auto;
+    height: 100px
+}
+
+tr{
+    border-bottom: 1px solid #c6bfbd;
+}
+
+#b{
+    font-weight: bold;
+}
+
+#fecha{
+    color: green;
+    text-align: center;
+    font-style: italic;    
+    font-variant: small-caps;
+}
+
+caption {
+    caption-side: bottom;
+    color: green;
+    font-style: italic;
+    font-variant: small-caps;
+    margin-top: 1px;
+    
+}
+
+footer{
+    background-color: green;
+    color: white;
+    text-align: right;
+    padding: 5px;
+    text-transform: uppercase;
+}

@@ -1,0 +1,36 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 25 abr 2023, 9:03:50
+    Author     : Oscar Pascual Ferrero
+*/
+
+.formulario{    
+    background-color: gray;
+    padding: 10px;
+    margin: 15px;
+}
+
+.enunciadoPregunta{
+     font-weight: bold;
+}
+
+.pregunta{   
+    background-color: white;
+    border: black dotted 1px;
+}
+
+.respuesta{
+    border: black dotted 1px;
+}
+
+.botones{
+    text-align: center;
+}
+
+label{
+    display: block;
+    border: black dotted 1px;
+}

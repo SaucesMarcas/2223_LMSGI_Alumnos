@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Company SYSTEM "05.dtd">
+<Company>
+    <Employee>
+        <FirstName></FirstName>
+        <LastName></LastName>
+        <ContactNo></ContactNo>
+        <Email></Email>
+        <Address>
+            <City></City>
+            <State></State>
+            <Zip></Zip>
+        </Address>
+    </Employee>
+</Company>
