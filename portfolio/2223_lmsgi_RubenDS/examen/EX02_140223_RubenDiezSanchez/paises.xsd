@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="geografia">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="continente" id="europa" type="xs:string" maxOccurs="unbounded"/>
+                <xs:element name="continente" id="america" type="xs:string" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="España" type="xs:string"/>
+            <xs:attribute name="Francia" type="xs:string"/>
+            <xs:attribute name="Suiza" type="xs:string"/>
+            <xs:attribute name="Argentina" type="xs:string"/>
+            <xs:attribute name="Jamaica" type="xs:string"/>
+            <xs:attribute name="Uruguay" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="paises">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="pais" id="españa" type="xs:string" maxOccurs="unbounded"/>
+                <xs:element name="pais" id="francia" type="xs:string" maxOccurs="unbounded"/>
+                <xs:element name="pais" id="suiza" type="xs:string" maxOccurs="unbounded"/>
+                <xs:element name="pais" id="uruguay" type="xs:string" maxOccurs="unbounded"/>
+                <xs:element name="pais" id="argentina" type="xs:string" maxOccurs="unbounded"/>
+                <xs:element name="pais" id="jamiaca" type="xs:string" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="sistema" type="xs:string"/>
+            <xs:attribute name="superficie" type="xs:int"/>
+            <xs:attribute name="moneda" type="xs:string"/>
+            <xs:attribute name="idioma" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="rios"/>
+    <xs:complexType name="rio">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="pais" type="xs:string"/>
+            <xs:element name="pas" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

@@ -1,7 +1,11 @@
 /nbproject
 /.vscode
+/pruebas
 *.zip
 *.rar
 *.log
 
 
+/portfolio/2223_lmsgi_ErikaMP/nbproject/private/
+/portfolio/2223_lmsgi_CarlosGC/nbproject/private/
+/portfolio/2223_lmsgi*/pruebas

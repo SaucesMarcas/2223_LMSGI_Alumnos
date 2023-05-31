@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url(../data/background.jpg);
+  background-repeat: repeat;
+  background-size:150px;
+  max-width: 100%;
+}
+
+h1 {
+  background-color: grey;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  
+}
+
+table {
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  align-items: flex-end;
+  float: left;
+  width: 30%;
+  height: 25%;
+  padding: 0;
+  background-color: lightgrey;
+  border: 1px solid black;
+}
+
+th {
+  text-align: center;
+  font-size: 32px;
+  
+}
+
+tr td {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+
+span {
+    font-size: 30px;
+    color: orange;
+}
+
+footer {
+    background-color: grey;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    width: 98.95%;
+    color: white;
+}
+
+footer p {
+    font-size: 23px;
+}

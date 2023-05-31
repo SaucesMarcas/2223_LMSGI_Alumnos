@@ -183,6 +183,22 @@ header .menu a:hover {
 .textAboutMe h2 {
   font-size: 50px;
   margin-top: 0px;
+  padding: 0;
+  margin: 0;
+}
+
+.networks ul{
+  display: flex;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.networks a {
+  padding-right: 20px;
+}
+
+.networks ul li img{
+    width: 40px;
 }
 
 /*MY PROJECTS*/

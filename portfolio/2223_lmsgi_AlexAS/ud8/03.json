@@ -1,0 +1,32 @@
+[
+    {
+        "nombre":"Alex",
+        "configuracion":{
+            "color_fondo":"gris",
+            "tamaño_texto":12,
+            "color_texto":"blanco",
+            "idioma":"ingles",
+            "pantalla_inicio":false
+        }
+    },
+    {
+        "nombre":"Rebeca",
+        "configuracion":{
+            "color_fondo":"rosa",
+            "tamaño_texto":15,
+            "color_texto":"blanco",
+            "idioma":"español",
+            "pantalla_inicio":true
+        }
+    },
+    {
+        "nombre":"Ruben",
+        "configuracion":{
+            "color_fondo":"blanco",
+            "tamaño_texto":12,
+            "color_texto":"blanco",
+            "idioma":"ingles",
+            "pantalla_inicio":false
+        }
+    }
+]

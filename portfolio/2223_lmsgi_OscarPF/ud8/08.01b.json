@@ -1,0 +1,68 @@
+{
+    "nombreEquipo": "BOSTON CELTICS",
+    "colorEquipacion" : "verde",
+    "nombreEstadio" : "TD Garden",
+    "nombreEntrenador" : "Joe Mazzulla",
+    "esPlantillaHistorica" : "si",
+    "web" : null,
+    "jugadores" : 
+            {
+                "base" : 
+                [
+        {
+            "nombreJugador" : "Marcus Smart",
+            "dorsal" : 36
+        },
+        {
+            "nombreJugador" : "Malcom Brogdon",
+            "dorsal" : 13
+        },
+        {
+            "nombreJugador" : "Payton Pritchard",
+            "dorsal" : 11
+        },
+        {
+            "nombreJugador" : "J.D. Davison",
+            "dorsal" : 20
+        }
+                ],
+                "alero" :
+                [
+        {
+            "nombreJugador" : "Jayson Tatum",
+            "dorsal" : 0
+        },
+        {
+            "nombreJugador" : "Sam Hauser",
+            "dorsal" : 30
+        },
+        {
+            "nombreJugador" : "Justin Champagnie",
+            "dorsal" : 99
+        },
+        {
+            "nombreJugador" : "Danilo Gallinari",
+            "dorsal" : 8
+        }
+                ],
+                "pivot" :
+                [
+        {
+            "nombreJugador" : "Robert Williams",
+            "dorsal" : 44
+        },
+        {
+            "nombreJugador" : "Mike Muscala",
+            "dorsal" : 57
+        },
+        {
+            "nombreJugador" : "Luke Kornet",
+            "dorsal" : 40
+        },
+        {
+            "nombreJugador" : "Mfiondu Kabengele",
+            "dorsal" : 28
+        }
+                ]
+            }
+}

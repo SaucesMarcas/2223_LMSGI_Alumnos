@@ -1,0 +1,4 @@
+IP: 192.18.2.107
+
+Dificultades: no se ve el css en el servidor.
+Cambios: Archivos xml y dtd, introducir en el index los cambios nuevos, para que se vean los xml y dtd.

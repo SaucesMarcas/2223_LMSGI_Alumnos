@@ -1,0 +1,32 @@
+[
+    {
+        "nombre":"Rebeca",
+        "configuracion":{
+            "colorFondo":"rosa",
+            "tamanyoTexto":10,
+            "colorTexto":"negro",
+            "idioma":"espanyol",
+            "pantallaInicio":true
+        }
+    },
+    {
+        "nombre":"Ruben",
+        "configuracion":{
+            "colorFondo":"rosa",
+            "tamanyoTexto":5,
+            "colorTexto":"azul",
+            "idioma":"ingles",
+            "pantallaInicio":false
+        }
+    },
+    {
+        "nombre":"Alex",
+        "configuracion":{
+            "colorFondo":"gris",
+            "tamanyoTexto":3,
+            "colorTexto":"blanco",
+            "idioma":"esperanto",
+            "pantallaInicio":true
+        }
+    }
+]

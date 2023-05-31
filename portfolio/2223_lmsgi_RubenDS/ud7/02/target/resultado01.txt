@@ -1,0 +1,2 @@
+<lib205><title lang="en">Everyday Italian</title><author>Giada De Laurentiis</author></lib205>
+<lib205><title lang="en">Harry Potter</title><author>J K. Rowling</author></lib205>

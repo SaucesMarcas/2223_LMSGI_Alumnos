@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+}
+
+html{
+    font-family: 'Roboto',sans-serif;
+}
+
+h1{
+    color:green;
+    background-color: lightgray;
+    margin:0;
+    padding: 5px;
+}
+
+h2{
+    color: lightgray;
+    background-color: green;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+
+
+caption{
+    caption-side: bottom;
+    color: green;
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+table{
+    border-collapse: collapse;
+    width: 75%;
+}
+
+tr {
+    border-bottom: 1px solid grey;
+}

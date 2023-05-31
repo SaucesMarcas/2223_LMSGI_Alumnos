@@ -160,7 +160,7 @@ button a {
   background-position-y: 0;
   background-color: rgba(50, 50, 50, 1);
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-  max-width: 360px;
+  max-width: 330px;
   max-height: 400px;
   padding-top: 10px;
   border-radius: 15px;
@@ -202,3 +202,4 @@ button a {
     ),
     url("/public/images/altumcode-dMUt0X3f59Q-unsplash.jpg");
 }
+

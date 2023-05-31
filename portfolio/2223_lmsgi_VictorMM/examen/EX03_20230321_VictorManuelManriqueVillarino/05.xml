@@ -1,11 +1,9 @@
-<examen>
-    <datosfiscales>
-        <dato>por cuenta ajena</dato>
-    </datosfiscales>
+<datos>
+    <datosfiscales>por cuenta ajena</datosfiscales>
     <datospersonales>
         <nombre>victor</nombre>
         <apellidos>manrique</apellidos>
         <sueldo>menos de 400</sueldo>
         <caracteristica>con enfermedad profesional</caracteristica>
     </datospersonales>
-</examen>
+</datos>

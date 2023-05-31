@@ -1,0 +1,4 @@
+<libro><title lang="en">XQuery Kick Start</title><price>49.99</price><precioIva>51.99</precioIva></libro>
+<libro><title lang="en">Learning XML</title><price>39.95</price><precioIva>41.55</precioIva></libro>
+<libro><title lang="en">Everyday Italian</title><price>30.00</price><precioIva>31.20</precioIva></libro>
+<libro><title lang="en">Harry Potter</title><price>29.99</price><precioIva>31.19</precioIva></libro>

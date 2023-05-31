@@ -1,0 +1,51 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 25 abr 2023, 9:03:50
+    Author     : Oscar Pascual Ferrero
+*/
+
+*{
+    font-family: 'Permanent Marker', cursive;
+}
+
+
+html{
+    width: 1024px;
+    margin: 0 auto;
+}
+
+h1{
+    background-color: #387ab6;
+    color: white;
+    text-align: left;
+    
+}
+
+.cabeceras{
+    text-align: center;
+    background-color: #387ab6;
+    color: white;
+}
+
+table{
+     width: 100%;
+     margin: 0 auto;
+}
+
+table,tr,td{
+    border-collapse: collapse;
+    border:5px #FFF groove;
+}
+
+.total{
+    background-color: #387ab6;
+    color: white;
+    font-variant: small-caps;
+}
+
+.bold{
+    font-weight: bold;
+}

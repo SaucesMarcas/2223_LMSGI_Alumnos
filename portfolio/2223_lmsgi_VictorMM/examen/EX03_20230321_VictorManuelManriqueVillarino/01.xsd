@@ -10,14 +10,14 @@
             <xs:sequence>
                 <xs:element name="producto" maxOccurs="unbounded">
                     <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="bono" minOccurs="1">
+                        <xs:choice>
+                            <xs:element name="bono" minOccurs="0">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="valoractual">
                                             <xs:complexType>
                                                 <xs:simpleContent>
-                                                    <xs:extension base="xs:string">
+                                                    <xs:extension base="xs:decimal">
                                                         <xs:attribute name="moneda">
                                                             <xs:simpleType>
                                                                 <xs:restriction base="xs:string">
@@ -33,20 +33,14 @@
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="futuro" minOccurs="1">
+                            <xs:element name="futuro" minOccurs="0">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="elemento">
                                             <xs:complexType>
                                                 <xs:simpleContent>
                                                     <xs:extension base="xs:string">
-                                                        <xs:attribute name="idioma">
-                                                            <xs:simpleType>
-                                                                <xs:restriction base="xs:string">
-                                                                    <xs:pattern value="espanol|aleman|japones"/>
-                                                                </xs:restriction>
-                                                            </xs:simpleType>
-                                                        </xs:attribute>
+                                                        <xs:attribute name="idioma" type="xs:string"/>
                                                     </xs:extension>
                                                 </xs:simpleContent>
                                             </xs:complexType>
@@ -55,7 +49,7 @@
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="acciones" minOccurs="1">
+                            <xs:element name="acciones" minOccurs="0">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="empresa">
@@ -77,7 +71,7 @@
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
-                        </xs:sequence>
+                        </xs:choice>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>

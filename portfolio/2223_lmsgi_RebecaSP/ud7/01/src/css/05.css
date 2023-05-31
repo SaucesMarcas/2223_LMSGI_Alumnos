@@ -1,0 +1,23 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 16 may 2023, 9:38:47
+    Author     : daw1
+*/
+table{
+    border: 1px solid green;
+}
+th,td{
+    border: 1px solid green;
+}
+.cooking{
+    color: green;
+}
+.web{
+    color: red;
+}
+.children{
+    color: blue;
+}
