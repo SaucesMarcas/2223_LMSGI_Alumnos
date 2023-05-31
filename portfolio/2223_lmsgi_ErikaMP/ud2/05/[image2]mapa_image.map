@@ -1,0 +1,16 @@
+<img src="[image2] (importada)" width="800" height="600" border="0" usemap="#map" />
+
+<map name="map">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:Usuario -->
+<area shape="rect" coords="61,54,364,69" href="http://www.w3schools.com/tags/tag_label.asp" />
+<area shape="rect" coords="60,118,381,132" href="http://www.w3schools.com/tags/tag_label.asp" />
+<area shape="rect" coords="61,262,414,276" href="http://www.w3schools.com/tags/tag_label.asp" />
+<area shape="poly" coords="45,197,638,197,668,197,668,213,45,214,44,197,45,197" href="http://www.w3schools.com/tags/tag_input.asp" />
+<area shape="poly" coords="42,294,476,293,476,307,517,306,516,329,357,328,356,360,124,360,125,373,41,373,42,297" href="http://www.w3schools.com/tags/tag_select.asp" />
+<area shape="poly" coords="44,151,230,150,233,164,367,163,368,181,85,182,86,194,45,195,44,150" href="http://www.w3schools.com/tags/tag_ul.asp" />
+<area shape="circle" coords="51,486,50" href="http://www.w3schools.com/TAGS/tag_td.asp" />
+</map>

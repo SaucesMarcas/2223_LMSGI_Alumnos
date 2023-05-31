@@ -1,0 +1,9 @@
+<!-- 
+    Autor: Erika Martínez Pérez
+    Práctica: Actividad 8
+    Descripción: Conversión del ejercicio 08 a DTD
+-->
+<!ELEMENT lugares (lugar+)>
+
+<!ELEMENT lugares (#PCDATA|lugar)*>
+<!ELEMENT lugar (#PCDATA)>

@@ -1,0 +1,158 @@
+<!<DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Erika Martínez">
+		<meta name="descrption" content="Actividad 3 - Formularios">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="formulario, preguntas">
+		<meta name="generator" content="visual-studio-code">
+		<title> HTML 02 Erika Martínez Pérez </title>
+		<style>
+			body {
+				font-family: consolas;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1> Resgistro de clientes </h1>
+		</header>
+		<main>
+			<h2> Ficha de registro: </h2>
+			<form action="#" method="GET" name="formulario">
+				<fieldset>
+					<legend> Datos personales: </legend>
+					<div>
+						<label for="idNomb"> Nombre: </label>
+						<input type="text" name="nom1" id="idNomb" placeholder="Escribe tu nombre." required>
+					</div>
+					<div>
+						<label for="idape1"> Primer apellido: </label>
+						<input type="text" name="ape1" id="idape1" placeholder="Escribe tu apellido." required>
+					</div>
+					<div>
+						<label for="idape2"> Segundo apellido: </label>
+						<input type="text" name="ape2" id="idape2" placeholder="Escribe tu apellido." required>
+					</div>
+					<div>
+						<label for="email"> Email o correo de contacto: </label>
+						<input type="email" id="email" pattern=".+@gmail\.com" size="30" required>
+					</div>
+				</fieldset>
+			<br>
+				<fieldset>
+					<legend> Seleccion cuantas veces a comprado: </legend>
+					<div>
+						<label for="idDAW">
+							<input checked type="radio" name="ciclo-for" id="idDAW" value="1"> 1
+						</label>
+					</div>
+					<div>
+						<label for="idASIR">
+							<input type="radio" name="ciclo-for" id="idASIR" value="2"> 2
+						</label>
+					</div>
+					<div>
+						<label for="idDAM">
+							<input type="radio" name="ciclo-for" id="idDAM" value="3"> Otro.
+						</label>
+					</div>
+				</fieldset>
+			<br>
+				<fieldset>
+					<legend> Selección, indique cuantas veces a comprado: </legend>
+					<div>
+						<label for="mod1">
+							<input type="checkbox" name="mod-1" id="mod1"> Visualización en la web.
+						</label>
+					</div>
+					<div>
+						<label for="mod2">
+							<input type="checkbox" name="mod-2" id="mod2"> Recomendación
+						</label>
+					</div>
+					<div>
+						<label for="mod3">
+							<input type="checkbox" name="mod-3" id="mod3"> Publicidad en alguna red social
+						</label>
+					</div>
+					<div>
+						<label for="mod4">
+							<input type="checkbox" name="mod-4" id="mod4"> Otro.
+						</label>
+					</div>
+				</fieldset>
+			<br>
+				<fieldset>
+					<legend> Fechas: </legend>
+					<div>
+						<label for="idDate"> Fecha de nacimiento: </label>
+						<input type="date" name="FechaNa" id="idDate">
+					</div>
+					<div>
+						<label for="idDate2"> Fecha de registro en la web: </label>
+						<input type="date" name="FechaRe" id="idDate2">
+					</div>
+					<div>
+						<label for="idstart"> Mes del pedido: </label>
+						<input type="month" id="idstart" name="comienzo" min="2000-12" value="2000-12">
+					</div>
+					<div>
+						<label for="idsemana"> Elige proxima semana para la compra: </label>
+						<input type="week" name="semana" id="idsemana" min="2000-W18" max="2000-W26" required>
+					</div>
+				</fieldset>
+			<br>
+				<fieldset>
+					<legend> Hora de los medidos </legend>
+					<div>
+						<label for="idtime"> Fecha de nacimiento: </label>
+						<input type="time" name="Time" id="idtime" max="23:00" step="4">
+					</div>
+				</fieldset>
+			<br>
+				<fieldset>
+					<label for="idproducto"> Selecciona tu producto: </label>
+					<input type="text" list="producto" name="Producto" id="idproducto" placeholder="Elige tu producto">
+						<datalist id="producto">
+							<option value="Peras"> 
+							<option value="Manzanas"> 
+						</datalist>
+				</fieldset>
+			<br>
+				<fieldset>
+					<div> 
+						<label id="idTel"> Telefono de contacto: </label>
+						<input type="tel" name="telefono" id="idTele" pattern=" \([0-9]{3}\) [0-9]{3}[-][0-9]{3}" title="Número de telefono incorrecto." placeholder="(000)000-000" required> 
+					</div>
+				</fieldset>
+			<br>
+				<label> Selecciona grado de satisfacción: </label> 0
+				<input type="range" min="0" max="10" value="5" list="idrange"> 10
+					<datalist id="idrange" style="background: #46E792">
+						<option value="0" label="0">
+						<option value="2" label="2">
+						<option value="4" label="4">
+						<option value="6" label="6">
+						<option value="8" label="8">
+						<option value="10" label="10">
+					</datalist>
+			<br>
+				<fieldset>
+					<div>
+						<label for="idcomentario"> Comentario sobre la compra: </label>
+					</div>
+					<div>
+						<textarea name="comentario" id="idcomentario" rows="5" cols="10"> </textarea>
+					</div>
+				</fieldset>
+			<br>
+				<input type="image" src="images/submit.png" alt="No funciona pri." style="width:112px ; height:60px">
+			</form>
+		</main>
+		<footer> 
+		2022-2023 Todos los derechos reservados optimizado para Google Chrome. Erika Martínez Pérez 
+		</footer>
+	</body>
+</html>

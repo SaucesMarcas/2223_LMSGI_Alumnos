@@ -1,0 +1,19 @@
+<!ELEMENT geografia (continentes+,paises+,rios+)>
+<!ELEMENT continentes (continente+)>
+<!ELEMENT continente (pais+)>
+<!ELEMENT paises (pais+)>
+<!ELEMENT pais (#PCDATA|sistema|superficie|moneda|idioma)*>
+<!ELEMENT rios (rio+)>
+<!ELEMENT rio (nombre,pais+)>
+
+<!ELEMENT sistema (#PCDATA)>
+<!ELEMENT superficie (#PCDATA)>
+<!ELEMENT moneda (#PCDATA)>
+<!ELEMENT idioma (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+
+<!ATTLIST continente nombre (Europa|América|Asia|Antartida|Oceania) #REQUIRED>
+<!ATTLIST pais nombre (España|Francia|Suiza|Uruguay|Argentina|Jamaica) #IMPLIED>
+<!ATTLIST moneda antigua CDATA #FIXED "antigua">
+<!ATTLIST geografia xmlns:xsi CDATA #IMPLIED>
+    <!ATTLIST geografia xsi:noNamespaceSchemaLocation CDATA #IMPLIED>

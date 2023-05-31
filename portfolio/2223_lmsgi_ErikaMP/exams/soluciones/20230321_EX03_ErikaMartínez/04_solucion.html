@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Erika Martínez"/>
+        <meta name="descrption" content="Actividad 5 - Examen"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="refresh" content="8"/>
+        <meta name="keywords" content="formulario, preguntas"/>
+        <meta name="generator" content="visual-studio-code"/>
+        <title> EXAMEN 03 Erika Martínez Pérez </title>
+        <style>
+            legend {
+                color: white;
+                background-color: grey;
+            }
+            div {
+                padding: 0.88%;
+            }
+            form {
+                width: 50%;
+                position: absolute;
+                left: 25%;
+                right: 25%;
+            }
+            h1 {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1> Actividad 5 - EXAMEN 03</h1>
+        </header>
+        <main>
+            <form action="#" method="GET" name="formulario">
+                <fieldset>
+                    <legend> Datos fiscales </legend>
+                    <div>
+                        <label for="idDAW">
+                            <input checked type="radio" name="ciclo-for" id="idDAW" value="paro"> En paro.
+                        </label>
+                    </div>
+                    <div>
+                        <label for="idASIR">
+                            <input type="radio" name="ciclo-for" id="idASIR" value="autonomo"> Autónomo
+                        </label>
+                    </div>
+                    <div>
+                        <label for="idDAM">
+                            <input type="radio" name="ciclo-for" id="idDAM" value="ajena"> Por c. ajena
+                        </label>
+                    </div>
+                </fieldset>
+            <br>
+                <fieldset>
+                    <legend> Datos personales </legend>
+                    <div>
+                        <label for="idNomb"> Nombre: </label>
+                        <input type="text" name="nom1" id="idNomb" placeholder="Escribe tu nombre." required> 
+                    </div>
+                    <div>
+                        <label for="idape1"> Primer apellido: </label>
+                        <input type="text" name="ape1" id="idape1" placeholder="Escribe tu apellido." required>
+                    </div>
+                    <div>
+                        <label for="idproducto"> Sueldo: </label>
+					    <input type="text" list="producto" name="Producto" id="idproducto" placeholder="Elige opcion.">
+						<datalist id="producto">
+							<option value="Mas de 400."> 
+							<option value="Menos de 400.">
+                            <option value="Variables."> 
+						</datalist>
+                    </div>
+                    <div>
+                        <label for="mod1">
+                            <input type="checkbox" name="mod-1" id="mod1"> Con enfermedad profesional
+                        </label>
+                    </div>
+                    <div>
+                        <label for="mod2">
+                            <input type="checkbox" name="mod-2" id="mod2"> Con padres a cargo
+                        </label>
+                    </div>
+                    <div>
+                        <label for="mod3">
+                            <input type="checkbox" name="mod-3" id="mod3"> Con hijos a cargo
+                        </label>
+                    </div>
+                    <div>
+                        <input type="submit">
+                    </div>
+                </fieldset>
+                <br>
+            </form>
+        </main>
+    </body>
+</html>

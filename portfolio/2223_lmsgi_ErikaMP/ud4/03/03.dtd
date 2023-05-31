@@ -1,0 +1,13 @@
+<!-- 
+    Autor: Erika Martínez Pérez
+    Práctica: Actividad 3
+    Descripción: Conversión del ejercicio 03 a DTD
+-->
+<!ELEMENT hechos (acontecimiento+)>
+<!ELEMENT acontecimiento (nombre,fecha)>
+<!ELEMENT fecha (dia,mes,anyo)>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT anyo (#PCDATA)>

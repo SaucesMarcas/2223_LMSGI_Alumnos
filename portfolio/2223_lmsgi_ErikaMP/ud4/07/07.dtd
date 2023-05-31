@@ -1,0 +1,12 @@
+<!-- 
+    Autor: Erika Martínez Pérez
+    Práctica: Actividad 7
+    Descripción: Conversión del ejercicio 07 a DTD
+-->
+<!ELEMENT grupo (estudiante+)>
+<!ELEMENT estudiante (nombre)>
+
+<!ELEMENT nombre (#PCDATA)>
+
+<!ATTLIST estudiante tutor NMTOKEN #REQUIRED>
+<!ATTLIST nombre codigo NMTOKEN #REQUIRED>

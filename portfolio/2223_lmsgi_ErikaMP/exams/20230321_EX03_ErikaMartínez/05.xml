@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formulario>
+    <!-- atributo de eleccion de una de las tres opciones --> 
+    <datosfiscales eleccion="En paro"/>
+    <!-- atributos de las opciones en las que se puede marcar más de tres -->
+    <datospersonales enfermedades="false" hijosAcargo="true" padresAcargo="false">
+        <nombre></nombre>
+        <apellido></apellido>
+        <sueldo opcion="Variables"/>
+    </datospersonales>
+</formulario>

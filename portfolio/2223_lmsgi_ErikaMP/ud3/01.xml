@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel> 
+        <title>Erika MP - El país</title>
+        <link>https://elpais.es</link>
+        <description>Últimas noticias del periodico el país</description>
+        <lastBuildDate>Thu, 12 Jan 2023 12:32:10 +0100</lastBuildDate>
+        <language>es-es</language>
+        <category>Noticias El Pais</category>
+        <copyright>2023 ELPAIS. All right reserved</copyright>
+        <skipDays> 
+            <day>Saturday</day>
+            <day>Sunday</day>
+        </skipDays>
+        <skipHours> 
+            <hour>0</hour>
+            <hour>1</hour>
+            <hour>2</hour>
+            <hour>3</hour>
+            <hour>4</hour>
+            <hour>5</hour>
+            <hour>6</hour>
+            <hour>7</hour>
+            <hour>8</hour> 
+        </skipHours>
+        <image>
+            <link>https://elpais.es</link>
+            <title>Erika MP - El país</title>
+            <url>https://elpais.com/elpais/2022/04/17/album/1650210080_740235.html</url>
+            <description>Imagen de la página web El País</description>
+            <height>32</height>
+            <width>96</width>
+        </image>
+        <item>
+            <title>Marina Silva: “Bolsonaro mantiene su poder de convocar turbas enfurecidas, tal vez no el de desmovilizarlas. Y eso es peligroso”</title>
+            <link>https://elpais.com/internacional/2023-01-12/marina-silva-bolsonaro-mantiene-su-poder-de-convocar-turbas-enfurecidas-tal-vez-no-el-de-desmovilizarlas-y-eso-es-peligroso.html</link>
+            <guid>https://elpais.com/internacional/2023-01-12/marina-silva-bolsonaro-mantiene-su-poder-de-convocar-turbas-enfurecidas-tal-vez-no-el-de-desmovilizarlas-y-eso-es-peligroso.html</guid>
+            <description><![CDATA[<b>La ministra de Medio Ambiente y Cambio Climático de Brasil defiende, en una entrevista con EL PAÍS, que el expresidente “tiene un historial de actos, palabras y omisiones que testifican fuertemente en su contra”</b>]]></description>
+            <category>internacional</category>
+            <category>españa</category>
+            <category>politica</category>
+            <pubDate>Thu, 12 Jan 2023 12:32:10 +0100</pubDate>
+            <enclosure url="http://www.w3ii.com/media/3d.wmv" length="78645" type="video/wmv"/>
+            <source url="https://elpais.es">El Pais</source>
+        </item>
+        <item>
+            <title>La ola de violencia en Perú se traslada a la región de Cuzco</title>
+            <link>https://elpais.com/internacional/2023-01-12/la-ola-de-violencia-en-el-peru-se-traslada-a-la-region-de-cusco.html</link>
+            <guid>https://elpais.com/internacional/2023-01-12/la-ola-de-violencia-en-el-peru-se-traslada-a-la-region-de-cusco.html</guid>
+            <description><![CDATA[<b>La Fiscalía asegura que los diecisiete manifestantes fallecidos el lunes murieron por proyectiles de arma de fuego</b>]]></description>
+            <category>españa</category>
+            <category>nacional</category>
+            <category>noticias</category>
+            <pubDate>Thu, 12 Jan 2023 12:32:10 +0100</pubDate>
+            <source url="https://elpais.es">El Pais</source>
+        </item>
+        <item>
+            <title>El primer "virívoro": un organismo que se puede alimentar solo de virus, hasta un millón al día</title>
+            <link>https://elpais.com/ciencia/2023-01-12/el-primer-virivoro-un-organismo-que-se-puede-alimentar-solo-de-virus-hasta-un-millon-al-dia.html</link>
+            <guid>https://elpais.com/ciencia/2023-01-12/el-primer-virivoro-un-organismo-que-se-puede-alimentar-solo-de-virus-hasta-un-millon-al-dia.html</guid>
+            <description><![CDATA[<b>La existencia de microbios con esta alimentación muestra el papel esencial de las partículas virales en el ciclo de la vida</b>]]></description>
+            <category>españa</category>
+            <category>nacional</category>
+            <category>noticias</category>
+            <pubDate>Thu, 12 Jan 2023 12:32:10 +0100</pubDate>
+            <source url="https://elpais.es">El Pais</source>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,42 @@
+	@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Kaushan+Script&family=New+Rocker&display=swap');
+	@font-face {
+		font-family: "New Rocker";
+		src: url(./font/NewRocker-Regular.ttf);
+	}
+	
+	h1 {
+		font-family: 'Consola', cursive;
+		text-shadow: -3px -3px 0px rgba(255,0,0,0.55);
+	}
+	span.word {
+		text-shadow: -3px -3px 0px rgba(255,0,0,0.55);
+	}
+	span.word1 {
+		text-decoration: underline;
+	}
+	
+	p:hover {
+		text-decoration: overline;
+		text-decoration-color: red;
+	}
+	p {
+		text-align-last: center;
+		text-indent:2em;
+	}
+	p:first-letter {
+		font-size:2em;
+		background-color:red;
+		color: white;
+	}
+	
+	p:nth-child(1) {
+		font-family: "Caveat Brush", cursive;
+		font-size: 20px;
+	}
+	p:nth-child(2) {
+		font-family: "New Rocker", cursive;
+	}
+	
+	p:nth-child(3) {
+		font-family: 'Kaushan Script', cursive;
+	}
