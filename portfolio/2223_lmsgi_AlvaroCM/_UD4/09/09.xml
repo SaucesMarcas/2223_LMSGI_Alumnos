@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE textos [
+    <!ELEMENT textos (texto*)>
+    <!ELEMENT texto (#PCDATA)>
+    <!ENTITY Escritor "Miguel de Cervantes">
+    <!ENTITY Fecha "29/09/1547">
+    <!ENTITY Obra "El Quijote">
+    <!ATTLIST textos axmlns:xsi CDATA #IMPLIED>
+    <!ATTLIST textos xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+]>
+
+
+<textos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="09.xsd">
+    <texto>&Obra;fue escrito por &Escritor;</texto>
+    <texto>&Escritor; nacio el &Fecha;</texto>
+</textos>

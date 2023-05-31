@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 50%;
+  margin: auto;
+  font-family: "Permanent Marker", cursive;
+}
+
+table {
+  border: 1px solid black;
+  width: 100%;
+}
+
+table tr td {
+  border: 1px solid black;
+}
+
+h1 {
+  color: white;
+  background-color: #387ab6;
+}
+
+.matricula {
+  text-align: center;
+}
+
+.reparacion {
+  height: 220px;
+  display: flex;
+}
+
+.reparaciones {
+  padding-top: 30px;
+}
+
+.reparaciones li {
+  padding-top: 20px;
+}
+
+.datos_coches {
+  margin: 0;
+  list-style: none;
+}
+
+.datos_coches li {
+    padding-bottom:10px ;
+  font-variant: small-caps;
+}
+
+.datos {
+  color: white;
+  background-color: #387ab6;
+}
+
+table tr th {
+    padding: 10px;
+  color: white;
+  background-color: #387ab6;
+  width: 50%;
+}

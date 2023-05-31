@@ -1,0 +1,29 @@
+header {
+  width: 50%;
+  margin: auto;
+}
+
+form {
+  width: 50%;
+  margin: auto;
+  border: 10px solid lightgrey;
+}
+
+label {
+  display: block;
+  border: 1px dotted black;
+}
+
+.enunciadoPregunta {
+  font-weight: bold;
+  border-top: 3px solid lightgrey;
+}
+
+.botones {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}

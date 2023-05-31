@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <!-- CANAL -->
+    <channel>
+        <!-- Elementos obligatorios de la etiqueta channel -->
+        <title>Practica 01 Alvaro Cordero</title>
+        <link>https://elpais.es</link>
+        <description>Free web building tutorials</description>
+        <!-- Elementos opcionales-->
+        <language>es-es</language>
+        <category>Noticias El Pais</category>
+        <copyright>2023 ELPAIS. All right reserved</copyright>
+        <lastBuildDate>Wed, 02 Oct 2002 13:00:00 GMT</lastBuildDate>
+        <pubDate>Wed, 02 Oct 2002 08:00:00 EST</pubDate>
+        <skipDays>
+            <day>Saturday</day>
+            <day>Sunday</day>
+        </skipDays>
+        <skipHours>
+            <hour>0</hour>
+            <hour>1</hour>
+            <hour>2</hour>
+            <hour>3</hour>
+            <hour>4</hour>
+            <hour>5</hour>
+            <hour>6</hour>
+            <hour>7</hour>
+        </skipHours>
+        <image>
+            <url>https://imagenes.elpais.com/resizer/QepKYdjbhr0Gy1BR7MAyilRFMUs=/828x466/cloudfront-eu-central-1.images.arcpublishing.com/prisa/EHUDKMUA7FAVZLKGCH3CLLJ2MQ.jpg</url>
+            <title>Practica 01 Alvaro Cordero</title>
+            <link>https://elpais.es</link>
+            <description>Descripcion de el Pais</description>
+        </image>
+        <!-- ARTICULO DEL CANAL -->
+        <!-- Elemento variable (Puedes incluir esta etiqueta si lo cress conveniente)-->
+        <item>
+            <title>El Pais españa</title>
+            <link>
+                https://elpais.com/espana/2023-01-11/candido-conde-pumpido-elegido-presidente-del-tribunal-constitucional.html</link>
+            <guid>
+                https://elpais.com/espana/2023-01-11/candido-conde-pumpido-elegido-presidente-del-tribunal-constitucional.html</guid>
+            <author>alvarocormi@gmail.com</author>
+            <category>deportes</category>
+            <pubDate>Wed, 02 Oct 2002 13:00:00 GMT</pubDate>
+            <enclosure url="http://www.w3ii.com/media/3d.wmv" length="78645" type="video/wmv" />
+            <description><![CDATA[<h1>Hola mi nombre es Alvaro</h1><p>Descripcion usando la etiqueta p de HTML</p>]]></description>
+            <source url="https://elpais.es">El Pais</source>
+        </item>
+    </channel>
+</rss>

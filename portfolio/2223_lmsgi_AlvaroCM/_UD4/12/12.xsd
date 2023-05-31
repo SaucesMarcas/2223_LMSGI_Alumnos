@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!--ANOTACIONES-->
+    <xs:annotation>
+        <xs:appinfo>Grupo Musicales Info</xs:appinfo>
+        <xs:documentation xml:lang="es"> Esta schema describe las caracteristicas de los grupos
+            musicales. Realizado por Álvaro Cordero</xs:documentation>
+    </xs:annotation>
+    <!--TIPOS-->
+    <xs:simpleType name="tipoMusica">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="POP" />
+            <xs:enumeration value="ROCK" />
+            <xs:enumeration value="CLASICA" />
+            <xs:enumeration value="JAZZ" />
+            <xs:enumeration value="BLUES" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipoLocalidad">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="BARCELONA" />
+            <xs:enumeration value="MADRID" />
+            <xs:enumeration value="VALENCIA" />
+            <xs:enumeration value="GIJON" />
+            <xs:enumeration value="ZAMORA" />
+            <xs:enumeration value="BILBAO" />
+            <xs:enumeration value="SALAMANCA" />
+            <xs:enumeration value="MALAGA" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipoApellido">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="20" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipoNombre">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="20" />
+        </xs:restriction>
+    </xs:simpleType>
+    <!--GRUPOS-->
+    <xs:group name="datosPr">
+        <xs:sequence>
+            <xs:element name="nombre" type="tipoNombre" />
+            <xs:element name="discos" type="xs:string" />
+            <xs:element name="anyo" type="xs:integer" />
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="datosPersonas">
+        <xs:attribute name="apellido2" type="tipoApellido"/>
+        <xs:attribute name="mote" type="xs:string"/>
+    </xs:attributeGroup>
+    <!--ELEMENTOS-->
+    <xs:element name="grupoMusical">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="datosGM">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="tipoNombre" />
+                            <xs:element name="estiloMusical" type="tipoMusica" />
+                            <xs:element name="director">
+                                <xs:complexType>
+                                    <xs:all>
+                                        <xs:element name="nombre"/>
+                                        <xs:element name="apellidos">
+                                            <xs:complexType>
+                                                <xs:attributeGroup ref="datosPersonas"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:all>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="artistas">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre"/>
+                                        <xs:element name="apellidos">
+                                            <xs:complexType>
+                                                <xs:attributeGroup ref="datosPersonas"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="discografias">
+                                <xs:complexType>
+                                    <xs:group ref="datosPr"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="conciertos">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="tipoNombre" />
+                                        <xs:element name="lugar">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="localidad" type="tipoLocalidad" />
+                                                    <xs:element name="provincia" type="xs:string" />
+                                                    <xs:element name="direccion">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute name="calle" type="xs:string" use="required" />
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="precio" type="xs:float" minOccurs="1"/>
+                                        <xs:element name="formaPago">
+                                            <xs:complexType>
+                                                <xs:choice>
+                                                    <xs:element name="targeta" type="xs:string" />
+                                                    <xs:element name="efectivo" type="xs:string" />
+                                                </xs:choice>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="abono">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:integer">
+                                                        <xs:attribute name="tamanyo" type="xs:integer" fixed='400' />
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="fecha" type="xs:date"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="premios">
+                                <xs:complexType>
+                                    <xs:group ref="datosPr"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

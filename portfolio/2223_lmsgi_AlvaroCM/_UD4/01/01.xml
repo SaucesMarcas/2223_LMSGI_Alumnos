@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mail SYSTEM "01.dtd">
+<mail>
+    <remitente>tunombre@gmail.com</remitente>
+    <destinatarios>
+        correo@gmail.com
+        correo@gmail.com
+        correo@gmail.com
+    </destinatarios>
+    <fechamensaje>
+        <dia>12</dia>
+        <mes>09</mes>
+        <anyo>2023</anyo>
+    </fechamensaje>
+    <asunto>
+        Asunto del mensaje a enviar
+    </asunto>
+    <mensaje>
+        <![CDATA[ <ul>
+            <li>1. Cocalcola</li>
+            <li>2. Kas</li>
+            <li>3. Agua</li>
+            <li>4. Piña</li>
+        </ul>]]>
+    </mensaje>
+    <ficherosadjuntos>
+        <nombre>Nombre del fichero</nombre>
+        <tipo>image/jpeg</tipo>
+    </ficherosadjuntos>
+    <ficherosadjuntos>
+        <nombre>Nombre del fichero 2</nombre>
+        <tipo>image2/png</tipo>
+    </ficherosadjuntos>
+</mail>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Descripción: Unidad04-Actividad 12
+	Autor: victor manuel manrique
+	Fecha creación/modificación: 23/02/2023
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:annotation>
+        <xs:documentation>
+            Autor:Victor Manuel Manrique
+        </xs:documentation>
+        <xs:appinfo>
+            Recogida de información sobre el Festival de Eurovision 2023
+        </xs:appinfo>
+    </xs:annotation>
+    <xs:group name="GrupoPais">
+        <xs:sequence>
+            <xs:element name="Nombre" type="xs:string"/>
+            <xs:element name="Participacion" type="xs:string"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:simpleType name="tipoPositivo">
+        <xs:restriction base="xs:float">
+            <xs:minExclusive value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="Festival">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Sede">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Lugar" type="xs:string"/>
+                        <xs:element name="CadenaAnfitriona" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+                </xs:element>
+                <xs:element name="Presentador">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Nombre" type="xs:string"/>
+                        <xs:element name="Residencia" type="xs:string"/>
+                     </xs:sequence>
+                </xs:complexType>
+                </xs:element>
+                <xs:element name="Paises">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Clasificados">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Pais" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:group ref="GrupoPais"/>
+                                                </xs:sequence>
+                                            </xs:complexType> 
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Semifinalistas">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Semifinal" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:group ref="GrupoPais"/>
+                                                </xs:sequence>
+                                                    <xs:attribute name="numero">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:int">
+                                                                <xs:pattern value="1|2"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:attribute>  
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Preseleccion">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Paises" type="xs:int"/>
+                         </xs:sequence> 
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Entradas">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Cantidad" type="xs:int"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>                            
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>     
+</xs:schema>

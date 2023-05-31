@@ -1,0 +1,167 @@
+<!--
+	Descripcion: Primer Ejercicio
+	Autor: Álvaro Cordero
+	Fecha: 11/10/2022
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 01 Álvaro Cordero Miñambres</title>
+</head>
+<body>
+    <!-- ENCABEZADO DE LA PAGINA -->
+    <header>
+        <h1>NOTICIAS BENAVENTE</h1>
+    </header>
+    <!-- MENU DE NAVEGACION -->
+    <nav>
+        <ul>
+			<li>
+				<a href="#nacional">Nacional</a>
+			</li>
+			<li>
+				<a href="#local">Local</a>
+			</li>
+			<li>
+				<a href="#internacional">Internacional</a>
+			</li>
+		</ul>
+    </nav>
+    <hr>
+    <main>
+        <!-- PRIMERA SECCION -->
+        <section id="nacional">
+            <header>
+                <h2>NACIONAL</h2>
+            </header>
+            <article>
+            <!-- Titular del articulo -->
+                <header>
+                    <h3>El fuerte viente ocasiona la caida de un árbol en la Mota y se cierra parte de los paseos</h3>
+                    <h4><i>La Concejalía de Seguridad Ciudadana del Ayuntamiento de Benavente <sub>ha comunicado que debido a las fuertes rachas de viento</sub> y las condiciones meteorológicas adversas, se ha procedido a cortar por parte de la Policía Local una parte de los Paseos de la Mota, en la zona arbolada, debido a la caída de una rama de gran tamaño</i></h4>
+                </header>
+                <!-- Contenido principal del articulo-->
+                <div class="nacional">
+                    <blockquote cite="https://www.interbenavente.es">
+                        <p>Con el fin de garantizar la seguridad de los usuarios de esta zona, <del>desde el Ayuntamiento</del> de Benavente <mark>recomiendan evitar pasear</mark> o permanecer bajo zonas arboladas debido al riesgo existente.</p>
+                        <details>
+                        <summary>
+                            <abbr title="Mostrara mas detalles sobre la noticia en cueston">Mas detalles</abbr>
+                        </summary>
+                        <p>Un riesgo que aumentará debido a la alerta amarilla existente <s>en nuestro territorio</s> por fuertes rachas de viento que pueden alcanzar los <b>70 kilómetros</b> por hora como ha indicado la Agencia Estatal de Meteorología para hoy domingo.</p>
+                        </details>
+                        <p>Si te esta <q>gustando</q> la pagina escribe <kbd>si</kbd></p>
+                    </blockquote>
+                    <figure>
+                        <figcaption>Logo lenguaje de Progamacion C</figcaption>
+                            <a href="./imagenes/logoC.png">
+                                <img src="./imagenes/logoC.png" style="width:200px;height:150px;" alt="imagenC">
+                            </a>
+                    </figure>
+                    <time datetime="2022-10-24"></time>
+                </div>
+                <br>
+            <!-- Pie de pagina del articulo -->
+                <footer>
+                    <p>Interbenavente</p>
+                </footer>
+            </article>
+        </section>
+         <!-- SEGUNDA SECCION -->
+        <section id="local">
+            <header>
+                <h2>LOCAL</h2>
+            </header>
+            <article>
+            <!-- Titular del articulo -->
+                <header>
+                    <h3>Java (lenguaje de programación)</h3>
+                    <h4><i>Java es un lenguaje de programación y una plataforma informática que fue comercializada por primera vez en 1995 por Sun Microsystems.2​3</i></h4>
+                </header>
+                <!-- Contenido principal del articulo-->
+                <div class="local">
+                    <blockquote cite="https://es.wikipedia.org/wiki/Java_(lenguaje_de_programaci%C3%B3n)">
+                        <p>El lenguaje de programación Java fue desarrollado originalmente por James Gosling, de Sun Microsystems (constituida en 1983 y posteriormente adquirida el 27 de enero de 2010 por la compañía Oracle),4​ y publicado en 1995 como un componente fundamental de la plataforma Java de Sun Microsystems. Su sintaxis deriva en gran medida de C y C++</p>
+                        <details>
+                        <summary>
+                            <abbr title="Mostrara mas detalles sobre la noticia en cueston">Mas detalles</abbr>
+                        </summary>
+                        <p>pero tiene menos utilidades de bajo nivel que cualquiera de ellos. Las aplicaciones de Java son compiladas a bytecode (clase Java), que puede ejecutarse en cualquier máquina virtual Java (JVM) sin importar la arquitectura de la computadora subyacente..</p>
+                        </details>
+                    </blockquote>
+                    <p>Ejemplo de Holamundo en java</p>
+                    <mark>Ejemplo de progamacion Java <ins>(Hola mundo en Java)</ins></mark><br>
+						<code>
+							class holaMundo
+							{
+		
+								public static void main(String args[])
+								{
+								System.out.println("Hola Mundo");
+								}
+							}
+						</code><br><br>
+						<samp>Aparecera en pantalla "Hola mundo"</samp>
+                    <figure>
+                        <figcaption>Logo lenguaje de Progamacion C</figcaption>
+                            <a href="./imagenes/logoC.png">
+                                <img src="./imagenes/logoC.png" style="width:200px;height:150px;" alt="imagenC">
+                            </a>
+                    </figure>
+                    <time datetime="2022-10-24"></time>
+                </div>
+                <br>
+            <!-- Pie de pagina del articulo -->
+                <footer>
+                    <p>Wikipedia</p>
+                </footer>
+            </article>
+        </section>
+         <!-- TERCERA SECCION -->
+		 <section id="internacional">
+            <header>
+                <h2>INTERNACIONAL</h2>
+            </header>
+            <article>
+            <!-- Titular del articulo -->
+                <header>
+                    <h3>El fuerte viente ocasiona <small>la caida de un árbol en la Mota</small> y se cierra parte de los paseos</h3>
+                    <h4><i>La Concejalía de Seguridad Ciudadana del Ayuntamiento de Benavente <sub>ha comunicado que debido a las fuertes rachas de viento</sub> y las condiciones meteorológicas adversas, se ha procedido a cortar por parte de la Policía Local una parte de los Paseos de la Mota, en la zona arbolada, debido a la caída de una rama de gran tamaño</i></h4>
+                </header>
+                <!-- Contenido principal del articulo-->
+                <div class="internacional">
+                    <blockquote cite="https://www.interbenavente.es">
+                        <p>Con el fin de garantizar la seguridad de los usuarios de esta zona, <del>desde el Ayuntamiento</del> de Benavente <mark>recomiendan evitar pasear</mark> o permanecer bajo zonas arboladas debido al riesgo existente.</p>
+                        <details>
+                        <summary>
+                            <abbr title="Mostrara mas detalles sobre la noticia en cueston">Mas detalles</abbr>
+                        </summary>
+                        <p>Un riesgo que aumentará debido a la alerta amarilla existente <s>en nuestro territorio</s> por fuertes rachas de viento que pueden alcanzar los <b>70 kilómetros</b> por hora como ha indicado la Agencia Estatal de Meteorología para hoy domingo.</p>
+                        </details>
+                        <p>Si te esta <q>gustando</q> la pagina escribe <kbd>si</kbd></p>
+                    </blockquote>
+                    <figure>
+                        <figcaption>Logo lenguaje de Progamacion C</figcaption>
+                            <a href="./imagenes/logoC.png">
+                                <img src="./imagenes/logoC.png" style="width:200px;height:150px;" alt="imagenC">
+                            </a>
+                    </figure>
+                    <time datetime="2022-10-24"></time>
+                </div>
+                <br>
+            <!-- Pie de pagina del articulo -->
+                <footer>
+                    <p>Interbenavente</p>
+                </footer>
+            </article>
+        </section><br><br>
+    </main>
+	<footer>
+		<p>2022-2023 Todos los derechos reservados. Álvaro Cordero Miñambres<p>
+	</footer>
+</body>
+</html>
