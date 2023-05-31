@@ -1,0 +1,7 @@
+<!ELEMENT persona (fila+)>
+<!ELEMENT textos (fila+)>
+<!ELEMENT fila (escritor,obra,fecha,texto)>
+<!ELEMENT escritor (#PCDATA)>
+<!ELEMENT obra (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT texto (#PCDATA)>

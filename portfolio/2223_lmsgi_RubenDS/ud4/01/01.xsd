@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="mail">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="remitente" type="xs:string"/>
+                <xs:element name="destinatario" type="xs:string" maxOccurs="2"/>
+                <xs:element name="fecha" type="xs:date"/>
+                <xs:element name="dia" type="xs:date"/>
+                <xs:element name="mes" type="xs:date"/>
+                <xs:element name="año" type="xs:date"/>
+                <xs:element name="asunto" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,17 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="estudiante">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string" />
+                <xs:element name="firstname" type="xs:string" maxOccurs="2"/>
+                <xs:element name="lastname" type="xs:date"/>
+                <xs:element name="telefono" type="xs:date"/>
+                <xs:element name="email" type="xs:date"/>
+                <xs:element name="address" type="xs:date"/>
+                <xs:element name="city" type="xs:string"/>
+                <xs:element name="state" type="xs:string"/>
+                <xs:element name="zip" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

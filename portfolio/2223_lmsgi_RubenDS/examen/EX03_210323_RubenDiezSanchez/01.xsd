@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Documentacion: 
+    Autores: Ruben
+    Fecha: 21/03/223
+--> 
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="productosfinancieros">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="producto" maxOccurs="unbounded"/>
+                <xs:element name="valoractual" type="xs:float"/>
+                <xs:element name="beneficio"/>
+                <xs:element name="futuro"/>
+                <xs:element name="elemento" type="xs:string"/>
+                <xs:element name="acciones"/>
+                <xs:element name="empresa" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="moneda" type="xs:decimal"/>
+            <xs:attribute name="idioma" type="xs:string"/>
+            <xs:attribute name="pais" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

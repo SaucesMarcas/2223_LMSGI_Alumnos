@@ -1,0 +1,23 @@
+{
+    "Nombre del equipo:":"Boston Celtics",
+    "Color de la equipación":["Blanco","Verde"],
+    "Nombre del estadio":"Crypto.com Arena",
+    "Nombre del entrenador":"TD Garden",
+    "Plantilla historica":false,
+    "Referencia a su página web":false,
+    "Jugadores":
+    {
+        "Base":{
+            "nombre":"Marcus Smart",
+            "dorsal":12
+        },
+        "Alero":{
+        "nombre":"Jaylen Brown",
+        "dorsal":7
+    },
+    "Pivot":{
+        "nombre":"Robert Williams",
+        "dorsal":44
+    }
+}
+}

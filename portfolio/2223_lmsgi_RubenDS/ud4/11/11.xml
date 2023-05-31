@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogo>
+    <portatil tipo="ordenador">
+        <referencia tipo="serial">LN6200</referencia>
+        <nombre tipo="Portatil">Slim</nombre>
+        <fabricante tipo="pantalla">Lenovo Slim</fabricante>
+        <procesador tipo="chipset">
+            <nombre>i5</nombre>
+            <cache>L2</cache>
+            <numero>10</numero>
+            <velocidad>3.2Ghz</velocidad>
+        </procesador>
+        <ram tipo="memory">
+            <memoria>32GB</memoria>
+            <tipo>DDR5</tipo>
+        </ram>
+        <disco tipo="disk">SSD>
+            <capacidad tipo="cantidad">512 GB</capacidad>
+        </disco>
+        <pantalla tipo="monitor">
+            <dimension>28 pulgadas</dimension>
+            <resolucion>1920x1080</resolucion>
+            <maxresolucion>2k</maxresolucion>
+        </pantalla>
+        <grafica tipo="grafico">Ryze 9</grafica>
+        <fotos tipo="pixel">ordenador1.jpg</fotos>
+    </portatil>
+</catalogo>

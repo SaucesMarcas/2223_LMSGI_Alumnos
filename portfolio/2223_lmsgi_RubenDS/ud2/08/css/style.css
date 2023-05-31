@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+h1{color:red;text-align:center}
+a{
+	color: red;
+	list-style: none;
+	text-decoration: none;
+	padding: 2rem;
+}
+.logo-1{
+	font-family: 'Dancing Script', cursive;
+	font-size: 50px
+}
+.logo-2{
+	font-family: 'Lobster', cursive;
+	font-size: 50px
+}
+.logo-3{
+	font-family: 'Rubik Glitch', cursive;
+	font-size: 50px
+}
+.logo-4{
+	font-family: 'Dancing Script', cursive;
+	font-size: 50px
+}
+span{
+	color:green;
+}
+main{
+	width: 1024px;
+	margin: 0 auto;
+	position:relative;
+}
+.content{
+    width: 100%;
+    max-width: 600px;
+    padding: 25px 50px 10px 50px;
+    border-top: dashed red 1px;
+    border-bottom: dashed green 1px;
+    border-left: dotted orange 1px;
+    border-right: dotted red 1px;
+    margin:0px auto;
+}
+.content div{
+    width: 30%;
+    max-width: 300px;
+    padding: 25px 10px;
+    border: red 2px solid;
+    margin: 40px 0;
+    background-color: rgb(115, 135, 250);
+}
+.content div:nth-child(2n+1){
+    margin:0px auto;
+    text-align: left;
+}
+.content div:nth-child(2n){
+    text-align: center;
+}
+div div:nth-child(1){
+    font-family: 'Verdana',sans-serif;
+}
+div div:nth-child(2){
+    font-family: 'Didot',serif;
+}
+div div:nth-child(3){
+    font-family: 'Freemono', monospace;
+}
+div div:nth-child(4){
+    font-family: 'Roboto', sans-serif;
+    
+}@font-face{
+    font-family: 'Akronim';
+    src: url('../font/Akronim-Regular.ttf');
+}
+div div:nth-child(5){
+    font-family: 'Akronim', cursive;
+    font-size: 24px;
+}
+div div:nth-child(6){
+    font-family: 'Montserrat', sans-serif ;
+}
+footer{
+	background-color: white;
+	color: #005a66;
+	position:fixed;
+	left: 0;
+	bottom:0;
+	padding: 2rem;
+	width:100%;
+	text-align: center;
+	clear: both;
+}

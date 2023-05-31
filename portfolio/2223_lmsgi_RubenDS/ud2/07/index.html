@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>CARAS DE UN DADO</title>
+	<style>
+		div{text-align:center;}
+		div>div {
+			width:250px;
+			height:250px;
+			margin: 5px;
+			border:5px solid black;
+			border-top-color: black;
+			border-bottom-color: black;
+			background-color: #34F42A;
+			padding: 0px;
+			background-image: url(images/punto.png), url(images/punto.png), url(images/punto.png), url(images/punto.png), url(images/punto.png), url(images/punto.png);
+			background-size:25%;
+			background-repeat: no-repeat;
+			display: inline-block;
+		}
+			div:nth-child(1)>div{ background-position: top left;}
+			div:nth-child(2)>div{ background-position: top left, bottom right;}
+			div:nth-child(3)>div{ background-position: top left, center, bottom right;}
+			div:nth-child(4)>div{ background-position: top left, top right, bottom left, bottom right;}
+			div:nth-child(5)>div{ background-position: top left, top right, center, bottom left, bottom right;}
+			div:nth-child(6)>div{ background-position: top left, top right, center right, center left, bottom left, bottom right;}
+	</style>
+	</head>
+	<body>
+	<div>
+		<div></div>
+	</div>
+	<div>
+		<div></div>
+		<div></div>
+	</div>
+	<div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+	<div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+	<div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+	<div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+	</body>
+	<footer>
+		<address>2022-23. ©Todos los derechos reservados. Ruben Diez Sanchez.</address>
+	</footer>
+</html>
