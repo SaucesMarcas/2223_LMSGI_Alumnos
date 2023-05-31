@@ -1,0 +1,152 @@
+/* Estilos generales */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-image: url("../media/images/fondo.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+a {
+    color: #0a8fcb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #0a8fcb;
+    padding: 20px;
+    color: #fff;
+}
+
+h1, h2, h3 {
+	margin: 20;
+    padding: 20px;
+}
+
+
+header img {
+    width: 80px;
+    margin-right: 10px;
+}
+
+ul li{
+    list-style:none;  
+}
+
+nav {
+    background-color: #ccc;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    font-weight: bold;
+    list-style-type: none;
+    display: inline;
+}
+
+.main-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Estilos específicos */
+
+.primer {
+    margin: 20px 0;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.cursiva {
+    font-style: italic;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.verde {
+    color: #00b74a;
+}
+
+#Unidad {
+    margin: 20px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#Unidad header {
+    margin-bottom: 20px;
+}
+
+#Unidad h2 {
+    margin: 0;
+}
+
+.article ol {
+    list-style: decimal inside;
+    margin: 0;
+    padding: 0;
+}
+
+.article li {
+    margin-bottom: 10px;
+}
+
+.article a {
+    color: #333;
+    font-weight: bold;
+}
+
+.article a:hover {
+    text-decoration: none;
+    color: #0a8fcb;
+}
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    position: center;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  address {
+    font-size: 14px;
+    font-style: normal;
+  }

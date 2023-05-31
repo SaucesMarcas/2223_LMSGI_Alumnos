@@ -1,0 +1,15 @@
+<!ELEMENT continentes (#PCDATA)*>
+<!ELEMENT continente (#PCDATA)>
+<!ELEMENT continente (europa,america)>
+<!ELEMENT pais (#PCDATA)*>
+<!ELEMENT pais (españa,francia,suiza,uruguay,argentina,jamaica)>
+<!ELEMENT sistema (#PCDATA)>
+<!ELEMENT superfiecie (#PCDATA)>
+<!ELEMENT moneda (#PCDATA)>
+<!ATTLIST moneda antigua ID #REQUIRED>
+<!ELEMENT idioma (#PCDATA)>
+<!ELEMENT rios (#PCDATA)*>
+<!ELEMENT rio (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT pas (#PCDATA)>
+<!ELEMENT pas (españa,francia,suiza,uruguay,argentina,jamaica)>

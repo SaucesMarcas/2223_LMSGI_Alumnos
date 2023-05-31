@@ -1,0 +1,7 @@
+<!ELEMENT mail (fila+)>
+<!ELEMENT fila (remitente,destinatario,asunto,imagen)>
+<!ELEMENT fecha (dia,mes,anyo)>
+<!ELEMENT remitente (#PCDATA)>
+<!ELEMENT destinatario (#PCDATA)>
+<!ELEMENT asunto (#PCDATA)>
+<!ELEMENT imagen (#PCDATA)>

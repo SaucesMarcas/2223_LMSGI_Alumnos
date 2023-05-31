@@ -1,0 +1,31 @@
+[
+    {
+"Ruben":[
+    {
+    "Color de fondo":"Negro",
+    "Tamaño del texto":12,
+    "Color de texto":"Blanco",
+    "Idioma":["Español","Ingles"],
+    "Pantalla de inicio":true
+}
+],
+"Alex":[
+{
+    "Color de fondo":"Blanco",
+    "Tamaño del texto":12,
+    "Color de texto":"Negro",
+    "Idioma":["Español","Ingles,Aleman"],
+    "Pantalla de inicio":false
+}
+],
+"Rebeca":[
+{
+    "Color de fondo":"Rosa",
+    "Tamaño del texto":20,
+    "Color de texto":"Negro",
+    "Idioma":"Aleman",
+    "Pantalla de inicio":false
+}
+]
+}
+]

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmlns:xsi="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="12-5_Ruben_Alex.xsd">
+<Planta>
+    <tipos>
+        <nombre>Mary Popins</nombre>
+        <cantidad unidadMedida="g">70</cantidad>
+        <precio divisa="euros">70</precio>
+        <calidad>80</calidad>
+        <vendedores>
+            <vendedor>
+                <nombre>Torrente</nombre>
+                <localidad>Madrid</localidad>
+                <experiencia tipo="anyos">18</experiencia>
+            </vendedor>
+            <vendedores>
+                <vendedor>
+                    <nombre>Menin</nombre>
+                    <localidad>Catalonyia</localidad>
+                    <experiencia tipo="meses">5</experiencia>
+                </vendedor>
+                <vendedores>
+                    <vendedor>
+                        <nombre>Ibai</nombre>
+                        <localidad>País Vasco</localidad>
+                        <experiencia tipo="dias">7</experiencia>
+                    </vendedor>
+                </vendedores>
+            </vendedores>
+        </vendedores>
+    </tipos>
+    <tipos>
+        <nombre>Rosa María</nombre>
+        <cantidad unidadMedida="Kg">1</cantidad>
+        <precio divisa="dolares">500</precio>
+        <calidad>60</calidad>
+        <vendedores>
+            <vendedor>
+                <nombre>Torrente</nombre>
+                <localidad>Madrid</localidad>
+                <experiencia tipo="anyos">18</experiencia>
+            </vendedor>
+            <vendedor>
+                <nombre>Ibai</nombre>
+                <localidad>País Vasco</localidad>
+                <experiencia tipo="dias">7</experiencia>
+            </vendedor>
+        </vendedores>
+    </tipos>
+    <tipos>
+        <nombre>Doña Juana</nombre>
+        <cantidad unidadMedida="g">25</cantidad>
+        <precio divisa="pesos">125</precio>
+        <calidad>50</calidad>
+        <experiencia tipo="anyos">18</experiencia>
+        <vendedores>
+            <vendedor>
+                <nombre>Menin</nombre>
+                <localidad>Catalonyia</localidad>
+                <experiencia tipo="meses">5</experiencia>
+            </vendedor>
+        </vendedores>
+    </tipos>
+</Planta>
