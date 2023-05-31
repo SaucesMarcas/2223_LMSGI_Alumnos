@@ -1,0 +1,72 @@
+{
+    "equipo":"Lakers",
+    "color": ["amarillo","morado"],
+    "estadio":"Crypto.com Arena",
+    "entrenador":"Darvin Ham",
+    "plantillaHistorica":true,
+    "web":"https://www.nba.com/lakers",
+    "jugadores": {
+        "base":[
+            {
+                "nombre":"D'Angelo Russell",
+                "dorsal":1
+            },
+            {
+                "nombre":"Dennis Schröder",
+                "dorsal":17
+            }
+        ],
+        "alero":[
+            {
+                "nombre":"Austin Reaves",
+                "dorsal":15
+            },
+            {
+                "nombre":"Lonnie Walker",
+                "dorsal":4
+            },
+            {
+                "nombre":"Malik Beasley",
+                "dorsal":5
+            },
+            {
+                "nombre":"Shaquille Harrison",
+                "dorsal":0
+            }
+        ],
+        "pivot":[
+            {
+                "nombre":"LeBron James",
+                "dorsal":6
+            },
+            {
+                "nombre":"Anthony Davis",
+                "dorsal":3
+            },
+            {
+                "nombre":"Rui Hachimura",
+                "dorsal":8
+            },
+            {
+                "nombre":"Tristan Thompson",
+                "dorsal":9
+            },
+            {
+                "nombre":"Jarred Vanderbilt",
+                "dorsal":2
+            },
+            {
+                "nombre":"Mohamed Bamba",
+                "dorsal":12
+            },
+            {
+                "nombre":"Wenyen Gabriel",
+                "dorsal":35
+            },
+            {
+                "nombre":"Troy Brown Jr.",
+                "dorsal":7
+            }
+        ]
+    }
+}

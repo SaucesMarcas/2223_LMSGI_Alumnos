@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE musica SYSTEM "12.dtd">
+<musica xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="12.xsd">
+    <artista genero="Dance_Tecno">
+        <nombreArtista>The Weeknd</nombreArtista>
+        <numeroOyentes>98675641</numeroOyentes>
+        <info>
+            The Weeknd took over pop music and culture on his own terms filtering RandB, Pop,and hip-hop through 
+            an ambitious widescreen lens. The multi-platinum 3X GRAMMY Award winner has emerged as one of the most successful 
+            and significant artists of the modern era.
+        </info>
+        <activo opcion="true"/>   <!--está activo porque no está jubilado y está de gira-->
+        <disco idDisco="D01" tipoDisco="album" generoDisco="Dance_Tecno">            <!-- idDisco= pattern // tipoDisco=puede ser sencillo o album // valor por defecto album ??? // genero ???-->
+            <nombreDisco>After Hours</nombreDisco>
+            <fechaLanzamiento>2020-03-20</fechaLanzamiento>            <!--tipo date "YYYY-MM-DD"-->
+            <duracionTotal unidad="h">00:56:17</duracionTotal>            <!--unidad fixed h // con una pattern "00:00:00"--> 
+            <discografica>XO</discografica>
+            <canciones numeroCanciones="14">
+                <cancion idCancion="C01">                    <!--idref del disco-->
+                    <nombreCancion>Alone Again</nombreCancion>
+                    <duracion unidadMedida="min">00:04:10</duracion>                    <!-- unidadMedida fixed min // con una pattern "00:00" ???-->
+                    <numeroReproducciones>22365120</numeroReproducciones>
+                    <idioma>
+                        <extranjero valor="true"/> <!--xs:choice <nacional valor="false"/>-->
+                    </idioma>
+                    <letra>
+                        Take off my disguise
+                        I'm living someone else's life
+                        Suppressing who I was inside
+                        So I throw two-thousand ones in the sky
+                        ...
+                    </letra>                    <!--opcional-->
+                    <colaboraciones>                        <!--xs:all COMO MAXIMO 5-->
+                        <colaborador>Lady Gaga</colaborador>
+                    </colaboraciones>                    <!--opcional-->
+                </cancion>
+                <cancion idCancion="C02">
+                    <nombreCancion>Blinding Lights</nombreCancion>
+                    <duracion unidadMedida="min">00:03:20</duracion>
+                    <numeroReproducciones>3426068274</numeroReproducciones>
+                    <idioma>
+                        <extranjero valor="true"/> <!--xs:choice <nacional valor="false"/>-->
+                    </idioma>
+                    <letra>
+                        I've been tryna call
+                        I've been on my own for long enough
+                        Maybe you can show me how to love, maybe
+                        I'm going through withdrawals
+                        ...
+                    </letra>
+                </cancion>
+            </canciones>
+        </disco>
+        <disco idDisco="D02" tipoDisco="sencillo" generoDisco="Pop">            
+            <nombreDisco>Save Your Tears(Remix)</nombreDisco>
+            <fechaLanzamiento>2020-08-09</fechaLanzamiento>            
+            <duracionTotal unidad="h">00:03:11</duracionTotal>           
+            <discografica>XO</discografica>
+            <canciones numeroCanciones="1">
+                <cancion idCancion="C03">                   
+                    <nombreCancion>Save Your Tears(with Ariana Grande)</nombreCancion>
+                    <duracion unidadMedida="min">00:03:11</duracion>                   
+                    <numeroReproducciones>1397943809</numeroReproducciones>
+                    <idioma>
+                        <extranjero valor="true"/> <!--xs:choice <nacional valor="false"/>-->
+                    </idioma>
+                    <letra>
+                        I saw you dancing in a crowded room
+                        You look so happy when I'm not with you
+                        But then you saw me, caught you by surprise
+                        A single teardrop falling from your eye
+                        ...
+                    </letra>                  
+                    <colaboraciones>                        
+                        <colaborador>Ariana Grande</colaborador>
+                    </colaboraciones>                    
+                </cancion>
+            </canciones>
+        </disco>
+    </artista>
+</musica>

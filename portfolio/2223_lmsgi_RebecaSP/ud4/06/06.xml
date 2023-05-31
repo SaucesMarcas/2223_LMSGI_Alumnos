@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="estilos.css"?>
+<!DOCTYPE ejemplos SYSTEM "06.dtd">
+<ejemplos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="06.xsd">
+    <lenguaje>
+        <title>Java</title>
+        <content><![CDATA[
+            #inlude <stdio.h>
+            int main()
+            {
+                float nota;
+                printf("\n Introduzca nota (real): ");
+                scanf("%f",&nota);
+                if(5<=nota){
+                    printf("\n APROBADO");
+                }
+                return 0;
+            }]]>
+        </content>
+    </lenguaje>
+    <lenguaje>
+        <title>HTML</title>
+        <content><![CDATA[
+            <!DOCTYPE html>
+            <html>
+                <body>
+                    <h1>My First Heading</h1>
+                    <p>My first paragraph</p>
+                </body>
+            </html>]]>
+        </content>
+    </lenguaje>
+    <lenguaje>
+        <title>PHP</title>
+        <content></content>
+    </lenguaje>
+</ejemplos>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mail SYSTEM "01.dtd">
+<mail xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="01.xsd">
+    <remitente>
+        pepe@gmail.com
+    </remitente>
+    <destinatario>
+        gaza@gmail.com
+    </destinatario>
+    <destinatario>
+        lauki@gmail.com
+    </destinatario>
+    <fecha>
+        <dia>---17</dia>
+        <mes>--01</mes>
+        <anyo>2023</anyo>
+    </fecha>
+    <asunto>Los Quintos de CostroGonzalo 2023</asunto>
+    <mensaje><![CDATA[
+        Lista de la compra:
+        1. Cocacola
+        2. Kas naranja
+        3. Bitterkas
+        4. Acuarius
+        ]]>
+    </mensaje>
+    <image>
+        <nombre>Foto</nombre>
+        <tipo>png</tipo>
+    </image>
+</mail>

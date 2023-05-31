@@ -1,0 +1,45 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 9 may 2023, 8:50:05
+    Author     : daw1
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Roboto', sans-serif; 
+}
+body{
+    margin: auto;
+    width: 60%;
+}
+.cajaGris{
+    margin: 5px 5px;
+    background-color: lightgray;
+    border: 1px black solid;
+    padding: 10px 15px;
+}
+label{
+    border: 1px black dotted;
+    display: block;
+    margin: 2px;
+}
+input{
+    margin: 0 5px;
+}
+.pregunta{
+    background-color: white;
+    border: 1px black solid;
+    margin-bottom: 5px;
+}
+.enunciadoPregunta{
+    font-weight: bold;
+}
+.botones{
+    margin-top: 10px;
+    text-align: center;
+}
