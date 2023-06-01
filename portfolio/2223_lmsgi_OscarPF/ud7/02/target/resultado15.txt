@@ -1,0 +1,1 @@
+<resultado><libro><title lang="en">Everyday Italian</title><numcaracteres>16</numcaracteres></libro><libro><title lang="en">Harry Potter</title><numcaracteres>12</numcaracteres></libro><libro><title lang="en">XQuery Kick Start</title><numcaracteres>17</numcaracteres></libro><libro><title lang="en">Learning XML</title><numcaracteres>12</numcaracteres></libro></resultado>
