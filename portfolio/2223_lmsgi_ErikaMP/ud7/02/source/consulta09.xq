@@ -1,10 +1,7 @@
 <libros>
   {
     let $x := doc("book")/bookstore/book/price
-    return 
-    <libro>
-      <precio>{$x}</precio>
-    </libro>
+    return $x
   }
   <total>
     {
