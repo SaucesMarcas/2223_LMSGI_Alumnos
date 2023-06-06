@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : notasfinales.xsl
+    Created on : 1 de junio de 2023, 13:13
+    Author     : daw1
+    Description:
+        Purpose of transformation follows.
+-->
+
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:output method="xml"/>
     <xsl:template match="/daw">
-        
         <xsl:element name="daw">
             <xsl:attribute name="curso">
                 <xsl:value-of select="@curso"/>
@@ -17,12 +25,11 @@
                             <xsl:attribute name="sigla">
                                 <xsl:value-of select="@sigla"/>
                             </xsl:attribute>
-                            <xsl:value-of select="round(sum(nota[.!'NP')div 3)"/>
+                            <xsl:value-of select="round(sum(nota[.!='NP'])div 3)"/>                            
                         </xsl:element>
                     </xsl:for-each>
                 </xsl:element>
-            </xsl:for-each>                
+            </xsl:for-each>
         </xsl:element>
-  
-   </xsl:template>
+    </xsl:template>
 </xsl:stylesheet>
