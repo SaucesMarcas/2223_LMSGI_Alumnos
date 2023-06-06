@@ -67,6 +67,12 @@ main p{
 #columna2{
     margin-left: 5rem;
 }
+.linea3 span{
+    display: inline-block;
+}
+#columna2_1{
+    margin-left: 2rem;
+}
 /*IMAGENES DE LA FILA 2*/
 #xml{
     position: relative;
