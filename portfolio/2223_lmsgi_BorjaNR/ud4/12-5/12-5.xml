@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Autores: Ismael Ferreras García
+        Borja Nuñez Refoyo
+-->
+<Planta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="12-5_RubenAlex_Planta.xsd">
+    <tipos cantidad="g">
+
+        <nombre>Anonimo</nombre>
+        <localidad>Benavente</localidad>
+        <experiencia></experiencia>
+
+    </tipos>
+</Planta>

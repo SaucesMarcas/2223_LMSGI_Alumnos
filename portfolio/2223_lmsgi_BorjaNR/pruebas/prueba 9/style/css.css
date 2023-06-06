@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding:0;
+}
+html {
+    font-family: sans-serif;
+    margin-bottom: 5rem;
+}
+
+body {
+    background-color: turquoise;
+
+}
+p{
+    height: 16rem;
+    width: 16rem;
+    border: 5px dotted #005a66;
+    margin: 10px;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: justify;
+    float: left;
+}
+h1{
+    text-align: center;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+main p:first-letter{
+    font-size: 4rem;
+    float: left;
+    line-height: 3rem;
+}
+footer{
+    padding: 0.5rem;
+    background-color: white;
+    color: #005a66;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+}

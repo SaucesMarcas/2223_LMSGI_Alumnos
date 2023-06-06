@@ -1,0 +1,62 @@
+{
+    "nombre_equipo":"Miami Heat",
+    "anyo_creacion":1988,
+    "nombre_estadio":"Miami Dade Arena",
+    "nombre_entrenador":"Erik Spoelstra",
+    "plantilla_historica":false,
+    "web":"https://www.themiamiheatstore.com/",
+    "jugadores":[
+    {
+        "base":[
+        {
+            "nombre":"Kyle Lowry",
+            "dorsal":"7"
+        },
+        {
+            "nombre":"Gabe Vincent",
+            "dorsal":"2"
+        }    
+        ],
+        "alero":[
+        {
+            "nombre":"Jimmy Butler",
+            "dorsal":"22"
+        },
+        {
+            "nombre":"Max Straus",
+            "dorsal":"31"
+        },
+        {
+            "nombre":"Haywood Highsmith",
+            "dorsal":"24"
+        },
+        {
+            "nombre":"Jamal Cain",
+            "dorsal":"8"
+        }
+        ],
+        "pivot":[
+        {
+            "nombre":"Bam Adebayo",
+            "dorsal":"13"
+        },
+        {
+            "nombre":"Cody Zeller",
+            "dorsal":"44"
+        },
+        {
+            "nombre":"Orlando Robinson",
+            "dorsal":"25"
+        },
+        {
+            "nombre":"Udonis Haslem",
+            "dorsal":"40"
+        },
+        {
+            "nombre":"Omer Yurtseven",
+            "dorsal":"77"
+        }
+        ]
+    }
+    ]
+}

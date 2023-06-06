@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    author: Borja
+    date: 17/01/2023
+    description: XML06
+-->
+<!DOCTYPE ejemplos SYSTEM "06.dtd">
+<ejemplos>
+    <lenguaje>
+        <title>java</title>
+        <content><![CDATA[ 
+        #include <stdio.h>
+        int main()
+        {
+            float nota;
+            printf("\n Introduzca nota(real): ");
+            scanf("%f", &nota);
+            if(5<=nota)
+                printf("\n APROBAD0");
+            return 0;
+        }
+        ]]></content>
+    </lenguaje>
+    <lenguaje>
+        <title>html</title>
+        <content><![CDATA[ 
+        <!DOCTYPE html>
+        <html>
+            <body>
+                <h1>My First Heading</h1>
+                <p>My first paragraph</p>
+            </body>
+        </html>
+        ]]></content>
+    </lenguaje>
+</ejemplos>

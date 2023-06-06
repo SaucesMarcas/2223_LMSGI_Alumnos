@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss verson="2.0">
+<channel>
+    <titulo>Pratica 02 Borja Nuñez Refoyo</titulo>
+    <link>http://192.168.2.113</link>
+    <descripcion>Ultimas noticias de mis tareas en Lenguage de Marcas</descripcion>
+    <language>es-es</language>
+    <categoria>Noticias El Pais</categoria>
+    <copyright>2023 Borja Nuñez Refoyo. All right reserved</copyright>
+    <ultimaFechaEdicion>Domingo, 22 Enero 2023 12:31</ultimaFechaEdicion>
+    <fechaPublicacion>22/01/2023 12:39</fechaPublicacion>
+    <diasDescanso>
+        <dia>Viernes</dia>
+        <dia>Sabado</dia>
+        <dia>Domingo</dia>
+    </diasDescanso>
+    <horasDescanso>
+        <hora>00:00</hora>
+        <hora>01:00</hora>
+        <hora>02:00</hora>
+        <hora>03:00</hora>
+        <hora>05:00</hora>
+        <hora>05:00</hora>
+        <hora>06:00</hora>
+        <hora>07:00</hora>
+        <hora>08:00</hora>
+    </horasDescanso>
+    <image>
+        <link>http://192.168.2.113/</link>
+        <titulo>Pratica 01 Borja Nueñez Refoyo</titulo>
+        <url>http://192.168.2.113/ud3/images/xml.jpg</url>
+        <descripcion>Imagen xml</descripcion>
+        <height>42</height>
+        <width>116</width>
+    </image>
+    <objeto>
+        <titulo>Practica de Horarios con HTML</titulo>
+        <link>http://192.168.2.113/ud2/02/index.html</link>
+        <categoria>HTML</categoria>
+        <pubdate>22/01/2022 15:11</pubdate>
+        <enclosure url="http://192.168.2.113/ud3/images/xml.jpg" length="67" type="png" />
+        <descripcion>Otra vez la imagen de xml</descripcion>
+    </objeto>
+    <objeto>
+        <titulo>Practica de posicionamiento en CSS</titulo>
+        <link>D:\Mi unidad\daw1\\2223_LMGSI_BorjaNR\ud2\09\index.html</link>
+        <categoria>CSS</categoria>
+        <pubdate>22/01/2023 18:20</pubdate>
+        <descripcion><![CDATA[<p>Posicionamiento CSS</p>]]></descripcion>
+    </objeto>
+    <objeto>
+        <titulo>Formularios en HTML</titulo>
+        <link>D:\Mi unidad\daw1\2223_LMGSI_BorjaNR\ud2\03\index.html</link>
+        <categoria>HTML</categoria>
+        <pubdate>22/12/2022 16:30</pubdate>
+        <descripcion>Usando formularios</descripcion>
+    </objeto>
+</channel>
+</rss>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cine fecha="2023-02-23">
+    <cartelera>
+       <pelicula id="P01" genero="aventuras" edad="7" tresde="false">
+            <titulo>Uncharted</titulo>
+            <precio moneda="euro">5</precio>
+       </pelicula> 
+       <pelicula id="P02" genero="terror" edad="18" tresde="true">
+            <titulo>Maligno</titulo>
+            <precio moneda="euro">8</precio>
+       </pelicula>
+       <pelicula id="P03" genero="suspense" edad="16" tresde="false">
+            <titulo>Black Phone</titulo>
+            <precio moneda="euro">6</precio>
+       </pelicula>
+       <pelicula id="P04" genero="western" edad="16" tresde="true">
+                <titulo>Los odiosos 8</titulo>
+                <precio moneda="euro">9</precio>
+        </pelicula>
+        <pelicula id="P05" genero="mafia" edad="18" tresde="true">
+                <titulo>Pulp Fiction</titulo>
+                <precio moneda="euro">9</precio>
+        </pelicula>
+    </cartelera>
+    <favoritas>
+        <pelicula idp="P01" posicion="1">34</pelicula>
+        <pelicula idp="P03" posicion="2">30</pelicula>
+   </favoritas>
+    <kiosco>
+        <palomitas tipo="dulces" tamanyo="mediano">
+            <cantidad medida="gramos">100</cantidad>
+            <precio moneda="euro">3</precio>
+        </palomitas>
+        <palomitas tipo="saladas" tamanyo="grande">
+            <cantidad medida="gramos">250</cantidad>
+            <precio moneda="euro">3</precio>
+        </palomitas>
+        <bebida tipo="cocacola" tamanyo="pequeño">
+            <cantidad medida="litros">0.25</cantidad>
+            <precio moneda="euro">1.5</precio>
+        </bebida>
+        <bebida tipo="fanta" tamanyo="mediano">
+            <cantidad medida="litros">0.5</cantidad>
+            <precio moneda="euro">2.5</precio>
+        </bebida>
+    </kiosco>
+    <formaPago>
+        <!-- efectivo, bizum, tarjeta, criptomoneda-->
+        <bizum/>
+    </formaPago>
+</cine>

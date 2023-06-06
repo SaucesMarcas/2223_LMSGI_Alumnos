@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+	Descripción: EX03
+	Autor: Borja Nuñez Refoyo
+	Fecha creación/modificación:	21/03/2023
+-->
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="icon" type="imagen/favicon" href="./images/favicon.ico">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>EX03 Borja Nuñez Refoyo</title>
+	</head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Datos fiscales</legend>
+                <div>
+                    <label for="paro">
+                        <input checked type="radio" name="situacionFiscal" id="paro" value="paro">En paro
+                    </label>
+                </div>
+                <div>
+                    <label for="autonomo">
+                        <input checked type="radio" name="situacionFiscal" id="autonomo" value="autonomo">Autónomo
+                    </label>
+                </div>
+                <div>
+                    <label for="cajena">
+                        <input checked type="radio" name="situacionFiscal" id="cajena" value="cajena">Por c.ajena
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Datos personales</legend>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="Nombre">
+                </div><br>
+                <div>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="Apellidos">
+                </div>
+                <div>
+                    <label for="idSueldo">Sueldo:</label>
+                    <select id="idSueldo">
+                        <option value="400" selected>Más de 400 euros</option>
+                        <option value="2000">Más de 2000 euros</option>
+                    </select>
+                </div>
+                <div>
+					<label for="enfermedad"><input type="checkbox" name="cargas" id="enfermedad" value="enfermedad">Con enfermedad profesional</label>
+				</div>
+				<div>
+					<label for="padres"><input type="checkbox" name="cargas2" id="padres" value="padres">Con padres a cargo</label>
+				</div>
+				<div>
+					<label for="hijos"><input type="checkbox" name="cargas3" id="hijos" value="hijos">Con hijos a cargo</label>
+				</div>
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </body>
+</html>

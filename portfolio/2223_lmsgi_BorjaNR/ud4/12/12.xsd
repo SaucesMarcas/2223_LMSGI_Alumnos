@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:annotation>
+        <xs:documentation>
+            Realizado por Ismael Ferreras y Borja Nuñez
+        </xs:documentation>
+        <xs:appinfo>
+            Recogida de información de un cine
+        </xs:appinfo>
+    </xs:annotation>
+    <!-- Declaracion de tipos-->
+    <xs:simpleType name="tipoPositivo">
+        <xs:restriction base="xs:float">
+            <xs:minExclusive value="0" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipoTamanyo">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="pequeño"/>
+            <xs:enumeration value="mediano"/>
+            <xs:enumeration value="grande"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipoPalomitas">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="saladas"/>
+            <xs:enumeration value="dulces"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipoBebidas">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="cocacola"/>
+            <xs:enumeration value="fanta"/>
+            <xs:enumeration value="agua"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <!-- Declaracion de grupos-->
+    <xs:group name="grupoComida">
+        <xs:sequence>
+            <xs:element name="cantidad">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:float">
+                            <xs:attribute name="medida" type="xs:string"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="precio">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:float">
+                            <xs:attribute name="moneda" type="xs:string" fixed="euro"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:group>
+
+    <xs:attributeGroup name="atributosPelicula">
+        <xs:attribute name="genero" type="xs:string"/>
+        <xs:attribute name="edad" type="xs:int"/>
+        <xs:attribute name="tresde" type="xs:boolean"/>
+        <xs:attribute name="id" type="xs:string"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="atributosFovoritas">
+        <xs:attribute name="idp" type="xs:string"/>
+        <xs:attribute name="posicion" type="xs:int"/>
+    </xs:attributeGroup>
+    <!-- Declaracion de elementos-->
+    <xs:element name="cine">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="cartelera">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="pelicula" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="titulo" type="xs:string"/>
+                                        <xs:element name="precio">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:float">
+                                                        <xs:attribute name="moneda" type="xs:string" fixed="euro"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attributeGroup ref="atributosPelicula"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="favoritas">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="pelicula" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:int">
+                                            <xs:attributeGroup ref="atributosFovoritas"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="kiosco">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="palomitas" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:group ref="grupoComida"></xs:group>
+                                    <xs:attribute name="tipo" type="tipoPalomitas" default="saladas"/>
+                                    <xs:attribute name="tamanyo" type="tipoTamanyo"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="bebida" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:group ref="grupoComida"></xs:group>
+                                    <xs:attribute name="tipo" type="tipoBebidas"/>
+                                    <xs:attribute name="tamanyo" type="tipoTamanyo"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="formaPago">
+                    <xs:complexType>
+                        <xs:choice>
+                            <xs:element name="bizum" type="tipoPositivo"/>
+                            <xs:element name="tarjeta" type="tipoPositivo"/>
+                            <xs:element name="efectivo" type="tipoPositivo"/>
+                            <xs:element name="criptomoneda" type="tipoPositivo"/>
+                        </xs:choice>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="fecha" type="xs:date"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

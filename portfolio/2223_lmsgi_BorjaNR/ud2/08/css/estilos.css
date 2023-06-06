@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+@font-face{
+    font-family: 'Akronim';
+    src:url(../fonts/Akronim-Regular.ttf);
+}
+a{
+    margin: 20px;
+}
+.logo1{
+    font-size: 4rem;
+    font-family: 'Roboto';
+    color:darkcyan;
+}
+.logo2{
+    font-size: 4rem;
+    font-family: 'Gill Sans';
+    color:darkcyan;
+}
+.logo3{
+    font-size: 4rem;
+    font-family: 'Trebuchet MS';
+    color:darkcyan;
+}
+.logo4{
+    font-size: 4rem;
+    font-family: 'Lucida Sans';
+    color:darkcyan;
+}
+span{
+    color:black;
+}
+.Parrafo1{
+    font-family: Verdana;
+}
+.Parrafo2{
+    font-family: serif;
+}
+.Parrafo3{
+    font-family: monospace;
+}
+.Parrafo4{
+    font-family: 'Roboto';
+}
+.Parrafo5{
+    font-family: 'Akronim';
+    font-size: 24px;
+}
+.Parrafo6{
+    font-family: 'Montserrat';
+}
+.content{
+    width: 500px;
+    padding-top: 25px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    border: 1px;
+    border-top: dashed red;
+    border-bottom: dashed green;
+    border-left: dotted orange;
+    border-right: dotted red;
+    display: block;
+}
+.content div{
+    width: 30%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid red;
+    margin: 20px;
+    background-color: royalblue;
+}
+.content div:nth-child(2n+1){
+    display:block
+}
+.content div:nth-child(2n){
+    display: block;
+}

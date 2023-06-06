@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    author: Borja
+    date: 17/01/2023
+    description: XML07
+-->
+<!DOCTYPE grupo SYSTEM "07.dtd">
+<grupo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="07.xsd">
+    <estudiante codigo="T01">
+        <nombre>Maria</nombre>
+    </estudiante>
+    <estudiante codigo="T02" tutor="T01">
+        <nombre>Rebe</nombre>
+    </estudiante>
+    <estudiante codigo="T03" tutor="T01 T02">
+        <nombre>Paco</nombre>
+    </estudiante>   
+</grupo>

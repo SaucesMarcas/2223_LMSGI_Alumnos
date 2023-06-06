@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    author: Borja
+    date: 17/01/2023
+    description: XML04
+-->
+<!DOCTYPE curriculum SYSTEM "04.dtd">
+<curriculum>
+    <nombre>Mario</nombre>
+    <apellidos>Gonzalez</apellidos>
+    <anyoNacimiento>2001</anyoNacimiento>
+    <residencia>
+        <ciudad>Valladolid</ciudad>
+        <pais>España</pais>
+    </residencia>
+    <datos>
+        <telefono>684736245</telefono>
+        <correo>mario@gmail.com</correo>
+        <linkedin>mariogonzprz</linkedin>
+        <descripcion>
+        Profesional responsable y eficiente en busca de un puesto como dependienta. 
+        Mi objetivo es obtener experiencia en el área de atención al cliente y poder 
+        ofrecer una experiencia de compra personalizada y de gran calidad a sus 
+        clientes. Cuento con habilidades de cara a la comunicación, al trabajo en 
+        equipo y al aprendizaje rápido.
+        </descripcion>
+        <competencias nivel="Alto">
+            diseño y maquetacion de web
+        </competencias>
+        <competencias nivel="Medio">
+            productividad
+        </competencias>
+        <competencias nivel="Bajo">
+            orientacion al cliente
+        </competencias>
+        <formacion>
+            <titulacion anyo="2020" centro="IES LOS SAUCES">Educacion Secundaria</titulacion>
+            <titulacion anyo="2022" centro="IES LOS SAUCES">Sistemas Microinformaticos y Redes</titulacion>
+        </formacion>
+        <experiencia>
+            <puesto>Puesto de trabajo2</puesto>
+            <empresa>Empresa2</empresa>
+            <anyoInicio>2021</anyoInicio>
+            <anyoFinal>2022</anyoFinal>
+        </experiencia>
+    </datos>
+</curriculum>

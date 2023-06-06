@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+	Descripción: Hola Mundo
+	Autor: Borja Nuñez Refoyo
+	Fecha creación/modificación:	10/11/2022
+-->
+<html lang="es">
+	<head>
+		<meta  charset="UTF-8">
+		<title>Estilos</title>
+		<style>
+			li:first-letter {
+				color:red; text-transform:uppercase;
+			}
+			li:before{
+			content: url(images/favicon.ico);
+			}
+            ul{
+                list-style: none;
+            }
+			span:before{
+				content: url(images/tigre.png);
+			}
+			li:nth-child(2n){
+				font-weight:bold;
+			}
+			li:nth-child(2n+1){
+				font-style:italic;
+			}
+			.color{
+				font-size:large; color:yellowgreen;
+			}
+			.bordes{
+				border:1px solid black;
+			}
+			.ruido{
+				background-color:royalblue;
+			}
+			.colores{
+				color:aquamarine;
+			}
+			[class*=color]{
+				font-size:3em;
+			}
+			div {
+				width: 250px;
+				height: 250px;
+				margin: 20px;
+				border: 5px solid black;
+				border-top-color: yellowgreen;
+				border-bottom-color: yellowgreen;
+				border-left-style: dotted;
+				background-color: tomato;
+				padding: 30px;
+				background-image: url('images/medusa.png'), url('images/abeja.png'),url('images/oso.png'),url('images/camaleon.png'), url('images/hamster.png');
+				background-size: 25%, 25%, 25%, 25%, 25%;
+				background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+				background-position: 50% 50%, 25% 25%, 75% 25%, 75% 75%, 25% 75%;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+            <li>un<span>patitos</span></li>
+            <li>dos<span>tigres</span></li>
+            <li>tres<span>canguros</span></li>
+        </ul>
+		<div>
+			<p class="color bordes">Musica</p>
+			<p class="bordes">Viaje a Madrid</p>
+			<p class="ruido colores">Viaje a IFEMA</p>
+		</div>
+		<div class="2">
+
+		</div>
+	</body>
+	</html>
