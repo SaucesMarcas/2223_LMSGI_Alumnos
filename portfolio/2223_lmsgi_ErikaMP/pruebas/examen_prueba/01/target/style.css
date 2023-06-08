@@ -1,0 +1,53 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 8 jun 2023, 13:33:40
+    Author     : daw1
+*/
+body {
+    width: 1024px;
+    margin: 0 auto;
+    background-image: url("../../images/general.jpg");
+}
+
+a {
+    
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    width: 1024px;
+    background-color: #1670AD;
+    color: white;
+}
+
+table {
+    width: 1024px;
+    height: 248px;
+}
+
+thead {
+    background-color: #1670AD;
+    color: white;
+}
+
+tbody {
+    margin: 0 auto;
+    background-color: #1670AD;
+    color: white;
+}
+
+td {
+    width: 150px;
+}
+
+footer {
+    width: 1024px;
+    background-color: #1670AD;
+    color: white;
+}
+
+
