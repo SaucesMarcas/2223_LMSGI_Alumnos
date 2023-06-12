@@ -1,0 +1,128 @@
+/* 
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on: 11 Jun 2023, 17:49:11
+    Author: daw1
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+li {
+    font-size: 1.8rem;
+    margin-left: 2rem;
+}
+
+header img {
+    float: left;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+h1 {
+    color: green;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid green;
+    letter-spacing: 0.4rem;
+}
+
+article {
+    border: 1px solid green;
+    border-radius: 50px 50px 0 0;
+    color: green;
+    margin: 1rem;
+    background-color: green;
+    width: 25%;
+    margin-bottom: 4rem;
+    display:inline-table;
+}
+
+ol {
+    background-color: white;
+}
+
+article header {
+    color: white;
+    border-radius: 5% 5% 0 0;
+}
+
+footer {
+    background-color: green;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0.4rem;
+    clear: both;
+    float: left;
+    color: white;
+}
+
+footer th {
+    border: 1px solid white;
+}
+
+footer a {
+    float: right;
+}
+
+ol div {
+    margin-left: 40px;
+    padding: 2px;
+}
+
+ol div a {
+    margin-left: 0px;
+}
+
+section {
+    margin-left: 200px;
+}
+
+section ol {
+    list-style: none;
+}
+
+section ol li {
+    font-size: 1.8rem;
+    margin-left: 2rem;
+}
+
+section header img {
+    float: left;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+section h1 {
+    color: green;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid green;
+    letter-spacing: 0.4rem;
+}
