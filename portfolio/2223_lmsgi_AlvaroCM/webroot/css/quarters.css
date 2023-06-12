@@ -203,3 +203,10 @@ button a {
     url("/public/images/altumcode-dMUt0X3f59Q-unsplash.jpg");
 }
 
+
+.themes h1{
+  color: white;
+  background-color: rgba(50, 50, 50, 1);
+  font-size: 40px;
+  padding: 10px;
+}

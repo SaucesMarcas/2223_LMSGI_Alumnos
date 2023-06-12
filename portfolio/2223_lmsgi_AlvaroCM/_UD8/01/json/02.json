@@ -1,0 +1,21 @@
+{
+	"nombre_equipo": "Los Lakers",
+	"color_equipacion": "Púrpura y Oro",
+	"nombre_estadio": "Nombre estadio",
+	"nombre_entrenador": "Frank Vogel",
+	"plantilla_historica": false,
+	"pagina_web": null,
+	"jugadores": {
+	  "base": [
+		{ "nombre": "Russell Westbrook", "dorsal": 0 }
+	  ],
+	  "alero": [
+		{ "nombre": "LeBron James", "dorsal": 6 },
+		{ "nombre": "Talen Horton-Tucker", "dorsal": 5 }
+	  ],
+	  "pivot": [
+		{ "nombre": "Anthony Davis", "dorsal": 3 }
+	  ]
+	}
+  }
+  

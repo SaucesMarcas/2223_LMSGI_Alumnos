@@ -1,0 +1,33 @@
+{
+  "usuarios": {
+    "Pedro": [
+      {
+        "color_de_fondo": "gris",
+        "tamaño_del_texto": 23,
+        "color_del_texto": "blanco",
+        "idioma": "Español",
+        "pantalla_de_inicio": "pantalla1"
+      }
+    ],
+
+    "Juan": [
+      {
+        "color_de_fondo": "blanco",
+        "tamaño_del_texto": 13,
+        "color_del_texto": "gris",
+        "idioma": "Ingles",
+        "pantalla_de_inicio": "pantalla2"
+      }
+    ],
+
+    "Maria": [
+      {
+        "color_de_fondo": "morado",
+        "tamaño_del_texto": 33,
+        "color_del_texto": "blanco",
+        "idioma": "Aleman",
+        "pantalla_de_inicio": "pantalla3"
+      }
+    ]
+  }
+}
