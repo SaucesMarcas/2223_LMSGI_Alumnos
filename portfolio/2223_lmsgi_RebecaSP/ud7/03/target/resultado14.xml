@@ -1,0 +1,6 @@
+<baile><nombre>Cha-cha-cha</nombre><precio>80</precio><precioIVA>92</precioIVA></baile>
+<baile><nombre>Merengue</nombre><precio>75</precio><precioIVA>86.25</precioIVA></baile>
+<baile><nombre>Pasodoble</nombre><precio>320</precio><precioIVA>368</precioIVA></baile>
+<baile><nombre>Rock</nombre><precio>30</precio><precioIVA>34.5</precioIVA></baile>
+<baile><nombre>Salsa</nombre><precio>32</precio><precioIVA>36.8</precioIVA></baile>
+<baile><nombre>Tango</nombre><precio>27</precio><precioIVA>31.05</precioIVA></baile>

@@ -1,22 +1,6 @@
---CORRECCIONES DEL PRIMER TRIMESTRE--
-Practica01 -> En el cuerpo de cada article he añadido un div agrupando el blackquote y el figure.
-Practica02 -> SIN CORRECCION
-Practica03 -> He añadido en el tag select los atributos id, name y form.
-Practica04 -> SIN CORRECCION (No se mejorar el css)
-Practica05 -> SIN CORRECCION
-Practica06 -> SIN CORRECCION (No se optimizar las reglas del CSS)
-Practica07 -> SIN CORRECCION (No esta corregida)
-Practica08 -> SIN CORRECCION
-Practica09 -> SIN CORRECCION (El pie de pagina ya tiene el año del curso)
-Practica10 -> He añadido un padding mayor al pie de pagina.
-Practica11 -> SIN CORRECCION
-Practica12 -> SIN CORRECCION (No esta corregida)
-
 ///URL DE MI SERVIDOR///
 +++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++++++++++
 +++++ http://192.168.2.108/ +++++
 +++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++++++++++
-
-Token passwork: 

@@ -70,9 +70,15 @@
                                         </xsl:for-each>
                                         <tr>
                                             <td>Número de aprobados</td>
-                                            <th><xsl:value-of select="count(//nota[@evaluacion='1' and ../@expediente=current()/expediente and text()>=5])"/></th>
-                                            <th><xsl:value-of select="count(//nota[@evaluacion='2' and ../@expediente=current()/expediente and text()>=5])"/></th>
-                                            <th><xsl:value-of select="count(//nota[@evaluacion='3' and ../@expediente=current()/expediente and text()>=5])"/></th>
+                                            <th>
+                                                <xsl:value-of select="count(//nota[@evaluacion='1' and ../@expediente=current()/expediente and text()>=5])"/>
+                                            </th>
+                                            <th>
+                                                <xsl:value-of select="count(//nota[@evaluacion='2' and ../@expediente=current()/expediente and text()>=5])"/>
+                                            </th>
+                                            <th>
+                                                <xsl:value-of select="count(//nota[@evaluacion='3' and ../@expediente=current()/expediente and text()>=5])"/>
+                                            </th>
                                         </tr>
                                     </table>
                                 </td>
@@ -84,3 +90,16 @@
         </html>
     </xsl:template>
 </xsl:stylesheet>
+<!--
+SOLUCION DE AMOR - SUSTITUIR EL IF POR UN CHOOSE Y EL FOR-EACH POR UNA PLANTILLA
+
+<xsl:choose>
+    <xsl:when test="$NumExpediente='0'">
+         <xsl:apply-templates select="alumnos/alumno">
+            <xsl:sort data-type="number" select="expediente"/>
+        </xsl:apply-templates>
+    </xsl:when>
+    <xsl:otherwise>
+        <xsl:apply-templates select="alumnos/alumno[expediente=$NumExpediente]"/>
+    </xsl:otherwise>                        
+</xsl:choose>-->

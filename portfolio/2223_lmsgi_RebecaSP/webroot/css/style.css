@@ -71,7 +71,9 @@ main p{
     display: inline-block;
 }
 #columna2_1{
-    margin-left: 2rem;
+    position: relative;
+    left: 1.8rem;
+    top: -11.5rem;
 }
 /*IMAGENES DE LA FILA 2*/
 #xml{
@@ -99,7 +101,7 @@ main p{
 #xslt{
     position: relative;
     left: 41rem;
-    top: -15.5rem;
+    top: -16rem;
     width: 11rem;
 }
 #xquery{
