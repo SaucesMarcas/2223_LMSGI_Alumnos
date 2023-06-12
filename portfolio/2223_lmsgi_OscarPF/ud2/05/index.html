@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+	Descripcion: Mapa de imagen 05
+	Autor: Oscar Pascual Ferrero
+	Fecha creacion/modificacion: 12/06/2023
+-->
+<html lang="es"> 
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Oscar Pascual Ferrero">
+		<meta name="description" content="HTML mapa de imagen con varias areas">
+		<style>
+			body{background-color:#e0e1eb;
+				color:#64CBD6;
+			}
+			h1{color: white;}
+		</style>
+		<link rel="icon" type="image/png" href="/portfolio/2223_lmsgi_OscarPF/webroot/media/images/favicon.ico">
+		<title>HTML 05 Oscar Pascual Ferrero</title>
+	</head>
+	<body>
+		<header>
+			<h1>MAPA DE IMAGEN: Gatete</h1>
+		</header>
+		<main>
+			<h2>Haz click en una parte de la imagen y te llevará a un enlace externo:</h2>
+			<img src="images/gato.jpg" alt="gato" usemap="#image-map">
+			<map name="image-map">
+                <area target="" alt="Piedra" title="Piedra" href="https://www.dispiedra.com/" coords="76,749,636,779" shape="rect">
+                <area target="" alt="Gato" title="Gato" href="https://www.mundoanimalia.com/venta/gatos/" coords="529,191,593,196,625,178,638,216,670,283,620,426,627,509,580,574,571,682,621,709,589,740,265,729,226,686,220,615,222,561,231,527,242,477,289,425,341,383,404,365,429,365,445,324,434,290,432,250,445,225,443,176,467,122" shape="poly">
+                <area target="" alt="Aprende a desenfocar" title="Aprende a desenfocar" href="https://www.xatakandroid.com/tutoriales/como-desenfocar-fondo-foto-google-fotos" coords="968,407,302" shape="circle">
+            </map>
+		</main>
+		<footer>            
+            <address>&copy; 2022-2023 IES Los Sauces Todos los derechos reservados. Optimizado para Chrome. Oscar Pascual Ferrero
+                <a href="https://github.com/Discreppo"><img style="width: 25px; height: 25px;" src="webroot/media/images/github.svg"></a>
+            </address>
+            
+        </footer>
+	</body>
+</html>

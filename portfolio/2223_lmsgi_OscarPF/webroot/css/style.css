@@ -8,6 +8,7 @@ html{
     background-image: url(../media/images/fondo.jpg) ;
      background-size: cover;
      background-position: center;
+     height: 4000px;
 }
 body {
      font-size: 20px;
