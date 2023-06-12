@@ -1,6 +1,10 @@
 {
-    "color_fondo": "azul",
-    "tamaño_texto": 24,
-    "color_texto": "negro",
-    "idioma": "es"
+    "nombre": "Rebeca",
+    "configuracion": {
+        "color_fondo": "azul",
+        "tamaño_texto": 24,
+        "color_texto": "negro",
+        "idioma": "es",
+        "pantalla": true
+    }
 }
