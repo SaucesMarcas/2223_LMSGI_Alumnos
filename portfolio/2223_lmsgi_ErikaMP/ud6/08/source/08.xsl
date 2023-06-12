@@ -25,7 +25,7 @@
             </head>
             <body>
                 <h1><xsl:value-of select="concat(@curso,'ºDAW Curso 2021/2022')"/></h1>
-                <table>
+                <table class="padre">
                     <tr>
                         <th>Expediente</th>
                         <th>Nombre y Apellidos</th>
