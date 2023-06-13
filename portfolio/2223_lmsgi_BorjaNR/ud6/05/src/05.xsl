@@ -16,7 +16,7 @@
          syntax recommendation http://www.w3.org/TR/xslt 
     -->
     <xsl:template match="/examen">
-    <xsl:call-template name="docTipo"/>
+
         <html>
             <head>
                 <xsl:call-template name="metaweb">
