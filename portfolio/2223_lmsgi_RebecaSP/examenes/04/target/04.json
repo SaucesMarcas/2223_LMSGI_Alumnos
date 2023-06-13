@@ -1,0 +1,30 @@
+
+            {
+            "lanzamientos": [
+                {
+                "distibucion":"ubuntu",
+                "version":"17.10"
+                },
+                {
+                "distibucion":"ubuntu",
+                "version":"18.04"
+                },
+                {
+                "distibucion":"ubuntu",
+                "version":"22.04"
+                },
+                {
+                "distibucion":"ubuntu",
+                "version":"22.04"
+                },
+                {
+                "distibucion":"redhat",
+                "version":"8.4"
+                },
+                {
+                "distibucion":"redhat",
+                "version":"8.4"
+                },  
+            ]
+            }
+        

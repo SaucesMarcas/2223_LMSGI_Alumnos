@@ -114,7 +114,7 @@ main p{
     float:left;
     margin: 20px;
     width: 47%;
-    height: 22rem;
+    height: 32rem;
     border: 2px solid #904B6B;
     background-color: rgba(255,255,255, 0.5);
 }
@@ -122,7 +122,7 @@ main p{
 #foto_exam{
     position: relative;
     left: 42rem;
-    top: -11rem;
+    top: -21rem;
     width: 10rem;
 }
 #json{
@@ -214,4 +214,15 @@ address{
     /*text-align: center;*/
     color: white;
     /*background-color:rgb(21, 172, 121);*/
+}
+.ult_exam li{
+    display:block;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    margin-bottom: 5px;
+}
+.ult_exam li a{
+    color: #904B6B;
+    border: 1px solid #904B6B;
+    padding: 0 0.2rem;
 }

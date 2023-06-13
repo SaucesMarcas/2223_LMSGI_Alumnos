@@ -1,0 +1,58 @@
+
+/* 
+    Created on : 8 jun 2023, 20:45:02
+    Author     : amor
+*/
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+header{
+    width: 70%;
+    margin: 20px auto;
+    text-align: center;
+}
+h1, h2{
+    color: limegreen;
+}
+header img{
+    width: 100px;
+}
+.main{
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid black;
+}
+ul{
+    margin-left: 150px;
+}
+li{
+    margin: 5px;
+}
+a{
+    text-decoration: none;
+    color: green;
+}
+a:hover{
+    background-color: limegreen;
+}
+table{
+    width: 100%;
+}
+td{
+    padding: 10px;
+    border: 1px solid black;
+    width: 33%;
+    text-align: center;
+}
+td img{
+    height: 150px;
+    margin: 10px;
+}
+td div{
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding: 5px;
+}
