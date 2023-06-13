@@ -29,6 +29,12 @@ section {
     text-align: center;
 }
 
+.reborde2 {
+    border: 1px solid whitesmoke;
+    width: 100px;
+    text-align: center;
+}
+
 .unidad {
     display: flex;
     flex-direction: row;
