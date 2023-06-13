@@ -1,0 +1,48 @@
+
+/* 
+    Created on : 8 jun 2023, 20:45:02
+    Author     : amor
+*/
+html{
+    margin: 0 auto;
+   
+}
+
+body{
+    margin: 0 auto;
+    text-align: center;
+}
+
+table{
+    border: 1px solid green;
+}
+
+th{
+    border: 1px solid green;
+    width: 400px;
+    height: 200px;
+
+}
+
+span{
+    display: block;
+}
+
+header{
+    text-align: center;
+    color: green;
+}
+
+table{
+    text-align: center;
+}
+
+li{
+    text-align: left;
+    margin-left: 35%;
+}
+a{
+    text-decoration: none;
+    color: green;
+    
+}

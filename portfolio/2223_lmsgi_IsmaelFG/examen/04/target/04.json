@@ -1,0 +1,45 @@
+
+            {
+            "lanzamientos": [
+                                           
+                                          
+                       
+                                         
+                                           
+                                           
+            
+         
+                                         {
+                                          "distribucion":"ubuntu",                      
+                                          "version":"17.10"
+                                           },
+                                            
+                                         {
+                                          "distribucion":"ubuntu",                      
+                                          "version":"18.04"
+                                           },
+                                            
+                                         {
+                                          "distribucion":"ubuntu",                      
+                                          "version":"22.04"
+                                           },
+                                            
+                                         {
+                                          "distribucion":"ubuntu",                      
+                                          "version":"22.04"
+                                           },
+                                            
+                                         {
+                                          "distribucion":"redhat",                      
+                                          "version":"8.4"
+                                           },
+                                            
+                                         {
+                                          "distribucion":"redhat",                      
+                                          "version":"8.4"
+                                           },
+                                           
+                                    ]
+            
+            }
+        
