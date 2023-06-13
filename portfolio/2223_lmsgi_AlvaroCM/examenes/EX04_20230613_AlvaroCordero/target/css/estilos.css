@@ -1,0 +1,30 @@
+
+/* 
+    Created on : 8 jun 2023, 20:45:02
+    Author     : amor
+*/
+*{
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+}
+
+li {
+    margin-left: 100px;
+}
+
+ul {
+    padding: 10px;
+    display: flex;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+}
