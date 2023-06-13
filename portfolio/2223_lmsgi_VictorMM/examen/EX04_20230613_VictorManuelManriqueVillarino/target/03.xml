@@ -1,0 +1,9 @@
+<ultimaversion><lanzamientos>
+        <lanzamiento distribucion="manjaro" version="17.1" año="2017" mes="12" escritorio="xfce" kernel="4.14"/>
+        <lanzamiento distribucion="mint" version="19" año="2018" mes="6" escritorio="cinnamon" kernel="4.15"/>
+        <lanzamiento distribucion="ubuntu" version="22.04" año="2022" mes="04" escritorio="" kernel="5.4"/>
+        <lanzamiento distribucion="ubuntu" version="22.04" año="2022" mes="04" escritorio="gnome" kernel="5.4"/>
+        <lanzamiento distribucion="debian" version="9" año="2017" mes="6" escritorio="gnome" kernel="4.09"/>
+         <lanzamiento distribucion="redhat" version="8.4" año="2021" mes="6" escritorio="" kernel="4.18"/>
+         <lanzamiento distribucion="redhat" version="8.4" año="2021" mes="6" escritorio="gnome" kernel="4.18"/>
+    </lanzamientos></ultimaversion>

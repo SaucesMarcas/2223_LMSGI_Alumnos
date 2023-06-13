@@ -1,0 +1,29 @@
+
+/* 
+    Created on : 8 jun 2023, 20:45:02
+    Author     : amor
+*/
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+
+ul{
+    padding: 2px;
+    list-style: circle;
+}
+li{
+    color: limegreen;
+}
+.content-1{
+    border: 1px solid green;
+    float: left;
+    margin:3px;
+    
+}
+
+div div{
+    text-align: center;
+}
