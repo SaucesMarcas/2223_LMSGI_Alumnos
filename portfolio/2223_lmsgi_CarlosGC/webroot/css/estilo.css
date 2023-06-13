@@ -5,6 +5,7 @@
 body {
     background-color: black;
     color: #fff;
+    height: 1400px;
 }
 
 body header h1 {
@@ -80,7 +81,7 @@ article {
 p {
     display: inline;
     margin-right: 10px;
-    border: solid 1px grey
+    border: solid 1px grey;
 }
 
 footer {

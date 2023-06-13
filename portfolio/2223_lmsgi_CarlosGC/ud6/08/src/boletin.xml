@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:output method="html" indent="yes" />
+    <xsl:template match="/daw">
+        <xsl:param name="NumExpediente" select="0"/>
+        <html>
+            <head>
+                <style>
+                    
+                </style>
+            </head>
+            <body>
+                <div>
+                    <h1>
+                        <xsl:value-of select="@curso"/>º DAW Curso 2021/2022</h1>
+                </div>
+                <table>
+                    <tr>
+                        <th>Expediente</th>
+                        <th>Nombre y Apellidos</th>
+                        <th>Calificaciones</th>
+                    </tr>
+                    <xsl:for-each select="alumnos/alumno">
+                        <tr>
+                            <td>
+                                <xsl:value-of select="expediente"/>
+                            </td>
+                            <td>
+                                <xsl:value-of select="concat(nombre/text(),' ',apellido1/text(),' ',apellido2/text())"/>
+                            </td>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <th>Modulo</th>
+                                        <th>1º Evaluacion</th>
+                                        <th>2º Evaluacion</th>
+                                        <th>3º Evaluacion</th>
+                                    </tr>
+                                    <xsl:for-each select="//boletin/calificacion[@expediente=current()/expediente]">
+                                        <tr>
+                                            <td>
+                                                <xsl:value-of select="document('../data/modulos.xml')//modulo[sigla=current()/@sigla/nombre/text()]"/>
+                                            </td>
+                                            <xsl:for-each select="nota">
+                                                <td>
+                                                    <xsl:choose>
+                                                        <xsl:when test="text()!='NP'">
+                                                            <xsl:value-of select="text()"/>                                                            
+                                                        </xsl:when>
+                                                        <xsl:otherwise>
+                                                            0
+                                                        </xsl:otherwise>
+                                                    </xsl:choose>
+                                                </td>
+                                            </xsl:for-each>
+                                        </tr>     
+                                    </xsl:for-each>
+                                    <tr>
+                                        <td>Numero de aprobados</td>
+                                        <th>
+                                           <xsl:value-of select="count(//nota[@evaluacion='1' and ../expediente=current()/expediente and text()>=5])"/>
+                                        </th>
+                                        <th><xsl:value-of select="count(//nota[@evaluacion='1' and ../expediente=current()/expediente and text()>=5])"/></th>
+                                        <th><xsl:value-of select="count(//nota[@evaluacion='1' and ../expediente=current()/expediente and text()>=5])"/></th>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </xsl:for-each>
+                </table>
+            </body>           
+        </html>
+    </xsl:template>
+</xsl:stylesheet>

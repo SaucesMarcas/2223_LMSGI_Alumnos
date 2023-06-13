@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <xsl:output method="html" indent="yes" />
+<xsl:param name="NumExpediente" select="0"/>
+  
+
+  <xsl:template match="/">
+    <html>
+      <head>
+        <style type="text/css">
+          body {
+                    font-family: Arial, sans-serif;                    
+                    color: white;
+                    width: 1024px;
+                    margin: 0 auto;
+                    }
+                    h1 {
+                    text-align: center;
+                    color: #d1b841;
+                    background-color: #9c8c3f;
+                    }
+                    table {
+                    border-collapse: collapse;
+                    width: 100%;
+                    }
+                    th, td {
+                    border: 1px solid white;
+                    padding: 8px;
+                    text-align: left;
+                    }
+        </style>
+      </head>
+      <body>
+        <h1>Boletín de Notas</h1>
+        <xsl:apply-templates select="daw/alumnos/alumno[expediente = $NumExpediente or $NumExpediente = 0]" />
+      </body>
+    </html>
+  </xsl:template>
+
+  <xsl:template match="alumno">
+    <xsl:variable name="expediente" select="expediente" />
+    <h2>Alumno: <xsl:value-of select="nombre" /> <xsl:value-of select="apellido1" /> <xsl:value-of select="apellido2" /></h2>
+    <table>
+      <tr>
+        <th>Módulo</th>
+        <th>Profesor</th>
+        <th>Notas</th>
+      </tr>
+      <xsl:apply-templates select="//calificacion[@expediente = $expediente]" />
+    </table>
+  </xsl:template>
+
+  <xsl:template match="calificacion">
+    <tr>
+      <td><xsl:value-of select="@sigla" /></td>
+      <td><xsl:value-of select="$modulos[sigla = current()/@sigla]/profesor" /></td>
+      <td>
+        <xsl:for-each select="nota">
+          <xsl:choose>
+            <xsl:when test=". = 'NP'">
+              <span style="color: red;"><xsl:value-of select="."/></span>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="."/>
+            </xsl:otherwise>
+          </xsl:choose>
+          <xsl:if test="position() != last()">, </xsl:if>
+        </xsl:for-each>
+      </td>
+    </tr>
+  </xsl:template>
+
+</xsl:stylesheet>
+
+
