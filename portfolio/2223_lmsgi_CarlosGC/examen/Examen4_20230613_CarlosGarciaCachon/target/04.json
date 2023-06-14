@@ -1,3 +1,29 @@
+
 {
-            "lanzamientos": [
-        {"distribucion":"manjaro""version":"17.1"},{"distribucion":"mint""version":"18.3"},{"distribucion":"mint""version":"19"},{"distribucion":"ubuntu""version":"17.10"},{"distribucion":"ubuntu""version":"18.04"},{"distribucion":"ubuntu""version":"22.04"},{"distribucion":"ubuntu""version":"22.04"},{"distribucion":"debian""version":"8"},{"distribucion":"debian""version":"9"},{"distribucion":"redhat""version":"8.4"},{"distribucion":"redhat""version":"8.4"},]}
+"lanzamientos": [ 
+                    {
+                     "distribucion":"ubuntu",
+                     "version":"17.10"
+                    },
+                    {
+                     "distribucion":"ubuntu",
+                     "version":"18.04"
+                    },
+                    {
+                     "distribucion":"ubuntu",
+                     "version":"22.04"
+                    },
+                    {
+                     "distribucion":"ubuntu",
+                     "version":"22.04"
+                    },
+                    {
+                     "distribucion":"redhat",
+                     "version":"8.4"
+                    },
+                    {
+                     "distribucion":"redhat",
+                     "version":"8.4"
+                    }
+                ]
+}   
