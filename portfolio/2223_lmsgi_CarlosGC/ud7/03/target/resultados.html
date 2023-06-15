@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Unidad 7&period;3 XQUERY BAILES</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <h1 id="unidad-73-xquery-bailes">Unidad 7.3 XQUERY BAILES</h1>
+<ol>
+<li>
+<p>Mostrar cada uno de los nombres de los bailes con la etiqueta &quot;losbailes&quot;</p>
+<p><code>let $bailes := doc('bailes')//baile return &lt;losbailes&gt;  {for $baile in $bailes  return &lt;baile&gt;{$baile/nombre/text()}&lt;/baile&gt;} &lt;/losbailes&gt;</code></p>
+<p>Resultado:</p>
+<pre><code class="language-Xpath"> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">losbailes</span>&gt;</span>
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Tango<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Cha-cha-cha<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Rock<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Merengue<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Salsa<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Pasodoble<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+ <span class="hljs-tag">&lt;/<span class="hljs-name">losbailes</span>&gt;</span></span>
+</code></pre>
+</li>
+<li>
+<p>Mostrar los nombres de los bailes seguidos con el n�mero de plazas entre par�ntesis, ambos
+dentro de la misma etiqueta &quot;losbailes&quot;.</p>
+<p><code>let $bailes := doc('bailes')//baile return &lt;losbailes&gt;  {for $baile in $bailes  return &lt;baile&gt;{$baile/nombre/text()} ({data($baile/plazas)})&lt;/baile&gt;} &lt;/losbailes&gt;</code></p>
+<p>Resultado:</p>
+<pre><code class="language-Xpath"> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">losbailes</span>&gt;</span>
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Tango (20)<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Cha-cha-cha (18)<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Rock (15)<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Merengue (12)<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Salsa (10)<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Pasodoble (8)<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+ <span class="hljs-tag">&lt;/<span class="hljs-name">losbailes</span>&gt;</span></span>
+</code></pre>
+</li>
+<li>
+<p>Mostrar los nombres de los bailes cuyo precio sea mayor de 30.</p>
+<p><code>let $bailes := doc('bailes')//baile[precio &gt; 30]  return    &lt;losbailes&gt;      {for $baile in $bailes      return &lt;baile&gt;{$baile/nombre/text()}&lt;/baile&gt;}    &lt;/losbailes&gt;</code></p>
+<p>Resultado:</p>
+<pre><code class="language-Xpath"> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">losbailes</span>&gt;</span>
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Cha-cha-cha<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Merengue<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Salsa<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Pasodoble<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+ <span class="hljs-tag">&lt;/<span class="hljs-name">losbailes</span>&gt;</span></span>
+</code></pre>
+</li>
+<li>
+<p>Mostrar los nombres de los bailes cuyo precio sea mayor de 30 y la moneda &quot;euro&quot;.</p>
+<p><code>let $bailes := doc('bailes')//baile[precio &gt; 30 and precio/@moneda = 'euro']  return    &lt;losbailes&gt;      {for $baile in $bailes      return &lt;baile&gt;{$baile/nombre/text()}&lt;/baile&gt;}    &lt;/losbailes&gt;</code></p>
+<p>Resultado:</p>
+<pre><code class="language-Xpath"> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">losbailes</span>&gt;</span>
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Cha-cha-cha<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Salsa<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Pasodoble<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+ <span class="hljs-tag">&lt;/<span class="hljs-name">losbailes</span>&gt;</span></span>
+</code></pre>
+</li>
+<li>
+<p>Mostrar los nombres y la fecha de comienzo de los bailes que comiencen el mes de enero (utiliza
+para buscarlo la cadena de texto &quot;/1/&quot;).</p>
+<p><code>let $bailes := doc('bailes')//baile[starts-with(comienzo, '1/')] return &lt;losbailes&gt;  {for $baile in $bailes  return &lt;baile&gt;{$baile/nombre/text()}, {$baile/comienzo/text()}&lt;/baile&gt;} &lt;/losbailes&gt; </code></p>
+<p>Resultado:</p>
+<pre><code class="language-Xpath"> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">losbailes</span>&gt;</span>
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Tango, 1/1/2011<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Cha-cha-cha, 1/2/2011<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Rock, 1/3/2011<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Merengue, 1/1/2011<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Salsa, 1/5/2011<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Pasodoble, 1/1/2011<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+ <span class="hljs-tag">&lt;/<span class="hljs-name">losbailes</span>&gt;</span></span>
+</code></pre>
+</li>
+<li>
+<p>Mostrar los nombres de los profesores y la sala en la que dan clase, ord�nalos por sala.</p>
+<p><code>let $bailes := doc('tu_archivo.xml')//baile  return    &lt;losbailes&gt;      {for $baile in $bailes      order by $baile/sala/text()      return &lt;baile&gt;{$baile/profesor/text()}, Sala {$baile/sala/text()}&lt;/baile&gt;}    &lt;/losbailes&gt;</code></p>
+<p>Resultado:</p>
+<pre><code class="language-Xpath"> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">losbailes</span>&gt;</span>
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Roberto Garcia, Sala 1<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Miriam Gutierrez, Sala 1<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Laura Mendiola, Sala 1<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Miriam Gutierrez, Sala 1<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Jesus Lozano, Sala 2<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Jesus Lozano, Sala 2<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+ <span class="hljs-tag">&lt;/<span class="hljs-name">losbailes</span>&gt;</span></span>
+</code></pre>
+</li>
+<li>
+<p>Mostrar los nombres de los profesores eliminando los repetidos y acampa�ar cada nombre con
+todas las salas en la que da clase, ord�nalos por nombre.</p>
+<p><code>let $bailes := doc('bailes')//baile  let $profesores := distinct-values($bailes/profesor)  return    &lt;losbailes&gt;      {for $profesor in $profesores      let $salas := $bailes[profesor = $profesor]/sala      order by $profesor      return &lt;baile&gt;{$profesor}: {string-join($salas, ', ')}&lt;/baile&gt;}   &lt;/losbailes&gt;</code></p>
+<p>Resultado:</p>
+<pre><code class="language-Xpath"> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">losbailes</span>&gt;</span>
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Jesus Lozano: 2, 2<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Laura Mendiola: 1<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Miriam Gutierrez: 1, 1<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Roberto Garcia: 1<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+ <span class="hljs-tag">&lt;/<span class="hljs-name">losbailes</span>&gt;</span></span>
+</code></pre>
+</li>
+<li>
+<p>Mostrar la media de los precios de todos los bailes.</p>
+<p><code>let $bailes := doc('books')//baile  let $precios := $bailes/precio  return    &lt;media&gt;      {avg($precios)}    &lt;/media&gt;</code></p>
+<p>Resultado:</p>
+<pre><code class="language-Xpath"> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">losbailes</span>&gt;</span>
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Jesus Lozano: 2, 2<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Laura Mendiola: 1<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Miriam Gutierrez: 1, 1<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Roberto Garcia: 1<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+ <span class="hljs-tag">&lt;/<span class="hljs-name">losbailes</span>&gt;</span></span>
+</code></pre>
+</li>
+<li>
+<p>Mostrar la suma de los precios de los bailes de la sala 1.</p>
+<p><code>let $bailes := doc('bailes')//baile[sala = '1']  let $precios := $bailes/precio  return    &lt;suma&gt;      {sum($precios)}    &lt;/suma&gt;</code></p>
+<p>Resultado:</p>
+<pre><code class="language-Xpath"> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">suma</span>&gt;</span>457<span class="hljs-tag">&lt;/<span class="hljs-name">suma</span>&gt;</span></span>
+</code></pre>
+</li>
+<li>
+<p>Mostrar cu�ntas plazas en total oferta el profesor &quot;Jesus Lozano&quot;.</p>
+<p><code>let $bailes := doc('bailes')//baile[profesor = 'Jesus Lozano'] let $plazas := $bailes/plazas return   &lt;total_plazas&gt;     {sum($plazas)}   &lt;/total_plazas&gt; </code></p>
+</li>
+</ol>
+<p>Resultado:</p>
+<pre><code class="language-Xpath"> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">total_plazas</span>&gt;</span>22<span class="hljs-tag">&lt;/<span class="hljs-name">total_plazas</span>&gt;</span></span>
+ ```
+
+<span class="hljs-number">11</span>. Mostrar el dinero que ganar�a la profesora <span class="hljs-string">&quot;Laura Mendiola&quot;</span> si se completaran todas las plazas de 
+su baile, sabiendo que s�lo tiene un baile.
+
+ `<span class="hljs-keyword">let</span> <span class="hljs-variable">$baile</span> :=<span class="hljs-built_in"> doc</span>(<span class="hljs-string">&#x27;bailes&#x27;</span>)//baile[profesor = <span class="hljs-string">&#x27;Laura Mendiola&#x27;</span>]
+ <span class="hljs-keyword">let</span> <span class="hljs-variable">$plazas</span> := <span class="hljs-variable">$baile</span>/plazas
+ <span class="hljs-keyword">let</span> <span class="hljs-variable">$precio</span> := <span class="hljs-variable">$baile</span>/precio
+ <span class="hljs-keyword">return</span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">ganancia</span>&gt;</span>
+     </span><span class="language-xquery"><span class="hljs-built_in">{sum</span>(<span class="hljs-variable">$plazas</span>) * <span class="hljs-variable">$precio</span>}</span><span class="language-xml">
+   <span class="hljs-tag">&lt;/<span class="hljs-name">ganancia</span>&gt;</span></span>`
+
+Resultado:
+
+```Xpath
+ <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">ganancia</span>&gt;</span>450<span class="hljs-tag">&lt;/<span class="hljs-name">ganancia</span>&gt;</span></span>
+ ```
+
+<span class="hljs-number">12</span>. Mostrar el dinero que ganar�a el profesor <span class="hljs-string">&quot;Jesus Lozano&quot;</span> si se completaran todas las plazas de su 
+baile, pero mostrando el beneficio de cada baile por separado.
+
+ `<span class="hljs-keyword">let</span> <span class="hljs-variable">$bailes</span> :=<span class="hljs-built_in"> doc</span>(<span class="hljs-string">&#x27;bailes&#x27;</span>)//baile[profesor = <span class="hljs-string">&#x27;Jesus Lozano&#x27;</span>]
+ <span class="hljs-keyword">return</span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">losbailes</span>&gt;</span>
+     </span><span class="language-xquery">{<span class="hljs-keyword">for</span> <span class="hljs-variable">$baile</span> <span class="hljs-keyword">in</span> <span class="hljs-variable">$bailes</span>
+     <span class="hljs-keyword">let</span> <span class="hljs-variable">$plazas</span> := <span class="hljs-variable">$baile</span>/plazas
+     <span class="hljs-keyword">let</span> <span class="hljs-variable">$precio</span> := <span class="hljs-variable">$baile</span>/precio
+     <span class="hljs-keyword">return</span> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xquery">{<span class="hljs-variable">$baile</span>/nombre/<span class="hljs-type">text</span>()}</span></span><span class="language-xml">: </span><span class="language-xquery"><span class="language-xquery"><span class="hljs-built_in">{sum</span>(<span class="hljs-variable">$plazas</span>) * <span class="hljs-variable">$precio</span>}</span></span><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span>}
+   &lt;/losbailes&gt;`
+
+Resultado:
+
+```Xpath
+ <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">losbailes</span>&gt;</span></span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Merengue: 900<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>Salsa: 320<span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">losbailes</span>&gt;</span></span>
+ ```
+
+<span class="hljs-number">13</span>. Mostrar el dinero que ganar�a la profesora <span class="hljs-string">&quot;Laura&quot;</span> (no conocemos su apellido) si se completaran 
+todas las plazas de su baile.
+
+ `<span class="hljs-keyword">let</span> <span class="hljs-variable">$bailes</span> :=<span class="hljs-built_in"> doc</span>(<span class="hljs-string">&#x27;bailes&#x27;</span>)//baile<span class="hljs-built_in">[starts-with</span>(profesor, <span class="hljs-string">&#x27;Laura&#x27;</span>)]
+ <span class="hljs-keyword">let</span> <span class="hljs-variable">$plazas</span> := <span class="hljs-variable">$bailes</span>/plazas
+ <span class="hljs-keyword">let</span> <span class="hljs-variable">$precio</span> := <span class="hljs-variable">$bailes</span>/precio
+ <span class="hljs-keyword">return</span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">ganancia</span>&gt;</span>
+     </span><span class="language-xquery"><span class="language-xquery"><span class="hljs-built_in">{sum</span>(<span class="hljs-variable">$plazas</span>) * <span class="hljs-variable">$precio</span>}</span></span><span class="language-xml">
+   <span class="hljs-tag">&lt;/<span class="hljs-name">ganancia</span>&gt;</span></span>`
+
+Resultado:
+
+```Xpath
+ <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">ganancia</span>&gt;</span>450<span class="hljs-tag">&lt;/<span class="hljs-name">ganancia</span>&gt;</span></span>
+ ```
+
+<span class="hljs-number">14</span>. Mostrar el nombre del baile, su precio y el precio con un descuento del <span class="hljs-number">15</span>% para familias 
+numerosas. Ordenar por el nombre del baile
+
+ `<span class="hljs-keyword">let</span> <span class="hljs-variable">$bailes</span> :=<span class="hljs-built_in"> doc</span>(<span class="hljs-string">&#x27;bailes&#x27;</span>)//baile
+ <span class="hljs-keyword">return</span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">losbailes</span>&gt;</span>
+     </span><span class="language-xquery"><span class="language-xquery">{<span class="hljs-keyword">for</span> <span class="hljs-variable">$baile</span> <span class="hljs-keyword">in</span> <span class="hljs-variable">$bailes</span>
+     <span class="hljs-keyword">let</span> <span class="hljs-variable">$precio</span> := <span class="hljs-variable">$baile</span>/precio
+     <span class="hljs-keyword">let</span> <span class="hljs-variable">$descuento</span> := <span class="hljs-variable">$precio</span> * <span class="hljs-number">0</span>.<span class="hljs-number">15</span>
+     <span class="hljs-keyword">let</span> <span class="hljs-variable">$precio_descuento</span> := <span class="hljs-variable">$precio</span> - <span class="hljs-variable">$descuento</span>
+     <span class="hljs-keyword">order</span> <span class="hljs-keyword">by</span> <span class="hljs-variable">$baile</span>/nombre/<span class="hljs-type">text</span>()
+     <span class="hljs-keyword">return</span> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>
+              </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">nombre</span>&gt;</span></span><span class="language-xquery">{<span class="hljs-variable">$baile</span>/nombre/<span class="hljs-type">text</span>()}</span></span></span><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">nombre</span>&gt;</span></span>
+              <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">precio</span>&gt;</span></span><span class="language-xquery"><span class="language-xquery">{<span class="hljs-variable">$precio</span>}</span></span><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">precio</span>&gt;</span></span>
+              <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">precio_descuento</span>&gt;</span></span><span class="language-xquery"><span class="language-xquery">{<span class="hljs-variable">$precio_descuento</span>}</span></span><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">precio_descuento</span>&gt;</span></span>
+            &lt;/baile&gt;}
+   &lt;/losbailes&gt;`
+
+Resultado:
+
+```Xpath
+ <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">losbailes</span>&gt;</span>
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">nombre</span>&gt;</span>Cha-cha-cha<span class="hljs-tag">&lt;/<span class="hljs-name">nombre</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">precio</span>&gt;</span>
+             </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">precio</span> <span class="hljs-attr">cuota</span>=<span class="hljs-string">&quot;trimestral&quot;</span> <span class="hljs-attr">moneda</span>=<span class="hljs-string">&quot;euro&quot;</span>&gt;</span>80<span class="hljs-tag">&lt;/<span class="hljs-name">precio</span>&gt;</span></span><span class="language-xml">
+         <span class="hljs-tag">&lt;/<span class="hljs-name">precio</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">precio_descuento</span>&gt;</span>68<span class="hljs-tag">&lt;/<span class="hljs-name">precio_descuento</span>&gt;</span></span><span class="language-xml">
+     <span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">nombre</span>&gt;</span>Merengue<span class="hljs-tag">&lt;/<span class="hljs-name">nombre</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">precio</span>&gt;</span>
+             </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">precio</span> <span class="hljs-attr">cuota</span>=<span class="hljs-string">&quot;trimestral&quot;</span> <span class="hljs-attr">moneda</span>=<span class="hljs-string">&quot;dolares&quot;</span>&gt;</span>75<span class="hljs-tag">&lt;/<span class="hljs-name">precio</span>&gt;</span></span><span class="language-xml">
+         <span class="hljs-tag">&lt;/<span class="hljs-name">precio</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">precio_descuento</span>&gt;</span>63.75<span class="hljs-tag">&lt;/<span class="hljs-name">precio_descuento</span>&gt;</span></span><span class="language-xml">
+     <span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">nombre</span>&gt;</span>Pasodoble<span class="hljs-tag">&lt;/<span class="hljs-name">nombre</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">precio</span>&gt;</span>
+             </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">precio</span> <span class="hljs-attr">cuota</span>=<span class="hljs-string">&quot;anual&quot;</span> <span class="hljs-attr">moneda</span>=<span class="hljs-string">&quot;euro&quot;</span>&gt;</span>320<span class="hljs-tag">&lt;/<span class="hljs-name">precio</span>&gt;</span></span><span class="language-xml">
+         <span class="hljs-tag">&lt;/<span class="hljs-name">precio</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">precio_descuento</span>&gt;</span>272<span class="hljs-tag">&lt;/<span class="hljs-name">precio_descuento</span>&gt;</span></span><span class="language-xml">
+     <span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">nombre</span>&gt;</span>Rock<span class="hljs-tag">&lt;/<span class="hljs-name">nombre</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">precio</span>&gt;</span>
+             </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">precio</span> <span class="hljs-attr">cuota</span>=<span class="hljs-string">&quot;mensual&quot;</span> <span class="hljs-attr">moneda</span>=<span class="hljs-string">&quot;euro&quot;</span>&gt;</span>30<span class="hljs-tag">&lt;/<span class="hljs-name">precio</span>&gt;</span></span><span class="language-xml">
+         <span class="hljs-tag">&lt;/<span class="hljs-name">precio</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">precio_descuento</span>&gt;</span>25.5<span class="hljs-tag">&lt;/<span class="hljs-name">precio_descuento</span>&gt;</span></span><span class="language-xml">
+     <span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">nombre</span>&gt;</span>Salsa<span class="hljs-tag">&lt;/<span class="hljs-name">nombre</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">precio</span>&gt;</span>
+             </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">precio</span> <span class="hljs-attr">cuota</span>=<span class="hljs-string">&quot;mensual&quot;</span> <span class="hljs-attr">moneda</span>=<span class="hljs-string">&quot;euro&quot;</span>&gt;</span>32<span class="hljs-tag">&lt;/<span class="hljs-name">precio</span>&gt;</span></span><span class="language-xml">
+         <span class="hljs-tag">&lt;/<span class="hljs-name">precio</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">precio_descuento</span>&gt;</span>27.2<span class="hljs-tag">&lt;/<span class="hljs-name">precio_descuento</span>&gt;</span></span><span class="language-xml">
+     <span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">nombre</span>&gt;</span>Tango<span class="hljs-tag">&lt;/<span class="hljs-name">nombre</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">precio</span>&gt;</span>
+             </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">precio</span> <span class="hljs-attr">cuota</span>=<span class="hljs-string">&quot;mensual&quot;</span> <span class="hljs-attr">moneda</span>=<span class="hljs-string">&quot;euro&quot;</span>&gt;</span>27<span class="hljs-tag">&lt;/<span class="hljs-name">precio</span>&gt;</span></span><span class="language-xml">
+         <span class="hljs-tag">&lt;/<span class="hljs-name">precio</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">precio_descuento</span>&gt;</span>22.95<span class="hljs-tag">&lt;/<span class="hljs-name">precio_descuento</span>&gt;</span></span><span class="language-xml">
+     <span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+ <span class="hljs-tag">&lt;/<span class="hljs-name">losbailes</span>&gt;</span></span>
+ ```
+
+<span class="hljs-number">15</span>. Mostrar todos los datos de cada baile excepto la fecha de comienzo y de fin.
+
+ `<span class="hljs-keyword">let</span> <span class="hljs-variable">$bailes</span> :=<span class="hljs-built_in"> doc</span>(<span class="hljs-string">&#x27;bailes&#x27;</span>)//baile
+ <span class="hljs-keyword">return</span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">losbailes</span>&gt;</span>
+     </span><span class="language-xquery"><span class="language-xquery">{<span class="hljs-keyword">for</span> <span class="hljs-variable">$baile</span> <span class="hljs-keyword">in</span> <span class="hljs-variable">$bailes</span>
+     <span class="hljs-keyword">return</span> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>
+              </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">nombre</span>&gt;</span></span><span class="language-xquery">{<span class="hljs-variable">$baile</span>/nombre/<span class="hljs-type">text</span>()}</span></span></span><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">nombre</span>&gt;</span></span>
+              <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">precio</span>&gt;</span></span><span class="language-xquery"><span class="language-xquery">{<span class="hljs-variable">$baile</span>/precio/<span class="hljs-type">text</span>()}</span></span><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">precio</span>&gt;</span></span>
+              <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">plazas</span>&gt;</span></span><span class="language-xquery"><span class="language-xquery">{<span class="hljs-variable">$baile</span>/plazas/<span class="hljs-type">text</span>()}</span></span><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">plazas</span>&gt;</span></span>
+              <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">profesor</span>&gt;</span></span><span class="language-xquery"><span class="language-xquery">{<span class="hljs-variable">$baile</span>/profesor/<span class="hljs-type">text</span>()}</span></span><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">profesor</span>&gt;</span></span>
+              <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">sala</span>&gt;</span></span><span class="language-xquery"><span class="language-xquery">{<span class="hljs-variable">$baile</span>/sala/<span class="hljs-type">text</span>()}</span></span><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">sala</span>&gt;</span></span>
+            &lt;/baile&gt;}
+   &lt;/losbailes&gt;`
+
+Resultado:
+
+```Xpath
+ <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">losbailes</span>&gt;</span>
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">nombre</span>&gt;</span>Tango<span class="hljs-tag">&lt;/<span class="hljs-name">nombre</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">precio</span>&gt;</span>27<span class="hljs-tag">&lt;/<span class="hljs-name">precio</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">plazas</span>&gt;</span>20<span class="hljs-tag">&lt;/<span class="hljs-name">plazas</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">profesor</span>&gt;</span>Roberto Garcia<span class="hljs-tag">&lt;/<span class="hljs-name">profesor</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">sala</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">sala</span>&gt;</span></span><span class="language-xml">
+     <span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">nombre</span>&gt;</span>Cha-cha-cha<span class="hljs-tag">&lt;/<span class="hljs-name">nombre</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">precio</span>&gt;</span>80<span class="hljs-tag">&lt;/<span class="hljs-name">precio</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">plazas</span>&gt;</span>18<span class="hljs-tag">&lt;/<span class="hljs-name">plazas</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">profesor</span>&gt;</span>Miriam Gutierrez<span class="hljs-tag">&lt;/<span class="hljs-name">profesor</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">sala</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">sala</span>&gt;</span></span><span class="language-xml">
+     <span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">nombre</span>&gt;</span>Rock<span class="hljs-tag">&lt;/<span class="hljs-name">nombre</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">precio</span>&gt;</span>30<span class="hljs-tag">&lt;/<span class="hljs-name">precio</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">plazas</span>&gt;</span>15<span class="hljs-tag">&lt;/<span class="hljs-name">plazas</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">profesor</span>&gt;</span>Laura Mendiola<span class="hljs-tag">&lt;/<span class="hljs-name">profesor</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">sala</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">sala</span>&gt;</span></span><span class="language-xml">
+     <span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">nombre</span>&gt;</span>Merengue<span class="hljs-tag">&lt;/<span class="hljs-name">nombre</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">precio</span>&gt;</span>75<span class="hljs-tag">&lt;/<span class="hljs-name">precio</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">plazas</span>&gt;</span>12<span class="hljs-tag">&lt;/<span class="hljs-name">plazas</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">profesor</span>&gt;</span>Jesus Lozano<span class="hljs-tag">&lt;/<span class="hljs-name">profesor</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">sala</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">sala</span>&gt;</span></span><span class="language-xml">
+     <span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">nombre</span>&gt;</span>Salsa<span class="hljs-tag">&lt;/<span class="hljs-name">nombre</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">precio</span>&gt;</span>32<span class="hljs-tag">&lt;/<span class="hljs-name">precio</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">plazas</span>&gt;</span>10<span class="hljs-tag">&lt;/<span class="hljs-name">plazas</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">profesor</span>&gt;</span>Jesus Lozano<span class="hljs-tag">&lt;/<span class="hljs-name">profesor</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">sala</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">sala</span>&gt;</span></span><span class="language-xml">
+     <span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">nombre</span>&gt;</span>Pasodoble<span class="hljs-tag">&lt;/<span class="hljs-name">nombre</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">precio</span>&gt;</span>320<span class="hljs-tag">&lt;/<span class="hljs-name">precio</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">plazas</span>&gt;</span>8<span class="hljs-tag">&lt;/<span class="hljs-name">plazas</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">profesor</span>&gt;</span>Miriam Gutierrez<span class="hljs-tag">&lt;/<span class="hljs-name">profesor</span>&gt;</span></span><span class="language-xml">
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">sala</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">sala</span>&gt;</span></span><span class="language-xml">
+     <span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span></span><span class="language-xml">
+ <span class="hljs-tag">&lt;/<span class="hljs-name">losbailes</span>&gt;</span></span>
+ ```
+
+<span class="hljs-number">16</span>. Mostrar en una tabla de HTML los nombres de los bailes y su profesor, cada uno en una fila
+
+ `<span class="hljs-keyword">let</span> <span class="hljs-variable">$bailes</span> :=<span class="hljs-built_in"> doc</span>(<span class="hljs-string">&#x27;bailes&#x27;</span>)//baile
+ <span class="hljs-keyword">return</span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+       </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Nombre del Baile<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span></span><span class="language-xml">
+       </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Profesor<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span></span><span class="language-xml">
+     <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xquery"><span class="language-xquery">{<span class="hljs-keyword">for</span> <span class="hljs-variable">$baile</span> <span class="hljs-keyword">in</span> <span class="hljs-variable">$bailes</span>
+     <span class="hljs-keyword">return</span>
+       <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span></span><span class="language-xquery">{<span class="hljs-variable">$baile</span>/nombre/<span class="hljs-type">text</span>()}</span></span></span><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span></span>
+         <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span></span><span class="language-xquery"><span class="language-xquery">{<span class="hljs-variable">$baile</span>/profesor/<span class="hljs-type">text</span>()}</span></span><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span></span>
+       &lt;/tr&gt;}
+   &lt;/table&gt;`
+
+Resultado:
+
+```Xpath
+ <span class="hljs-keyword">let</span> <span class="hljs-variable">$bailes</span> :=<span class="hljs-built_in"> doc</span>(<span class="hljs-string">&#x27;bailes&#x27;</span>)//baile
+ <span class="hljs-keyword">return</span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+     </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+       </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Nombre del Baile<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span></span><span class="language-xml">
+       </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Profesor<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span></span><span class="language-xml">
+     <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span></span><span class="language-xml">
+     </span><span class="language-xquery"><span class="language-xquery">{<span class="hljs-keyword">for</span> <span class="hljs-variable">$baile</span> <span class="hljs-keyword">in</span> <span class="hljs-variable">$bailes</span>
+     <span class="hljs-keyword">return</span>
+       <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+         </span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span></span><span class="language-xquery">{<span class="hljs-variable">$baile</span>/nombre/<span class="hljs-type">text</span>()}</span></span></span><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span></span>
+         <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span></span><span class="language-xquery"><span class="language-xquery">{<span class="hljs-variable">$baile</span>/profesor/<span class="hljs-type">text</span>()}</span></span><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span></span>
+       &lt;/tr&gt;}
+   &lt;/table&gt;
+ ```
+</code></pre>
+
+        <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+        
+    </body>
+    </html>

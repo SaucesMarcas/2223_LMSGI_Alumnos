@@ -1,1 +1,4 @@
-<resultado><title lang="en">Everyday Italian</title><title lang="en">Harry Potter</title></resultado>
+<resultado>
+    <title lang="en">Everyday Italian</title>
+    <title lang="en">Harry Potter</title>
+</resultado>

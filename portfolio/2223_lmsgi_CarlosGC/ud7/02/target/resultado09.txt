@@ -1,1 +1,7 @@
-<libros><price>30.00</price><price>29.99</price><price>49.99</price><price>39.95</price><total>149.93</total></libros>
+<libros>
+    <price>30.00</price>
+    <price>29.99</price>
+    <price>49.99</price>
+    <price>39.95</price>
+    <total>149.93</total>
+</libros>

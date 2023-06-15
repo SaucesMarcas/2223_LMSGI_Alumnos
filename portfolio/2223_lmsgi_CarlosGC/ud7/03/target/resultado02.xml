@@ -1,1 +1,8 @@
-<losbailes><baile>Tango (20)</baile><baile>Cha-cha-cha (18)</baile><baile>Rock (15)</baile><baile>Merengue (12)</baile><baile>Salsa (10)</baile><baile>Pasodoble (8)</baile></losbailes>
+<losbailes>
+    <baile>Tango (20)</baile>
+    <baile>Cha-cha-cha (18)</baile>
+    <baile>Rock (15)</baile>
+    <baile>Merengue (12)</baile>
+    <baile>Salsa (10)</baile>
+    <baile>Pasodoble (8)</baile>
+</losbailes>
