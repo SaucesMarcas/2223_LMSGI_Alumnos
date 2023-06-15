@@ -1,0 +1,36 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif';
+}
+
+html {
+    width: 1024px;
+    margin-left: 25%;
+    justify-content: center;
+}
+
+nav {
+    text-align: center;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: orangered;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    padding-left: 9rem;
+}
+
+li {
+    display: inline-table;
+    font-size: 2rem; 
+    margin-left: 1rem;
+}
+
+.letrasRojas {
+    color: red;
+}

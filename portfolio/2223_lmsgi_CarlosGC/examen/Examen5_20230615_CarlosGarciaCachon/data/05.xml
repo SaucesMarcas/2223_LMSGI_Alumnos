@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datos 
+   xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='05.xsd'>
+    <libros>
+        <libro>
+            <codigo>LIB001</codigo>
+            <titulo>El Gran Gatsby</titulo>
+            <editorial>Editorial A</editorial>
+            <autores>
+                <autor codigo="AUT001"/>
+            </autores>
+            <idiomas>
+                <idioma>Español</idioma>
+            </idiomas>
+            <numero_paginas>300</numero_paginas>
+            <sinopsis>La historia sigue al millonario Jay Gatsby y su obsesión por recuperar a Daisy Buchanan, su antigua amante.</sinopsis>
+            <anio_publicacion>1925</anio_publicacion>
+        </libro>
+        <libro>
+            <codigo>LIB002</codigo>
+            <titulo>1984</titulo>
+            <editorial>Editorial B</editorial>
+            <autores>
+                <autor codigo="AUT002"/>
+            </autores>
+            <idiomas>
+                <idioma>Español</idioma>
+            </idiomas>
+            <numero_paginas>400</numero_paginas>
+            <sinopsis>La novela presenta una sociedad distópica en la que el Estado vigilante controla todos los aspectos de la vida de sus ciudadanos.</sinopsis>
+            <anio_publicacion>1949</anio_publicacion>
+        </libro>
+        <libro>
+            <codigo>LIB003</codigo>
+            <titulo>Harry Potter y la Piedra Filosofal</titulo>
+            <editorial>Editorial C</editorial>
+            <autores>
+                <autor codigo="AUT003"/>
+            </autores>
+            <idiomas>
+                <idioma>Español</idioma>
+            </idiomas>
+            <numero_paginas>350</numero_paginas>
+            <sinopsis>El primer libro de la serie Harry Potter, en el que el joven mago descubre el mundo de la magia y se enfrenta a su mayor enemigo.</sinopsis>
+            <anio_publicacion>1997</anio_publicacion>
+        </libro>
+        <libro>
+            <codigo>LIB004</codigo>
+            <titulo>El señor de los anillos: La comunidad del anillo</titulo>
+            <editorial>Editorial D</editorial>
+            <autores>
+                <autor codigo="AUT004"/>                    
+            </autores>
+            <idiomas>
+                <idioma>Español</idioma>
+            </idiomas>
+            <numero_paginas>500</numero_paginas>
+            <sinopsis>Un grupo de seres se embarcan en una peligrosa misión para destruir un anillo poderoso y evitar que caiga en manos del mal.</sinopsis>
+            <anio_publicacion>1954</anio_publicacion>
+        </libro>
+        <libro>
+            <codigo>LIB005</codigo>
+            <titulo>Cien años de soledad</titulo>
+            <editorial>Editorial E</editorial>
+            <autores>
+                <autor codigo="AUT005"/>
+                    
+            </autores>
+            <idiomas>
+                <idioma>Español</idioma>
+            </idiomas>
+            <numero_paginas>400</numero_paginas>
+            <sinopsis>La saga de la familia Buendía a lo largo de varias generaciones, llena de realismo mágico y sucesos extraordinarios.</sinopsis>
+            <anio_publicacion>1967</anio_publicacion>
+        </libro>
+        <libro>
+            <codigo>LIB006</codigo>
+            <titulo>Don Quijote de la Mancha</titulo>
+            <editorial>Editorial F</editorial>
+            <autores>
+                <autor codigo="AUT006"/>
+            </autores>
+            <idiomas>
+                <idioma>Español</idioma>
+            </idiomas>
+            <numero_paginas>900</numero_paginas>
+            <sinopsis>Las aventuras del ingenioso hidalgo don Quijote y su fiel escudero Sancho Panza, en una obra considerada como una de las más importantes de la literatura española.</sinopsis>
+            <anio_publicacion>1605</anio_publicacion>
+        </libro>
+        <libro>
+            <codigo>LIB007</codigo>
+            <titulo>Orgullo y prejuicio</titulo>
+            <editorial>Editorial G</editorial>
+            <autores>
+                <autor codigo="AUT007"/>
+            </autores>
+            <idiomas>
+                <idioma>Español</idioma>
+            </idiomas>
+            <numero_paginas>300</numero_paginas>
+            <sinopsis>Una historia de amor y desencuentros en la Inglaterra del siglo XIX, que explora las convenciones sociales y los prejuicios de la época.</sinopsis>
+            <anio_publicacion>1813</anio_publicacion>
+        </libro>
+        <libro>
+            <codigo>LIB008</codigo>
+            <titulo>Matar a un ruiseñor</titulo>
+            <editorial>Editorial H</editorial>
+            <autores>
+                <autor  codigo="AUT008"/>
+            </autores>
+            <idiomas>
+                <idioma>Español</idioma>
+            </idiomas>
+            <numero_paginas>320</numero_paginas>
+            <sinopsis>La historia de Scout Finch y su hermano Jem, quienes presencian los conflictos raciales en una pequeña ciudad del sur de Estados Unidos durante la década de 1930.</sinopsis>
+            <anio_publicacion>1960</anio_publicacion>
+        </libro>
+        <libro>
+            <codigo>LIB009</codigo>
+            <titulo>La sombra del viento</titulo>
+            <editorial>Editorial I</editorial>
+            <autores>
+                <autor codigo="AUT009"/>
+            </autores>
+            <idiomas>
+                <idioma>Español</idioma>
+                <idioma>Inglés</idioma>
+            </idiomas>
+            <numero_paginas>500</numero_paginas>
+            <sinopsis>El joven Daniel Sempere descubre un libro que lo llevará a desentrañar secretos del pasado y a enfrentarse a un peligroso enemigo.</sinopsis>
+            <anio_publicacion>2001</anio_publicacion>
+        </libro>
+        <libro>
+            <codigo>LIB010</codigo>
+            <titulo>El alquimista</titulo>
+            <editorial>Editorial J</editorial>
+            <autores>
+                <autor codigo="AUT010"/>
+            </autores>
+            <idiomas>
+                <idioma>Español</idioma>
+                <idioma>Inglés</idioma>
+                <idioma>Portugués</idioma>
+            </idiomas>
+            <numero_paginas>200</numero_paginas>
+            <sinopsis>La historia de Santiago, un joven pastor que emprende un viaje en busca de su tesoro personal y descubre el significado de la vida.</sinopsis>
+            <anio_publicacion>1988</anio_publicacion>
+        </libro>
+    </libros>
+    <autores>
+        <autor>
+            <codigo>AUT001</codigo>
+            <nombre>F. Scott Fitzgerald</nombre>
+            <web_oficial>https://www.fscottfitzgerald.com</web_oficial>
+        </autor>
+        <autor>
+            <codigo>AUT002</codigo>
+            <nombre>George Orwell</nombre>
+            <web_oficial>https://www.georgeorwell.com</web_oficial>
+        </autor>
+        <autor>
+            <codigo>AUT003</codigo>
+            <nombre>J.K. Rowling</nombre>
+            <web_oficial>https://www.jkrowling.com</web_oficial>
+        </autor>
+        <autor>
+            <codigo>AUT004</codigo>
+            <nombre>J.R.R. Tolkien</nombre>
+            <web_oficial>https://www.jrrtolkien.com</web_oficial>
+        </autor>
+        <autor>
+            <codigo>AUT005</codigo>
+            <nombre>Gabriel García Márquez</nombre>
+            <web_oficial>https://www.gabrielgarciamarquez.com</web_oficial>
+        </autor>
+        <autor>
+            <codigo>AUT006</codigo>
+            <nombre>Miguel de Cervantes Saavedra</nombre>
+            <web_oficial>https://www.migueldecervantes.com</web_oficial>
+        </autor>
+        <autor>
+            <codigo>AUT007</codigo>
+            <nombre>Jane Austen</nombre>
+            <web_oficial>https://www.janeausten.com</web_oficial>
+        </autor>
+        <autor>
+            <codigo>AUT008</codigo>
+            <nombre>Harper Lee</nombre>
+            <web_oficial>https://www.harperlee.com</web_oficial>
+        </autor>
+        <autor>
+            <codigo>AUT009</codigo>
+            <nombre>Carlos Ruiz Zafón</nombre>
+            <web_oficial>https://www.carlosruizzafon.com</web_oficial>
+        </autor>
+        <autor>
+            <codigo>AUT010</codigo>
+            <nombre>Paulo Coelho</nombre>
+            <web_oficial>https://www.paulocoelho.com</web_oficial>
+        </autor>
+    </autores>
+</datos>

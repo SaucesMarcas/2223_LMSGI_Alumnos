@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="datos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="libros">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="libro" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="codigo" type="xs:string"/>
+                    <xs:element name="titulo" type="xs:string"/>
+                    <xs:element name="editorial" type="xs:string"/>
+                    <xs:element name="autores">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="autor" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="codigo" type="xs:string"/>
+                                <xs:element name="nombre" type="xs:string"/>
+                                <xs:element name="web_oficial" type="xs:string"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="idiomas">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="idioma" type="xs:string" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="numero_paginas" type="xs:positiveInteger"/>
+                    <xs:element name="sinopsis" type="xs:string"/>
+                    <xs:element name="anio_publicacion" type="xs:positiveInteger"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="autores">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="autor" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="codigo" type="xs:string"/>
+                    <xs:element name="nombre" type="xs:string"/>
+                    <xs:element name="web_oficial" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

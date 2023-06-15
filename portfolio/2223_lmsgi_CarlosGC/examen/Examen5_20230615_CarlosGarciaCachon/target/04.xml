@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><libros>
+    <libro>
+        <titulo>Harry Potter y la Piedra Filosofal</titulo>
+        <sinopsis>El primer libro de la serie Harry Potter, en el que el joven mago descubre el mundo de la magia y se enfrenta a su mayor enemigo.</sinopsis>
+    </libro>
+    <libro>
+        <titulo>La sombra del viento</titulo>
+        <sinopsis>El joven Daniel Sempere descubre un libro que lo llevará a desentrañar secretos del pasado y a enfrentarse a un peligroso enemigo.</sinopsis>
+    </libro>
+</libros>

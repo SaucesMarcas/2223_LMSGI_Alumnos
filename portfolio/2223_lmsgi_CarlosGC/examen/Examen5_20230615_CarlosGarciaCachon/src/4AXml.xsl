@@ -10,24 +10,16 @@
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:output method="xml"/>
-    <xsl:template match="/daw">
-        <xsl:element name="daw">
-            <xsl:attribute name="curso">
-                <xsl:value-of select="@curso"/>
-            </xsl:attribute>
-            <xsl:for-each select="alumnos/alumno">
-                <xsl:element name="alumno">
-                    <xsl:attribute name="expediente">
-                        <xsl:value-of select="expediente"/>
-                    </xsl:attribute>
-                    <xsl:for-each select="//calificacion[@expediente=current()/expediente]">
-                        <xsl:element name="nota">
-                            <xsl:attribute name="sigla">
-                                <xsl:value-of select="@sigla"/>
-                            </xsl:attribute>
-                            <xsl:value-of select="round(sum(nota[.!='NP'])div 3)"/>                            
-                        </xsl:element>
-                    </xsl:for-each>
+    <xsl:template match="/datos">
+        <xsl:element name="libros">
+            <xsl:for-each select="//libros/libro[anio_publicacion&gt;1990 and anio_publicacion&lt;2023 and numero_paginas&gt;100]">
+                <xsl:element name="libro">
+                    <xsl:element name="titulo">
+                        <xsl:value-of select="titulo"/>        
+                    </xsl:element> 
+                    <xsl:element name="sinopsis">
+                        <xsl:value-of select="sinopsis"/>        
+                    </xsl:element>                
                 </xsl:element>
             </xsl:for-each>
         </xsl:element>
