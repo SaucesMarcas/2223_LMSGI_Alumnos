@@ -2,7 +2,7 @@ let $books := doc('books')//book
 return
   <result>
     {
-    for $book in $books
+    for $book in doc('tiempo')//data
     let $price := xs:decimal($book/price)
     let $price_con_iva := $price * 1.04
     order by $price_con_iva
