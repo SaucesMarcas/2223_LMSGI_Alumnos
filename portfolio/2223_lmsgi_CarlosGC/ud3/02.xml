@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Carlos GC</title>
+        <link>https://192.168.2.115</link>
+        <description><![CDATA[<h2>Descripcion</h2>]]></description>
+        <language>es</language>
+        <skipDays>
+            <day>Sabado</day>
+            <day>Domingo</day>
+        </skipDays>
+        <lastBuildDate>Thu, 12 Jan 2023 11:22:14 GMT</lastBuildDate>
+        <enclosure type="images/png" url="images/logo.png"></enclosure>
+        <item>
+            <title>Actualizacion de Index:</title>
+            <link>https://elpais.com/deportes/2023-01-10/joan-barreda-se-despide-del-dakar-con-otra-caida.html</link>
+            <guid>https://elpais.com/deportes/2023-01-10/joan-barreda-se-despide-del-dakar-con-otra-caida.html</guid>
+            <description>He añadido nuevas unidades, como unidad 05 y examenes.</description>
+            <category>Noticias</category>
+            <author>Carlos GC</author>
+        </item>
+        
+        <copyright>Derechos de Autor Carlos GC</copyright>
+    </channel>
+</rss>

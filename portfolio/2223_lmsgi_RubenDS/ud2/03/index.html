@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!--
+	Descripción: Unidad02-Actividad 03
+	Autor: ruben diez sanchez
+	Fecha creación/modificación: 25/10/2022
+-->
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title> HTML 03 Ruben Diez Sanchez </title>
+	</head>
+	<body>
+	<main>
+	<header>
+		<h1>Plantilla de formulario de Videojuegos Retro</h1>
+	</header>
+		<form action="#Videojuegos.php" method="GET">
+	<fieldset>
+		<legend>Texto</legend>
+		<label for="LbPacman">Pacman</label>
+			<input type="text" name="Pacman" value="Pacman" id="LbPacman" pattern=[Za-Az] size="10">
+		<br>
+		<label for="LbTurok">Turok</label>
+			<input type="text" name="Turok" value="Turok" id="LbTurok">
+		<br>
+		<label for="LbCupHead">CupHead</label>
+			<input type="text" name="CupHead" value="CupHead" id="LbCupHead">
+	</fieldset>
+	<fieldset>
+		<legend>Selecionar Redondo</legend>
+		<label for="Lbjuego">Pacman</label>
+			<input checked type="radio" name="Juegos" value="Pacman" id="Lbjuego">
+		<br>
+		<label for="Lbjuego1">Turok</label>
+			<input type="radio" name="Juegos" value="Turok" id="Lbjuego1">
+		<br>
+		<label for="Lbjuego2">CupHead</label>
+			<input type="radio" name="Juegos" value="CupHead" id="Lbjuego2">
+	</fieldset>
+	<fieldset>
+		<legend>Selecionar Cuadrado</legend>
+		<label for="Lbjuego3">Pacman</label>
+			<input checked type="checkbox" name="Pacman" value="Pacman" id="Lbjuego3">
+		<br>
+		<label for="Lbjuego4">Turok</label>
+			<input type="checkbox" name="Turok" value="Turok" id="Lbjuego4">
+		<br>
+		<label for="Lbjuego5">CupHead</label>
+			<input type="checkbox" name="CupHead" value="CupHead" id="Lbjuego5">
+	</fieldset>
+	<fieldset>
+		<legend>Email</legend>
+		<label for="email" name="" placeholder="Introduce tu email">Introduce tu email</label>
+			<input type="email" id="email"
+				pattern=".+@hotmail\.com" size="30">
+	</fieldset>
+	<fieldset>
+		<legend>Telefono</legend>
+		<label for="idte12">Telefono de contacto</label>
+		<input type="tel" id="idte12" pattern="\(\+[0-9] (2)\) [0-9] (3) [0-9] (3) {0-9] (3)"
+			placeholder="(+34) 666 111 222" required>
+	</fieldset>
+	<fieldset>
+		<legend>Dia</legend>
+		<label for="Lbjuego6">Pacman</label>
+			<input type="date" name="Pacman" min="1999-01-01" value="1999-06-04" id="Lbjuego6" size="31">
+		<br>
+		<label for="Lbjuego7">Turok</label>
+			<input type="date" name="Turok" id="Lbjuego7" size="31">
+		<br>
+		<label for="Lbjuego8">CupHead</label>
+			<input type="date" name="CupHead" id="Lbjuego8" size="31">
+	</fieldset>
+	<fieldset>
+		<legend>Semana</legend>
+		<label for="Lbjuego9">Pacman</label>
+			<input type="week" name="Pacman" id="Lbjuego9">
+		<br>
+		<label for="Lbjuego10">Turok</label>
+			<input type="week" name="Turok" id="Lbjuego10">
+		<br>
+		<label for="Lbjuego11">CupHead</label>
+			<input type="week" name="CupHead" id="Lbjuego11">
+	</fieldset>
+	<fieldset>
+		<legend>Mes</legend>
+		<label for="Lbjuego12">Pacman</label>
+			<input type="month" name="Pacman" id="Lbjuego12">
+		<br>
+		<label for="Lbjuego13">Turok</label>
+			<input type="month" name="Turok" id="Lbjuego13">
+		<br>
+		<label for="Lbjuego14">CupHead</label>
+			<input type="month" name="CupHead" id="Lbjuego14">
+	</fieldset>
+	<fieldset>
+		<legend>Rango</legend>
+		<label for="Lbjuego15">Pacman</label>
+			<input type="range" name="Pacman" id="Lbjuego15">
+		<br>
+		<label for="Lbjuego16">Turok</label>
+			<input type="range" name="Turok" id="Lbjuego16">
+		<br>
+		<label for="Lbjuego17">CupHead</label>
+			<input type="range" name="CupHead" id="Lbjuego17">
+	</fieldset>
+	<fieldset>
+		<legend>Lista Desplegable</legend>
+		<select name="VidejouegosRetro" id="VideojeugosRetro">
+			<option value="p">Pacman</option>
+			<option value="t">Turok</option>
+			<option value="c">CupHead</option>
+		</select>
+	</fieldset>
+	<fieldset>
+		<legend>Opciones definidas</legend>
+		<label for="idBrowser">Seleciona tu juego favorito</label>
+			<input list="lstBrowsers" name="browser" id="idBrowser">
+			<datalist id="lstBrowsers">
+			<option value="Pacman">
+			<option value="Turok">
+			<option value="CupHead">
+			</datalist>
+	</fieldset>
+	<fieldset>
+	<legend>Textarea</legend>
+		<textarea name="textarea" rows="10" cols="50" placeholder= "Escribe un comentario" ></textarea>
+	</fieldset>
+	<fieldset>
+	<legend>Imagenes</legend>
+		<input id="image" type="image" width="100" height="100" alt="Pacman"
+			src="images/pacman.png">
+			<br>
+		<input id="image1" type="image" width="100" height="100" alt="Turok"
+			src="images/turok.png">
+			<br>
+		<input id="image2" type="image" width="100" height="100" alt="Cuphead"
+			src="images/cuphead.png">
+	</fieldset>
+	<fieldset>
+	<legend>Buscador</legend>
+		<input type="search" name="busquedajuegos" placeholder="Videojuegos Retro">
+		<input type="submit" value="Buscar">
+	</fieldset>
+	<fieldset>
+	<legend>URL</legend>
+		<input type="url" name="sitioweb" placeholder="Pagina Web">
+	</fieldset>
+	<fieldset>
+	<legend>Contraseña</legend>
+		<input type="password" name="pass" placeholder="Elije una contraseña fuerte">
+	</fieldset>
+	<fieldset>
+	<legend>Número</legend>
+		<label for="numero">Numero de Juegos (0-100):</label>
+			<input type="number" id="numero" name="numero"
+				min="0" max="100">
+	</fieldset>
+	<fieldset>
+	<legend>Subir archivo</legend>
+		<input type="file" name="archivosubido">
+	</fieldset>
+	<fieldset>
+	<legend>Elegir color</legend>
+		<label for="color">Elige el tipo de color</label>
+			<input type="color" name="colorprincipal">
+	</fieldset>
+	<fieldset>
+	<legend>Enviar y resetear formulario</legend>
+		<input type="submit" value="Enviar datos">
+		<input type="reset" value="Restaurar formulario">
+	</fieldset>
+			</form>
+		</main>
+	</body>
+</html>

@@ -1,0 +1,9 @@
+<!ELEMENT historia (fila+)>
+<!ELEMENT fila (descripcion,fecha)>
+<!ELEMENT fecha (anyo,mes,dia)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT anyo (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT dia (#PCDATA)>
+<!ATTLIST historia xmlns:xsi CDATA #IMPLIED
+                xsi:noNamespaceSchemaLocation CDATA #IMPLIED>

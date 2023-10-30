@@ -1,0 +1,18 @@
+<!ELEMENT menu (plato+, bebida+, formaPago)>
+<!ELEMENT plato (nombre, sinGluten?, cantidad?, precio)>
+<!ATTLIST plato tipo (entrante | primero | segundo | postre) #REQUIRED>
+<!ATTLIST nombre tipo CDATA #IMPLIED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT sinGluten (#PCDATA)>
+<!ATTLIST sinGluten opcion (true | false) "false">
+<!ELEMENT cantidad (#PCDATA)>
+<!ATTLIST cantidad tipo (racion | entera) #REQUIRED>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT bebida (nombre, precio)>
+<!ELEMENT nombre (#PCDATA)>
+<!ATTLIST nombre tipo (con gas | sin gas) #REQUIRED>
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST nombre medida (ml) #REQUIRED>
+<!ATTLIST nombre tamanio (500 | 1000) #IMPLIED>
+<!ELEMENT formaPago (bizum?, visa?, efectivo?, criptomoneda?, paypal?, mastercard?)>
+<!ELEMENT bizum (#PCDATA)>

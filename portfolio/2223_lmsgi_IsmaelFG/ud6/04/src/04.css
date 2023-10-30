@@ -1,0 +1,41 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 20 abr 2023, 13:25:58
+    Author     : daw1
+*/
+header{
+    background-color: #387ab6;
+    color: white;
+    margin-bottom: 1px;
+     margin: 0 auto;
+     width: 50%;
+}
+
+
+table{
+    border: 1px black solid;
+     margin: 0 auto;
+      width: 50%;
+}
+
+td{
+    border: 1px black solid;
+}
+
+
+.t_tabla{
+  background-color: #387ab6;
+  color: white;
+}
+
+.matricula{
+    text-align: center;
+}
+
+.ultima{
+    background-color: #387ab6;
+    color: white;
+}

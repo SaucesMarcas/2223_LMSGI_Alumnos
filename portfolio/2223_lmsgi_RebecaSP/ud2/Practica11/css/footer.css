@@ -1,0 +1,16 @@
+/*FOOTER DE LA PAGINA*/
+footer{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background-color: white;
+	padding: 0.5rem;
+	color: dimgray;
+}
+address{
+    margin-left: 82.5%;
+    text-decoration: none;
+    color:dimgray;
+    font-size: 0.75rem;
+}

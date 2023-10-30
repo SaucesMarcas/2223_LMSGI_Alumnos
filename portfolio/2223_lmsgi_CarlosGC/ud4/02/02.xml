@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Author: Carlos Garcia Cachon
+    Date: 24/01/2023
+    Description: Escribir un documento XML que almacene la siguiente información:
+                    CONTINENTE      PAÍS                CAPITAL
+                    EUROPA          ALEMANIA            BERLÍN
+                    AMÉRICA         ARGENTINA           BUENOS AIRES
+                    AMÉRICA         BAHAMAS             NASSAU
+                    ASIA            AFGANISTÁN          KABUL
+                    ASIA            ARABIA SAUDITA      RIAD
+-->
+<!DOCTYPE world SYSTEM "02.dtd">
+<world xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="02.xsd">
+    <linea>
+        <continente>EUROPA</continente>
+        <pais>ALEMANIA</pais>
+        <capital>BERLÍN</capital>
+    </linea>
+    <linea>
+        <continente>AMÉRICA</continente>
+        <pais>ARGENTINA</pais>
+        <capital>BUENOS AIRES</capital>
+    </linea>
+    <linea>
+        <continente>AMÉRICA</continente>
+        <pais>BAHAMAS</pais>
+        <capital>NASSAU</capital>
+    </linea>
+    <linea>
+        <continente>ASIA</continente>
+        <pais>AFGANISTÁN</pais>
+        <capital>KABUL</capital>
+    </linea>
+    <linea>
+        <continente>ASIA</continente>
+        <pais>ARABIA SAUDITA</pais>
+        <capital>RIAD</capital>
+    </linea>
+</world>

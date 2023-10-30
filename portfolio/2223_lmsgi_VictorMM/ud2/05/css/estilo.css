@@ -1,0 +1,19 @@
+
+img {
+height:650px;
+width:650px;
+}
+
+
+/* Footer */
+footer{
+	background-color:white;
+	color:#3349FF;
+	position:fixed;
+	left: 0;
+	bottom:0;
+	padding: 2rem;
+	width:100%;
+	text-align: center;
+	clear: both;
+}

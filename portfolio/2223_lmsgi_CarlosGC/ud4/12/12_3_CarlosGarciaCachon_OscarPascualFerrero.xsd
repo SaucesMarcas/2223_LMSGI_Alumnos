@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!-- Declaracion de grupos de elementos-->
+<xs:group name="obraGrupo">
+    <xs:sequence>
+        <xs:element name="titulo" type="xs:string"/>
+        <xs:element name="autor" type="xs:string" minOccurs="0"/>
+        <xs:element name="fecha" type="xs:date" minOccurs="0"/>
+    </xs:sequence>
+</xs:group>
+<!-- Declaracio de atributos-->
+<xs:attributeGroup name="idTitulo">
+    <xs:attribute name="id" type="xs:string" use="required"/>
+    <xs:attribute name="tituloCorto" type="xs:string"/>
+</xs:attributeGroup>
+  <xs:element name="hemeroteca">
+    <xs:complexType>
+        <xs:sequence>
+        <xs:element name="publicacion" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:group ref="obraGrupo"/>
+              <xs:sequence>
+                <xs:element name="articulo" minOccurs="0" maxOccurs="unbounded">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="titulo" type="xs:string"/>
+                      <xs:element name="autor" type="xs:string"/>
+                      <xs:element name="contenido" type="xs:string"/>
+                    </xs:sequence>
+                    <xs:attribute name="seccion" type="xs:string"/>
+                    <xs:attribute name="pagina" type="xs:positiveInteger"/>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="noticia">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="titulo" type="xs:string"/>
+                      <xs:element name="contenido" type="xs:string"/>
+                      <xs:element name="fuente" type="xs:string" minOccurs="0"/>
+                    </xs:sequence>
+                    <xs:attribute name="categoria" type="xs:string" default="general"/>
+                  </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+            </xs:sequence>
+            <xs:attributeGroup ref="idTitulo"/>
+            <xs:attribute name="tipo" type="xs:string" fixed="revista"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="libro">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:group ref="obraGrupo"/>
+              <xs:element name="editorial" type="xs:string"/>
+              <xs:element name="isbn" type="xs:string"/>
+              <xs:element name="idioma">
+                <xs:complexType>
+                    <xs:all>
+                        <xs:element name="español" type="xs:boolean"/>
+                        <xs:element name="ingles" type="xs:boolean"/>
+                        <xs:element name="portuges" type="xs:boolean"/>
+                    </xs:all>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="genero">
+                <xs:complexType>
+                    <xs:choice>
+                        <xs:element name="Terror" type="xs:string"/>
+                        <xs:element name="Ciencia_Ficcion" type="xs:string"/>
+                        <xs:element name="Infantil" type="xs:string"/>
+                    </xs:choice>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attributeGroup ref="idTitulo"/>
+            <xs:attribute name="tipo" type="xs:string" fixed="libro"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

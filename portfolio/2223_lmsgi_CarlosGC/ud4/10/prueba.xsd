@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="pedido">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="plato" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" type="xs:string"/>
+              <xs:element name="cantidad" type="xs:string" minOccurs="0"/>
+              <xs:element name="sinGluten" type="xs:boolean" minOccurs="0"/>
+              <xs:element name="precio" type="xs:float"/>
+            </xs:sequence>
+            <xs:attribute name="tipo" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="bebida" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" type="xs:string"/>
+              <xs:element name="precio" type="xs:float"/>
+            </xs:sequence>
+            <xs:attribute name="tipo" type="xs:string" use="optional"/>
+            <xs:attribute name="medida" type="xs:string" use="optional"/>
+            <xs:attribute name="tamanyo" type="xs:integer" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="formaPago">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="bizum" type="xs:float"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

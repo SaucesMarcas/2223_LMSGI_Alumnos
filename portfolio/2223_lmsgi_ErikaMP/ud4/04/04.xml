@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Nombre: Erika Martínez Pérez
+    Práctica: Actividad 4
+    Descripción: XML04.- Representación de un curriculum vitae. 
+        Representar en un documento XML el curriculum vitae. Los datos que debe contener son los siguientes:
+        • Nombre y apellidos
+        • Año de nacimiento
+        • Residencia
+            o Ciudad
+            o País
+        • Datos de contacto
+            o Teléfono
+            o Correo electrónico
+            o Perfil Linkedln
+            o Breve descripción general.
+            o Listado de competencias, indicando el nombre y el nivel
+            o Formación académica, con la titulación, el centro de formación y el año de titulación.
+            o Experiencia profesional, especificando el puesto, la empresa, el año de inicio y el año de finalización.
+-->
+<!DOCTYPE curriculum SYSTEM "04.dtd">
+<curriculum>
+    <nomb>Erika</nomb>
+    <apell1>Martínez</apell1>
+    <apell2>Pérez</apell2>
+    <residencia>
+        <ciudad>Benavente</ciudad>
+        <pais>España</pais>
+    </residencia>
+    <datoscontacto>
+        <tlf>987654321</tlf>
+        <email>perezmartinezerika@gmail.es</email>
+        <linkedin>https://linkedin.com/profile/es/za/erika</linkedin>
+        <descripcion>Datos sobre el curriculum</descripcion>
+        <competencias>
+            <competencia nivel="alto">>Diseño y maquetación de Web</competencia>
+            <competencia nivel="medio">Redes Sociales y posicionamiento rrss</competencia>
+            <competencia nivel="bajo">Programación sobre basede datos</competencia>
+        </competencias>
+        <formacion>
+            <titulacion anyo="2019" centro="IES LOS SAUCES">Sistemas Microinformáticos y Redes</titulacion>
+            <titulacion anyo="2018" centro="IES LOS SAUCES">Bachillerato de ciencias - tecnológico</titulacion>
+        </formacion>
+        <experiencia>
+            <empresa>Fyvasa</empresa>
+            <puesto>Becario Informático</puesto>
+        </experiencia>
+    </datoscontacto>
+</curriculum>

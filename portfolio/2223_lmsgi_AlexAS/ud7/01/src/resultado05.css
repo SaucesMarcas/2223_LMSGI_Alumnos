@@ -1,0 +1,7 @@
+table,th,td{
+    border: 1px double green;
+}
+
+.children{ color: blue;}
+.web{ color:red;}
+.cooking{color: green}

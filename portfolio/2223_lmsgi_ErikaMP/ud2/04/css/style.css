@@ -1,0 +1,64 @@
+	* {
+		margin:0;
+		padding:0;
+		font-family:'Poppins', consolas;
+	}
+	
+	body {
+		background-image:linear-gradient(90deg,#54428C,#6747A7,#6E35FC,#6851DA,#6E35FC,#6747A7,#54428C);
+		background-size:500%;
+		animation:fani 10.5s infinite;
+	}
+	
+	@keyframes fani{
+		0% {
+			background-position:0% 50%;
+		}
+		25%{
+			background-position:100% 50%;
+		}
+		50% {
+			background-position:0% 50%;
+		}
+		75%{
+			background-position:100% 50%;
+		}
+		100%{
+			background-position:0% 50%;
+		}
+	}
+	
+	#destacado {
+		color:white;
+		text-align: center;
+		margin:30px 0;
+		font-size:45px;
+		font-weight: bold;
+	}
+	.destacado2 {
+		color:white;
+		text-align: middle;
+		margin:10px 0;
+		font-size:22px;
+		font-weight: bold;
+	}
+	.destacado3 {
+		color:white;
+		text-align: middle;
+		margin:6px 0;
+		font-size:28px;
+		font-weight: bold;
+	}
+	
+	.image {
+		padding: 5px;
+		width: 30%;
+		height: 340px;
+	}
+	
+	.video {
+		padding: 5px;
+		width: 32%;
+		height: 340px;
+	}
+	

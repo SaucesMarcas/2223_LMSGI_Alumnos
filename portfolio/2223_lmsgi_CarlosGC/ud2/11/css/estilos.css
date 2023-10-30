@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: beige;
+}
+
+body header h1 {
+    height: 125px;
+    background-color: green;
+    padding-left: 10rem;
+    padding-top: 1rem;
+    color: white;
+}
+
+img {
+    padding: 0.5rem 0.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+figcaption {
+    position: absolute;
+    top: 7.5rem;
+    left: 0.5rem;
+    color: white;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    text-transform: uppercase;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding-left: 9rem;
+}
+
+li {
+    display: inline-table;
+    font-size: 2rem; 
+    margin-left: 1rem;
+}
+
+nav {
+    background-color: green;
+    
+}
+
+h2 {
+    color: black;
+}
+
+h3 {
+    margin-left: 15%;
+    width: 70%;
+}
+
+article {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+td {
+    text-align: center;
+    width: 200px;
+}
+
+table {
+    width: 70%;
+    margin-left: 15%;
+}
+
+td {
+    border: 1px solid white;
+}
+
+#horario {
+    background-color: green;
+}
+
+.horario {
+    background-color: green;
+}
+
+#entorno {
+    background-color: greenyellow;
+}
+
+.EDD {
+    background-color: greenyellow;
+}
+
+#lmsgi {
+    background-color: gold;
+}
+
+.LMSG {
+    background-color: gold;
+}
+
+#programacion {
+    background-color: darkorange;
+}
+
+.PROG {
+    background-color: darkorange;
+}
+
+#fol {
+    background-color: gray;
+}
+
+.FOL {
+    background-color: gray;
+}
+
+#bd {
+    background-color: darksalmon;
+}
+
+.BBDD {
+    background-color: darksalmon;
+}
+
+#sistemas {
+    background-color: goldenrod;
+}
+
+.SINF {
+    background-color: goldenrod;
+}
+
+#clavep {
+    margin-top: 1rem;
+    background-color: aqua;
+}
+
+#clavem {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: green;
+}

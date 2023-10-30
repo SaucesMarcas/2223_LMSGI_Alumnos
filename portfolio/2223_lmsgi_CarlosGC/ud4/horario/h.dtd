@@ -1,0 +1,10 @@
+<!ELEMENT horario (dia+)>
+  <!ELEMENT dia (hora+)>
+  <!ATTLIST dia tipo CDATA #REQUIRED>
+  <!ELEMENT hora (asignatura, profesor)>
+  <!ATTLIST hora horaEntrada CDATA #REQUIRED
+                horaSalida CDATA #REQUIRED>
+  <!ELEMENT asignatura (#PCDATA)>
+  <!ELEMENT profesor (#PCDATA)>
+  <!ATTLIST horario xmlns:xsi CDATA #IMPLIED
+                xsi:noNamespaceSchemaLocation CDATA #IMPLIED>

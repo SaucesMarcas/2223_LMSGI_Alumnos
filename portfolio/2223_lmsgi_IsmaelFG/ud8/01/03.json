@@ -1,0 +1,36 @@
+ {
+"usuarios":[
+    {
+        "nombre":"ismael",
+        "configuracion":{
+            "color_fondo":"blue",
+            "tamaño_texto":24,
+            "color_texto":"black",
+            "idioma":"es",
+            "pantalla_inicio":true
+        }
+    },
+    {
+        "nombre":"pedro",
+        "configuracion":{
+            "color_fondo":"white",
+            "tamaño_texto":18,
+            "color_texto":"red",
+            "idioma":"en",
+            "pantalla_inicio":false
+        }
+    },
+    {
+        "nombre":"juan",
+        "configuracion":{
+            "color_fondo":"black",
+            "tamaño_texto":32,
+            "color_texto":"white",
+            "idioma":"fr",
+            "pantalla_inicio":true
+        }
+    }
+
+]
+
+ }

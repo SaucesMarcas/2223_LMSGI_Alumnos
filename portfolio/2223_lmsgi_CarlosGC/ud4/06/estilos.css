@@ -1,0 +1,8 @@
+* {
+    white-space: pre;
+}
+
+codigo::after {
+    content: '\A';
+    white-space: pre;
+}

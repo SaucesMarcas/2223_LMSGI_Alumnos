@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Descripción: 
+	Autor: Ismael Ferreras García
+	Fecha creación/modificación: 17/01/2023
+-->
+<!DOCTYPE hechos SYSTEM "03.dtd">
+<hechos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="03.xsd"> 
+    <linea>
+        <descripcion>Se funda youtube</descripcion>
+        <fecha>
+            <dia>15</dia>
+            <mes>02</mes>
+            <anio>2005</anio>
+        </fecha>
+    </linea>
+    <linea>
+        <descripcion>Se funda Google</descripcion>
+        <fecha>
+            <dia>4</dia>
+            <mes>09</mes>
+            <anio>1998</anio>
+        </fecha>
+    </linea>
+    <linea>
+        <descripcion>Se funda Facebook</descripcion>
+        <fecha>
+            <dia>4</dia>
+            <mes>02</mes>
+            <anio>2004</anio>
+        </fecha>
+    </linea>
+</hechos>

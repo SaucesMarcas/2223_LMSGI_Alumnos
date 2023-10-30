@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--
+	Descripcion: Examen 1º Evaluacion
+	Autor: Rebeca Sánchez Pérez
+	Fecha creacion/modificacion: 13/12/2022
+-->
+<html lang="es"> 
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Rebeca Sánchez Pérez">
+		<meta name="description" content="Primer examen de lenguaje de marcas">
+		<meta name="Keywords" content="examen, preguntas, notas, ejercicios">
+		<link rel="stylesheet" href="css/estilos1.css">
+		<link rel="icon" type="image/png" href="media/images/logo.png">
+		<title>1º Evaluación. Rebeca Sánchez Pérez</title>
+	</head>
+	<body>
+		<header id="encabezado">
+			<img src="media/images/logo.png" alt="logo">
+			<h1>Lenguaje de Marcas y Sistemas de Gestión de Información</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="login.html">Acceso Privado</a></li>
+			</ul>
+		</nav>
+		<main>
+			<div class="primer">
+				Esta página web es el examen de la 1º evaluación 
+				del módulo <span class="cursiva">Lenguaje de Marcas y Sistemas de Gestión de Información</span> de 1º Curso del <span class="negrita">Ciclo 
+				Formativo de Grado Superior de Desarrollo de Aplicaciones Web</span> en el <span class="verde">IES los Sauces (Benavente).</span>
+			</div>
+			<div id="contenido2">
+				<section id="listado-de-practicas">
+					<header>
+						<h2>Listado de practicas</h2>
+					</header>
+					<div class="article">
+						<ol>
+							<li><a href="../ud2/Practica09/index.html">Noticias</a></li>
+							<li><a href="../ud2/Practica11/index.html">Horario</a></li>
+							<li><a href="../ud2/Practica03/index.html">Formulario</a></li>
+							<li><a href="../ud2/Practica04/index.html">Multimedia</a></li>
+						</ol>
+					</div>
+				</section>
+				<section id="buscador">
+					<header>
+						<h2>Buscador</h2>
+					</header>
+					<div class="article">
+						<form method="get" action="#busqueda.php" id="form1">
+							<div>
+								<input type="search" id="idbuscador-form" name="buscador" placeholder="Escribe aqui">
+								<input type="button" value="Buscar">
+							</div>
+						</form>
+					</div>
+				</section>
+				<section id="contacto">
+					<header>
+						<h2>Contacto</h2>
+					</header>
+					<div class="article">
+						<form method="post" action="#altacontacto.php" id="form2">
+							<div>
+								<label for="idnombre-form">Nombre (requerido)</label>
+								<input type="text" id="idnombre-form" name="nombre-form" required>
+							</div>
+							<div>
+								<label for="idCorreo-form">Tu correo electrónico (requerido)</label>
+								<input type="email" id="idCorreo-form" name="correo-form" required>
+							</div>
+							<div>
+								<label for="idasunto-form">Asunto</label>
+								<input type="text" id="idasunto-form" name="asunto-form">
+							</div>
+							<div>
+								<label for="idmensaje-form">Mensaje</label><br>
+								<textarea id="idmensaje-form" name="mensaje-form" rows="5" placeholder="Escribe aqui"></textarea>
+							</div>
+							<input type="submit" value="ENVIAR">
+						</form>
+					</div>
+				</section>
+				<section id="audio">
+					<header>
+						<h2>Audio</h2>
+					</header>
+					<div class="article">
+						<figure>
+							<img src="media/images/mh.gif" alt="Monster High">
+							<audio controls>
+								<source src="media/audio/monster.mp3" type="audio/mpeg">
+								Tu navegador no soporta HTML5, por favor pruebe con Chrome.
+							</audio>
+							<figcaption>Monster High</figcaption>
+						</figure>
+					</div>
+				</section>
+				<section id="video">
+					<header>
+						<h2>Video</h2>
+					</header>
+					<div class="article">
+						<video controls>
+							<source src="media/video/Armageddon.mp4" type="video/mp4">
+							Tu navegador no soporta HTML5, por favor pruebe con Chrome.
+						</video>
+						<figcaption>Trailer Armageddon</figcaption>
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer>
+			<div>
+				<div id="footer-menu">
+					<table>
+						<tbody>
+							<tr>
+								<td><a href="#">Ubicación</a></td>
+								<td><a href="#">Politica de Cookies</a></td>
+								<td rowspan="2"><a href="#">Aviso legal</a></td>
+							</tr>
+							<tr>
+								<td><a href="#">Contacto</a></td>
+								<td><a href="#">Politica de privacidad</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div id="footer-redes">
+					<figure>
+						<a href="#"><img src="media/images/twitter-256.png" alt="twitter"></a>
+						<a href="#"><img src="media/images/facebook-256.png" alt="facebook"></a>
+						<a href="#"><img src="media/images/icono-youtube.png" alt="youtube"></a>
+						<a href="#"><img src="media/images/logo-instagram.png" alt="ig"></a>
+					</figure>
+				</div>
+			</div>
+			<div id="footer-derechos">
+				<address>2022-23  IES LOS SAUCES. ©Todos los derechos reservados y optimizado para Chrome. Rebeca Sánchez Pérez</address>
+			</div>
+		</footer>
+	</body>
+</html>

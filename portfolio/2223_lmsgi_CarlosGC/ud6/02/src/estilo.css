@@ -1,0 +1,48 @@
+h1 {
+    background-color: #C6BFBD;
+    color: green;
+}
+
+h2 {
+    background-color: green;
+    color: white;
+}
+
+tr {
+    border-bottom: 1px solid #C6BFBD;
+}
+
+p {
+    font-weight: bold;
+}
+
+.totalPrecio {
+    font-weight: bold;
+}
+
+.numTickets {
+   border: 2px solid greenyellow;
+   color: green;
+   font-size: 1em;
+    font-weight: bold;
+}
+
+table {
+    width: 75%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.fechaTicket {
+    text-align: center;
+    color: green;
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+footer {
+    background-color: green;
+    color: white;
+    text-align: right;
+}
+

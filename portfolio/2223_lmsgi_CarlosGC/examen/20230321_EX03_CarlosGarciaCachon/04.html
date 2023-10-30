@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+		<meta name="author" content="Carlos García Cachón">
+		<title>EXAMEN 03 Carlos Garcia Cachon</title>
+        <style>
+			form { width: 50%;
+			}
+            legend { background-color: grey;
+                        color: white;
+
+            }
+            div { margin-bottom: 5px;
+            }
+		</style>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1></h1>
+            </header>
+            <form method="post" action="#nohecopiadoaOscar.php">
+                <fieldset>
+                    <legend>Datos fiscales</legend>
+                    <div>
+                        <label for="idEnParo"><input checked type="radio" value="EnParo" name="tipoEmpleo" id="idEnParo">En paro</label>
+                    </div>
+                    <div>
+                        <label for="idAutonomo"><input type="radio" value="Autonomo" name="tipoEmpleo" id="idAutonomo">Autonomo</label>
+                    </div>
+                    <div>
+                        <label for="idPor_c._ajena"><input type="radio" value="Por_c._ajena" name="tipoEmpleo" id="idPor_c._ajena">Por c. ajena</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <div>
+                        <label for="id_text_name">Nombre: </label>
+                        <input id="id_text_name" name="nombre" maxlength="20" rows="1" cols="10" required></input>
+                    </div>
+                    <div>
+                        <label for="id_text_address">Apellidos: </label>
+                        <input id="id_text_address" name="apellido" maxlength="20" rows="1" cols="10" required></input>
+                    </div>
+                    <div>
+                        <label for="idDesplegable">Sueldo: </label>
+                        <select id="idDesplegable">
+                            <option selected value="mas400E">Mas de 400 euros</option>
+                            <option selected value="menos400E">Menos de 400 euros</option>
+                            <option selected value="variables">Variables</option>
+                        </select>
+                    <div>
+                    <div>
+                        <label for="idEP"><input checked type="checkbox" value="EP" name="Enfermedad_Profesional" id="idEP">Con enfermedad profesional</label>
+                        <br>
+                        <label for="idPC"><input type="checkbox" value="PC" name="Padres_Cargo" id="idPC">Con padres a cargo</label>
+                        <br>
+                        <label for="idHC"><input type="checkbox" value="HC" name="Hijos_Cargo" id="idHC">Con hijos a cargo</label>
+                    </div>
+                    <div>
+                        <button type="submit" value="Enviar">Enviar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Autor: Erika Martínez Pérez
+    Práctica: Actividad 8
+    Descripción: Tenemos que almacenar información sobre lugares. 
+            Se pide elaborar el DTD para comprobar que está bien formado.
+-->
+<!DOCTYPE SYSTEM "08.dtd">
+<lugares>
+    En el <lugar>polo norte</lugar> hace mucho frío. Pero, en 
+    el <lugar>desierto del Sahara</lugar> hace mucho calor.
+</lugares>

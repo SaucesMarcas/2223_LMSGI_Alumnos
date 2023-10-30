@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- 
+    Descripción: Unidad04-Actividad 07
+	Autor: ruben diez sanchez
+	Fecha creación/modificación: 17/01/2023
+-->
+<estudiante>
+    <linea>
+        <nombre>Ruben</nombre>
+        <fisrtname>Diez</fisrtname>
+        <lastname>Sanchez</lastname>
+        <telefono>012345678</telefono>
+        <email>ruben@company.es</email>
+        <address>C/benavente</address>
+        <city>Zamora</city>
+        <state>España</state>
+        <zip>560212</zip>
+    </linea>
+</estudiante>

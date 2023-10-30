@@ -1,0 +1,20 @@
+Practica 01
+He cambiado los párrafos que he incluido dentro de un nuevo artículo.
+Practica 02
+Practica 03
+Usa placeholder en email, telefono, datelist,el textarea y placeholder, hidden, el label de elemento color.
+Practica 04
+Mejorar el CSS, audio con imagen.
+Practica 05
+Etiquetas meta.
+Practica 06
+Etiquetas metas, favicon, titulo h1 y mejorar CSS.
+Practica 07
+Practica 08
+Practica 09
+Mejorar el HTML, ocultar los elementos de las seciones utilizando la etiqueta hidden, centrar las imagenes y poner la fuente del pie de foto mas pequeña.
+Practica 10
+Cambiar colores, cambiar el titulo, cambiar el padding, figcaption mas pequeño y en cursiva, pie de pagina mas pequeño.
+Practica 11
+Insertar la regla para que los bordes estén unidos.
+Practica 12

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formulario>
+    <datosfiscales> <!--supongo que es un complex type con un choice en vez de una sequence-->
+        <enparo/>
+    </datosfiscales>
+    <datospersonales>
+        <nombre>Amor</nombre>
+        <apellidos>pedro</apellidos>
+        <sueldo valor="Más de 400"/> <!--supongo que el valor de la seleccion es el valor del atributo-->
+        <conenfermedadprofesional/> <!--supongo que estos elementos son opcionales (minocur=0) y solo aparecen cuando son seleccionados-->
+        <conhijosacargo/>
+    </datospersonales>
+</formulario>

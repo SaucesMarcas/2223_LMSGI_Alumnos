@@ -1,0 +1,80 @@
+body{
+    background-color: cyan;
+}
+div{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 10PX;
+    padding-left: 10px;
+   
+    width: 200px;
+
+}
+#lorem{
+    border-top: dashed red 1px;
+    border-bottom: dashed green 1px;
+    border-left: dotted orange 1px;
+    border-right: dotted red 1px;
+    width: 100%;
+    padding-top: 25px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    position: center;
+}
+.lor1{
+    border: solid red 3px;
+    width: 30%;
+    margin-bottom: 10px;
+    font-family: Verdana, sans-serif;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.lor2{
+        border: solid red 3px;
+        width: 30%;
+        margin-bottom: 10px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-left: 1200px;
+    }
+.lor3{
+        border: solid red 3px;
+        width: 30%;
+        margin-bottom: 10px;
+        padding-top: 25px;
+    padding-bottom: 25px;
+    }
+ .lor4{
+        border: solid red 3px;
+        width: 30%;
+        margin-bottom: 10px;
+        padding-top: 25px;
+    padding-bottom: 25px;
+    margin-left: 1200px;
+    }
+.lor5{
+        border: solid red 3px;
+        width: 30%;
+        margin-bottom: 10px;
+        padding-top: 25px;
+    padding-bottom: 25px;
+    }
+.lor6{
+        border: solid red 3px;
+        width: 30%;
+        margin-bottom: 10px;
+        padding-top: 25px;
+    padding-bottom: 25px;
+    margin-left: 1200px;
+    }
+
+.logo-1{
+    font-family: Verdana, sans-serif;
+}
+.logo-2{
+    font-family: 
+}
+.logo-3{}
+.logo-4{}
+

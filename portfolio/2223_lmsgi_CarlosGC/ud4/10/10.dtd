@@ -1,0 +1,23 @@
+<!ELEMENT pedido (plato+,bebida+,formaPago*)>
+<!ELEMENT plato (nombre|cantidad?|sinGluten?|precio)>
+    <!ATTLIST plato tipo (entrante|primero|segundo|postre) #REQUIRED>
+<!ELEMENT cantidad (#PCDATA)>
+    <!ATTLIST cantidad tipo (racionM|racionG) #REQUIRED>
+<!ELEMENT sinGluten (#PCDATA)>
+    <!ATTLIST sinGluten opcion (true|false) #IMPLIED>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT bebida (nombre,precio)>
+<!ELEMENT nombre (#PCDATA)>
+    <!ATTLIST nombre tipo (CDATA|sin_gas|con_gas) #IMPLIED>
+    <!ATTLIST nombre medida CDATA #IMPLIED>
+    <!ATTLIST nombre tamanyo CDATA #IMPLIED>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT formaPago (#PCDATA|efectivo|bizum|visa|mastercard|criptomoneda|paypal)*>
+<!ELEMENT bizum (#PCDATA)>
+<!ELEMENT visa (#PCDATA)>
+<!ELEMENT criptomoneda (#PCDATA)>
+<!ELEMENT paypal (#PCDATA)>
+<!ELEMENT mastercard (#PCDATA)>
+<!ATTLIST pedido 
+                xmlns:xsi CDATA #IMPLIED
+                xsi:noNamespaceSchemaLocation CDATA #IMPLIED>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Descripción: examen
+	Autor: ruben diez sanchez
+	Fecha creación/modificación: 17/01/2023
+-->
+<tiempo>
+	<ciudad nombre="Zamora">
+		<dia formato="YYYY-MM-DD">10</dia>
+		<precipitacion tipo="int(0-100)">5%</precipitacion>
+		<estado tipo="string">Nubes</estado>
+		<temperatura tipo="int(-100-100)">12/26</temperatura>
+		<viento tipo="valor,int">N 0</viento>
+	</ciudad>
+	<ciudad nombre="Madrid">
+		<dia formato="YYYY-MM-DD">11</dia>
+		<precipitacion tipo="int(0-100)">0%</precipitacion>
+		<estado tipo="string">Despejado</estado>
+		<temperatura tipo="int(-100-100)">13/26</temperatura>
+		<viento tipo="valor,int">NE 5</viento>
+	</ciudad>
+	<ciudad nombre="Valladolid">
+		<dia formato="YYYY-MM-DD">15</dia>
+		<precipitacion tipo="int(0-100)">10%</precipitacion>
+		<estado tipo="string">Cubierto con lluvia escasa</estado>
+		<temperatura tipo="int(-100-100)">14/28</temperatura>
+		<viento tipo="valor,int">N 20</viento>
+	</ciudad>
+</tiempo>

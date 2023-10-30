@@ -1,0 +1,9 @@
+<!ELEMENT hechos (linea+)>
+<!ELEMENT linea (descripcion,fecha)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT fecha (dia,mes,anio)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT anio (#PCDATA)>
+<!ATTLIST hechos xmlns:xsi CDATA #IMPLIED
+xsi:noNamespaceSchemaLocation CDATA #IMPLIED>

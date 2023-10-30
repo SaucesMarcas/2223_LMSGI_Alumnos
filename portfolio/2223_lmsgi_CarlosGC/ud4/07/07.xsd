@@ -1,0 +1,28 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="grupo">
+    <xs:annotation>
+      <xs:documentation> 
+    Author: Carlos Garcia Cachon
+    Date: 17/01/2023
+    Description: Tenemos que almacenar información sobre un grupo de estudiantes, por cada estudiante almaceno la siguiente 
+información: nombre del estudiante y el código del estudiante. Además, cada estudiante puede tener cero, uno o dos tutores, 
+que a la vez son estudiantes.
+
+Nota. - El código del estudiante y los códigos de los tutores son atributos. (Tipo de atributos ID Y IDREF)
+</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="estudiante" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="nombre"/>
+            </xs:sequence>
+            <xs:attribute type="xs:ID" name="codigo"/>
+            <xs:attribute type="xs:IDREFS" name="tutor" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

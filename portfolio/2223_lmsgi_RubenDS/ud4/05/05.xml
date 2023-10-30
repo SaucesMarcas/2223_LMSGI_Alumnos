@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- 
+    Descripción: Unidad04-Actividad 05
+	Autor: ruben diez sanchez
+	Fecha creación/modificación: 17/01/2023
+-->
+<datos>
+    <linea>
+        <nombre>Juan</nombre>
+        <apellidos>Sanchez</apellidos>
+        <telefono>123456789</telefono>
+        <email>juansanchez@company.com</email>
+        <ciudad>Kamataka</ciudad>
+        <localidad>Bangalore</localidad>
+        <cp>560212</cp>
+    </linea>
+</datos>

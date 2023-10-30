@@ -1,0 +1,5 @@
+<!ELEMENT planeta (fila+)>
+<!ELEMENT fila (continente,pais,capital)>
+<!ELEMENT continente (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT capital (#PCDATA)>

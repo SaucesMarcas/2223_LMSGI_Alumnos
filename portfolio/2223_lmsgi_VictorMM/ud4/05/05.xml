@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Company SYSTEM "05.dtd">
+<!--
+	Descripción: Unidad04-Actividad 03
+	Autor: victor manuel manrique
+	Fecha creación/modificación: 17/01/2023
+-->
+<Company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="05.xsd">
+    <Employe>
+          <FirstName>Juan</FirstName>
+          <LastName>Sanchez</LastName>
+          <ContactNo>123456789</ContactNo>
+          <Email>juansanchez@compny.com</Email>
+          <Address>
+               <City>Bangalore</City>
+               <State>Karnataka</State>
+               <Zip>560212</Zip>
+          </Address>
+     </Employe>
+</Company>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE curriculum SYSTEM "04.dtd">
+<curriculum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="04.xsd">
+        <nombre>Rebeca</nombre>
+        <apellidos>Sánchez Pérez</apellidos>
+        <residencia>
+            <ciudad>Zamora</ciudad>
+            <pais>España</pais>
+        </residencia>
+        <contacto>
+            <telefono>958258418</telefono>
+            <correo>rebeca.sanper.1@educa.jcyl.es</correo>
+            <linkedin>https://</linkedin>
+            <descripcion>Descripcion sobre el curriculum</descripcion>
+            <competencias>
+                <competencia nivel="alto">
+                    Redes Sociales
+                </competencia>
+                <competencia nivel="medio">
+                    Diseño y maquetacion de web
+                </competencia>
+                <competencia nivel="bajo">
+                    Posicionamiento SEO
+                </competencia>
+            </competencias>
+            <formacion>
+                <titulacion anyo="2016" centro="IES LOS SAUCES">Educacion Secundaria Obligatoria</titulacion>
+                <titulacion anyo="2020" centro="IES FRAY DIEGO TADEO">Bachillerato</titulacion>
+            </formacion>
+            <experiencia>
+                <puesto>Puesto de trabajo</puesto>
+                <empresa>Empresa1</empresa>
+                <anyoInicio>2002</anyoInicio>
+                <anyoFinal>2022</anyoFinal>
+            </experiencia>
+            <experiencia>
+                <puesto>Puesto de trabajo 2</puesto>
+                <empresa>Empresa2</empresa>
+                <anyoInicio>2022</anyoInicio>
+            </experiencia>
+        </contacto>
+</curriculum>

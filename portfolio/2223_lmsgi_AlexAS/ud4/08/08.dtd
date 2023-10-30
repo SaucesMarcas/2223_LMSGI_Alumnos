@@ -1,0 +1,3 @@
+<!ELEMENT lugares (#PCDATA|lugar)*>
+<!--Es importante el orden del pcdata-->
+<!ELEMENT lugar (#PCDATA)>

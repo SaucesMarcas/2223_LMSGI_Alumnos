@@ -1,0 +1,41 @@
+h1 {
+    color:green;
+    background-color: grey;
+}
+
+html {
+    font-family: Roboto;
+}
+
+
+caption {
+    caption-side: bottom;
+    color: green;
+    font-style: italic;
+    font-variant: small-caps;
+    
+    
+}
+
+h3 {
+    color: green;
+    padding: 4px;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 75%;
+}
+
+tr {
+    border-bottom: 1px solid grey;
+}
+
+footer div{
+    background-color: green;
+    color: white;
+    text-align: right;
+    padding: 5px;
+    text-transform: uppercase;
+}

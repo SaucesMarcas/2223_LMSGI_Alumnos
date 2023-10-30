@@ -1,0 +1,195 @@
+/* FUENTES */
+@font-face{ 
+	font-family: 'Roboto-bold';
+	src: url("../fonts/Roboto/Roboto-Bold.ttf"); 
+} 
+/* RESETEAR FORMATOS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: "Courier New", 'Courier New', Courier, monospace;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+ol,ul{
+    list-style: none;
+}
+/* ENCABEZADO */
+#encabezado{
+    width: 100%;
+    border-bottom: 2px groove green;
+    font-family: 'Roboto-bold', sans-serif;
+    background-color: white;
+   max-height: 10rem;
+}
+#encabezado img{
+    width: 8rem;
+    float: left;
+    padding: 1rem 0 0.5rem 0.5rem;
+}
+h1{
+    color: green;
+    margin-left: 8rem;
+    font-size: 3rem;
+}
+/* MENU DE NAVEGACION */
+nav ul{
+    width: 10%;
+    float:right;
+}
+nav li{
+    background-color: green;
+    margin: 1rem 0;
+}
+nav a{
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-family: 'Roboto-bold', sans-serif;
+    
+}
+/* ********************************* MAIN */
+main{
+    margin-top: 150px;
+}
+/********** primer bloque del main */
+main .primer {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: justify;
+    text-indent: 3rem;
+}
+main header  h2{
+    margin:0;
+    padding: 5px;
+    color:white;
+    text-align: center;
+    background-color: green;
+     border-radius: 25px 25px 0 0;
+}
+ section {
+    width: 15rem;
+    margin:5px;   
+    float:left;
+    color:green;
+ }
+
+section a{
+    color:green;
+   
+} 
+section .article {
+    border: 4px solid green;
+ }
+
+ /****** form ****/
+input {
+  padding: 0.2rem;
+  margin: 0.2rem;
+  font-size: 17px;
+  width: 90%;
+  display: block;
+  border-color: green;
+}
+
+textarea {
+  width: 90%;
+  border-color: green;
+  margin-left: 5px;
+}
+
+label {
+  color: green;
+  
+  font-size: 17px;
+  font-weight: bold;
+
+  display:block;
+
+}
+
+input[type="button"] {
+  color: green;
+  border-color: green;
+  border-style: solid;
+}
+ /***** articulo con imagen ***/
+ #contenido2 .article  img {
+    width: 100%;
+ }
+  #contenido2 .article  audio {
+    width: 100%;
+ }
+  #contenido2 .article  figcaption {
+   text-align: center;
+   font-weight: bold;
+ }
+ /****** article con video*/
+  #contenido2 .article  video {
+    width: 100%;
+ }
+
+ #listado-de-practicas ol{
+    list-style-type:decimal;
+    list-style-position: inside;
+ }
+
+ 
+/* ********************************************************** FOOTER */
+/***************** PIE DE LA WEB ************************/
+footer {
+  border-top: 5px groove green;
+  background-color: green;
+  font-family: "Roboto Bold", sans-serif;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  position: fixed;
+  bottom:0;
+  left: 0;
+  height: 6rem;
+  width: 100%;
+}
+
+#footer-menu {
+  width: 75%;
+  float: left;
+}
+
+footer table {
+  width: 50%;
+  color: white;
+}
+
+footer table td {
+  padding: 3px;
+  border: 1px solid white;
+}
+
+footer table td a {
+  color: white;
+}
+
+#footer-redes {
+  float: right;
+  padding-top: 1rem;
+}
+
+footer img {
+  width: 2rem;
+}
+
+#footer-derechos {
+  clear: both;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 0.8rem;
+  text-transform: unset;
+}
+

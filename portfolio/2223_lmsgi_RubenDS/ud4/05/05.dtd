@@ -1,0 +1,9 @@
+<!ELEMENT datos (fila+)>
+<!ELEMENT fila (nombre,apellidos,telefono,email,ciudad,localidad,cp)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT localidad (#PCDATA)>
+<!ELEMENT cp (#PCDATA)>

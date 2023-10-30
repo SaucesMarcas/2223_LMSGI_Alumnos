@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogo>
+    <portatil>
+        <referencia>HP 15-DA0204NS</referencia>
+        <nombre>PORTATIL HP</nombre>
+        <fabricante>
+            <procesador>
+                <nombre>CORE I3-7020U</nombre>
+                <cache tamanyo="Gb">8</cache>
+                <numero>1</numero>
+                <velocidad medida="Ghz">2.3</velocidad>
+            </procesador>
+            <ram>
+                <memoria capacidad="Gb">8</memoria>
+                <tipo>DDR4</tipo>
+            </ram>
+            <disco>
+                <tamanyo capacidad="Gb">256</tamanyo>
+                <tipo>SSD</tipo>
+            </disco>
+            <pantalla>
+                <dimension tamanyo="pulgadas">15</dimension>
+                <resolucion>1266*768</resolucion>
+                <resolucionMaxima/>
+            </pantalla>
+            <grafica>intel UHD Graphics 620</grafica>
+            <foto>
+                <nombre>portatil1.png</nombre>
+            </foto>
+        </fabricante>
+    </portatil>
+    <portatil>
+        <referencia>IDEAPAD S145</referencia>
+        <nombre>PORTATIL LENOVO IDEAPAD</nombre>
+        <fabricante>
+            <procesador>
+                <nombre>CORE I3-8145U</nombre>
+                <cache tamanyo="Gb">8</cache>
+                <numero>1</numero>
+                <velocidad medida="Ghz">2.1</velocidad>
+            </procesador>
+            <ram>
+                <memoria tamanyo="Gb">8</memoria>
+                <tipo>DDR4</tipo>
+            </ram>
+            <disco>
+                <tamanyo capacidad="Gb">256</tamanyo>
+                <tipo>SSD</tipo>
+            </disco>
+            <pantalla>
+                <dimension tamanyo="pulgadas">15.6</dimension>
+                <resolucion>1366*768</resolucion>
+                <resolucionMaxima>1366*768</resolucionMaxima>
+            </pantalla>
+            <grafica>INTEGRADA</grafica>
+            <foto>
+                <nombre>portatil2.png</nombre>
+            </foto>
+        </fabricante>
+    </portatil>
+</catalogo>

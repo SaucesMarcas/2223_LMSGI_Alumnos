@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+}
+
+html{
+    font-family: 'Roboto',sans-serif;
+    background-image: url(../images/fondo.jpeg);
+    background-repeat: repeat;
+    background-size: 22%;
+}
+
+h1 {
+    color: white;
+    background-color: gray;
+    margin: 0px;
+    padding: 2px;
+    text-align: center;
+}
+
+span {
+    color: orange;
+}
+
+.content-1 {
+    display: inline-block;
+    background-color: lightgray;
+    margin: 6px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border: 2px solid black;
+    text-align: center;
+    width: 360px;
+}
+
+footer {
+    color: white;
+    background-color: gray;
+    margin: 0px;
+    padding: 2px;
+    text-align: center;
+}
