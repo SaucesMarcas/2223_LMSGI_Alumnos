@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogo SYSTEM "11.dtd">
+
+<catalogo>
+    <portatil>
+        <referencia>AB12345</referencia>
+        <nombre>HP-15</nombre>
+        <!-- LENOVO, HP, APPLE, MSI, ASUS, DELL, DESCONOCIDO-->
+        <fabricante nombre="HP"/>
+        <procesador>
+            <nombre>Intel Core i3-7020U</nombre>
+            <cache tamanyo="Mb">3</cache>
+            <numeroProcesadores>1</numeroProcesadores>
+            <velocidad medida="Ghz">2.3</velocidad>
+        </procesador>
+        <ram>
+            <memoria unidadmedida="Gb">8</memoria>
+            <!-- ddr3, ddr4-->
+            <tipo>DDR4</tipo>
+        </ram>
+        <disco tipo="SSD">
+            <capacidad unidad="Gb">256</capacidad>
+        </disco>
+        <pantalla>
+            <dimension tamanyo="pulgadas">15.6</dimension>
+            <resolucion>1266x768</resolucion>
+            <resolucionMaxima>1366x768</resolucionMaxima>
+        </pantalla>
+        <grafica>Integrada</grafica>
+        <fotos></fotos>
+    </portatil>
+    
+</catalogo>

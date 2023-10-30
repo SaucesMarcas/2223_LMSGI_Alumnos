@@ -1,0 +1,13 @@
+<img src="[mapa] (importada)" width="750" height="250" border="0" usemap="#map" />
+
+<map name="map">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:daw1 -->
+<area shape="rect" coords="46,45,189,206" alt="Logo html5" href="http://www.html15.com" />
+<area shape="circle" coords="280,118,80" alt="Logo JS" href="http://www.html15.com" />
+<area shape="rect" coords="381,54,537,202" alt="Logo desconocido" href="http://www.html15.com" />
+<area shape="poly" coords="626,54,559,118,630,194,695,118" alt="Logo rombo" href="http://www.html15.com" />
+</map>

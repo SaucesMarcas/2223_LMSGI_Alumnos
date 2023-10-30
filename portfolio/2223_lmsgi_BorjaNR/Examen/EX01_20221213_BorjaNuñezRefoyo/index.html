@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+	Descripción: 1º Evaluación. Nombre y Apellidos
+	Autor: Borja Nuñez Refoyo
+	Fecha creación/modificación: 29/11/2022
+    Navegador:Chrome
+-->
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" type="imagen/favicon" href="media/images/logo.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>1º Evaluación. Borja Nuñez Refoyo</title>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<header><h1>Lenguaje de Marcas y Sistemas de Gestión de la Información</h1></header><br>
+	<nav>
+		<ul>
+			<li><a href="login.html">ACCESO PRIVADO</a></li>
+		</ul>
+	</nav>
+    <main>
+        <a>Esta página web es el examen de la 1º evaluación del módulo Lenguaje de Marcas y Sistemas de Gestión de Información de 1º Curso del Ciclo Formativo de Grado Superior de Desarrollo de Aplicaciones Web en el IES los Sauces (Benavente).</a>
+        <div id="Listado-practicas">
+            <h3>Listado de prácticas</h3>
+            <ol>
+                <li><a href="../ud2/01/index.html">Noticias</a></li>
+                <li><a href="../ud2/02/index.html">Horarios</a></li>
+                <li><a href="../ud2/03/index.html">Formulario</a></li>
+                <li><a href="../ud2/04/index.html">Multimedia</a></li>
+            </ol>
+        </div>
+        <div id="Buscador">
+            <h3>Buscador</h3>
+			<input type="search" name="Buscador" placeholder="Escribe aqui"><br>
+            <input type="search" name="Buscar" value="Buscar">
+        </div>
+        <div id="Contacto">
+            <h3>Contacto</h3>
+            <label>Nombre (requerido)</label><br>
+			<input type="text"><br>
+            <label>Introduce tu dicreccion de email</label><br>
+			<input type="email"><br>
+            <label>Asunto</label><br>
+            <input type="text"><br>
+            <label>Mensaje</label><br>
+            <textarea rows="7" cols="50"></textarea><br>
+            <input type="submit" name="Enviar" value="Enviar">
+        </div>
+        <div id="Audio">
+            <h3>Audio</h3>
+            <img src="./media/images/mh.gif" alt="Monster" style="width: 12rem; height:12rem"><br>
+				<audio controls>
+				<source src="./media/audio/monster.mp3" type="audio/mp3">
+				</audio>
+        </div>
+        <div id="Video">
+            <h3>Video</h3>
+            <video width="200" height="200" controls>
+                <source src="./media/video/Armageddon.mp4" type="video/mp4">
+                Tu navegador no soporta el video 
+            </video>
+        </div>
+    </main>
+	<footer>
+        <div id="footer-menu">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Ubicacion</td>
+                        <td>Politica de Cookies</td>
+                        <td rowspan="2">Aviso legal</td>
+                    </tr>
+                    <tr>
+                        <td>Contacto</td>
+                        <td>Politica de privacidad</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="footer-redes">
+            <img src="media/images/twitter-256.png" style="width: 50px; height: 50px" alt="twitter">
+            <img src="media/images/facebook-256.png" style="width: 50px; height: 50px" alt="facebook">
+            <img src="media/images/icono-youtube.png" style="width: 50px; height: 50px" alt="youtube">
+            <img src="media/images/logo-instagram.png" style="width: 50px; height: 50px" alt="instagram">
+        </div>
+        <div id="footer-derechos">
+            <a>2022-23 IES los Sauces. @Todos los derechos reservados y optimizado Chrome. Borja Nuñez Refoyo</a>
+        </div>
+	</footer>
+</body>
+</html>

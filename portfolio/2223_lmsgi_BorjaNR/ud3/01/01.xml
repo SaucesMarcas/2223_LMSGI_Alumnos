@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss verson="2.0">
+    <!-- CANAL -->
+    <noticiero>
+        <!-- Elementos obligatorios de la etiqueta channel -->
+        <titulo>Pratica 01 Borja Nueñez Refoyo</titulo>
+        <link>https://elpais.es</link>
+        <descripcion>Ultimas noticias del periodico</descripcion>
+        <language>es-es</language>
+        <categoria>Noticias El Pais</categoria>
+        <copyright>2023 ElPais. All right reserved</copyright>
+        <ultimaFechaEdicion>Lunes, 23 Enero 2023 18:38</ultimaFechaEdicion>
+        <fechaPublicacion>23/01/2023 19:42</fechaPublicacion>
+        <diasDescanso>
+            <dia>Viernes</dia>
+            <dia>Sabado</dia>
+            <dia>Domingo</dia>
+        </diasDescanso>
+        <horasDescanso>
+            <hora>00:00</hora>
+            <hora>01:00</hora>
+            <hora>02:00</hora>
+            <hora>03:00</hora>
+            <hora>05:00</hora>
+            <hora>05:00</hora>
+            <hora>06:00</hora>
+            <hora>07:00</hora>
+            <hora>08:00</hora>
+        </horasDescanso>
+        <image>
+            <link>https://elpais.es</link>
+            <title>Pratica 01 Borja Nuñez Refoyo</title>
+            <url>https://elpais.com/elviajero/2022/07/12/album/1657628661_215336.html</url>
+            <description>Descripcioc</description>
+            <height>32</height>
+            <width>96</width>
+        </image>
+        <objeto>
+            <titulo>Titulo del articulo</titulo>
+            <link>https://elpais.com/espana/madrid/2023-01-23/ayuso-da-por-imposible-la-propuesta-de-feijoo-para-que-gobierne-la-lista-mas-votada-y-plantea-estudiar-elecciones-a-dos-vueltas.html</link>
+            <guid>https://elpais.com/espana/madrid/2023-01-23/ayuso-da-por-imposible-la-propuesta-de-feijoo-para-que-gobierne-la-lista-mas-votada-y-plantea-estudiar-elecciones-a-dos-vueltas.html</guid>
+            <autor>correoelectronicejemplo@gmail.com</autor>
+            <categoria>Politica</categoria>
+            <fechaPublicacion>23/01/2023 18:56</fechaPublicacion>
+            <enclosure url="http://www.w3ii.com/media/3d.wmv" length="78645" type="video/wmv" />
+            <descripcion>Descripcion</descripcion>
+            <descripcion><![CDATA[<h1>Hola soy es Borja</h1><p>Descripcion usando la etiqueta p de HTML</p>]]></descripcion>
+            <source url="https://elpais.es">El Pais</source>
+        </objeto>
+    </noticiero>
+</rss>

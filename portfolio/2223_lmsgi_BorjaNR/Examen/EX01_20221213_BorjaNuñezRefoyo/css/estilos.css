@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: content-box;
+}
+main div{
+    display: inline-block;
+    padding: 5rem;
+    margin: 2rem;
+}
+ul{
+    background-color: green;
+    position: fixed;
+    top: 10%;
+    right:0;
+    list-style: none;
+}
+ul a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+footer{
+    background-color: green;
+    width: 100%;
+    padding: 0.4rem;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+#footer-menu{
+    color:white
+}
+#footer-redes{
+    float: right;
+}
+#footer-derechos{
+    position: fixed;
+    bottom: 0;
+    left: 35%;
+    color: white;
+}
+h1{
+    color: green;
+    font-size: 4rem;
+}
+#Listado-practicas{
+    padding-left:0.4rem;
+    padding-right:0.4rem;
+    border: solid 2px;
+    border-color: green;
+    width: 15rem;
+    float: left;
+    text-align: center;
+}
+#Buscador{
+    padding-left:0.4rem;
+    padding-right:0.4rem;
+    border: solid 2px;
+    border-color: green;
+    width: 15rem;
+    float: left;
+    text-align: center;
+}
+#Contacto{
+    padding-left:0.4rem;
+    padding-right:0.4rem;
+    border: solid 2px;
+    border-color: green;
+    width: 15rem;
+    float: left;
+    text-align: center;
+}
+#Audio{
+    padding-left:0.4rem;
+    padding-right:0.4rem;
+    border: solid 2px;
+    border-color: green;
+    width: 15rem;
+    float: left;
+    text-align: center;
+}
+#Video{
+    padding-left:0.4rem;
+    padding-right:0.4rem;
+    border: solid 2px;
+    border-color: green;
+    width: 15rem;
+    float: left;
+    text-align: center;
+}
+div h3{
+    background-color: green;
+    font-size: 1.2rem;
+    color:white;
+}
+ol{
+    list-style: none;
+}
+ol a{
+    text-decoration: none;
+}
+td{
+    border: solid 2px;
+}
+

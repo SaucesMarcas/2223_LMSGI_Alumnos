@@ -1,0 +1,28 @@
+{
+    "usuarios":[
+    {
+        "nombre":"Moises",
+        "color_fondo":"azul",
+        "tamanyo_texto":18,
+        "color_texto":"blanco",
+        "idioma":"español",
+        "pantalla_inicio":false
+    }
+    {
+        "nombre":"Matias",
+        "color_fondo":"marron",
+        "tamanyo_texto":24,
+        "color_texto":"gris",
+        "idioma":"italiano",
+        "pantalla_inicio":true
+    }
+    {
+        "nombre":"Roberto",
+        "color_fondo":"negro",
+        "tamanyo_texto":14,
+        "color_texto":"blanco",
+        "idioma":"español",
+        "pantalla_inicio":true
+    }
+    ]
+}

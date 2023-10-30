@@ -1,0 +1,10 @@
+<datos>
+    <datosfiscales>En paro</datosfiscales>
+    <datospersonales>
+        <nombre>Borja</nombre>
+        <apellidos>Nuñez Refoyo</apellidos>
+        <sueldo>Más de 400 euros</sueldo>
+        <enfermedad>on</enfermedad>
+        <hijo>on</hijo>
+    </datospersonales>
+</datos>

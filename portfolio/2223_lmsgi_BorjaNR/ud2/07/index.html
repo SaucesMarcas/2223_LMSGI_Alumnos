@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+	Descripción: Actividad 07
+	Autor: Borja Nuñez Refoyo
+	Fecha creación/modificación:	24/11/2022
+-->
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML 07 Borja Nuñez Refoyo</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			div{text-align:center;}
+			div>div {
+				width:250px;
+				height:250px;
+				margin: 5px;
+				border:5px solid black;
+				border-top-color: black;
+				border-bottom-color: black;
+				background-color: #34F42A;
+				padding: 0px;
+				background-image: url(images/punto.png), url(images/punto.png), url(images/punto.png), url(images/punto.png), url(images/punto.png), url(images/punto.png);
+				background-size:25%;
+				background-repeat: no-repeat;
+				display: inline-block;
+			}
+				div:nth-child(1)>div{ 
+					background-position: top left;
+					background-image: url('images/puntorojo.png');
+					background-size: 25%;
+					background-repeat: no-repeat;
+					background-position: 50% 50%;
+				}
+				div:nth-child(2)>div{ 
+					background-position: top left, bottom right;
+					background-image: url('images/puntorojo.png'), url('images/puntorojo.png');
+					background-size: 25%, 25%;
+					background-repeat: no-repeat, no-repeat;
+					background-position: 25% 25%, 75% 75%;
+				}
+				div:nth-child(3)>div{ 
+					background-position: top left, center, bottom right;
+					background-image: url('images/puntorojo.png'), url('images/puntorojo.png'), url('images/puntorojo.png');
+					background-size: 25%, 25%, 25%;
+					background-repeat: no-repeat, no-repeat, no-repeat;
+					background-position: 25% 25%, 75% 75%, 50% 50%;
+				}
+				div:nth-child(4)>div{ 
+					background-position: top left, top right, bottom left, bottom right;
+					background-image: url('images/puntorojo.png'), url('images/puntorojo.png'), url('images/puntorojo.png'), url('images/puntorojo.png');
+					background-size: 25%, 25%, 25%, 25%;
+					background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+					background-position: 25% 25%, 75% 25%, 75% 75%, 25% 75%;
+				}
+				div:nth-child(5)>div{ 
+					background-position: top left, top right, center, bottom left, bottom right;
+					background-image: url('images/puntorojo.png'), url('images/puntorojo.png'), url('images/puntorojo.png'), url('images/puntorojo.png'), url('images/puntorojo.png');
+					background-size: 25%, 25%, 25%, 25%, 25%;
+					background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+					background-position: 25% 25%, 75% 25%, 75% 75%, 25% 75%, 50% 50%;
+				}
+				div:nth-child(6)>div{ 
+					background-position: top left, top right, center right, center left, bottom left, bottom right;
+					background-image: url('images/puntorojo.png'), url('images/puntorojo.png'), url('images/puntorojo.png'), url('images/puntorojo.png'), url('images/puntorojo.png'), url('images/puntorojo.png');
+					background-size: 25%, 25%, 25%, 25%, 25%, 25%;
+					background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+					background-position: 25% 25%, 25% 50%, 75% 75%, 25% 75%, 75% 50%, 75% 25%;
+				}
+		</style>
+	</head>
+	<body>
+		<div>
+			<div></div>
+		</div>
+		<div>
+			<div></div>
+			<div></div>
+		</div>
+		<div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<footer>
+			<address>2022-23. ©Todos los derechos reservados. Borja Nuñez Refoyo.</address>
+		</footer>
+	</body>
+</html>

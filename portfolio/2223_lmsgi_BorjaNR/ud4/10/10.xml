@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pedido xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="10.xsd">
+    <!--entrantes,primeros,segundos y postres -->
+    <!-- todos los nombres tienen un tamaño maximo de 100 caracteres y minimo  de 4-->
+    <!-- todos los nombres de los platos empiezan por mayuscula-->
+    <plato tipo="entrante">
+        <nombre tipo="jamon">Croquetas caseras</nombre><!-- jamon,boletus y mixta-->
+        <cantidad tipo="racion">media</cantidad>
+        <sinGluten opcion="false"/>
+        <precio>3.20</precio>
+    </plato>
+    <plato tipo="primero">
+        <nombre>Macarrones a la carbonara</nombre>
+        <sinGluten opcion="false"/>
+        <precio>4.80</precio>
+    </plato>
+    <plato tipo="segundo">
+        <nombre>Pollo al ajillo</nombre>
+        <sinGluten opcion="true"/>
+        <precio>4.80</precio>
+    </plato>
+    <plato tipo="postre">
+        <nombre>Coullant de chocolate caliente y nata</nombre>
+        <precio>6</precio>
+    </plato>
+    <bebida>
+        <nombre tipo="sin gas" medida="ml" tamanyo="500">agua</nombre>
+        <precio>1.20</precio>
+    </bebida>
+    <bebida>
+        <nombre tipo="sin gas" medida="ml" tamanyo="1000">agua</nombre>
+        <precio>1.20</precio>
+    </bebida>
+    <bebida>
+        <nombre tipo="con gas" medida="ml" tamanyo="500">agua</nombre>
+        <precio>1.20</precio>
+    </bebida>
+    <formaPago>
+        <!-- efectivo, bizum, tarjeta, criptomoneda-->
+        <bizum>50</bizum>
+    </formaPago>
+</pedido>
