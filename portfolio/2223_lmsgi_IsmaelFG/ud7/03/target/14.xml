@@ -1,0 +1,18 @@
+<nombre>Tango</nombre>
+<precio cuota="mensual" moneda="euro">27</precio>
+<precio-familia>22.95</precio-familia>
+<nombre>Cha-cha-cha</nombre>
+<precio cuota="trimestral" moneda="euro">80</precio>
+<precio-familia>68</precio-familia>
+<nombre>Rock</nombre>
+<precio cuota="mensual" moneda="euro">30</precio>
+<precio-familia>25.5</precio-familia>
+<nombre>Merengue</nombre>
+<precio cuota="trimestral" moneda="dolares">75</precio>
+<precio-familia>63.75</precio-familia>
+<nombre>Salsa</nombre>
+<precio cuota="mensual" moneda="euro">32</precio>
+<precio-familia>27.2</precio-familia>
+<nombre>Pasodoble</nombre>
+<precio cuota="anual" moneda="euro">320</precio>
+<precio-familia>272</precio-familia>

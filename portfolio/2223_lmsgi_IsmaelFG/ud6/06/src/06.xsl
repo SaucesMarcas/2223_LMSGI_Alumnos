@@ -2,7 +2,7 @@
 
 <!--
     Document   : 06.xsl
-    Created on : 11 de mayo de 2023, 13:39
+    Created on : 9 de mayo de 2023, 9:39
     Author     : daw1
     Description:
         Purpose of transformation follows.
@@ -15,14 +15,37 @@
          syntax recommendation http://www.w3.org/TR/xslt 
     -->
     <xsl:template match="/network">
-        <html>
-            <body>
-                <xsl:for-each select="interface">
-                    <xsl:text>network:</xsl:text>
-                    <xsl:text>version:</xsl:text>
-                </xsl:for-each>
-            </body>
-        </html>
+        <xsl:text>network:</xsl:text>
+        <xsl:text>  
+   version: </xsl:text>
+        <xsl:value-of select="version"/>
+        <xsl:text>  
+   renderer: networkd</xsl:text>
+        <xsl:text>  
+   ethernets:</xsl:text>
+        <xsl:apply-templates select="interface"/>
+    </xsl:template>
+    
+    <xsl:template match="interface">
+        <xsl:text>
+        </xsl:text>
+        <xsl:value-of select="  ethernets"/>
+        <xsl:text>  
+            dhcp4: </xsl:text>
+        <xsl:value-of select="dhcp4"/>
+        <xsl:text>  
+            address: </xsl:text>
+        <xsl:value-of select="address"/>
+        <xsl:text>  
+            gateway4: </xsl:text>
+        <xsl:value-of select="gateway"/>
+        <xsl:apply-templates select="nameservers"/>
+    </xsl:template>
+    
+    <xsl:template match="nameservers">
+        <xsl:text>
+            nameservers:</xsl:text>
+        <xsl:value-of select="concat('[',address,',',address,']')"/>
     </xsl:template>
 
 </xsl:stylesheet>

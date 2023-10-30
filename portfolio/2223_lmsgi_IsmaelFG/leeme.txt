@@ -1,1 +1,1 @@
-Realizados ejercicios unidad 6, actualizado el index tengo un problema con 2 archivos xml que se muestran como vacios en el index
+Actualizacion de index y añadidos los ejercicios restantes del tema 6,7 y 8

@@ -26,4 +26,5 @@ Configuración de red de un equipo.
             <address>8.8.8.8</address>
         </nameservers>
     </interface>
+    
 </network>
