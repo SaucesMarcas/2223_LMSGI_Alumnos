@@ -1,0 +1,1 @@
+<resultado><autores>Kurt Cagle</autores><autores>James Linn</autores><autores>Per Bothner</autores><autores>Erik T. Ray</autores><autores>J K. Rowling</autores><autores>James McGovern</autores><autores>Giada De Laurentiis</autores><autores>Vaidyanathan Nagarajan</autores></resultado>

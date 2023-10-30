@@ -1,0 +1,1 @@
+<resultado><title lang="en">XQuery Kick Start</title><title lang="en">Learning XML</title></resultado>
